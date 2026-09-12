@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Text;
 using TMPro;
 using UnityEngine;
@@ -37,13 +35,29 @@ public class BacklogController : MonoBehaviour
         if (runner == null || IsOpen) return;
 
         var sb = new StringBuilder();
+        string prevSpeaker = null;
+        
         foreach (var l in runner.Log)
         {
             if (string.IsNullOrEmpty(l.speaker))
-                sb.AppendLine($"<i>{l.text}</i>");              // 나레이션
+            {
+                if (sb.Length > 0) sb.AppendLine();
+                sb.AppendLine($"<i>{l.text}</i>");
+                prevSpeaker = null;
+                continue;
+            }
+
+            if (l.speaker != prevSpeaker)
+            {
+                if (sb.Length > 0) { sb.AppendLine(); }
+                sb.AppendLine($"<color=#B5451B><b>{l.speaker}</b></color>");
+                prevSpeaker = l.speaker;
+            }
             else
-                sb.AppendLine($"<b>{l.speaker}</b> : {l.text}");
-            sb.AppendLine();
+            {
+                sb.AppendLine();
+            }
+            sb.AppendLine(l.text);
         }
         if (logText != null) logText.text = sb.ToString().TrimEnd();
 
@@ -54,7 +68,7 @@ public class BacklogController : MonoBehaviour
         StartCoroutine(ScrollToBottom());
     }
     
-    System.Collections.IEnumerator ScrollToBottom()
+   IEnumerator ScrollToBottom()
     {
         yield return null;
         Canvas.ForceUpdateCanvases();
