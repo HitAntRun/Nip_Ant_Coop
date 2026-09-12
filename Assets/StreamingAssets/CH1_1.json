@@ -12,7 +12,7 @@
       "id": "n_c035a044",
       "speaker": "학생 개미 1",
       "text": "선생님, 그런데 전쟁은 둘이 막 싸우는 거잖아요.",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_449fd604",
       "endHere": false,
@@ -29,7 +29,7 @@
         {
           "id": "teacher",
           "sprite": "teacher-normal-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Left",
           "fadeIn": true,
           "flip": true
@@ -41,13 +41,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_449fd604",
       "speaker": "학생 개미 1",
       "text": "그러면 먼저 잘못한 쪽이 사과하면 화해할 수 있는 거 아닌가요?",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_dfe2c587",
       "endHere": false,
@@ -59,13 +60,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_dfe2c587",
       "speaker": "선생 개미",
       "text": "한쪽이 잘못을 인정한다면, 이 갈등은 평화롭게 마무리됐겠지요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_51f60d28",
       "endHere": false,
@@ -82,7 +84,7 @@
         {
           "id": "student1",
           "sprite": "student1-normal-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -94,13 +96,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_51f60d28",
       "speaker": "선생 개미",
       "text": "하지만 저들은 잘못을 인정하지 않고, 잘못을 되풀이하고 있어요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_4878ed94",
       "endHere": false,
@@ -112,13 +115,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_4878ed94",
       "speaker": "선생 개미",
       "text": "역사를 바로 배우지 않는다면, 흰개미처럼 아집에 빠지게 된답니다.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_085e7551",
       "endHere": false,
@@ -130,13 +134,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_085e7551",
       "speaker": "선생 개미",
       "text": "아직까지도 흰개미들이 우리에게 사과하지 않는 이유는, 저들의 왜곡된 역사 교육 탓이니까요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_43c62c6f",
       "endHere": false,
@@ -148,13 +153,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_43c62c6f",
       "speaker": "선생 개미",
       "text": "그러고보니, 이건 지난 수업시간에 이야기했었죠? 혹시 기억 나는 학생 있으면 대답해볼까요~?",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_93d30656",
       "endHere": false,
@@ -175,13 +181,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_93d30656",
       "speaker": "선생 개미",
       "text": "왜 흰개미마을에서는 그렇게 왜곡된 역사 교육을 하는 걸까요~?",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f65e763b",
       "endHere": false,
@@ -193,13 +200,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_f65e763b",
       "speaker": "학생 개미1",
       "text": "저요! 저 알아요!",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_dbce2f9e",
       "endHere": false,
@@ -216,7 +224,7 @@
         {
           "id": "teacher",
           "sprite": "teacher-kind-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
           "flip": true
@@ -228,13 +236,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_dbce2f9e",
       "speaker": "학생 개미1",
       "text": "그건 바로 흰개미들이 우리 검은개미와 달리 비정상적인 돌연변이이기 때문입니다!!",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_859db57a",
       "endHere": false,
@@ -246,13 +255,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_859db57a",
       "speaker": "선생 개미",
       "text": "네, 그렇죠~ 그들은 순수한 검은개미가 아니에요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_5187c593",
       "endHere": false,
@@ -269,7 +279,7 @@
         {
           "id": "student1",
           "sprite": "student1-smile-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -281,13 +291,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_5187c593",
       "speaker": "선생 개미",
       "text": "검은개미의 유전자에 돌연변이가 생겨 탄생한 존재들이지요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_ab2c5f72",
       "endHere": false,
@@ -308,13 +319,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_ab2c5f72",
       "speaker": "선생 개미",
       "text": "그러다 보니 우리 검은개미보다도 훨씬 비문명적이고 포악합니다.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_1ef84324",
       "endHere": false,
@@ -326,13 +338,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_1ef84324",
       "speaker": "선생 개미",
       "text": "… 최근에는 다시 또 우리 검은개미마을에 나타나서는…",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f8acc9c1",
       "endHere": false,
@@ -344,13 +357,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_f8acc9c1",
       "speaker": "학생 개미2",
       "text": "네? 선생님, 그게 무슨 말씀이세요??",
-      "portrait": "student2-normal-32px",
+      "portrait": "Student2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_daff3ddc",
       "endHere": false,
@@ -359,7 +373,7 @@
         {
           "id": "teacher",
           "sprite": "teacher-serious-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
           "flip": true
@@ -367,7 +381,7 @@
         {
           "id": "student1",
           "sprite": "student1-embarrassed-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -387,13 +401,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_daff3ddc",
       "speaker": "선생 개미",
       "text": "...하아. 어차피 여러분에게도 알려야 할 사실이었으니…",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b6f776e7",
       "endHere": false,
@@ -410,7 +425,7 @@
         {
           "id": "student2",
           "sprite": "student2-embarrassed-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
           "flip": false
@@ -422,13 +437,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_b6f776e7",
       "speaker": "선생 개미",
       "text": "실은, 그것 때문에 우리 검은개미마을에 위기가 닥쳤어요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_6969aa43",
       "endHere": false,
@@ -440,13 +456,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_6969aa43",
       "speaker": "선생 개미",
       "text": "여러분, 이건 전체 공지사항이니 잘 들어주세요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_733a3f96",
       "endHere": false,
@@ -458,13 +475,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_733a3f96",
       "speaker": "선생 개미",
       "text": "<b>최근 들어, 검은개미마을에 흰개미들이 몰래 침입하고 있다고 해요.</b>",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f0a1a2d4",
       "endHere": false,
@@ -476,13 +494,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_f0a1a2d4",
       "speaker": "학생 개미1",
       "text": "네?? 아니, 어떻게 그런 일이!!",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_a1154c28",
       "endHere": false,
@@ -491,7 +510,7 @@
         {
           "id": "teacher",
           "sprite": "teacher-serious-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
           "flip": true
@@ -511,13 +530,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_a1154c28",
       "speaker": "학생 개미2",
       "text": "몰래 침입해서 뭘 하려는 거죠?? 설마 우리를 몰래 죽이려는 건가요?!",
-      "portrait": "student2-normal-32px",
+      "portrait": "Student2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_855ff2b4",
       "endHere": false,
@@ -526,7 +546,7 @@
         {
           "id": "student1",
           "sprite": "student1-embarrassed-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -546,13 +566,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_855ff2b4",
       "speaker": "선생 개미",
       "text": "그들은 흰개미마을에서 보낸 스파이들이에요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b2b75d16",
       "endHere": false,
@@ -569,7 +590,7 @@
         {
           "id": "student2",
           "sprite": "student2-angry-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
           "flip": false
@@ -581,13 +602,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_b2b75d16",
       "speaker": "선생 개미",
       "text": "스파이들은 우리의 식량 창고를 오염시키거나 마을의 기물을 파손하기도 모자라,",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_887322d4",
       "endHere": false,
@@ -599,13 +621,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_887322d4",
       "speaker": "선생 개미",
       "text": "어린 애벌레와 알들까지도 건드리려 한 사실이 밝혀졌습니다.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_74a5912f",
       "endHere": false,
@@ -617,13 +640,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_74a5912f",
       "speaker": "학생 개미1",
       "text": "그런 잔인한...!",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_97f0bda3",
       "endHere": false,
@@ -640,7 +664,7 @@
         {
           "id": "teacher",
           "sprite": "teacher-serious-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
           "flip": true
@@ -652,13 +676,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_97f0bda3",
       "speaker": "학생 개미2",
       "text": "이...! 나쁜 놈들!",
-      "portrait": "student2-normal-32px",
+      "portrait": "Student2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_79dd699b",
       "endHere": false,
@@ -675,7 +700,7 @@
         {
           "id": "student1",
           "sprite": "student1-scary-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -687,13 +712,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_79dd699b",
       "speaker": "선생 개미",
       "text": "그리고 요 며칠, 마을 곳곳의 개미굴에서 흰개미가 발견되었다는 신고가 잇따르고 있어요. ",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_d56e4134",
       "endHere": false,
@@ -710,7 +736,7 @@
         {
           "id": "student2",
           "sprite": "student2-angry-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
           "flip": false
@@ -722,13 +748,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_d56e4134",
       "speaker": "선생 개미",
       "text": "흰개미들이 이미 검은개미마을의 깊숙한 곳부터 몰래 우리의 질서를 해치려 하는 거예요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_a856c4c2",
       "endHere": false,
@@ -740,13 +767,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_a856c4c2",
       "speaker": "학생 개미1",
       "text": "그럼 어떡해요? 빨리 그 녀석들을 잡아야 하잖아요!",
-      "portrait": "student1-normal-32px",
+      "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_05347337",
       "endHere": false,
@@ -763,7 +791,7 @@
         {
           "id": "teacher",
           "sprite": "teacher-serious-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
           "flip": true
@@ -775,13 +803,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_05347337",
       "speaker": "선생 개미",
       "text": "그래서 선생님이 여러분에게 전달할 중요한, 정말 중요한 사항은 지금부터입니다.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_8426b29f",
       "endHere": false,
@@ -798,7 +827,7 @@
         {
           "id": "student1",
           "sprite": "student1-scary-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -810,13 +839,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_8426b29f",
       "speaker": "선생 개미",
       "text": "<b>흰개미를 발견하면 접촉하지 말고 즉시 신고하세요.</b>",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_2d151f73",
       "endHere": false,
@@ -828,13 +858,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_2d151f73",
       "speaker": "선생 개미",
       "text": "많이 찾아 신고한 학생에게는 특별한 상을 줄 예정이에요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_e3a7ad40",
       "endHere": false,
@@ -855,13 +886,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_e3a7ad40",
       "speaker": "선생 개미",
       "text": "어쩌면 여러분 중 누군가가 마을의 영웅이 될 기회일지도 몰라요.",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_cb82450d",
       "endHere": false,
@@ -873,13 +905,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_cb82450d",
       "speaker": "에밀",
       "text": "(솔깃)",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_9aa89bc9",
       "endHere": false,
@@ -916,13 +949,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_9aa89bc9",
       "speaker": "선생 개미",
       "text": "시간이 다 되었으니, 오늘 수업은 여기서 마치겠습니다. 모두들, 집까지 조심히 가요~",
-      "portrait": "teacher-normal-32px",
+      "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f1e7fa62",
       "endHere": false,
@@ -931,7 +965,7 @@
         {
           "id": "emil",
           "sprite": "emil-normal-32px",
-          "brightness": 0.7,
+          "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
           "flip": false
@@ -943,13 +977,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_f1e7fa62",
       "speaker": "에밀",
       "text": "흰개미 신고하기라... 별로 어렵지 않을 것 같은데?",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_280a809e",
       "endHere": false,
@@ -978,13 +1013,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_280a809e",
       "speaker": "에밀",
       "text": "나쁜 흰개미들을 잡아서, 나도 마을의 영웅으로 거듭나는 거야!",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_defc56de",
       "endHere": false,
@@ -996,13 +1032,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_defc56de",
       "speaker": "에밀",
       "text": "그러면 아빠도 엄마도 기뻐하시겠지?",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_50ae9ebe",
       "endHere": false,
@@ -1014,13 +1051,14 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_50ae9ebe",
       "speaker": "에밀",
       "text": "오늘부터 마을 곳곳을 돌아다니면서 흰개미를 찾아봐야겠어.",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": null,
       "endHere": true,
@@ -1032,6 +1070,7 @@
       "mode": "",
       "bg": null,
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     }
   ],

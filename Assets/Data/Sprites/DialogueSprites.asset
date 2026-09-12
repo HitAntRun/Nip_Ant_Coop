@@ -95,3 +95,11 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 31d90d857c46b4ec7adeba9aae18e27c, type: 3}
   - name: emils_home_ch1_pixelate
     sprite: {fileID: 21300000, guid: d8e2ed75c3bd14fb6b342a737756e18c, type: 3}
+  - name: Emil-portrait
+    sprite: {fileID: 21300000, guid: 1f0c9466aadb74c6d84ebf5297a8ab06, type: 3}
+  - name: Student1-portrait
+    sprite: {fileID: 21300000, guid: 20bd70d4870424c19a1ee16e7391033b, type: 3}
+  - name: Student2-portrait
+    sprite: {fileID: 21300000, guid: 6cb185755f9e84810ac7152698bcaeeb, type: 3}
+  - name: Teacher-portrait
+    sprite: {fileID: 21300000, guid: 48d973ffdcdec410482a8f7c6b7f142e, type: 3}

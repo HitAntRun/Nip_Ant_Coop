@@ -12,7 +12,7 @@
       "id": "n_9f44cf23",
       "speaker": "에밀",
       "text": "다녀왔습니다...~",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b1b9edc4",
       "endHere": false,
@@ -29,16 +29,18 @@
       ],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_b1b9edc4",
       "speaker": "에밀",
       "text": "조금 피곤하긴 한데, 그래도 할 만한 것 같아.",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_16411930",
       "endHere": false,
@@ -46,9 +48,11 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
@@ -63,9 +67,11 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "narration",
       "bg": "ch1_CutScene_family",
       "fadeBreak": true,
+      "wipe": false,
       "hold": -1.0
     },
     {
@@ -80,9 +86,11 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
@@ -97,9 +105,11 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
@@ -114,9 +124,11 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
@@ -131,16 +143,18 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_3b4efbb6",
       "speaker": "에밀",
       "text": "후아암, 졸려.",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_03046cf0",
       "endHere": false,
@@ -157,16 +171,18 @@
       ],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "",
       "bg": "",
       "fadeBreak": true,
+      "wipe": false,
       "hold": -1.0
     },
     {
       "id": "n_03046cf0",
       "speaker": "에밀",
       "text": "Zzzz....",
-      "portrait": "emil-normal-32px",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": null,
       "endHere": true,
@@ -174,9 +190,11 @@
       "actors": [],
       "shake": false,
       "bgm": "",
+      "sfx": "",
       "mode": "",
       "bg": "",
       "fadeBreak": false,
+      "wipe": false,
       "hold": -1.0
     }
   ],
