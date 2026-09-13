@@ -176,7 +176,7 @@ MonoBehaviour:
   label: {fileID: 7620126009803256532}
   bubble: {fileID: 2441455816997057581}
   padding: {x: 0.3, y: 0.2}
-  maxWidth: 20
+  bubbleWorldScale: 1
   showTime: 3
   hideTime: 3
   maxStartDelay: 2
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
