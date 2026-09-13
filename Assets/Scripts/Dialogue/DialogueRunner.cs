@@ -91,7 +91,7 @@ public class DialogueRunner : MonoBehaviour
     public bool IsActive => current != null;
     
     [System.Serializable]
-    public struct LogLine { public string speaker, text; }
+    public struct LogLine { public string speaker, text, portrait; }
 
     private readonly List<LogLine> log = new List<LogLine>();
     private string lastLoggedNodeId;
@@ -262,7 +262,8 @@ public class DialogueRunner : MonoBehaviour
             lastLoggedNodeId = node.id;
             log.Add(new LogLine {
                 speaker = (currentMode == "narration") ? "" : node.speaker,
-                text    = node.text
+                text    = node.text,
+                portrait = (currentMode == "narration") ? "" : node.portrait
             });
         }
         if (typing != null) StopCoroutine(typing);
