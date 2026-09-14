@@ -30,17 +30,18 @@ public static class SaveManager
 
     static void Apply(ProgressData d)
     {
-        GameFlow.CurrentStage = d.currentStage;
-        GameFlow.ChapterLabel = d.chapterLabel;
-        GameFlow.Day = d.day;
+        GameFlow.LastStoryStage = d.currentStage;
+        GameFlow.CurrentStage   = d.currentStage;
+        GameFlow.ChapterLabel   = d.chapterLabel;
+        GameFlow.Day            = d.day;
     }
 
     static void Collect(ProgressData d)
     {
-        d.currentStage = GameFlow.CurrentStage;
+        d.currentStage = GameFlow.LastStoryStage;
         d.chapterLabel = GameFlow.ChapterLabel;
-        d.day = GameFlow.Day;
-        d.savedAtUnix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        d.day          = GameFlow.Day;
+        d.savedAtUnix  = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
     }
 
     public static void MarkDirty() => dirty = true;
@@ -61,6 +62,7 @@ public static class SaveManager
     {
         Current = ProgressData.NewGame();
         Current.currentStage = startStage;
+        GameFlow.LastStoryStage = startStage;
         Apply(Current);
         Save(force : true);
     }

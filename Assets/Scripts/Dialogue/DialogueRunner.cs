@@ -105,12 +105,21 @@ public class DialogueRunner : MonoBehaviour
     public void Play(string storyId, int startIndex = 0)
     {
         string path = Path.Combine(Application.streamingAssetsPath, storyId + ".json");
+        
+        if (!File.Exists(path))
+        {
+            Debug.LogError($"[DialogueRunner] 스토리 파일 없음: {storyId}.json");
+            return;
+        }
         data = JsonConvert.DeserializeObject<DialogueData>(File.ReadAllText(path));
         ending = false;
         if (data == null) return;
 
+        GameFlow.LastStoryStage = storyId;
         if(!string.IsNullOrEmpty(data.chapterLabel)) GameFlow.ChapterLabel = data.chapterLabel;
         if (data.day > 0) GameFlow.Day = data.day;
+        SaveManager.Save(force: true);  
+        
         ChapterHeader.instance?.Refresh();
         SkipController.instance?.Refresh();
         ApplyBgm(data.bgm);

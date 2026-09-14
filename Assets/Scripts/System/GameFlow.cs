@@ -7,33 +7,20 @@ public static class GameFlow
     public static string CurrentStage
     {
         get => currentStage;
-        set
-        {
-            if (currentStage == value) return;
-            currentStage = value;
-            SaveManager.MarkDirty();
-        }
+        set => currentStage = value;
     }
+    
+    public static string LastStoryStage { get; set; } = "Prologue";
 
     public static string ChapterLabel
     {
         get => chapterLabel;
-        set
-        {
-            if (chapterLabel == value) return;
-            chapterLabel = value;
-            SaveManager.MarkDirty();
-        }
+        set { if (chapterLabel == value) return; chapterLabel = value; SaveManager.MarkDirty(); }
     }
 
     public static int Day
     {
         get => day;
-        set
-        {
-            if (day == value) return;
-            day = value;
-            SaveManager.MarkDirty();
-        }
+        set { if (day == value) return; day = value; SaveManager.MarkDirty(); }
     }
 }
