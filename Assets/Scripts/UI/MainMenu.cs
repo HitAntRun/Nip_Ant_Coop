@@ -6,37 +6,105 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private string startStage = "Prologue";
-    [SerializeField] private TMP_Text progressText;
-    [SerializeField] private string progressFormat = "진행중인 챕터:{0}";
+    [Header("Panels")]
+    [SerializeField] private GameObject mainPanel;
+    [SerializeField] private GameObject playPanel;
+    [SerializeField] private GameObject confirmPanel;
+    
+    [Header("Play Panel")]
     [SerializeField] private GameObject continueButton;
+    [SerializeField] private TMP_Text progressText;
+    [SerializeField] private string progressFormat = "진행중인 챕터: {0}";
+    
+    [Header("Flow")]
+    [SerializeField] private string startStage = "Prologue";
 
+    [Header("Animation")]
+    [SerializeField] private GameObject confirmRoot;
+    [SerializeField] private PanelPopup confirmPopup;
+
+    private bool HasProgress => SaveManager.HasSave && GameFlow.LastStoryStage != startStage;
+    
     private void Start()
     {
         Time.timeScale = 1f;
+        ShowMain();
+    }
     
-        if(continueButton != null)
-            continueButton.SetActive(SaveManager.HasSave);
+    private void Update()
+    {
+        if (!Input.GetKeyDown(KeyCode.Escape)) return;
+
+        if (confirmRoot != null && confirmRoot.activeSelf)
+        {
+            CloseConfirm();
+            return;
+        }
+
+        if (playPanel != null && playPanel.activeSelf)
+            ShowMain();
+    }
+
+    public void ShowMain()
+    {
+        if (mainPanel != null) mainPanel.SetActive(true);
+        if (playPanel != null) playPanel.SetActive(false);
+    }
+    
+    public void ShowPlay()
+    {
+        if (mainPanel != null) mainPanel.SetActive(false);
+        if (playPanel != null) playPanel.SetActive(true);
+
+        RefreshPlayPanel();
+    }
+    
+    private void RefreshPlayPanel()
+    {
+        bool has = HasProgress;
+
+        if (continueButton != null) continueButton.SetActive(has);
+
         if (progressText != null)
         {
-            progressText.gameObject.SetActive(SaveManager.HasSave);
-            progressText.text = string.Format(progressFormat, GameFlow.ChapterLabel);
+            progressText.gameObject.SetActive(has);
+            if (has) progressText.text = string.Format(progressFormat, GameFlow.ChapterLabel);
         }
-            
     }
-
+    
     public void OnClickContinue()
     {
-        SceneRouter.Load(SceneRouter.StoryScene, GameFlow.CurrentStage);
+        SceneRouter.Load(SceneRouter.StoryScene, GameFlow.LastStoryStage);
     }
-
+    
     public void OnClickNewGame()
     {
-        SaveManager.StartNewGame(startStage);
-        SceneRouter.Load(SceneRouter.StoryScene, startStage);
+        if (HasProgress && confirmRoot != null)
+        {
+            OpenConfirm();
+            return;
+        }
+        StartNewGame();
     }
-    public void OnClickPlay()
+
+    public void OnConfirmYes() { CloseConfirm(); StartNewGame(); }
+    public void OnConfirmNo()  { CloseConfirm(); }
+    
+    private void OpenConfirm()
     {
+        if (confirmRoot != null) confirmRoot.SetActive(true);
+        confirmPopup?.Open();
+    }
+
+    private void CloseConfirm()
+    {
+        confirmPopup?.Close();
+        if (confirmRoot != null) confirmRoot.SetActive(false);
+    }
+    
+    private void StartNewGame()
+    {
+        SaveManager.StartNewGame(startStage);
         SceneRouter.Load(SceneRouter.StoryScene, startStage);
     }
 
