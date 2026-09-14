@@ -17,6 +17,8 @@ public class SceneRouter : MonoBehaviour
         if (!string.IsNullOrEmpty(stageId))
             GameFlow.CurrentStage = stageId;
 
+        SaveManager.Save();
+        
         NextScene = sceneName;
         if (minTime >= 0f) MinLoadingTime = minTime;
 
@@ -26,6 +28,8 @@ public class SceneRouter : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(stageId))
             GameFlow.CurrentStage = stageId;
+
+        SaveManager.Save();
 
         NextScene = sceneName;
         SceneManager.LoadScene(sceneName);

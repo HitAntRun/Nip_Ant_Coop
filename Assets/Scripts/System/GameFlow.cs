@@ -1,6 +1,39 @@
 public static class GameFlow
 {
-    public static string CurrentStage = "Prologue_1";
-    public static string ChapterLabel = "Prologue";
-    public static int Day = 1;
+    static string currentStage = "Prologue";
+    static string chapterLabel = "Prologue";
+    static int day = 1;
+
+    public static string CurrentStage
+    {
+        get => currentStage;
+        set
+        {
+            if (currentStage == value) return;
+            currentStage = value;
+            SaveManager.MarkDirty();
+        }
+    }
+
+    public static string ChapterLabel
+    {
+        get => chapterLabel;
+        set
+        {
+            if (chapterLabel == value) return;
+            chapterLabel = value;
+            SaveManager.MarkDirty();
+        }
+    }
+
+    public static int Day
+    {
+        get => day;
+        set
+        {
+            if (day == value) return;
+            day = value;
+            SaveManager.MarkDirty();
+        }
+    }
 }

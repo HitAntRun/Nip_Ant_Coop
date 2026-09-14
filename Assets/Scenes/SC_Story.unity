@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runner: {fileID: 1848783815}
-  overrideStoryId: CH1_1
+  overrideStoryId: 
   startFromLine: 1
 --- !u!4 &276021732
 Transform:
