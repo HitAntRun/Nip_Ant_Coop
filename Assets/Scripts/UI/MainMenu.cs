@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     [Header("Panels")]
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject playPanel;
+    [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject confirmPanel;
     
     [Header("Play Panel")]
@@ -35,28 +36,33 @@ public class MainMenu : MonoBehaviour
     {
         if (!Input.GetKeyDown(KeyCode.Escape)) return;
 
-        if (confirmRoot != null && confirmRoot.activeSelf)
-        {
-            CloseConfirm();
-            return;
-        }
+        if (confirmRoot != null && confirmRoot.activeSelf) { CloseConfirm(); return; }
 
-        if (playPanel != null && playPanel.activeSelf)
-            ShowMain();
+        if (playPanel != null && playPanel.activeSelf)     { ShowMain(); return; }
+        if (settingsPanel != null && settingsPanel.activeSelf) { ShowMain(); return; }
+    }
+
+    public void ShowOnly(GameObject target)
+    {
+        if (mainPanel != null) mainPanel.SetActive(mainPanel == target);
+        if (playPanel != null) playPanel.SetActive(playPanel == target);
+        if(settingsPanel != null) settingsPanel.SetActive(settingsPanel == target);
     }
 
     public void ShowMain()
     {
-        if (mainPanel != null) mainPanel.SetActive(true);
-        if (playPanel != null) playPanel.SetActive(false);
+        ShowOnly(mainPanel);
     }
     
     public void ShowPlay()
     {
-        if (mainPanel != null) mainPanel.SetActive(false);
-        if (playPanel != null) playPanel.SetActive(true);
-
+        ShowOnly(playPanel);
         RefreshPlayPanel();
+    }
+
+    public void ShowSettings()
+    {
+        ShowOnly(settingsPanel);
     }
     
     private void RefreshPlayPanel()

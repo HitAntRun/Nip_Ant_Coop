@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UIDataTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 05434eb67f97a43e48907c55aadce4a5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2035112992768
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2035112992769
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2035112992770
+    m_Localized: Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2035125575680
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751293489152
+    m_Localized: Achievement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266368
+    m_Localized: Start Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266369
+    m_Localized: 'Current Chapter : '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266370
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266371
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266372
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266373
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266374
+    m_Localized: The current recording will be lost. Do you want to continue?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266375
+    m_Localized: Ant Date
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266376
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266377
+    m_Localized: Skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266378
+    m_Localized: Skip Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266379
+    m_Localized: Choice A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266380
+    m_Localized: Choice B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266381
+    m_Localized: Story Summary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688751310266382
+    m_Localized: Dialougue Log
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
