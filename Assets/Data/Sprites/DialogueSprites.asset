@@ -76,21 +76,21 @@ MonoBehaviour:
   - name: New-student-wink-32px
     sprite: {fileID: 21300000, guid: 8b9d581c4ff114941904568192c47c67, type: 3}
   - name: first_CutScene_900
-    sprite: {fileID: 21300000, guid: 8e348113c61744c7a9804b286a3e29bf, type: 3}
+    sprite: {fileID: 21300000, guid: c47b462d569164071809a4d88c161ab7, type: 3}
   - name: first_CutScene_901
-    sprite: {fileID: 21300000, guid: e6c31a35b8b3544029b4410862b257ed, type: 3}
+    sprite: {fileID: 21300000, guid: 3e1bc272700ba4f1fb2a71427402e372, type: 3}
   - name: first_CutScene_902
-    sprite: {fileID: 21300000, guid: b879115abc74f4450b8119b145b37034, type: 3}
+    sprite: {fileID: 21300000, guid: bf379d48d4812412ca67b5bdce9a2206, type: 3}
   - name: first_CutScene_903
-    sprite: {fileID: 21300000, guid: 73a14fe945706492687ecad46282d671, type: 3}
+    sprite: {fileID: 21300000, guid: 0859f99640af446e6ac2cabcd12adb9f, type: 3}
   - name: first_CutScene_904
-    sprite: {fileID: 21300000, guid: 4c0f9fa1a9baa4ce8a8031d0be9136db, type: 3}
+    sprite: {fileID: 21300000, guid: 9cb72eac55af242d78d1b7ed2725b775, type: 3}
   - name: first_CutScene_905
-    sprite: {fileID: 21300000, guid: ba8983d5fda2744fea626198e151511a, type: 3}
+    sprite: {fileID: 21300000, guid: 18a717ff89fe9401ca0c0aed453b8b4f, type: 3}
   - name: first_CutScene_906_907
-    sprite: {fileID: 21300000, guid: f2703f420f24c435a894e894e118790e, type: 3}
+    sprite: {fileID: 21300000, guid: fb5cf9cbc56544e8c87d931fbec6170c, type: 3}
   - name: first_CutScene_908
-    sprite: {fileID: 21300000, guid: 6281044bc2221478085eb7fd2bd598c6, type: 3}
+    sprite: {fileID: 21300000, guid: 405c62a37fd2348199059681569a1228, type: 3}
   - name: ch1_CutScene_family
     sprite: {fileID: 21300000, guid: 31d90d857c46b4ec7adeba9aae18e27c, type: 3}
   - name: emils_home_ch1_pixelate
