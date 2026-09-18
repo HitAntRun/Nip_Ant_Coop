@@ -95,6 +95,26 @@ MonoBehaviour:
     m_Key: dialogue_log
     m_Metadata:
       m_Items: []
+  - m_Id: 1072488158060544
+    m_Key: loading_tip_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072579442892800
+    m_Key: loading_tip_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072642076434432
+    m_Key: loading_tip_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072698212999168
+    m_Key: loading_tip_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072742743924736
+    m_Key: loading_tip_5
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

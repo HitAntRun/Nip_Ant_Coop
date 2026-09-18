@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 public class LoadingController : MonoBehaviour
@@ -16,9 +17,24 @@ public class LoadingController : MonoBehaviour
         if (string.IsNullOrEmpty(target))
             target = fallbackScene;
 
+        yield return LocalizationSettings.InitializationOperation;
+
         if (tipText != null && tipData != null)
-            tipText.text = tipData.GetRandom(target);
-        
+        {
+            var loc = tipData.PickRandom(target);
+            if (loc != null)
+            {
+                var handle = loc.GetLocalizedStringAsync();
+                yield return handle;
+                if (handle.IsDone && handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
+                    tipText.text = handle.Result;
+            }
+            else
+            {
+                tipText.text = string.Empty;
+            }
+        }
+
         float minTime = Mathf.Max(minDisplayTime, SceneRouter.MinLoadingTime);
         var op = SceneManager.LoadSceneAsync(target);
         op.allowSceneActivation = false;

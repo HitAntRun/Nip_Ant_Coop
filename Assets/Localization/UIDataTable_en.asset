@@ -98,6 +98,28 @@ MonoBehaviour:
     m_Localized: Dialougue Log
     m_Metadata:
       m_Items: []
+  - m_Id: 1072488158060544
+    m_Localized: "TMI: Long ago, termites and ants are said to have gotten along
+      just fine\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072579442892800
+    m_Localized: 'Tips: Spotted a termite? Report it right away!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072642076434432
+    m_Localized: 'Tips: Sometimes a very tiny termite shows up. Try zooming in!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072698212999168
+    m_Localized: "TMI: Maybe\u2026 there's a termite somewhere near you right now..?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072742743924736
+    m_Localized: 'Tips: Click certain objects and they''ll move! Termites have been
+      hiding lately...'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
