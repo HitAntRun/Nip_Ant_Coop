@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: 44d28049a62864edc94819931bd9a949, type: 3}
-  - {fileID: 8300000, guid: b9684a5ae0644424da1c7602292b9c49, type: 3}
   - {fileID: 8300000, guid: 6b5d37325073747d4b3e42f81127fc98, type: 3}
-  volume: 0.6
+  volume: 0.3
   avoidRepeatOnRefill: 1
   gapBetweenTracks: 0.5
