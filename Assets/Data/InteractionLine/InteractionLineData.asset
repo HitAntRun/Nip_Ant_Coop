@@ -13,27 +13,26 @@ MonoBehaviour:
   m_Name: InteractionLineData
   m_EditorClassIdentifier: 
   correctLines:
-  - "\uC57C\uD638! \uCC3E\uC558\uB2E4!"
-  - "\uC800\uAE30 \uC228\uC5B4\uC788\uC5C8\uAD70!"
-  - "\uB0B4 \uB208\uC744 \uD53C\uD560 \uC21C \uC5C6\uC9C0!"
-  - "\uC2A4\uD30C\uC774\uCE58\uACE0\uB294 \uD5C8\uC220\uD55C\uB370? \uD558\uD558!"
-  - "\uCC3E\uC558\uB2E4! \uC5B4\uB51C \uAC10\uD788!"
+  - line_correct_1
+  - line_correct_2
+  - line_correct_3
+  - line_correct_4
+  - line_correct_5
   wrongLines:
-  - "\uC774\uAC74 \uC544\uB2CC \uAC83 \uAC19\uC544."
-  - "\uD5C8\uC704 \uC2E0\uACE0\uB294 \uD558\uBA74 \uC548\uB3FC!"
-  - "\uB2E4\uB978 \uACF3\uC744 \uCC3E\uC544\uBCF4\uC790."
-  - "\uD770\uAC1C\uBBF8\uAC00 \uB3C4\uB9DD\uAC00\uAE30 \uC804\uC5D0, \uC11C\uB458\uB7EC\uC11C
-    \uC7A1\uC544\uC57C \uD574!"
-  - "\uC557, \uC2E4\uC218!"
+  - line_wrong_1
+  - line_wrong_2
+  - line_wrong_3
+  - line_wrong_4
+  - line_wrong_5
   wrongBubbleLines:
-  - "\uC57C, \uC2E4\uB840\uC796\uC544!"
-  - "\uC800, \uC804 \uC544\uB2CC\uB370\uC694..."
-  - "...\uBB58 \uBD10?"
-  - "\uB098 \uAC80\uC740\uAC1C\uBBF8\uAC70\uB4E0!"
-  - "\uBB50\uD558\uB294\uAC70\uC57C!!"
+  - bubble_wrong_1
+  - bubble_wrong_2
+  - bubble_wrong_3
+  - bubble_wrong_4
+  - bubble_wrong_5
   correctBubbleLines:
-  - "\uC73C\uC545!!"
-  - "\uC65C \uC6B0\uB9AC\uD55C\uD14C\uB9CC \uADF8\uB798!"
-  - "\uC6B0\uB9AC \uD770\uAC1C\uBBF8\uB4E4\uC740...!"
+  - bubble_correct_1
+  - bubble_correct_2
+  - bubble_correct_3
   correctFace: {fileID: 21300000, guid: 3d07dd4fbd8dc4e5788947d10f28a292, type: 3}
   wrongFace: {fileID: 21300000, guid: 5c54c634e993b4d8ab91ea395a85c9ba, type: 3}

@@ -10,6 +10,7 @@
   "nodes": [
     {
       "id": "n_9f44cf23",
+      "locKey": "CH1_2_1",
       "speaker": "에밀",
       "text": "다녀왔습니다...~",
       "portrait": "Emil-portrait",
@@ -38,6 +39,7 @@
     },
     {
       "id": "n_b1b9edc4",
+      "locKey": "CH1_2_2",
       "speaker": "에밀",
       "text": "조금 피곤하긴 한데, 그래도 할 만한 것 같아.",
       "portrait": "Emil-portrait",
@@ -57,6 +59,7 @@
     },
     {
       "id": "n_16411930",
+      "locKey": "CH1_2_3",
       "speaker": "",
       "text": "......",
       "portrait": "",
@@ -76,6 +79,7 @@
     },
     {
       "id": "n_7960693a",
+      "locKey": "CH1_2_4",
       "speaker": "",
       "text": "...... 걱정 마세요, 아빠.",
       "portrait": "",
@@ -95,6 +99,7 @@
     },
     {
       "id": "n_4d6597e0",
+      "locKey": "CH1_2_5",
       "speaker": "",
       "text": "마을만큼은 제가 꼭 지킬 테니까요.",
       "portrait": "",
@@ -114,6 +119,7 @@
     },
     {
       "id": "n_bf17adac",
+      "locKey": "CH1_2_6",
       "speaker": "",
       "text": "그러면 아빠도 조금은 후련하시겠죠?",
       "portrait": "",
@@ -133,6 +139,7 @@
     },
     {
       "id": "n_c362cb28",
+      "locKey": "CH1_2_7",
       "speaker": "",
       "text": "그럼, 내일 또 인사할게요. 안녕히 주무세요.",
       "portrait": "",
@@ -152,6 +159,7 @@
     },
     {
       "id": "n_3b4efbb6",
+      "locKey": "CH1_2_8",
       "speaker": "에밀",
       "text": "후아암, 졸려.",
       "portrait": "Emil-portrait",
@@ -180,6 +188,7 @@
     },
     {
       "id": "n_03046cf0",
+      "locKey": "CH1_2_9",
       "speaker": "에밀",
       "text": "Zzzz....",
       "portrait": "Emil-portrait",

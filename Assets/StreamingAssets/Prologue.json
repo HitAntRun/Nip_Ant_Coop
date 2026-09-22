@@ -10,6 +10,7 @@
   "nodes": [
     {
       "id": "n_bd36ce2e",
+      "locKey": "Prologue_1",
       "speaker": "",
       "text": "깊고 울창한 숲속에, 검은개미마을과 흰개미마을이 이웃해 있었습니다.",
       "portrait": "",
@@ -29,6 +30,7 @@
     },
     {
       "id": "n_da136af5",
+      "locKey": "Prologue_2",
       "speaker": "",
       "text": "두 마을의 개미들은 서로 생김새가 달랐지만, 늘 정답게 지냈답니다.",
       "portrait": "",
@@ -48,6 +50,7 @@
     },
     {
       "id": "n_6ba38eb1",
+      "locKey": "Prologue_3",
       "speaker": "",
       "text": "그러던 어느 날, 두 마을이 함께 모여 즐거운 축제를 열었어요.",
       "portrait": "",
@@ -67,6 +70,7 @@
     },
     {
       "id": "n_99ab15a6",
+      "locKey": "Prologue_4",
       "speaker": "",
       "text": "그러나 웃음이 가득했던 축제는 순식간에 무서운 전쟁터로 변했어요.",
       "portrait": "",
@@ -86,6 +90,7 @@
     },
     {
       "id": "n_c9e3a9aa",
+      "locKey": "Prologue_5",
       "speaker": "",
       "text": "흰여왕개미가 어린 검은개미 둘을 끔찍하게 물어 죽인 거예요.",
       "portrait": "",
@@ -105,6 +110,7 @@
     },
     {
       "id": "n_8008528e",
+      "locKey": "Prologue_6",
       "speaker": "",
       "text": "이를 목격한 검은여왕개미는 크게 분노하여 전쟁을 선포했습니다.",
       "portrait": "",
@@ -124,6 +130,7 @@
     },
     {
       "id": "n_0e7d91f9",
+      "locKey": "Prologue_7",
       "speaker": "",
       "text": "검은개미마을은 사과를 요구했지만, 흰개미마을은 받아들이지 않았죠.",
       "portrait": "",
@@ -143,6 +150,7 @@
     },
     {
       "id": "n_123e32f4",
+      "locKey": "Prologue_8",
       "speaker": "",
       "text": "오랜 싸움 끝에, 지친 두 마을은 마침내 휴전 협정을 맺었어요.",
       "portrait": "",
@@ -162,6 +170,7 @@
     },
     {
       "id": "n_6bf5d3bb",
+      "locKey": "Prologue_9",
       "speaker": "",
       "text": "그러나 너무 많은 개미가 죽었고, 두 마을 사이의 갈등은 여전히 남아 있습니다.",
       "portrait": "",

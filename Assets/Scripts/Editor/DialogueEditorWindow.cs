@@ -382,6 +382,7 @@ public class DialogueEditorWindow : EditorWindow
         }
 
         AssignLinks();
+        AssignLocKeys();
 
         if (!Directory.Exists(DialogueFolder)) Directory.CreateDirectory(DialogueFolder);
         if (string.IsNullOrEmpty(filePath))
@@ -433,6 +434,35 @@ public class DialogueEditorWindow : EditorWindow
             else
                 n.next = (i + 1 < data.nodes.Count) ? data.nodes[i + 1].id : null;
         }
+    }
+    
+    void AssignLocKeys()
+    {
+        string prefix = data.storyId + "_";
+
+        var used = new HashSet<int>();
+        foreach (var n in data.nodes)
+        {
+            if (string.IsNullOrEmpty(n.locKey)) continue;
+            if (n.locKey.StartsWith(prefix) &&
+                int.TryParse(n.locKey.Substring(prefix.Length), out int num))
+                used.Add(num);
+        }
+
+        int next = 1;
+        var added = new List<DialogueNode>();
+        foreach (var n in data.nodes)
+        {
+            if (!string.IsNullOrEmpty(n.locKey)) continue;
+            while (used.Contains(next)) next++;
+            n.locKey = prefix + next;
+            used.Add(next);
+            added.Add(n);
+        }
+
+        if (added.Count > 0)
+            Debug.Log($"[Dialogue] 신규 locKey {added.Count}개\n" +
+                      string.Join("\n", added.ConvertAll(n => $"{n.locKey}\t{n.text}")));
     }
 
     static string NewId() => "n_" + System.Guid.NewGuid().ToString("N").Substring(0, 8);

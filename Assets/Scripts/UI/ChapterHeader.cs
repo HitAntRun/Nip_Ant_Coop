@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class ChapterHeader : MonoBehaviour
 {
@@ -16,6 +18,9 @@ public class ChapterHeader : MonoBehaviour
     {
         instance = this;
     }
+    void OnLocaleChanged(Locale _) => Refresh();
+    void OnEnable()  { LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged; }
+    void OnDisable() { LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged; }
 
     private void OnDestroy()
     {
@@ -27,6 +32,8 @@ public class ChapterHeader : MonoBehaviour
     public void Refresh()
     {
         if (chapterText != null) chapterText.text = GameFlow.ChapterLabel;
-        if (dayText != null) dayText.text = string.Format(dayFormat, GameFlow.Day);
+        if (dayText != null)
+            dayText.text = string.Format(
+                Loc.Get(Loc.UI, "ant_date", dayFormat), GameFlow.Day);
     }
 }

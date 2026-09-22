@@ -21,6 +21,7 @@ public class DialogueData
 public class DialogueNode
 {
     public string id;
+    public string locKey;
     public string speaker;
     public string text;
     public string portrait;

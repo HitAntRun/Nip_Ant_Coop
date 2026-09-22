@@ -84,7 +84,7 @@ public class AntMonologue : MonoBehaviour
         if (label == null || string.IsNullOrEmpty(line)) return;
 
         idleLine = line;
-        label.text = line;
+        label.text = Loc.Get(Loc.UI, line, "");
         FitBubble();
 
         if (loop != null) StopCoroutine(loop);
@@ -106,7 +106,7 @@ public class AntMonologue : MonoBehaviour
 
     private IEnumerator ReactRoutine(string line, float duration)
     {
-        label.text = line;
+        label.text = Loc.Get(Loc.UI, line, "");
         FitBubble();
         wantVisible = true;
         
@@ -117,7 +117,7 @@ public class AntMonologue : MonoBehaviour
 
         if (!string.IsNullOrEmpty(idleLine))
         {
-            label.text = idleLine;
+            label.text = Loc.Get(Loc.UI, idleLine, "");
             FitBubble();
             loop = StartCoroutine(Loop());
         }

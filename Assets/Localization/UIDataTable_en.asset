@@ -67,7 +67,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 688751310266375
-    m_Localized: Ant Date
+    m_Localized: Ant Date {0}
     m_Metadata:
       m_Items: []
   - m_Id: 688751310266376
@@ -98,26 +98,176 @@ MonoBehaviour:
     m_Localized: Dialougue Log
     m_Metadata:
       m_Items: []
-  - m_Id: 1072488158060544
+  - m_Id: 2139869844332544
+    m_Localized: Press A or D to rotate the terrain!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109760
+    m_Localized: Right-click to zoom in!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109761
+    m_Localized: Find a termite and report it!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109762
+    m_Localized: Let's go find a termite, shall we?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109763
+    m_Localized: There was a termite right in front! Left-click to report it!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109764
+    m_Localized: "One might be hiding at an angle you can't see \u2014 press A or
+      D to look around!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109765
+    m_Localized: A termite was hiding there! Report it the same way!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109766
+    m_Localized: Right-click to zoom in! Just remember, you'll only see that one
+      spot!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109767
+    m_Localized: Report this one too!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109768
+    m_Localized: Now, shall we do this for real?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109769
+    m_Localized: Yahoo! Found one!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109770
+    m_Localized: So that's where it was hiding!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109771
+    m_Localized: You can't hide from my eyes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109772
+    m_Localized: Sloppy, for a spy! Haha!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109773
+    m_Localized: Found you! How dare you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109774
+    m_Localized: That doesn't seem right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109775
+    m_Localized: No false reports!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109776
+    m_Localized: Let's look somewhere else.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109777
+    m_Localized: We have to hurry and catch the termite before it gets away!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109778
+    m_Localized: Oops, my mistake!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109779
+    m_Localized: Hey, how rude!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109780
+    m_Localized: U-um, that's not me...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109781
+    m_Localized: ...What are you looking at?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109782
+    m_Localized: I'm a black ant, thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109783
+    m_Localized: What do you think you're doing!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109784
+    m_Localized: Aaagh!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109785
+    m_Localized: Why is it always us!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109786
+    m_Localized: We termites are...!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109787
+    m_Localized: A termite, hiding somewhere around here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109788
+    m_Localized: Termites are savage and vicious.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109789
+    m_Localized: Is something rotten around here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109790
+    m_Localized: I hear the Queen has laid new young!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109791
+    m_Localized: I miss Dad, off at work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2143471572869120
     m_Localized: "TMI: Long ago, termites and ants are said to have gotten along
       just fine\u2026"
     m_Metadata:
       m_Items: []
-  - m_Id: 1072579442892800
+  - m_Id: 2143539789029376
     m_Localized: 'Tips: Spotted a termite? Report it right away!'
     m_Metadata:
       m_Items: []
-  - m_Id: 1072642076434432
+  - m_Id: 2143600497385472
     m_Localized: 'Tips: Sometimes a very tiny termite shows up. Try zooming in!'
     m_Metadata:
       m_Items: []
-  - m_Id: 1072698212999168
+  - m_Id: 2143639126925312
     m_Localized: "TMI: Maybe\u2026 there's a termite somewhere near you right now..?"
     m_Metadata:
       m_Items: []
-  - m_Id: 1072742743924736
+  - m_Id: 2143718751592448
     m_Localized: 'Tips: Click certain objects and they''ll move! Termites have been
       hiding lately...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145133427417088
+    m_Localized: Emil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145173894062080
+    m_Localized: Teacher Ant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145212414550016
+    m_Localized: Student Ant1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145257989857280
+    m_Localized: Student Ant2
     m_Metadata:
       m_Items: []
   references:

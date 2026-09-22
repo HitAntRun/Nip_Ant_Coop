@@ -74,7 +74,7 @@ public class InteractionPopup : MonoBehaviour
         if (IsTutorial) return;
         if (string.IsNullOrEmpty(line)) return;
         
-        if(label != null) label.text = line;
+        if(label != null) label.text = Loc.Get(Loc.UI, line, "");
         if(characterImage != null && face != null) characterImage.sprite = face;
 
         SetVisible(true);

@@ -100,9 +100,9 @@ public class InputManager : MonoBehaviour
 
     string HintFor(TutorialController.Trigger t) => t switch
     {
-        TutorialController.Trigger.Rotate    => "A,D키를 눌러 지형을 회전시켜보자!",
-        TutorialController.Trigger.Magnify   => "마우스 우클릭으로 확대해보자!",
-        TutorialController.Trigger.ReportAnt => "흰개미를 찾아 신고해보자!",
+        TutorialController.Trigger.Rotate    => Loc.Get(Loc.UI, "hint_rotate",  "A,D키를 눌러 지형을 회전시켜보자!"),
+        TutorialController.Trigger.Magnify   => Loc.Get(Loc.UI, "hint_magnify", "마우스 우클릭으로 확대해보자!"),
+        TutorialController.Trigger.ReportAnt => Loc.Get(Loc.UI, "hint_report",  "흰개미를 찾아 신고해보자!"),
         _ => ""
     };
 

@@ -19,6 +19,7 @@ public class TutorialController : MonoBehaviour
     public class Step
     {
         [TextArea] public string text;
+        public string locKey;
         public Trigger trigger;
         public Sprite image;
     }
@@ -61,7 +62,7 @@ public class TutorialController : MonoBehaviour
         if (index >= steps.Count) { EndTutorial(); return; }
 
         if (tutorialPanel != null) tutorialPanel.SetActive(true);
-        if (tutorialText != null) tutorialText.text = steps[index].text;
+        if (tutorialText != null)  tutorialText.text = Loc.Get(Loc.UI, steps[index].locKey, steps[index].text);
         ShowStepImage(steps[index].image);
     }
 

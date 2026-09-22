@@ -95,24 +95,172 @@ MonoBehaviour:
     m_Key: dialogue_log
     m_Metadata:
       m_Items: []
-  - m_Id: 1072488158060544
+  - m_Id: 2139869844332544
+    m_Key: hint_rotate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109760
+    m_Key: hint_magnify
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109761
+    m_Key: hint_report
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109762
+    m_Key: tuto_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109763
+    m_Key: tuto_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109764
+    m_Key: tuto_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109765
+    m_Key: tuto_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109766
+    m_Key: tuto_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109767
+    m_Key: tuto_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109768
+    m_Key: tuto_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109769
+    m_Key: line_correct_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109770
+    m_Key: line_correct_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109771
+    m_Key: line_correct_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109772
+    m_Key: line_correct_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109773
+    m_Key: line_correct_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109774
+    m_Key: line_wrong_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109775
+    m_Key: line_wrong_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109776
+    m_Key: line_wrong_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109777
+    m_Key: line_wrong_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109778
+    m_Key: line_wrong_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109779
+    m_Key: bubble_wrong_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109780
+    m_Key: bubble_wrong_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109781
+    m_Key: bubble_wrong_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109782
+    m_Key: bubble_wrong_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109783
+    m_Key: bubble_wrong_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109784
+    m_Key: bubble_correct_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109785
+    m_Key: bubble_correct_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109786
+    m_Key: bubble_correct_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109787
+    m_Key: mono_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109788
+    m_Key: mono_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109789
+    m_Key: mono_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109790
+    m_Key: mono_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109791
+    m_Key: mono_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2143471572869120
     m_Key: loading_tip_1
     m_Metadata:
       m_Items: []
-  - m_Id: 1072579442892800
+  - m_Id: 2143539789029376
     m_Key: loading_tip_2
     m_Metadata:
       m_Items: []
-  - m_Id: 1072642076434432
+  - m_Id: 2143600497385472
     m_Key: loading_tip_3
     m_Metadata:
       m_Items: []
-  - m_Id: 1072698212999168
+  - m_Id: 2143639126925312
     m_Key: loading_tip_4
     m_Metadata:
       m_Items: []
-  - m_Id: 1072742743924736
+  - m_Id: 2143718751592448
     m_Key: loading_tip_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145133427417088
+    m_Key: char_emil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145173894062080
+    m_Key: char_teacher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145212414550016
+    m_Key: char_student1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2145257989857280
+    m_Key: char_student2
     m_Metadata:
       m_Items: []
   m_Metadata:

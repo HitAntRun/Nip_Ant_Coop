@@ -1,7 +1,6 @@
 public static class GameFlow
 {
     static string currentStage = "Prologue";
-    static string chapterLabel = "Prologue";
     static int day = 1;
 
     public static string CurrentStage
@@ -12,11 +11,16 @@ public static class GameFlow
     
     public static string LastStoryStage { get; set; } = "Prologue";
 
-    public static string ChapterLabel
+    static string chapterStoryId = "Prologue";
+
+    public static string ChapterStoryId
     {
-        get => chapterLabel;
-        set { if (chapterLabel == value) return; chapterLabel = value; SaveManager.MarkDirty(); }
+        get => chapterStoryId;
+        set { if (chapterStoryId == value) return; chapterStoryId = value; SaveManager.MarkDirty(); }
     }
+
+    public static string ChapterLabel
+        => Loc.Get(Loc.Story, $"{chapterStoryId}_chapterLabel", "");
 
     public static int Day
     {

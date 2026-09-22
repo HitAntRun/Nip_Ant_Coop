@@ -24,6 +24,8 @@ public static class SaveManager
 
     static ProgressData Migrate(ProgressData d)
     {
+        if (string.IsNullOrEmpty(d.chapterStoryId))
+            d.chapterStoryId = d.currentStage;
         d.version = ProgressData.CurrentVersion;
         return d;
     }
@@ -32,14 +34,14 @@ public static class SaveManager
     {
         GameFlow.LastStoryStage = d.currentStage;
         GameFlow.CurrentStage   = d.currentStage;
-        GameFlow.ChapterLabel   = d.chapterLabel;
+        GameFlow.ChapterStoryId = d.chapterStoryId;
         GameFlow.Day            = d.day;
     }
 
     static void Collect(ProgressData d)
     {
         d.currentStage = GameFlow.LastStoryStage;
-        d.chapterLabel = GameFlow.ChapterLabel;
+        d.chapterStoryId = GameFlow.ChapterStoryId;
         d.day          = GameFlow.Day;
         d.savedAtUnix  = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
     }

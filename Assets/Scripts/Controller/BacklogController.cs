@@ -68,13 +68,14 @@ public class BacklogController : MonoBehaviour
 
                 cur = Instantiate(entryPrefab, content);
                 spawned.Add(cur);
-                cur.SetSpeaker(l.speaker, spriteDB != null ? spriteDB.Get(l.portrait) : null);
+                cur.SetSpeaker(
+                    DialogueRunner.LocalizeSpeaker(l.speaker),
+                    spriteDB != null ? spriteDB.Get(l.portrait) : null);
 
                 prevSpeaker = isNarration ? null : l.speaker;
             }
-
             if (sb.Length > 0) sb.Append("\n\n");
-            sb.Append(l.text);
+            sb.Append(Loc.Get(Loc.Story, l.locKey, l.text));
         }
 
         if (cur != null) cur.SetBody(sb.ToString());

@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StoryTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 232c66db683ee472ebf30c5c5cb5e662, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 4407004487680
+    m_Localized: Deep in a lush forest, the Black Ant Village and the Termite Village
+      stood side by side.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847808
+    m_Localized: The ants of the two villages looked nothing alike, yet they always
+      got along.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847809
+    m_Localized: Then one day, the two villages came together to hold a joyful festival.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847810
+    m_Localized: But the festival, once full of laughter, turned into a terrible
+      battlefield in an instant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847811
+    m_Localized: The Termite Queen had savagely bitten two young black ants to death.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847812
+    m_Localized: The Black Ant Queen, who saw it happen, was enraged and declared
+      war.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847813
+    m_Localized: The Black Ant Village demanded an apology, but the Termite Village
+      would not give one.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407033847814
+    m_Localized: After a long fight, the two exhausted villages finally signed a
+      truce.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4407038042112
+    m_Localized: But far too many ants had died, and the conflict between the two
+      villages remains to this day.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906205700096
+    m_Localized: Chapter 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283008
+    m_Localized: "Another peaceful day in the Black Ant Village! But the village
+      carries a sad history. 162 years ago by the ant calendar, it went to war with
+      the Termite Village \u2014 once a close friend \u2014 and the two have been
+      under truce ever since. The termites, who started it all, still have not apologized
+      to the black ants. Very bad ants indeed.\nAnd as if that weren't enough, it
+      seems those wicked ones are scheming again! Termites have been sneaking into
+      the Black Ant Village to disturb its order. For the peace of the Black Ant
+      Village, let's find and report every <b>termite</b>. Report enough of them
+      and the school will even give you a special award!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283009
+    m_Localized: Teacher, but a war is when two sides fight each other, isn't it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283010
+    m_Localized: So if the side that was wrong apologizes first, couldn't they make
+      up?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283011
+    m_Localized: If one side admitted its fault, yes, the conflict would have ended
+      peacefully.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283012
+    m_Localized: But they refuse to admit any fault, and they keep repeating it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283013
+    m_Localized: If you don't learn history properly, you end up as stubborn as a
+      termite.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283014
+    m_Localized: The reason the termites still haven't apologized to us is their
+      distorted history education.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283015
+    m_Localized: Come to think of it, we covered this last class, didn't we? Does
+      anyone remember? Care to answer~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283016
+    m_Localized: Why do you suppose the Termite Village teaches such a distorted
+      history~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283017
+    m_Localized: Me! I know!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283018
+    m_Localized: It's because termites are abnormal mutants, unlike us black ants!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283019
+    m_Localized: Yes, that's right~ They are not pure black ants.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283020
+    m_Localized: They came into being from a mutation in the black ant's genes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283021
+    m_Localized: Which is why they are far more uncivilized and vicious than we black
+      ants.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283022
+    m_Localized: "\u2026 And lately they have turned up in our Black Ant Village
+      once again\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283023
+    m_Localized: What? Teacher, what do you mean??
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283024
+    m_Localized: "...Haah. You were going to have to be told anyway\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283025
+    m_Localized: The truth is, because of them, our Black Ant Village is facing a
+      crisis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283026
+    m_Localized: Everyone, this is an announcement for all of you, so listen carefully.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283027
+    m_Localized: <b>Lately, termites have been sneaking into the Black Ant Village.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283028
+    m_Localized: What?? No way, how could that happen!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283029
+    m_Localized: What are they sneaking in to do?? Don't tell me they mean to kill
+      us in secret?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283030
+    m_Localized: They are spies sent by the Termite Village.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283031
+    m_Localized: Not content with contaminating our food stores and destroying village
+      property,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283032
+    m_Localized: the spies were found to have gone after even our young larvae and
+      eggs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283033
+    m_Localized: How cruel...!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283034
+    m_Localized: Those...! Awful creatures!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283035
+    m_Localized: And over the past few days, reports keep coming in of termites spotted
+      in tunnels all over the village.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283036
+    m_Localized: The termites are already working from deep inside the Black Ant
+      Village to undermine our order.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283037
+    m_Localized: Then what do we do? We have to catch them, and fast!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906218283038
+    m_Localized: "So \u2014 here is the important, truly important thing I must tell
+      you all."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477312
+    m_Localized: <b>If you spot a termite, do not approach it. Report it at once.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477313
+    m_Localized: Students who find and report many of them will receive a special
+      award.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477314
+    m_Localized: One of you might just get the chance to become the village's hero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477315
+    m_Localized: (intrigued)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477316
+    m_Localized: We're out of time, so that's all for today. Everyone, get home safely~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477317
+    m_Localized: Reporting termites, huh... Doesn't sound too hard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477318
+    m_Localized: I'll catch those bad termites and become the village's hero!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477319
+    m_Localized: That would make Dad and Mom happy, wouldn't it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477320
+    m_Localized: Starting today, I'm going to go all over the village and look for
+      termites.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477321
+    m_Localized: Chapter 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477322
+    m_Localized: I'm home...~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477323
+    m_Localized: I'm a little tired, but I think I can manage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477324
+    m_Localized: ......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477325
+    m_Localized: ...... Don't worry, Dad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477326
+    m_Localized: I'll protect the village, whatever it takes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477327
+    m_Localized: That would put your mind at ease a little, wouldn't it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477328
+    m_Localized: Well then, I'll come say hello again tomorrow. Good night.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477329
+    m_Localized: Yaaawn, I'm sleepy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 676906222477330
+    m_Localized: Zzzz....
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

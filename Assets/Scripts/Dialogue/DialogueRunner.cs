@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
@@ -9,6 +11,20 @@ using UnityEngine.UI;
 
 public class DialogueRunner : MonoBehaviour
 {
+    static readonly Dictionary<string, string> speakerKeys = new Dictionary<string, string>
+    {
+        { "에밀",       "char_emil"     },
+        { "선생 개미",  "char_teacher"  },
+        { "학생 개미1", "char_student1" },
+        { "학생 개미2", "char_student2" },
+    };
+
+    public static string LocalizeSpeaker(string raw)
+    {
+        if (string.IsNullOrEmpty(raw)) return raw;
+        return speakerKeys.TryGetValue(raw, out var k) ? Loc.Get(Loc.UI, k, raw) : raw;
+    }
+    
     [Header("Dialogue UI")]
     [SerializeField] private GameObject panel;
     [SerializeField] private TMP_Text speakerText;
@@ -81,7 +97,8 @@ public class DialogueRunner : MonoBehaviour
     private string lastSfxNodeId;
 
     private bool ending;
-    public string Summary => data != null ? data.summary : null;
+    public string Summary => data == null ? null
+        : Loc.Get(Loc.Story, $"{data.storyId}_summary", data.summary);
 
     private int selectedIndex;
 
@@ -91,7 +108,7 @@ public class DialogueRunner : MonoBehaviour
     public bool IsActive => current != null;
     
     [System.Serializable]
-    public struct LogLine { public string speaker, text, portrait; }
+    public struct LogLine { public string speaker, text, portrait, locKey; }
 
     private readonly List<LogLine> log = new List<LogLine>();
     private string lastLoggedNodeId;
@@ -101,6 +118,10 @@ public class DialogueRunner : MonoBehaviour
     {
         if (shakeRoot != null) shakeHome = shakeRoot.anchoredPosition;
     }
+    
+    void OnEnable()  { LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged; }
+    void OnDisable() { LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged; }
+    
     // -------------------- 재생 --------------------
     public void Play(string storyId, int startIndex = 0)
     {
@@ -116,7 +137,7 @@ public class DialogueRunner : MonoBehaviour
         if (data == null) return;
 
         GameFlow.LastStoryStage = storyId;
-        if(!string.IsNullOrEmpty(data.chapterLabel)) GameFlow.ChapterLabel = data.chapterLabel;
+        if(!string.IsNullOrEmpty(data.chapterLabel)) GameFlow.ChapterStoryId = data.storyId;
         if (data.day > 0) GameFlow.Day = data.day;
         SaveManager.Save(force: true);  
         
@@ -242,7 +263,7 @@ public class DialogueRunner : MonoBehaviour
         {
             ApplyPortrait(node);
             ApplyActors(node);
-            speakerText.text = node.speaker;
+            speakerText.text = LocalizeSpeaker(node.speaker);
         }
 
         if (doFade)
@@ -272,11 +293,12 @@ public class DialogueRunner : MonoBehaviour
             log.Add(new LogLine {
                 speaker = (currentMode == "narration") ? "" : node.speaker,
                 text    = node.text,
-                portrait = (currentMode == "narration") ? "" : node.portrait
+                portrait = (currentMode == "narration") ? "" : node.portrait,
+                locKey   = node.locKey
             });
         }
         if (typing != null) StopCoroutine(typing);
-        typing = StartCoroutine(TypeText(node.text));
+        typing = StartCoroutine(TypeText(Loc.Get(Loc.Story, node.locKey, node.text)));
     }
 
     void ApplyPortrait(DialogueNode node)
@@ -524,7 +546,8 @@ public class DialogueRunner : MonoBehaviour
         {
             bool used = i < current.choices.Count;
             choiceSlots[i].SetActive(used);
-            if (used) choiceLabels[i].text = current.choices[i].text;
+            if (used) choiceLabels[i].text =
+                Loc.Get(Loc.Story, $"{current.locKey}_choice{i}", current.choices[i].text);
         }
         UpdateChecks();
         if (choicePopup != null) choicePopup.Open();
@@ -704,5 +727,21 @@ public class DialogueRunner : MonoBehaviour
         if (string.IsNullOrEmpty(id)) return;
         SoundManager.EnsureExists();
         SoundManager.instance?.PlayBgmById(id);
+    }
+    
+    void OnLocaleChanged(Locale _)
+    {
+        if (current == null) return;
+
+        if (typing != null) { StopCoroutine(typing); typing = null; }
+
+        Target.text = Loc.Get(Loc.Story, current.locKey, current.text);
+        Target.ForceMeshUpdate();
+        Target.maxVisibleCharacters = Target.textInfo.characterCount;
+
+        if (currentMode != "narration")
+            speakerText.text = LocalizeSpeaker(current.speaker);
+
+        if (current.choices != null && current.choices.Count > 0) ShowChoices();
     }
 }

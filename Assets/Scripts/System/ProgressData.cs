@@ -9,6 +9,7 @@ public class ProgressData
 
     public string currentStage = "Prologue_1";
     public string chapterLabel = "Prologue";
+    public string chapterStoryId;
     public int day = 1;
 
     public long savedAtUnix;

@@ -17,7 +17,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:05434eb67f97a43e48907c55aadce4a5
       m_TableEntryReference:
-        m_KeyId: 1072488158060544
+        m_KeyId: 2143471572869120
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:05434eb67f97a43e48907c55aadce4a5
       m_TableEntryReference:
-        m_KeyId: 1072579442892800
+        m_KeyId: 2143539789029376
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:05434eb67f97a43e48907c55aadce4a5
       m_TableEntryReference:
-        m_KeyId: 1072642076434432
+        m_KeyId: 2143600497385472
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:05434eb67f97a43e48907c55aadce4a5
       m_TableEntryReference:
-        m_KeyId: 1072698212999168
+        m_KeyId: 2143639126925312
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:05434eb67f97a43e48907c55aadce4a5
       m_TableEntryReference:
-        m_KeyId: 1072742743924736
+        m_KeyId: 2143718751592448
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
