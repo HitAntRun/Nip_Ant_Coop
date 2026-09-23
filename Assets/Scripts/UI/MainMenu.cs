@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class MainMenu : MonoBehaviour
 {
@@ -41,6 +43,14 @@ public class MainMenu : MonoBehaviour
         if (playPanel != null && playPanel.activeSelf)     { ShowMain(); return; }
         if (settingsPanel != null && settingsPanel.activeSelf) { ShowMain(); return; }
     }
+    
+    void OnEnable()  { LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged; }
+    void OnDisable() { LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged; }
+    
+    void OnLocaleChanged(Locale _)
+    {
+        if (playPanel != null && playPanel.activeSelf) RefreshPlayPanel();
+    }
 
     public void ShowOnly(GameObject target)
     {
@@ -74,7 +84,8 @@ public class MainMenu : MonoBehaviour
         if (progressText != null)
         {
             progressText.gameObject.SetActive(has);
-            if (has) progressText.text = string.Format(progressFormat, GameFlow.ChapterLabel);
+            if (has) progressText.text = string.Format(
+                Loc.Get(Loc.UI, "progress", progressFormat), GameFlow.ChapterLabel);
         }
     }
     
