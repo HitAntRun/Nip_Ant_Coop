@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 688751310266369
-    m_Localized: 'Current Chapter : '
+    m_Localized: 'Current Chapter : {0}'
     m_Metadata:
       m_Items: []
   - m_Id: 688751310266370
