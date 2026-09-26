@@ -7,6 +7,11 @@ public class InputManager : MonoBehaviour
     private MagnifierController _magnifier;
     private DialogueRunner _dialogue;
 
+    static bool NextPressed() =>
+        Input.GetKeyDown(KeyCode.Space)
+        || Input.GetKeyDown(KeyCode.Return)
+        || Input.GetKeyDown(KeyCode.KeypadEnter);
+
     private void Start()
     {
         _rotateController = FindFirstObjectByType<RotateController>();
@@ -39,13 +44,13 @@ public class InputManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.UpArrow))   _dialogue.Move(-1);
                 if (Input.GetKeyDown(KeyCode.DownArrow)) _dialogue.Move(1);
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) _dialogue.Confirm();
+                if(NextPressed()) _dialogue.Confirm();
             }
             else
             {
                 bool overUI = EventSystem.current != null
                               && EventSystem.current.IsPointerOverGameObject();
-                if (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0) && !overUI))
+                if (NextPressed()|| (Input.GetMouseButtonDown(0) && !overUI))
                     _dialogue.OnClick();
             }
             return;
@@ -55,10 +60,11 @@ public class InputManager : MonoBehaviour
 
         if (tut != null && tut.enabled && tut.IsBlocking)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            if (NextPressed() || Input.GetMouseButtonDown(0))
                 tut.Advance();
             return;
         }
+        
 
         if (Input.GetMouseButtonDown(1) && _magnifier != null)
         {
