@@ -31,6 +31,7 @@ public class PauseMenu : MonoBehaviour
         IsOpen = true;
         panel.Open();
         Time.timeScale = 0f;
+        CursorManager.instance?.SetHidden(false);
     }
 
     public void Close()
@@ -39,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         IsOpen = false;
         panel.Close();
         Time.timeScale = 1f;
+        CursorManager.instance?.SetHidden(true);
     }
 
     public void QuitGame()

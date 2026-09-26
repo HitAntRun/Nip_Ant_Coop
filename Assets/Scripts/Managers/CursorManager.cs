@@ -54,6 +54,7 @@ public class CursorManager : MonoBehaviour
     void Apply(string sceneName)
     {
         bool hide = System.Array.IndexOf(hiddenScenes, sceneName) >= 0;
+        if (PauseMenu.instance != null && PauseMenu.instance.IsOpen) hide = false;
         SetHidden(hide);
     }
 
