@@ -469,6 +469,7 @@ public class DialogueRunner : MonoBehaviour
         }
         isTyping = false;
         SoundManager.instance?.StopTyping();
+        SoundManager.instance?.StopAllSfx();
 
         if (choosing) return;
 

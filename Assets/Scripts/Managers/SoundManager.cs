@@ -270,7 +270,13 @@ public class SoundManager : MonoBehaviour
         src.pitch = Random.Range(e.pitchRange.x, e.pitchRange.y);
         src.PlayOneShot(clip, e.volume);
     }
-    
+
+    public void StopAllSfx()
+    {
+        if (sfxSources == null) return;
+        for(int i = 0; i < sfxSources.Length; i++)
+            if(sfxSources[i] != null) sfxSources[i].Stop();
+    }
     private AudioSource GetFreeSfxSource()
     {
         for (int i = 0; i < sfxSources.Length; i++)
