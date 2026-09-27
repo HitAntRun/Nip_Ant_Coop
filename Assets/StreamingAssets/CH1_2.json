@@ -1,7 +1,7 @@
 {
   "storyId": "CH1_2",
   "startNodeId": "n_9f44cf23",
-  "background": "emils_home_ch1_pixelate",
+  "background": "emils_home_ch1",
   "nextScene": "SC_Ingame",
   "nextStage": "Stage1_2",
   "chapterLabel": "Chapter 1",

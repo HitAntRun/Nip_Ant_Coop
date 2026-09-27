@@ -172,12 +172,19 @@ public class DialogueEditorWindow : EditorWindow
                 EditorGUILayout.LabelField("컷씬 연출", EditorStyles.boldLabel, GUILayout.Width(innerW));
 
                 bool nar = (n.mode == "narration");
-                n.mode = EditorGUILayout.Toggle("컷씬 진행", nar, GUILayout.Width(innerW)) ? "narration" : "";
-                n.bg        = EditorGUILayout.TextField("배경 교체(선택)", n.bg, GUILayout.Width(innerW));
-                n.bgm       = EditorGUILayout.TextField("BGM 교체(선택)", n.bgm, GUILayout.Width(innerW));
-                n.sfx       = EditorGUILayout.TextField("효과음(선택)", n.sfx, GUILayout.Width(innerW));
-                n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
-                n.wipe      = EditorGUILayout.Toggle("좌→우 와이프", n.wipe, GUILayout.Width(innerW));
+                nar = EditorGUILayout.Toggle("컷씬 진행", nar, GUILayout.Width(innerW));
+                n.mode = nar ? "narration" : "";
+
+                if (nar)
+                {
+                    EditorGUI.indentLevel++;
+                    n.bg        = EditorGUILayout.TextField("배경 교체(선택)", n.bg, GUILayout.Width(innerW));
+                    n.bgm       = EditorGUILayout.TextField("BGM 교체(선택)", n.bgm, GUILayout.Width(innerW));
+                    n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
+                    n.wipe      = EditorGUILayout.Toggle("좌→우 와이프", n.wipe, GUILayout.Width(innerW));
+                    EditorGUI.indentLevel--;
+                }
+                n.sfx = EditorGUILayout.TextField("효과음(선택)", n.sfx, GUILayout.Width(innerW));
 
                 EditorGUILayout.Space(2);
                 if (n.choices.Count == 0)

@@ -1,7 +1,7 @@
 {
   "storyId": "CH1_1",
   "startNodeId": "n_c035a044",
-  "background": "bg_classroom_ch1_pixelate",
+  "background": "bg_classroom_ch1",
   "nextScene": "SC_Ingame",
   "nextStage": "Tutorial",
   "chapterLabel": "Chapter 1",

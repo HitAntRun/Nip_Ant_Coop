@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3720127781384546793}
   - component: {fileID: 7938974048967565705}
   - component: {fileID: 2529813467075403667}
+  - component: {fileID: 460896147643337896}
   m_Layer: 7
   m_Name: BlackAnt
   m_TagString: Untagged
@@ -186,6 +187,21 @@ MonoBehaviour:
   rayBackDistance: 100
   skin: 0.5
   checkInterval: 0.1
+--- !u!114 &460896147643337896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5264465881617317395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937f37bab1fd64e04abbdc2b924e40cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.1
+  period: 1.8
+  randomPhase: 1
 --- !u!1 &6170798612823446391
 GameObject:
   m_ObjectHideFlags: 0
