@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: DialogueSprites
   m_EditorClassIdentifier: 
   entries:
-  - name: bg_classroom_ch1_pixelate
-    sprite: {fileID: 21300000, guid: 970c44a5be0714a02b8a9232e0e0552e, type: 3}
   - name: bg_classroom_prologue
-    sprite: {fileID: 21300000, guid: 2e840cc535e0b483585b165a398b4c81, type: 3}
+    sprite: {fileID: 21300000, guid: bc0f497aa8b6c42be86235a476741146, type: 3}
   - name: bg_classroom_ch1
-    sprite: {fileID: 21300000, guid: d7b94816e532845b3aaad59c60ff7db9, type: 3}
-  - name: bg_emils_home
-    sprite: {fileID: 21300000, guid: 78e9a78f406a242a49a7b80777dc2faf, type: 3}
-  - name: bg_emils_home_box
-    sprite: {fileID: 21300000, guid: 88a026a4f298343ffb72001561553387, type: 3}
-  - name: ch1_CutScene_1
-    sprite: {fileID: 21300000, guid: 8ac244051bd3344ca9fa93a411bc0da3, type: 3}
+    sprite: {fileID: 21300000, guid: a01d413ed9c5d44b8a08b5ea11d0167d, type: 3}
+  - name: emils_home_ch1
+    sprite: {fileID: 21300000, guid: cd833a5f93b5940229094b1664bd996e, type: 3}
   - name: emil-normal-32px
     sprite: {fileID: 21300000, guid: bd536e0c940054f41b43a7f26d7b9fb9, type: 3}
   - name: emil-closed-32px
@@ -93,8 +87,6 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 405c62a37fd2348199059681569a1228, type: 3}
   - name: ch1_CutScene_family
     sprite: {fileID: 21300000, guid: 31d90d857c46b4ec7adeba9aae18e27c, type: 3}
-  - name: emils_home_ch1_pixelate
-    sprite: {fileID: 21300000, guid: d8e2ed75c3bd14fb6b342a737756e18c, type: 3}
   - name: Emil-portrait
     sprite: {fileID: 21300000, guid: 1f0c9466aadb74c6d84ebf5297a8ab06, type: 3}
   - name: Student1-portrait
