@@ -365,6 +365,41 @@ MonoBehaviour:
   - 6
   - 3
   stepTime: 0.15
+--- !u!1 &56039137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56039138}
+  m_Layer: 5
+  m_Name: BgContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &56039138
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56039137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 729629299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2000, y: 1200}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &67192804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e840cc535e0b483585b165a398b4c81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a01d413ed9c5d44b8a08b5ea11d0167d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2600,7 +2635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &644960045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2958,6 +2993,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 266271904}
+  - {fileID: 56039138}
   - {fileID: 1339350848}
   - {fileID: 1992163238}
   - {fileID: 684900307}
@@ -6521,6 +6557,8 @@ MonoBehaviour:
   - {fileID: 499742780}
   - {fileID: 643525437}
   choosing: 0
+  bgDB: {fileID: 11400000, guid: e3a7926c21eff449e83386518f2befa8, type: 2}
+  bgContainer: {fileID: 56039138}
   spriteDB: {fileID: 11400000, guid: 49a8aef6960d140e7b8f10fe993e1f4a, type: 2}
   backgroundImage: {fileID: 266271905}
   portraitImage: {fileID: 662598328}

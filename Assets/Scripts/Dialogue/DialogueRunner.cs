@@ -39,10 +39,14 @@ public class DialogueRunner : MonoBehaviour
     public bool choosing;
 
     [Header("Visuals")]
+    [SerializeField] private BackgroundDatabase bgDB;
+    [SerializeField] private RectTransform bgContainer;
     [SerializeField] private SpriteDatabase spriteDB;
     [SerializeField] private Image backgroundImage;
     [SerializeField] private Image portraitImage;
     [SerializeField] private Vector2 actorSize = new Vector2(400, 400);
+    private GameObject currentBgInstance;
+    private string currentBgKey;
 
     [Header("Stage")]
     [SerializeField] private RectTransform characterRoot;
@@ -157,11 +161,7 @@ public class DialogueRunner : MonoBehaviour
             foreach (var go in hideInNarration)
                 if (go != null) go.SetActive(true);
 
-        if (!string.IsNullOrEmpty(data.background) && spriteDB != null && backgroundImage != null)
-        {
-            Sprite bg = spriteDB.Get(data.background);
-            if (bg != null) backgroundImage.sprite = bg;
-        }
+        ApplyBackground(data.background, false);
 
         startIndex = Mathf.Clamp(startIndex, 0, data.nodes.Count - 1);
         var first        = data.nodes[startIndex];
@@ -177,22 +177,7 @@ public class DialogueRunner : MonoBehaviour
                 if (go != null) go.SetActive(!startNar);
 
         string startBg = !string.IsNullOrEmpty(first.bg) ? first.bg : data.background;
-        if (!string.IsNullOrEmpty(startBg) && spriteDB != null)
-        {
-            Sprite s = spriteDB.Get(startBg);
-            if (s != null)
-            {
-                if (startNar && cutsceneImage != null) cutsceneImage.sprite = s;
-                else if (backgroundImage != null)      backgroundImage.sprite = s;
-            }
-        }
-
-        if (startNar && !string.IsNullOrEmpty(data.background)
-                     && spriteDB != null && backgroundImage != null)
-        {
-            Sprite bg = spriteDB.Get(data.background);
-            if (bg != null) backgroundImage.sprite = bg;
-        }
+        ApplyBackground(startBg, startNar);
         StartCoroutine(IntroRoutine(startIndex));
     }
 
@@ -233,26 +218,25 @@ public class DialogueRunner : MonoBehaviour
                     if (go != null) go.SetActive(!nar);
             currentMode = m;
         }
-
-        if (bgChanged && spriteDB != null)
+        
+        if (bgChanged)
         {
-            Sprite s = spriteDB.Get(node.bg);
-            if (s != null)
+            bool nar = currentMode == "narration";
+            bool isPrefab = bgDB != null && bgDB.Get(node.bg) != null;
+
+            if (doWipe && !isPrefab && spriteDB != null)
             {
-                if (currentMode == "narration" && cutsceneImage != null)
+                Sprite s = spriteDB.Get(node.bg);
+                if (s != null)
                 {
-                    if (doWipe)
-                    {
-                        transitioning = true;
-                        yield return WipeRoutine(s);
-                        transitioning = false;
-                    }
-                    else cutsceneImage.sprite = s;
+                    transitioning = true;
+                    yield return WipeRoutine(s);
+                    transitioning = false;
                 }
-                else if (backgroundImage != null)
-                    backgroundImage.sprite = s;
             }
+            else ApplyBackground(node.bg, nar);
         }
+        
 
         if (!string.IsNullOrEmpty(node.bgm)) ApplyBgm(node.bgm);
         
@@ -299,6 +283,39 @@ public class DialogueRunner : MonoBehaviour
         }
         if (typing != null) StopCoroutine(typing);
         typing = StartCoroutine(TypeText(Loc.Get(Loc.Story, node.locKey, node.text)));
+    }
+
+    void ApplyBackground(string key, bool narration)
+    {
+        if (string.IsNullOrEmpty(key)) return;
+
+        var prefab = bgDB != null ? bgDB.Get(key) : null;
+        if (prefab != null)
+        {
+            if (key == currentBgKey && currentBgInstance != null) return;
+            if (currentBgInstance != null) Destroy(currentBgInstance);
+            currentBgInstance = Instantiate(prefab, bgContainer);
+            currentBgKey = key;
+            if (backgroundImage != null) backgroundImage.enabled = false;
+            return;
+        }
+
+        Sprite s = spriteDB != null ? spriteDB.Get(key) : null;
+        if (s == null) return;
+
+        if (narration && cutsceneImage != null)
+        {
+            cutsceneImage.sprite = s;
+            return;
+        }
+
+        if (currentBgInstance != null) { Destroy(currentBgInstance); currentBgInstance = null; }
+        currentBgKey = key;
+        if (backgroundImage != null)
+        {
+            backgroundImage.enabled = true;
+            backgroundImage.sprite = s;
+        }
     }
 
     void ApplyPortrait(DialogueNode node)
@@ -712,15 +729,8 @@ public class DialogueRunner : MonoBehaviour
     void ApplyStateBeforeJump(string lastMode, string lastBg, DialogueNode target)
     {
         if (!string.IsNullOrEmpty(lastMode)) currentMode = lastMode;
-        if (!string.IsNullOrEmpty(lastBg) && string.IsNullOrEmpty(target.bg) && spriteDB != null)
-        {
-            Sprite s = spriteDB.Get(lastBg);
-            if (s != null)
-            {
-                if (currentMode == "narration" && cutsceneImage != null) cutsceneImage.sprite = s;
-                else if (backgroundImage != null) backgroundImage.sprite = s;
-            }
-        }
+        if (!string.IsNullOrEmpty(lastBg) && string.IsNullOrEmpty(target.bg))
+            ApplyBackground(lastBg, currentMode == "narration");
     }
 
     void ApplyBgm(string id)
