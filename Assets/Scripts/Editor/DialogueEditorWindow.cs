@@ -175,15 +175,17 @@ public class DialogueEditorWindow : EditorWindow
                 nar = EditorGUILayout.Toggle("컷씬 진행", nar, GUILayout.Width(innerW));
                 n.mode = nar ? "narration" : "";
 
+                n.bg        = EditorGUILayout.TextField("배경 교체(선택)", n.bg, GUILayout.Width(innerW));
+                n.bgm       = EditorGUILayout.TextField("BGM 교체(선택)", n.bgm, GUILayout.Width(innerW));
+                n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
+
                 if (nar)
                 {
                     EditorGUI.indentLevel++;
-                    n.bg        = EditorGUILayout.TextField("배경 교체(선택)", n.bg, GUILayout.Width(innerW));
-                    n.bgm       = EditorGUILayout.TextField("BGM 교체(선택)", n.bgm, GUILayout.Width(innerW));
-                    n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
-                    n.wipe      = EditorGUILayout.Toggle("좌→우 와이프", n.wipe, GUILayout.Width(innerW));
+                    n.wipe = EditorGUILayout.Toggle("좌→우 와이프", n.wipe, GUILayout.Width(innerW));
                     EditorGUI.indentLevel--;
                 }
+                
                 n.sfx = EditorGUILayout.TextField("효과음(선택)", n.sfx, GUILayout.Width(innerW));
 
                 EditorGUILayout.Space(2);
@@ -192,8 +194,11 @@ public class DialogueEditorWindow : EditorWindow
                     n.endHere = EditorGUILayout.Toggle("여기서 대화 종료", n.endHere, GUILayout.Width(innerW));
                     if (!n.endHere)
                     {
-                        string flow = (i + 1 < data.nodes.Count) ? "→ 다음 대사로 진행" : "→ 대화 종료(마지막)";
-                        Wrapped(flow, EditorStyles.miniLabel, innerW);
+                        var opts = NodeOptions();
+                        opts[0] = (i + 1 < data.nodes.Count) ? "→ 바로 다음 대사" : "→ 대화 종료(마지막)";
+                        int sel    = TargetToIndex(n.jumpTo);
+                        int newSel = EditorGUILayout.Popup("다음 대사", sel, opts, GUILayout.Width(innerW));
+                        n.jumpTo   = IndexToTarget(newSel);
                     }
                 }
                 else
@@ -237,7 +242,8 @@ public class DialogueEditorWindow : EditorWindow
                     n.actors[a].brightness = EditorGUILayout.Slider("밝기", n.actors[a].brightness, 0f, 1f,
                                                                     GUILayout.Width(Mathf.Max(70f, innerW - 140f)));
                     EditorGUIUtility.labelWidth = LabelWidth;
-                    n.actors[a].fadeIn = GUILayout.Toggle(n.actors[a].fadeIn, "페이드인", GUILayout.Width(66));
+                    string fadeLabel = n.actors[a].slot == "Off" ? "페이드아웃" : "페이드인";
+                    n.actors[a].fadeIn = GUILayout.Toggle(n.actors[a].fadeIn, fadeLabel, GUILayout.Width(66));
                     n.actors[a].flip   = GUILayout.Toggle(n.actors[a].flip,   "좌우반전", GUILayout.Width(66));
                     EditorGUILayout.EndHorizontal();
                 }
@@ -438,6 +444,8 @@ public class DialogueEditorWindow : EditorWindow
                 n.next = null;
             else if (n.endHere)
                 n.next = null;
+            else if (!string.IsNullOrEmpty(n.jumpTo) && TargetToIndex(n.jumpTo) > 0)
+                n.next = n.jumpTo;
             else
                 n.next = (i + 1 < data.nodes.Count) ? data.nodes[i + 1].id : null;
         }

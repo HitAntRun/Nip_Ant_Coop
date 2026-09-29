@@ -196,13 +196,19 @@ public class DialogueRunner : MonoBehaviour
                       && (string.IsNullOrEmpty(node.mode) ? currentMode : node.mode) == "narration";
 
         bool doFade = node.fadeBreak && fader != null && (modeChanged || bgChanged)
-                      && !isIntro && !doWipe;      // ← && !doWipe 추가
+                      && !isIntro && !doWipe;
         isIntro = false;
+        bool sceneChange = doFade && bgChanged;
+
+        transitioning = true;
+        yield return FadeOutActors(node, sceneChange);
+        transitioning = false;
         
         if (doFade)
         {
             transitioning = true;
             yield return fader.FadeOut(breakFadeDuration);
+            if (sceneChange) ClearStage();
         }
 
         if (modeChanged)
@@ -246,7 +252,7 @@ public class DialogueRunner : MonoBehaviour
         if (currentMode != "narration")
         {
             ApplyPortrait(node);
-            ApplyActors(node);
+            if (!sceneChange) ApplyActors(node);
             speakerText.text = LocalizeSpeaker(node.speaker);
         }
 
@@ -255,6 +261,8 @@ public class DialogueRunner : MonoBehaviour
             yield return fader.FadeIn(breakFadeDuration);
             transitioning = false;
         }
+        if (sceneChange && currentMode != "narration")
+            ApplyActors(node);    
 
         if (node.shake) Shake();
         
@@ -673,6 +681,49 @@ public class DialogueRunner : MonoBehaviour
         if (stage.TryGetValue(id, out var img) && img != null) Destroy(img.gameObject);
         stage.Remove(id);
         movers.Remove(id);
+    }
+    
+    IEnumerator FadeOutActors(DialogueNode node, bool all)
+    {
+        if (currentMode == "narration") yield break;
+
+        var ids = new List<string>();
+        if (all)
+        {
+            ids.AddRange(stage.Keys);
+        }
+        else if (node.actors != null)
+        {
+            foreach (var a in node.actors)
+                if (a.slot == "Off" && a.fadeIn) ids.Add(a.id);
+        }
+
+        var leaving = new List<Image>();
+        var startA  = new List<float>();
+        foreach (var id in ids)
+        {
+            if (!stage.TryGetValue(id, out var img) || img == null) continue;
+            if (fades.TryGetValue(id, out var c) && c != null) StopCoroutine(c);
+            fades.Remove(id);
+            leaving.Add(img);
+            startA.Add(img.color.a);
+        }
+        if (leaving.Count == 0) yield break;
+
+        float t = 0f;
+        while (t < actorFadeDuration)
+        {
+            t += Time.deltaTime;
+            float k = Mathf.Clamp01(t / actorFadeDuration);
+            for (int i = 0; i < leaving.Count; i++)
+            {
+                if (leaving[i] == null) continue;
+                var col = leaving[i].color;
+                col.a = Mathf.Lerp(startA[i], 0f, k);
+                leaving[i].color = col;
+            }
+            yield return null;
+        }
     }
 
     void ClearStage()

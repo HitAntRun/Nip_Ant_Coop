@@ -30,10 +30,10 @@ public class Fader : MonoBehaviour
         fadeOverlay.color = c;
 
         float t = 0f;
-        while (t < fadeDuration)
+        while (t < dur)
         {
             t += Time.deltaTime;
-            float k = t / fadeDuration;
+            float k = t / dur;
             k = k * k;
             c.a = Mathf.Lerp(from, to, k);
             fadeOverlay.color = c;

@@ -95,3 +95,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 6cb185755f9e84810ac7152698bcaeeb, type: 3}
   - name: Teacher-portrait
     sprite: {fileID: 21300000, guid: 48d973ffdcdec410482a8f7c6b7f142e, type: 3}
+  - name: bg_classroom_ch2
+    sprite: {fileID: 21300000, guid: f51988ae9bfbc49a5a59ef58f79a8aa3, type: 3}
+  - name: bg_board_ch2
+    sprite: {fileID: 21300000, guid: 6aa7da7f8240c4eca8697da03f44d4a5, type: 3}

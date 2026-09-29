@@ -27,6 +27,7 @@ public class DialogueNode
     public string portrait;
     public float portraitBrightness = 1f;
     public string next;
+    public string jumpTo;
     public bool endHere;
     public List<Choice> choices = new List<Choice>();
     public List<ActorState> actors = new List<ActorState>();
