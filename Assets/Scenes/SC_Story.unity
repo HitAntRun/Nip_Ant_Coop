@@ -6557,6 +6557,8 @@ MonoBehaviour:
   - {fileID: 499742780}
   - {fileID: 643525437}
   choosing: 0
+  choiceSpeaker: "\uC5D0\uBC00"
+  choicePortrait: Emil-portrait
   bgDB: {fileID: 11400000, guid: e3a7926c21eff449e83386518f2befa8, type: 2}
   bgContainer: {fileID: 56039138}
   spriteDB: {fileID: 11400000, guid: 49a8aef6960d140e7b8f10fe993e1f4a, type: 2}

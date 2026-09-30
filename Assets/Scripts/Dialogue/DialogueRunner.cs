@@ -38,6 +38,10 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private GameObject[] choiceChecks;
     public bool choosing;
 
+    [Header("Backlog")]
+    [SerializeField] private string choiceSpeaker = "에밀";
+    [SerializeField] private string choicePortrait = "";    
+
     [Header("Visuals")]
     [SerializeField] private BackgroundDatabase bgDB;
     [SerializeField] private RectTransform bgContainer;
@@ -141,7 +145,11 @@ public class DialogueRunner : MonoBehaviour
         if (data == null) return;
 
         GameFlow.LastStoryStage = storyId;
-        if(!string.IsNullOrEmpty(data.chapterLabel)) GameFlow.ChapterStoryId = data.storyId;
+        if (!string.IsNullOrEmpty(data.chapterLabel))
+        {
+            GameFlow.ChapterStoryId = data.storyId;
+            GameFlow.ChapterLabel = data.chapterLabel;
+        }
         if (data.day > 0) GameFlow.Day = data.day;
         SaveManager.Save(force: true);  
         
@@ -278,17 +286,8 @@ public class DialogueRunner : MonoBehaviour
             narrationGroup.alpha = 0f;
             StartCoroutine(FadeCanvas(narrationGroup, 0f, 1f, narrationFadeDuration));
         }
-        
-        if (node.id != lastLoggedNodeId && !string.IsNullOrEmpty(node.text))
-        {
-            lastLoggedNodeId = node.id;
-            log.Add(new LogLine {
-                speaker = (currentMode == "narration") ? "" : node.speaker,
-                text    = node.text,
-                portrait = (currentMode == "narration") ? "" : node.portrait,
-                locKey   = node.locKey
-            });
-        }
+
+        AddLog(node, currentMode);
         if (typing != null) StopCoroutine(typing);
         typing = StartCoroutine(TypeText(Loc.Get(Loc.Story, node.locKey, node.text)));
     }
@@ -509,11 +508,15 @@ public class DialogueRunner : MonoBehaviour
         string lastBgm = null;
         
         var guard = new HashSet<string>();
+        string logMode = currentMode;
 
         DialogueNode node = current;
         while (true)
         {
             if (node.id != null && !guard.Add(node.id)) break;
+
+            if (!string.IsNullOrEmpty(node.mode)) logMode = node.mode;
+            AddLog(node, logMode);
             
             ApplyActors(node);
             if (!string.IsNullOrEmpty(node.bg)) lastBg = node.bg;
@@ -561,6 +564,21 @@ public class DialogueRunner : MonoBehaviour
         current = null;
         StartCoroutine(OutroRoutine());
     }
+    
+    void AddLog(DialogueNode node, string mode)
+    {
+        if (node == null || string.IsNullOrEmpty(node.text)) return;
+        if (node.id == lastLoggedNodeId) return;
+
+        bool nar = mode == "narration";
+        lastLoggedNodeId = node.id;
+        log.Add(new LogLine {
+            speaker  = nar ? "" : node.speaker,
+            text     = node.text,
+            portrait = nar ? "" : node.portrait,
+            locKey   = node.locKey
+        });
+    }
 
     // ------------------------------------------------------------- 선택지
     void ShowChoices()
@@ -596,6 +614,15 @@ public class DialogueRunner : MonoBehaviour
     {
         choosing = false;
         if (choicePopup != null) choicePopup.Close();
+        
+        var choice = current.choices[selectedIndex];
+        log.Add(new LogLine {
+            speaker  = choiceSpeaker,
+            text     = choice.text,
+            portrait = choicePortrait,
+            locKey   = $"{current.locKey}_choice{selectedIndex}"
+        });
+        
         Choose(current.choices[selectedIndex].next);
     }
 
