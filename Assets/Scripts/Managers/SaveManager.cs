@@ -35,6 +35,7 @@ public static class SaveManager
         GameFlow.LastStoryStage = d.currentStage;
         GameFlow.CurrentStage   = d.currentStage;
         GameFlow.ChapterStoryId = d.chapterStoryId;
+        GameFlow.ChapterLabel   = d.chapterLabel;
         GameFlow.Day            = d.day;
     }
 
@@ -42,6 +43,7 @@ public static class SaveManager
     {
         d.currentStage = GameFlow.LastStoryStage;
         d.chapterStoryId = GameFlow.ChapterStoryId;
+        d.chapterLabel = GameFlow.ChapterLabel;
         d.day          = GameFlow.Day;
         d.savedAtUnix  = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
     }

@@ -8,7 +8,7 @@ public class ProgressData
     public int version = CurrentVersion;
 
     public string currentStage = "Prologue_1";
-    public string chapterLabel = "Prologue";
+    public string chapterLabel = "";
     public string chapterStoryId;
     public int day = 1;
 
