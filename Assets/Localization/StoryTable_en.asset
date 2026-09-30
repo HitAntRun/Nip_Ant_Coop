@@ -61,10 +61,6 @@ MonoBehaviour:
       villages remains to this day.
     m_Metadata:
       m_Items: []
-  - m_Id: 676906205700096
-    m_Localized: Chapter 1
-    m_Metadata:
-      m_Items: []
   - m_Id: 676906218283008
     m_Localized: "Another peaceful day in the Black Ant Village! But the village
       carries a sad history. 162 years ago by the ant calendar, it went to war with
@@ -250,10 +246,6 @@ MonoBehaviour:
       termites.
     m_Metadata:
       m_Items: []
-  - m_Id: 676906222477321
-    m_Localized: Chapter 1
-    m_Metadata:
-      m_Items: []
   - m_Id: 676906222477322
     m_Localized: I'm home...~
     m_Metadata:
@@ -288,6 +280,382 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 676906222477330
     m_Localized: Zzzz....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424197877760
+    m_Localized: Apparently, the pheromones given off by living ants and dead ants
+      have different chemical properties. The lesson was hard, so I'd better listen
+      closely in class and review whenever I can. By the way, my friend searched
+      for termites so hard that they got sick and couldn't come to school!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424214654976
+    m_Localized: Today, we're going to learn about the chemicals that come from our
+      bodies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849280
+    m_Localized: Teacher, one of our classmates isn't here yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849281
+    m_Localized: Everyone should get the same lesson, so let's start when they get
+      here!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849282
+    m_Localized: They let me know they're sick today and can't come~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849283
+    m_Localized: Huh, why? How did they get sick?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849284
+    m_Localized: It seems they searched for termites so hard that they wore themselves
+      out~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849285
+    m_Localized: That doesn't sound like them at all...?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849286
+    m_Localized: Anyway, so you don't get sick yourselves, you need to understand
+      your own bodies well~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849287
+    m_Localized: There'll be a short quiz after class, so pay attention~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849288
+    m_Localized: Okay...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849289
+    m_Localized: Now, the molecular structure on the left is the pheromone molecule
+      given off by the body of a living ant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849290
+    m_Localized: Every living ant gives this off, whether it's a black ant or a termite.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849291
+    m_Localized: But the body of a dead ant gives off a completely different substance,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849292
+    m_Localized: a substance called <b>oleic acid</b>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849293
+    m_Localized: All ants judge whether another ant is alive or dead by whether its
+      body gives off oleic acid.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849294
+    m_Localized: Teacher, does oleic acid only come from the bodies of dead ants?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849295
+    m_Localized: Not at all. It's also the most common fatty acid found in nature.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849296
+    m_Localized: They say olive oil is especially rich in it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849297
+    m_Localized: Teacher, then what happens if oleic acid gets on a living ant?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849298
+    m_Localized: Good question. If you were to put oleic acid on a living ant......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849299
+    m_Localized: <b>it could be mistaken for a dead ant.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849300
+    m_Localized: Hmm... But when we black ants die, our bodies turn white, don't
+      they?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849301
+    m_Localized: So even looking at a perfectly healthy black body, they'd think
+      it's dead just because of some oleic acid?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849302
+    m_Localized: How could anyone make a mistake like that?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849303
+    m_Localized: It's only natural to have doubts like that.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849304
+    m_Localized: But everyone, there's one fact you mustn't overlook.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849305
+    m_Localized: For us ants, 'sight' isn't a very reliable sense.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849306
+    m_Localized: I don't get what you mean, Teacher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849307
+    m_Localized: As you all know, we ants have poor eyesight, so we rely heavily
+      on pheromones.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849308
+    m_Localized: So we end up trusting what pheromones tell us more than what we
+      see.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849309
+    m_Localized: Which means, if the oleic acid is strong enough,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849310
+    m_Localized: <b>even a black ant that's clearly alive will 'feel' pure white,
+      as if it were dead.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849311
+    m_Localized: Now then, let's have a quick quiz on what we've learned so far.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849312
+    m_Localized: First question. When an ant dies, what substance does its body give
+      off~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849313
+    m_Localized: Oleic acid!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849314
+    m_Localized: "Ol\xE9 ol\xE9!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849315
+    m_Localized: That's correct~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849316
+    m_Localized: What, are you cheering at a soccer match~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849317
+    m_Localized: Second question. Which of these two does an ant perceive more strongly~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849318
+    m_Localized: Visual information!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849319
+    m_Localized: Pheromones!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849320
+    m_Localized: Correct~ You were listening well~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849321
+    m_Localized: Weren't you paying attention in class~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849322
+    m_Localized: Alright, let's wrap up today's class here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849323
+    m_Localized: Today's lesson may be a little difficult, so reviewing is a must~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424218849324
+    m_Localized: Hmm, maybe I should go visit my friend.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043584
+    m_Localized: But first, I need to look for termites even harder!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043585
+    m_Localized: Today, let's try somewhere other than where I went yesterday.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043586
+    m_Localized: A typical spy would go after the enemy's most important places,
+      right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043587
+    m_Localized: In our last history class, they said rations were important...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043588
+    m_Localized: This time, I'll look for termites at the village food storehouse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043589
+    m_Localized: After school, I was going to visit my sick friend, but on the way
+      I ran into another friend. And guess what, they made me a tempting offer. They
+      said they'd found a secret passage the termites use to sneak in! Now they want
+      me to come along... Ahh, visiting my friend or the secret passage, where should
+      I go?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043590
+    m_Localized: I noticed it last time too, but there's always a rotten smell around
+      those guys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043591
+    m_Localized: Ugh, that's so gross.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043592
+    m_Localized: Still, I think I worked harder today than yesterday, so I'll head
+      home early.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043593
+    m_Localized: Oh, right, I should stop by my friend's house.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043594
+    m_Localized: Heyyy~ Emil~~!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043595
+    m_Localized: You scared me! Oh, it's just you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043596
+    m_Localized: Why so jumpy? Got a guilty conscience?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043597
+    m_Localized: Anyway, good timing. Come somewhere with me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043598
+    m_Localized: Where?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043599
+    m_Localized: Heh heh, try not to be too shocked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043600
+    m_Localized: (looks around)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043601
+    m_Localized: Come closer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043602
+    m_Localized: What is it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043603
+    m_Localized: ... I think I found the termites' secret passage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043604
+    m_Localized: ......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043605
+    m_Localized: ... What?!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043606
+    m_Localized: Shhhhh!! It's not certain yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043607
+    m_Localized: If you found a secret passage, we could block it so those guys can't
+      invade us, right?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043608
+    m_Localized: <b>Or we could invade the Termite Village instead.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043609
+    m_Localized: ...... You seriously want to sneak into their village?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043610
+    m_Localized: We'll think about that later. Anyway, I'm about to go look for that
+      secret passage...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043611
+    m_Localized: If you've got time, want to come look for it with me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043612
+    m_Localized: I'd love to, but I think I should visit our friend first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043613
+    m_Localized: Sure, I'm in!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043614
+    m_Localized: Seriously, Emil, you're too nice for your own good.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043615
+    m_Localized: Then I'll check it out today and tell you at school tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043616
+    m_Localized: There's no school tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043617
+    m_Localized: Oh, right. I forgot. Then I'll tell you in three days!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043618
+    m_Localized: I'd better hurry to my friend's house before it gets any later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043619
+    m_Localized: Knew it! With you along, we'll find it in no time!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043620
+    m_Localized: '? Didn''t you say you already found it?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043621
+    m_Localized: I said I 'think' I found it, not that I found it, right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043622
+    m_Localized: ...?! Hey!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043623
+    m_Localized: No take-backs~~ Now hurry up and follow me!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4015424223043624
+    m_Localized: Ugh, come on...
     m_Metadata:
       m_Items: []
   references:

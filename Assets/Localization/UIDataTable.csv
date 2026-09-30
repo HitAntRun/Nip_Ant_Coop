@@ -1,54 +1,63 @@
-Key,Id,Shared Comments,English(en),English(en) Comments,Korean(ko),Korean(ko) Comments
-language,,,Language,,언어,
-settings,,,Settings,,설정,
-record,,,Record,,기록,
-achievement,,,Achievement,,업적,
-quit,,,Quit Game,,게임 종료,
-start_game,,,Start Game,,게임 시작,
-progress,,,Current Chapter : ,,진행중인 챕터 : ,
-continue,,,Continue,,이어하기,
-new_game,,,New Game,,새 게임,
-proceed,,,Play,,진행,
-cancel,,,Cancel,,취소,
-warning_txt,,,The current recording will be lost. Do you want to continue?,,진행중인 기록이 사라집니다. 계속할까요?,
-ant_date,,,Ant Date,,개미력,
-back,,,Back,,돌아가기,
-skip,,,Skip,,스킵하기,
-skip_story,,,Skip Story,,스토리 스킵하기,
-choice_A,,,Choice A,,선택지 A,
-choice_B,,,Choice B,,선택지 B,
-summary,,,Story Summary,,스토리 요약,
-dialogue_log,,,Dialougue Log,,대사 기록,
-hint_rotate,,,Press A or D to rotate the terrain!,,"A,D키를 눌러 지형을 회전시켜보자!",
-hint_magnify,,,Right-click to zoom in!,,마우스 우클릭으로 확대해보자!,
-hint_report,,,Find a termite and report it!,,흰개미를 찾아 신고해보자!,
-tuto_1,,,"Let's go find a termite, shall we?",,어디 한번 하얀개미를 찾아볼까?,
-tuto_2,,,There was a termite right in front! Left-click to report it!,,정면에 하얀개미가 있었네? 마우스 좌클릭을 통해 하얀개미를 신고하자!,
-tuto_3,,,One might be hiding at an angle you can't see — press A or D to look around!,,"이번엔 안보이는 각도에 하얀개미가 숨어있을수 있으니 A,D키를 눌러 찾아보자!",
-tuto_4,,,A termite was hiding there! Report it the same way!,,하얀개미가 숨어있었네? 똑같이 신고하자!,
-tuto_5,,,"Right-click to zoom in! Just remember, you'll only see that one spot!!",,"마우스 우클릭을 통해 화면을 확대해볼 수 있어! 단, 그 부분만 보이니깐 알아둬!!",
-tuto_6,,,Report this one too!,,이번에도 신고해보자!,
-tuto_7,,,"Now, shall we do this for real?",,이제 제대로 한번 찾아볼까?,
-line_correct_1,,,Yahoo! Found one!,,야호! 찾았다!,
-line_correct_2,,,So that's where it was hiding!,,저기 숨어있었군!,
-line_correct_3,,,You can't hide from my eyes!,,내 눈을 피할 순 없지!,
-line_correct_4,,,"Sloppy, for a spy! Haha!",,스파이치고는 허술한데? 하하!,
-line_correct_5,,,Found you! How dare you!,,찾았다! 어딜 감히!,
-line_wrong_1,,,That doesn't seem right.,,이건 아닌 것 같아.,
-line_wrong_2,,,No false reports!,,허위 신고는 하면 안돼!,
-line_wrong_3,,,Let's look somewhere else.,,다른 곳을 찾아보자.,
-line_wrong_4,,,We have to hurry and catch the termite before it gets away!,,"흰개미가 도망가기 전에, 서둘러서 잡아야 해!",
-line_wrong_5,,,"Oops, my mistake!",,"앗, 실수!",
-bubble_wrong_1,,,"Hey, how rude!",,"야, 실례잖아!",
-bubble_wrong_2,,,"U-um, that's not me...",,"저, 전 아닌데요...",
-bubble_wrong_3,,,...What are you looking at?,,...뭘 봐?,
-bubble_wrong_4,,,"I'm a black ant, thank you!",,나 검은개미거든!,
-bubble_wrong_5,,,What do you think you're doing!!,,뭐하는거야!!,
-bubble_correct_1,,,Aaagh!!,,으악!!,
-bubble_correct_2,,,Why is it always us!,,왜 우리한테만 그래!,
-bubble_correct_3,,,We termites are...!,,우리 흰개미들은...!,
-mono_1,,,"A termite, hiding somewhere around here?",,어딘가에 흰개미가 숨어 있다고?,
-mono_2,,,Termites are savage and vicious.,,흰개미는 미개하고 포악해.,
-mono_3,,,Is something rotten around here?,,어디서 썩은내가 나는데?,
-mono_4,,,I hear the Queen has laid new young!,,여왕개미가 새로운 자식들을 낳았대!,
-mono_5,,,"I miss Dad, off at work.",,일 나간 아빠가 보고 싶어.,
+﻿Key,Id,Shared Comments,English(en),English(en) Comments,Korean(ko),Korean(ko) Comments
+"language",2035112992768,"","Language","","언어",""
+"settings",2035112992769,"","Settings","","설정",""
+"record",2035112992770,"","Record","","기록",""
+"achievement",688751293489152,"","Achievement","","업적",""
+"quit",2035125575680,"","Quit Game","","게임 종료",""
+"start_game",688751310266368,"","Start Game","","게임 시작",""
+"progress",688751310266369,"","Current Chapter : {0}","","진행중인 챕터 : {0}",""
+"continue",688751310266370,"","Continue","","이어하기",""
+"new_game",688751310266371,"","New Game","","새 게임",""
+"proceed",688751310266372,"","Play","","진행",""
+"cancel",688751310266373,"","Cancel","","취소",""
+"warning_txt",688751310266374,"","The current recording will be lost. Do you want to continue?","","진행중인 기록이 사라집니다. 계속할까요?",""
+"ant_date",688751310266375,"","Ant Date {0}","","개미력 {0}일",""
+"back",688751310266376,"","Back","","돌아가기",""
+"skip",688751310266377,"","Skip","","스킵하기",""
+"skip_story",688751310266378,"","Skip Story","","스토리 스킵하기",""
+"choice_A",688751310266379,"","Choice A","","선택지 A",""
+"choice_B",688751310266380,"","Choice B","","선택지 B",""
+"summary",688751310266381,"","Story Summary","","스토리 요약",""
+"dialogue_log",688751310266382,"","Dialougue Log","","대사 기록",""
+"hint_rotate",2139869844332544,"","Press A or D to rotate the terrain!","","A,D키를 눌러 지형을 회전시켜보자!",""
+"hint_magnify",2139869861109760,"","Right-click to zoom in!","","마우스 우클릭으로 확대해보자!",""
+"hint_report",2139869861109761,"","Find a termite and report it!","","흰개미를 찾아 신고해보자!",""
+"tuto_1",2139869861109762,"","Let's go find a termite, shall we?","","어디 한번 하얀개미를 찾아볼까?",""
+"tuto_2",2139869861109763,"","There was a termite right in front! Left-click to report it!","","정면에 하얀개미가 있었네? 마우스 좌클릭을 통해 하얀개미를 신고하자!",""
+"tuto_3",2139869861109764,"","One might be hiding at an angle you can't see — press A or D to look around!","","이번엔 안보이는 각도에 하얀개미가 숨어있을수 있으니 A,D키를 눌러 찾아보자!",""
+"tuto_4",2139869861109765,"","A termite was hiding there! Report it the same way!","","하얀개미가 숨어있었네? 똑같이 신고하자!",""
+"tuto_5",2139869861109766,"","Right-click to zoom in! Just remember, you'll only see that one spot!!","","마우스 우클릭을 통해 화면을 확대해볼 수 있어! 단, 그 부분만 보이니깐 알아둬!!",""
+"tuto_6",2139869861109767,"","Report this one too!","","이번에도 신고해보자!",""
+"tuto_7",2139869861109768,"","Now, shall we do this for real?","","이제 제대로 한번 찾아볼까?",""
+"line_correct_1",2139869861109769,"","Yahoo! Found one!","","야호! 찾았다!",""
+"line_correct_2",2139869861109770,"","So that's where it was hiding!","","저기 숨어있었군!",""
+"line_correct_3",2139869861109771,"","You can't hide from my eyes!","","내 눈을 피할 순 없지!",""
+"line_correct_4",2139869861109772,"","Sloppy, for a spy! Haha!","","스파이치고는 허술한데? 하하!",""
+"line_correct_5",2139869861109773,"","Found you! How dare you!","","찾았다! 어딜 감히!",""
+"line_wrong_1",2139869861109774,"","That doesn't seem right.","","이건 아닌 것 같아.",""
+"line_wrong_2",2139869861109775,"","No false reports!","","허위 신고는 하면 안돼!",""
+"line_wrong_3",2139869861109776,"","Let's look somewhere else.","","다른 곳을 찾아보자.",""
+"line_wrong_4",2139869861109777,"","We have to hurry and catch the termite before it gets away!","","흰개미가 도망가기 전에, 서둘러서 잡아야 해!",""
+"line_wrong_5",2139869861109778,"","Oops, my mistake!","","앗, 실수!",""
+"bubble_wrong_1",2139869861109779,"","Hey, how rude!","","야, 실례잖아!",""
+"bubble_wrong_2",2139869861109780,"","U-um, that's not me...","","저, 전 아닌데요...",""
+"bubble_wrong_3",2139869861109781,"","...What are you looking at?","","...뭘 봐?",""
+"bubble_wrong_4",2139869861109782,"","I'm a black ant, thank you!","","나 검은개미거든!",""
+"bubble_wrong_5",2139869861109783,"","What do you think you're doing!!","","뭐하는거야!!",""
+"bubble_correct_1",2139869861109784,"","Aaagh!!","","으악!!",""
+"bubble_correct_2",2139869861109785,"","Why is it always us!","","왜 우리한테만 그래!",""
+"bubble_correct_3",2139869861109786,"","We termites are...!","","우리 흰개미들은...!",""
+"mono_1",2139869861109787,"","A termite, hiding somewhere around here?","","어딘가에 흰개미가 숨어 있다고?",""
+"mono_2",2139869861109788,"","Termites are savage and vicious.","","흰개미는 미개하고 포악해.",""
+"mono_3",2139869861109789,"","Is something rotten around here?","","어디서 썩은내가 나는데?",""
+"mono_4",2139869861109790,"","I hear the Queen has laid new young!","","여왕개미가 새로운 자식들을 낳았대!",""
+"mono_5",2139869861109791,"","I miss Dad, off at work.","","일 나간 아빠가 보고 싶어.",""
+"loading_tip_1",2143471572869120,"","TMI: Long ago, termites and ants are said to have gotten along just fine…","","TMI : 옛날에는 흰개미와 검은개미가 사이좋게 지냈다고 합니다…",""
+"loading_tip_2",2143539789029376,"","Tips: Spotted a termite? Report it right away!","","Tips : 흰개미를 발견하면 바로 신고하세요!",""
+"loading_tip_3",2143600497385472,"","Tips: Sometimes a very tiny termite shows up. Try zooming in!","","Tips : 가끔씩 아주 작은 흰개미가 보일때도 있답니다. 그럴땐 확대를 해보세요!",""
+"loading_tip_4",2143639126925312,"","TMI: Maybe… there's a termite somewhere near you right now..?","","TMI : 어쩌면.. 우리 근처에 흰개미가 있을수도..?",""
+"loading_tip_5",2143718751592448,"","Tips: Click certain objects and they'll move! Termites have been hiding lately...","","Tips : 특정 사물을 클릭하면 사물이 움직입니다! 요즘은 흰개미들이 숨어다니기도 하네요...",""
+"char_emil",2145133427417088,"","Emil","","에밀",""
+"char_teacher",2145173894062080,"","Teacher Ant","","선생 개미",""
+"char_student1",2145212414550016,"","Student Ant1","","학생 개미1",""
+"char_student2",2145257989857280,"","Student Ant2","","학생 개미2",""
