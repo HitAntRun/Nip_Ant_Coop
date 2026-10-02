@@ -446,7 +446,6 @@ public class DialogueRunner : MonoBehaviour
     public void OnClick()
     {
         if (current == null || transitioning) return;
-        if (IsAuto(current)) return;  
 
         if (isTyping)
         {
