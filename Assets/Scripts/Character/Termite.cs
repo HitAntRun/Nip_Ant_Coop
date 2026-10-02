@@ -19,6 +19,7 @@ public class Termite : MonoBehaviour
     public void Judge()
     {
         if (dying) return;
+        if (StageFlow.instance != null && StageFlow.instance.IsEnded) return;
 
         if (info != null && info.isReal)
         {

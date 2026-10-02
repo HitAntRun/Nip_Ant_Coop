@@ -57,6 +57,6 @@ public class GameTimer : MonoBehaviour
 
     void OnTimeUp()
     {
-        if (StageFlow.instance != null) StageFlow.instance.Fail();
+        if (StageFlow.instance != null) StageFlow.instance.Finish();
     }
 }

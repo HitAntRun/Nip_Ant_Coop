@@ -11,43 +11,33 @@ public class StageFlow : MonoBehaviour
     public class Route
     {
         public string stageId;
-        public string clearStoryId;
-        public string failStoryId;
+        public string nextStoryId;
     }
 
     [SerializeField] private Fader fader;
     [SerializeField] private Route[] routes;
     private bool ended;
 
-    void Awake()
-    {
-        instance = this;
-    }
+    public bool IsEnded => ended;
 
-    private void OnDestroy()
-    {
-        if(instance == this) instance = null;
-    }
+    void Awake() { instance = this; }
+    private void OnDestroy() { if(instance == this) instance = null; }
 
-    public void Clear() => Go(true);
-    public void Fail() => Go(false);
-
-    void Go(bool cleared)
+    public void Finish()
     {
         if (ended) return;
-        ended = true;
 
         var r = System.Array.Find(routes, x => x.stageId == GameFlow.CurrentStage);
-        if (r == null)
-        {
-            ended = false;
+        if (r == null || string.IsNullOrEmpty(r.nextStoryId))
             return;
-        }
-        
-        string next = cleared ? r.clearStoryId : r.failStoryId;
-        if (string.IsNullOrEmpty(next)) return;
 
-        StartCoroutine(Routine(next));
+        ended = true;
+        
+        if(AntCounter.instance != null)
+            GameFlow.RecordTermites(GameFlow.CurrentStage, AntCounter.instance.Found);
+        SaveManager.Save(force: true);
+        
+        StartCoroutine(Routine(r.nextStoryId));
     }
 
     IEnumerator Routine(string storyId)

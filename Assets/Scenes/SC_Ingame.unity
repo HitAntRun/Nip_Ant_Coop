@@ -977,6 +977,8 @@ MonoBehaviour:
   choiceLabels: []
   choiceChecks: []
   choosing: 0
+  choiceSpeaker: "\uC5D0\uBC00"
+  choicePortrait: 
   bgDB: {fileID: 0}
   bgContainer: {fileID: 0}
   spriteDB: {fileID: 0}
@@ -1145,11 +1147,9 @@ MonoBehaviour:
   fader: {fileID: 335378076}
   routes:
   - stageId: Stage1_1
-    clearStoryId: CH1_2
-    failStoryId: 
+    nextStoryId: CH1_2
   - stageId: Stage1_2
-    clearStoryId: CH2_1
-    failStoryId: 
+    nextStoryId: CH2_1
 --- !u!1 &379344069
 GameObject:
   m_ObjectHideFlags: 0

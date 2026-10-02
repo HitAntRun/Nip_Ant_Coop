@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public class ProgressData
@@ -15,6 +16,8 @@ public class ProgressData
     public long savedAtUnix;
     public static ProgressData NewGame() => new ProgressData();
     
+    public Dictionary<string, int> termitesFound = new Dictionary<string, int>();
+
     public DateTime SavedAtLocal =>
         DateTimeOffset.FromUnixTimeSeconds(savedAtUnix).ToLocalTime().DateTime;
 }

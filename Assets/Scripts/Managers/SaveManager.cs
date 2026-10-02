@@ -26,6 +26,7 @@ public static class SaveManager
     {
         if (string.IsNullOrEmpty(d.chapterStoryId))
             d.chapterStoryId = d.currentStage;
+        d.termitesFound ??= new Dictionary<string, int>();
         d.version = ProgressData.CurrentVersion;
         return d;
     }
@@ -37,6 +38,7 @@ public static class SaveManager
         GameFlow.ChapterStoryId = d.chapterStoryId;
         GameFlow.ChapterLabel   = d.chapterLabel;
         GameFlow.Day            = d.day;
+        GameFlow.SetTermites(d.termitesFound);
     }
 
     static void Collect(ProgressData d)
@@ -46,6 +48,7 @@ public static class SaveManager
         d.chapterLabel = GameFlow.ChapterLabel;
         d.day          = GameFlow.Day;
         d.savedAtUnix  = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        d.termitesFound = GameFlow.CopyTermites();
     }
 
     public static void MarkDirty() => dirty = true;
