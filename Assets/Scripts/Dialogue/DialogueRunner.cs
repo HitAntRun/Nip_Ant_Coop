@@ -191,6 +191,11 @@ public class DialogueRunner : MonoBehaviour
 
     void Show(DialogueNode node)
     {
+        if (typing != null)
+        {
+            StopCoroutine(typing);
+            typing = null;
+        }
         if (showCo != null) StopCoroutine(showCo);
         showCo = StartCoroutine(ShowRoutine(node));
     }
@@ -427,7 +432,6 @@ public class DialogueRunner : MonoBehaviour
 
             yield return new WaitForSeconds(typeSpeed);
         }
-        isTyping = false;
         SoundManager.instance?.StopTyping(); 
         isTyping = false;
 
@@ -554,6 +558,22 @@ public class DialogueRunner : MonoBehaviour
             ApplyBgm(lastBgm);
         current = node;
         Show(current);
+    }
+
+    void OnTypingFinished()
+    {
+        isTyping = false;
+        SoundManager.instance?.StopTyping();
+        
+        if(current.choices != null && current.choices.Count >= 0) { ShowChoices(); return; }
+        if (IsAuto(current)) typing = StartCoroutine(AutoAdvance(current));
+    }
+
+    IEnumerator AutoAdvance(DialogueNode node)
+    {
+        yield return new WaitForSeconds(HoldOf(node));
+        typing = null;
+        if (current == node) Next();
     }
 
     void EndDialogue()
