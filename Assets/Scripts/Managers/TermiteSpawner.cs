@@ -23,18 +23,44 @@ public class TermiteSpawner : MonoBehaviour
 
         int realCount = 0;
         var blackAnts = new List<AntMonologue>();
+
+        var boxes = new Dictionary<string, HiddenContainer>();
+        foreach (var c in cubeTransform.GetComponentsInChildren<HiddenContainer>(true))
+        {
+            c.ResetState();
+            boxes[c.Id] = c;
+        }
         foreach (var info in stage.termites)
         {
             var isBlack = info.antType == TermiteSpawnInfo.AntType.BlackAnt;
             var prefab = info.antType == TermiteSpawnInfo.AntType.BlackAnt ? blackAntPrefab : termitePrefab;
-            GameObject t = Instantiate(prefab, cubeTransform);
-            t.transform.localPosition = info.localPosition;
-            t.transform.localScale = Vector3.one * info.scale;
+            HiddenContainer box = null;
+            bool inBox = !string.IsNullOrEmpty(info.containerId);
+
+            if (inBox && !boxes.TryGetValue(info.containerId, out box))
+            {
+                Debug.LogWarning($"containerId '{info.containerId}' 상자를 찾을 수 없음");
+                inBox = false;
+            }
+            GameObject t = Instantiate(prefab, inBox ? box.AntAnchor : cubeTransform);
+            t.transform.localPosition = inBox ? Vector3.zero : info.localPosition;
+            if (inBox)
+            {
+                Vector3 want = cubeTransform.lossyScale * info.scale;
+                Vector3 p    = t.transform.parent.lossyScale;
+                t.transform.localScale = new Vector3(want.x / p.x, want.y / p.y, want.z / p.z);
+            }
+            else
+            {
+                t.transform.localScale = Vector3.one * info.scale;
+            }
+
             
             var termite = t.GetComponent<Termite>();
             if(termite != null) termite.Init(info);
-
-            if (isBlack)
+            if (inBox && termite != null) box.SetHidden(termite);
+            
+            if (isBlack && !inBox)
             {
                 var m = t.GetComponent<AntMonologue>();
                 if (m != null) blackAnts.Add(m);
@@ -76,8 +102,8 @@ public class TermiteSpawner : MonoBehaviour
         for (int i = cubeTransform.childCount - 1; i >= 0; i--)
         {
             var child = cubeTransform.GetChild(i);
-            if(child.GetComponent<Termite>() != null)
-                Destroy(child.gameObject);
+            foreach (var t in cubeTransform.GetComponentsInChildren<Termite>(true))
+                Destroy(t.gameObject);
         }
     }
 }

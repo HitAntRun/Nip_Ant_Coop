@@ -10,6 +10,7 @@ public class TermiteSpawnInfo
     public Vector3 surfaceNormal = Vector3.forward;
     public float scale = 1f;
     public bool isReal = true;
+    public string containerId = "";
 }
 
 [CreateAssetMenu(fileName = "StageTermiteData", menuName = "Termite/Stage Data")]

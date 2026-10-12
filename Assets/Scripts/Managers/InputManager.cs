@@ -6,6 +6,7 @@ public class InputManager : MonoBehaviour
     private RotateController _rotateController;
     private MagnifierController _magnifier;
     private DialogueRunner _dialogue;
+    [SerializeField] private LayerMask clickMask;
 
     static bool NextPressed() =>
         Input.GetKeyDown(KeyCode.Space)
@@ -118,8 +119,11 @@ public class InputManager : MonoBehaviour
         if (cam == null) return;
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(ray, out RaycastHit hit, 2000f, clickMask))
         {
+            var box = hit.collider.GetComponentInParent<HiddenContainer>();
+            if (box != null && !box.IsOpen) { box.Open(); return; }
+
             var t = hit.collider.GetComponent<Termite>();
             if (t != null) t.Judge();
         }
