@@ -99,3 +99,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: f51988ae9bfbc49a5a59ef58f79a8aa3, type: 3}
   - name: bg_board_ch2
     sprite: {fileID: 21300000, guid: 6aa7da7f8240c4eca8697da03f44d4a5, type: 3}
+  - name: friend_homeout_ch3
+    sprite: {fileID: 21300000, guid: 8d99bc0a2438741e2a9d15cb2dc7ddf5, type: 3}
+  - name: friend_homein_ch3
+    sprite: {fileID: 21300000, guid: 4133c68a16afb431b9d6daa7a24c67eb, type: 3}

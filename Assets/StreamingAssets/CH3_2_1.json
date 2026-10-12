@@ -1,0 +1,525 @@
+{
+  "storyId": "CH3_2_1",
+  "startNodeId": "n_e9d97beb",
+  "background": "dump_bg",
+  "nextScene": "",
+  "nextStage": "",
+  "chapterLabel": "Chapter3",
+  "day": 7,
+  "summary": "친구를 따라 쓰레기처리장으로 갔어요. 이미 흰개미의 비밀 통로를 찾은 줄 알았더니, 이제부터 같이 찾자고 하지 뭐예요. 허! ",
+  "nodes": [
+    {
+      "id": "n_e9d97beb",
+      "locKey": "CH3_2_1_1",
+      "speaker": "에밀",
+      "text": "이렇게까지 밑으로 내려온 적은 처음이야.",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_f6200624",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": true,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-normal-32px",
+          "brightness": 0.5,
+          "slot": "Center",
+          "fadeIn": true,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_f6200624",
+      "locKey": "CH3_2_1_2",
+      "speaker": "학생 개미2",
+      "text": "너 쓰레기처리장 처음 와 봐?",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_d1d7c5ce",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 0.5,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-normal-32px",
+          "brightness": 1.0,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_d1d7c5ce",
+      "locKey": "CH3_2_1_3",
+      "speaker": "에밀",
+      "text": "응. 넌 몇 번 와봤어?",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_6f0dc962",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-normal-32px",
+          "brightness": 0.5,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_6f0dc962",
+      "locKey": "CH3_2_1_4",
+      "speaker": "학생 개미2",
+      "text": "우리 아빠가 예전에 여기서 일하셨거든. 아빠 퇴근 시간 맞춰서 몇 번 놀러온 적 있어.",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_11e098f3",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 0.5,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-normal-32px",
+          "brightness": 1.0,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_11e098f3",
+      "locKey": "CH3_2_1_5",
+      "speaker": "에밀",
+      "text": "그렇구나.",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_ce33e62e",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-normal-32px",
+          "brightness": 0.5,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_ce33e62e",
+      "locKey": "CH3_2_1_6",
+      "speaker": "학생 개미2",
+      "text": "자, 그럼 이제 비밀 통로를 찾아볼까?",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_898d7954",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "student2",
+          "sprite": "student2-smile-32px",
+          "brightness": 1.0,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 0.5,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_898d7954",
+      "locKey": "CH3_2_1_7",
+      "speaker": "학생 개미2",
+      "text": "난 이쪽을 살펴볼 테니까, 에밀 넌 저쪽을 봐줘.",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_e390ffc2",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_e390ffc2",
+      "locKey": "CH3_2_1_8",
+      "speaker": "에밀",
+      "text": "알겠어.",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_be792561",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-smile-32px",
+          "brightness": 0.5,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_be792561",
+      "locKey": "CH3_2_1_9",
+      "speaker": "에밀",
+      "text": "그나저나 여기 냄새가 너무 지독한데... 오래는 못 살펴볼 것 같아.",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_ca5313cb",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-angry-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_ca5313cb",
+      "locKey": "CH3_2_1_10",
+      "speaker": "학생 개미2",
+      "text": "그래도 흰개미 같은 놈들이 숨기에는 최적의 장소 아니냐?",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_9b4dcd7f",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-angry-32px",
+          "brightness": 0.5,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-smile-32px",
+          "brightness": 1.0,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_9b4dcd7f",
+      "locKey": "CH3_2_1_11",
+      "speaker": "학생 개미2",
+      "text": "그리고 너도 맡았을지 모르겠지만, 그 녀석들한테서 지독한 냄새가 나잖아.",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_cd101f51",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_cd101f51",
+      "locKey": "CH3_2_1_12",
+      "speaker": "학생 개미2",
+      "text": "그거, 딱 이런 데 숨어 있다가 몸에 밴 걸 거야.",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_2252fc5f",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_2252fc5f",
+      "locKey": "CH3_2_1_13",
+      "speaker": "에밀",
+      "text": "어쨌든 여기 계속 있다가는 정신이 혼미해질 것 같으니까, 빨리 살펴보고 나가자.",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_e0bc8323",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-angry-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-smile-32px",
+          "brightness": 0.5,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_e0bc8323",
+      "locKey": "CH3_2_1_14",
+      "speaker": "학생 개미2",
+      "text": "당연하지. 이 앞에서 다시 만나자고.",
+      "portrait": "Student2-portrait",
+      "portraitBrightness": 1.0,
+      "next": "n_7cade232",
+      "jumpTo": null,
+      "endHere": false,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-angry-32px",
+          "brightness": 0.5,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-smile-32px",
+          "brightness": 1.0,
+          "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    },
+    {
+      "id": "n_7cade232",
+      "locKey": "CH3_2_1_15",
+      "speaker": "에밀",
+      "text": "이참에 숨어있는 흰개미가 있는지도 봐야겠다.",
+      "portrait": "Emil-portrait",
+      "portraitBrightness": 1.0,
+      "next": null,
+      "jumpTo": "",
+      "endHere": true,
+      "choices": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-normal-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "student2",
+          "sprite": "student2-smile-32px",
+          "brightness": 1.0,
+          "slot": "Off",
+          "fadeIn": true,
+          "flip": false
+        }
+      ],
+      "shake": false,
+      "bgm": "",
+      "sfx": "",
+      "mode": "",
+      "bg": "",
+      "fadeBreak": false,
+      "wipe": false,
+      "hold": -1.0
+    }
+  ],
+  "bgm": "",
+  "skipLoading": false
+}
