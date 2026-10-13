@@ -16,3 +16,9 @@ MonoBehaviour:
   - name: BG_Cave
     prefab: {fileID: 4673890585765321143, guid: 1dcd4c4abbc3b424c9837b9ef2e10288,
       type: 3}
+  - name: BG_GarbageDump
+    prefab: {fileID: 3728828032437987003, guid: f9267f41f2a8b4e28a54f9eb00915c7b,
+      type: 3}
+  - name: BG_Black
+    prefab: {fileID: 5140980324547538660, guid: ffee7d43ce5c64404b97135e1d5c5ed1,
+      type: 3}

@@ -1,7 +1,7 @@
 {
   "storyId": "CH3_2_2",
   "startNodeId": "n_1bfa9082",
-  "background": "dump_bg",
+  "background": "BG_GarbageDump",
   "nextScene": "",
   "nextStage": "",
   "chapterLabel": "Chapter3",
