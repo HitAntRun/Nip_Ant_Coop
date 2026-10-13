@@ -263,6 +263,30 @@ MonoBehaviour:
     m_Key: char_student2
     m_Metadata:
       m_Items: []
+  - m_Id: 10160429249585152
+    m_Key: char_aphid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362368
+    m_Key: char_soldier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362369
+    m_Key: char_soldier_chief
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362370
+    m_Key: char_official1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362371
+    m_Key: char_official2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362372
+    m_Key: char_janitor
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

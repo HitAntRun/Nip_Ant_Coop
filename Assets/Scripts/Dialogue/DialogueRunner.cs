@@ -13,16 +13,23 @@ public class DialogueRunner : MonoBehaviour
 {
     static readonly Dictionary<string, string> speakerKeys = new Dictionary<string, string>
     {
-        { "에밀",       "char_emil"     },
-        { "선생 개미",  "char_teacher"  },
-        { "학생 개미1", "char_student1" },
-        { "학생 개미2", "char_student2" },
+        { "에밀",          "char_emil"          },
+        { "선생 개미",     "char_teacher"       },
+        { "학생 개미1",    "char_student1"      },
+        { "학생 개미2",    "char_student2"      },
+        { "진딧물 아저씨", "char_aphid"         },
+        { "병정 개미",     "char_soldier"       },
+        { "상사 병정개미", "char_soldier_chief" },
+        { "간부 개미1",    "char_official1"     },
+        { "간부 개미2",    "char_official2"     },
+        { "미화원 개미",   "char_janitor"       },
     };
 
     public static string LocalizeSpeaker(string raw)
     {
         if (string.IsNullOrEmpty(raw)) return raw;
-        return speakerKeys.TryGetValue(raw, out var k) ? Loc.Get(Loc.UI, k, raw) : raw;
+        var name = raw.Trim();
+        return speakerKeys.TryGetValue(name, out var k) ? Loc.Get(Loc.UI, k, raw) : raw;
     }
     
     [Header("Dialogue UI")]

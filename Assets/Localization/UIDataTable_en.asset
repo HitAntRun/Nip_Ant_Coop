@@ -270,6 +270,30 @@ MonoBehaviour:
     m_Localized: Student Ant2
     m_Metadata:
       m_Items: []
+  - m_Id: 10160429249585152
+    m_Localized: Mr. Aphid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362368
+    m_Localized: Soldier Ant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362369
+    m_Localized: Sergeant Soldier Ant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362370
+    m_Localized: Official Ant1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362371
+    m_Localized: Official Ant2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10160429266362372
+    m_Localized: Sanitation Ant
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
