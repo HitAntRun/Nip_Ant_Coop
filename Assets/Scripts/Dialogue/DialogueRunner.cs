@@ -38,12 +38,13 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private float typeSpeed = 0.04f;
 
-    [Header("Choice UI")]
+    [Header("Choice")]
     [SerializeField] private PanelPopup choicePopup;
     [SerializeField] private GameObject[] choiceSlots;
     [SerializeField] private TMP_Text[] choiceLabels;
     [SerializeField] private GameObject[] choiceChecks;
     public bool choosing;
+    private string chosenNextStage;
 
     [Header("Backlog")]
     [SerializeField] private string choiceSpeaker = "에밀";
@@ -149,6 +150,7 @@ public class DialogueRunner : MonoBehaviour
         }
         data = JsonConvert.DeserializeObject<DialogueData>(File.ReadAllText(path));
         ending = false;
+        chosenNextStage = null;
         if (data == null) return;
 
         GameFlow.LastStoryStage = storyId;
@@ -396,13 +398,15 @@ public class DialogueRunner : MonoBehaviour
 
         if(data == null) yield break;
 
+        string stage = string.IsNullOrEmpty(chosenNextStage) ? data.nextStage : chosenNextStage;
+
         if (!string.IsNullOrEmpty(data.nextScene))
         {
-            if (data.skipLoading) SceneRouter.LoadDirect(data.nextScene, data.nextStage);
-            else                  SceneRouter.Load(data.nextScene, data.nextStage);
+            if (data.skipLoading) SceneRouter.LoadDirect(data.nextScene, stage);
+            else                  SceneRouter.Load(data.nextScene, stage);
         }
-        else if (!string.IsNullOrEmpty(data.nextStage))
-            GameFlow.CurrentStage = data.nextStage;
+        else if (!string.IsNullOrEmpty(stage))
+            GameFlow.CurrentStage = stage;
     }
     IEnumerator FadeCanvas(CanvasGroup cg, float from, float to, float dur)
     {
@@ -642,6 +646,8 @@ public class DialogueRunner : MonoBehaviour
         if (choicePopup != null) choicePopup.Close();
         
         var choice = current.choices[selectedIndex];
+        if (!string.IsNullOrEmpty(choice.nextStage))
+            chosenNextStage = choice.nextStage;
         log.Add(new LogLine {
             speaker  = choiceSpeaker,
             text     = choice.text,

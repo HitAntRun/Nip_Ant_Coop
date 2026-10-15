@@ -2,7 +2,7 @@
   "storyId": "CH2_2",
   "startNodeId": "n_95242f25",
   "background": "BG_Cave",
-  "nextScene": "",
+  "nextScene": "SC_Story",
   "nextStage": null,
   "chapterLabel": "Chapter 2",
   "day": 5,
@@ -746,11 +746,13 @@
       "choices": [
         {
           "text": "같이 가고 싶지만, 병문안 먼저 가봐야할 것 같아.",
-          "next": "n_aa58ffca"
+          "next": "n_aa58ffca",
+          "nextStage": "CH3_1_1"
         },
         {
           "text": "좋아, 나도 갈래!",
-          "next": "n_1abc8975"
+          "next": "n_1abc8975",
+          "nextStage": "CH3_2_1"
         }
       ],
       "actors": [],

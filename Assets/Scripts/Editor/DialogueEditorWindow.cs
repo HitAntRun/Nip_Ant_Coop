@@ -215,6 +215,7 @@ public class DialogueEditorWindow : EditorWindow
                         n.choices[j].next = IndexToTarget(newSel);
                         if (GUILayout.Button("x", GUILayout.Width(20))) { removeChoiceNode = i; removeChoiceIdx = j; }
                         EditorGUILayout.EndHorizontal();
+                        n.choices[j].nextStage = EditorGUILayout.TextField("   ↳ 끝나면 이동", n.choices[j].nextStage, GUILayout.Width(innerW));
                     }
                 }
                 if (GUILayout.Button("선택지 추가", GUILayout.Width(innerW))) addChoiceNode = i;

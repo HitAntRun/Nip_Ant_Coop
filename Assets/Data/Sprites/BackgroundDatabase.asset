@@ -22,3 +22,5 @@ MonoBehaviour:
   - name: BG_Black
     prefab: {fileID: 5140980324547538660, guid: ffee7d43ce5c64404b97135e1d5c5ed1,
       type: 3}
+  - name: BG_HomeIn
+    prefab: {fileID: 356104965082762981, guid: 44d2e02c04c114080817f1127a154cd0, type: 3}

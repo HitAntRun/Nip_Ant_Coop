@@ -48,6 +48,7 @@ public class Choice
 {
     public string text;
     public string next;
+    public string nextStage;
 }
 
 [System.Serializable]
