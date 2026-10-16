@@ -101,3 +101,39 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 6aa7da7f8240c4eca8697da03f44d4a5, type: 3}
   - name: friend_homeout_ch3
     sprite: {fileID: 21300000, guid: 8d99bc0a2438741e2a9d15cb2dc7ddf5, type: 3}
+  - name: Ole-32px
+    sprite: {fileID: 21300000, guid: 2d9ac7e6342254f3f8a3455d1be5921e, type: 3}
+  - name: mr-soldier-curious-64px
+    sprite: {fileID: 21300000, guid: a2ccae12801134eb0b525c4b59d6ccbc, type: 3}
+  - name: mr-soldier-embarrassed-64px
+    sprite: {fileID: 21300000, guid: 862306fc156de4481a355c85c76799c2, type: 3}
+  - name: mr-soldier-normal-64px
+    sprite: {fileID: 21300000, guid: dfb66fdbc0d5e4797a4eddf41afd9fff, type: 3}
+  - name: mr-soldier-smile-64px
+    sprite: {fileID: 21300000, guid: c852a719f06884677b8526fca512edcf, type: 3}
+  - name: executive-soldier-64px
+    sprite: {fileID: 21300000, guid: d702763e2a8bf48a897176c320e71f1b, type: 3}
+  - name: executive1-normal-64px
+    sprite: {fileID: 21300000, guid: 773883bd1d56f49a4a784dc681af157a, type: 3}
+  - name: detained-mr-soldier
+    sprite: {fileID: 21300000, guid: df2f1dab846b24d668863dede99a0e30, type: 3}
+  - name: executive1-portrait
+    sprite: {fileID: 21300000, guid: 3d4f8dd1f880f4af2a9ba0b544593a02, type: 3}
+  - name: executive-portrait
+    sprite: {fileID: 21300000, guid: 96a6c36a2d04f4dcca4ec43598ae86dd, type: 3}
+  - name: mr-soldier-portrait
+    sprite: {fileID: 21300000, guid: 959beb02d6d4441cf8e39f4458a44946, type: 3}
+  - name: cleaner-portrait
+    sprite: {fileID: 21300000, guid: 7d1c7819b53ad4254ab6b1fb62bb0841, type: 3}
+  - name: cleaner-normal-64px
+    sprite: {fileID: 21300000, guid: 43c8cd871f3d943c4bcd9e6ff07dd68f, type: 3}
+  - name: cleaner-surprised-64px
+    sprite: {fileID: 21300000, guid: eed109cddb56444579831d8fe963d873, type: 3}
+  - name: cleaner-surprised-64px
+    sprite: {fileID: 21300000, guid: eed109cddb56444579831d8fe963d873, type: 3}
+  - name: Ole-portrait
+    sprite: {fileID: 21300000, guid: 3334f4617a5bd433d869513575728585, type: 3}
+  - name: executive2-portrait
+    sprite: {fileID: 21300000, guid: 6763f47eb79664a238cd4b292f9d2905, type: 3}
+  - name: executive2-normal-64px
+    sprite: {fileID: 21300000, guid: 16751d027a796411ba14f70bae219223, type: 3}
