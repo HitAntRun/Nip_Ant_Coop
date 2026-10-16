@@ -137,3 +137,5 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 6763f47eb79664a238cd4b292f9d2905, type: 3}
   - name: executive2-normal-64px
     sprite: {fileID: 21300000, guid: 16751d027a796411ba14f70bae219223, type: 3}
+  - name: detained-student1-grey-64px
+    sprite: {fileID: 21300000, guid: a6ce1c3358b0d4991a46aaf0d0185bd4, type: 3}

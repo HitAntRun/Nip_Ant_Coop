@@ -683,7 +683,8 @@ public class DialogueRunner : MonoBehaviour
                 if (s != null)
                 {
                     img.sprite = s;
-                    img.rectTransform.sizeDelta = actorSize;  
+                    float aspect = s.rect.width / s.rect.height;
+                    img.rectTransform.sizeDelta = new Vector2(actorSize.y * aspect, actorSize.y);
                 }
                 else Debug.LogWarning($"스프라이트 '{a.sprite}' 를 DB에서 못 찾음");
             }

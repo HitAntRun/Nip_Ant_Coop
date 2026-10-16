@@ -73,7 +73,7 @@
       "actors": [
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -145,7 +145,7 @@
       "locKey": "CH3_1_1_6",
       "speaker": "??",
       "text": "꼬마야, 이 앞에서 알짱거리면 위ㅎㅓ ...",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f470310e",
       "jumpTo": null,
@@ -162,7 +162,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -183,7 +183,7 @@
       "locKey": "CH3_1_1_7",
       "speaker": "??",
       "text": "...... 어라, 혹시 에밀이니?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_cb668ffa",
       "jumpTo": null,
@@ -192,7 +192,7 @@
       "actors": [
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-embarrassed-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -230,7 +230,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-embarrassed-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -251,7 +251,7 @@
       "locKey": "CH3_1_1_9",
       "speaker": "??",
       "text": "나를 못 알아보겠어?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_4b3d36de",
       "jumpTo": null,
@@ -268,7 +268,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-embarrassed-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -289,7 +289,7 @@
       "locKey": "CH3_1_1_10",
       "speaker": "??",
       "text": "너희 아빠 친구야. 기억 안 나니?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_45b29ffa",
       "jumpTo": null,
@@ -327,7 +327,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-embarrassed-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -348,7 +348,7 @@
       "locKey": "CH3_1_1_12",
       "speaker": "진딧물 아저씨",
       "text": "그래, 맞아! 못 본 새 많이 컸구나.",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_34479ead",
       "jumpTo": null,
@@ -365,7 +365,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-smile-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -386,7 +386,7 @@
       "locKey": "CH3_1_1_13",
       "speaker": "진딧물 아저씨",
       "text": "...... 너희 아빠 일은 정말 유감이야. 달리 위로할 말이 없구나.",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_c6851e97",
       "jumpTo": null,
@@ -395,7 +395,7 @@
       "actors": [
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -433,7 +433,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -454,7 +454,7 @@
       "locKey": "CH3_1_1_15",
       "speaker": "진딧물 아저씨",
       "text": "그래도 미안하다. 동료로서 너희 아빠나 너나 둘 다 지켜줬어야 했는데...",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_653d65b7",
       "jumpTo": null,
@@ -471,7 +471,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -492,7 +492,7 @@
       "locKey": "CH3_1_1_16",
       "speaker": "진딧물 아저씨",
       "text": "아빠는 지금 많이 회복됐니?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_7cc0b3fb",
       "jumpTo": null,
@@ -530,7 +530,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -551,7 +551,7 @@
       "locKey": "CH3_1_1_18",
       "speaker": "진딧물 아저씨",
       "text": "뭐? 그게 무슨 소리니?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_6b0cbb52",
       "jumpTo": null,
@@ -568,7 +568,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-curious-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -606,7 +606,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-curious-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -627,7 +627,7 @@
       "locKey": "CH3_1_1_20",
       "speaker": "진딧물 아저씨",
       "text": "...... 그건",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_26657b29",
       "jumpTo": null,
@@ -644,7 +644,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-curious-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -665,7 +665,7 @@
       "locKey": "CH3_1_1_21",
       "speaker": "병정 개미",
       "text": "삐이이이익 ― !",
-      "portrait": "",
+      "portrait": "executive-portrait",
       "portraitBrightness": 1.0,
       "next": "n_4a68eef6",
       "jumpTo": null,
@@ -695,7 +695,7 @@
       "locKey": "CH3_1_1_22",
       "speaker": "진딧물 아저씨",
       "text": "이게 무슨 소리지??",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_13c3ca15",
       "jumpTo": null,
@@ -704,7 +704,7 @@
       "actors": [
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "mr-soldier-embarrassed-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -725,7 +725,7 @@
       "locKey": "CH3_1_1_23",
       "speaker": "진딧물 아저씨",
       "text": "ㅁ, 뭐야?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_5d689945",
       "jumpTo": null,
@@ -734,7 +734,7 @@
       "actors": [
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "detained-mr-soldier",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -755,7 +755,7 @@
       "locKey": "CH3_1_1_24",
       "speaker": "진딧물 아저씨",
       "text": "???!!!! 갑자기 뭐하는 짓이야!",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_bd42981a",
       "jumpTo": null,
@@ -776,7 +776,7 @@
       "locKey": "CH3_1_1_25",
       "speaker": "상사 병정개미",
       "text": "근무교대다. 따라 와.",
-      "portrait": "",
+      "portrait": "executive-portrait",
       "portraitBrightness": 1.0,
       "next": "n_a8836e5f",
       "jumpTo": null,
@@ -785,9 +785,17 @@
       "actors": [
         {
           "id": "senior",
-          "sprite": "",
+          "sprite": "executive-soldier-64px",
           "brightness": 1.0,
           "slot": "Center",
+          "fadeIn": false,
+          "flip": false
+        },
+        {
+          "id": "soldier",
+          "sprite": "detained-mr-soldier",
+          "brightness": 0.5,
+          "slot": "Right",
           "fadeIn": false,
           "flip": false
         }
@@ -806,7 +814,7 @@
       "locKey": "CH3_1_1_26",
       "speaker": "진딧물 아저씨",
       "text": "근무교대는 얼어죽을, 누가 이딴 식으로 근무교대를 해?",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_5e4311ab",
       "jumpTo": null,
@@ -815,7 +823,7 @@
       "actors": [
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "detained-mr-soldier",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -823,7 +831,7 @@
         },
         {
           "id": "senior",
-          "sprite": "",
+          "sprite": "executive-soldier-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -844,7 +852,7 @@
       "locKey": "CH3_1_1_27",
       "speaker": "진딧물 아저씨",
       "text": "게다가 교대할 병정개미도 없잖아. 멀쩡한 녀석들 대부분―",
-      "portrait": "",
+      "portrait": "mr-soldier-portrait",
       "portraitBrightness": 1.0,
       "next": "n_fc7e6ee8",
       "jumpTo": null,
@@ -874,7 +882,7 @@
       "locKey": "CH3_1_1_28",
       "speaker": "상사 병정개미",
       "text": "잔말 말고 순순히 따라 와.",
-      "portrait": "",
+      "portrait": "executive-portrait",
       "portraitBrightness": 1.0,
       "next": "n_cd8a1571",
       "jumpTo": null,
@@ -883,7 +891,7 @@
       "actors": [
         {
           "id": "senior",
-          "sprite": "",
+          "sprite": "executive-soldier-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -891,7 +899,7 @@
         },
         {
           "id": "soldier",
-          "sprite": "",
+          "sprite": "detained-mr-soldier",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -912,7 +920,7 @@
       "locKey": "CH3_1_1_29",
       "speaker": "상사 병정개미",
       "text": "어린 녀석도 같이 데려 간다.",
-      "portrait": "",
+      "portrait": "executive-portrait",
       "portraitBrightness": 1.0,
       "next": "n_ec8ba732",
       "jumpTo": null,
@@ -933,7 +941,7 @@
       "locKey": "CH3_1_1_30",
       "speaker": "상사 병정개미",
       "text": "어라, 뭐야. 이 자식 어디 갔어.",
-      "portrait": "",
+      "portrait": "executive-portrait",
       "portraitBrightness": 1.0,
       "next": "n_28f0c9f2",
       "jumpTo": null,
@@ -954,7 +962,7 @@
       "locKey": "CH3_1_1_31",
       "speaker": "상사 병정개미",
       "text": "아.. 젠장. 어이!! 다들 근처부터 뒤져 봐.",
-      "portrait": "",
+      "portrait": "executive-portrait",
       "portraitBrightness": 1.0,
       "next": "n_47ffce09",
       "jumpTo": null,
@@ -1175,7 +1183,7 @@
         },
         {
           "id": "student1",
-          "sprite": "",
+          "sprite": "detained-student1-grey-64px",
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
@@ -1213,7 +1221,7 @@
         },
         {
           "id": "student1",
-          "sprite": "",
+          "sprite": "detained-student1-grey-64px",
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
@@ -1255,8 +1263,8 @@
       "locKey": "CH3_1_1_42",
       "speaker": "??",
       "text": "(저벅저벅)",
-      "portrait": "",
-      "portraitBrightness": 1.0,
+      "portrait": "executive1-portrait",
+      "portraitBrightness": 0.0,
       "next": "n_19fab610",
       "jumpTo": null,
       "endHere": false,
@@ -1336,8 +1344,8 @@
       "locKey": "CH3_1_1_45",
       "speaker": "??",
       "text": "(저벅저벅)",
-      "portrait": "",
-      "portraitBrightness": 1.0,
+      "portrait": "executive1-portrait",
+      "portraitBrightness": 0.0,
       "next": "n_e2dca660",
       "jumpTo": null,
       "endHere": false,
@@ -1366,7 +1374,7 @@
       "locKey": "CH3_1_1_46",
       "speaker": "간부 개미1",
       "text": "저런, 이렇게나 어린 일개미였다니. 안타깝게 됐군.",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_4d8af9ab",
       "jumpTo": null,
@@ -1375,7 +1383,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": true,
@@ -1383,7 +1391,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": true,
@@ -1404,7 +1412,7 @@
       "locKey": "CH3_1_1_47",
       "speaker": "간부 개미2",
       "text": "그럼 '지하'로 보내지 말고 계속 이곳에 감시를 붙여둘까요?",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_d6a09752",
       "jumpTo": null,
@@ -1413,7 +1421,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1421,7 +1429,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -1442,7 +1450,7 @@
       "locKey": "CH3_1_1_48",
       "speaker": "간부 개미1",
       "text": "아니, 이런 일에는 예외를 두어서는 안 돼.",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_d49cd7be",
       "jumpTo": null,
@@ -1451,7 +1459,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -1459,7 +1467,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -1480,7 +1488,7 @@
       "locKey": "CH3_1_1_49",
       "speaker": "간부 개미2",
       "text": "병정개미들이 돌아오면 '지하'로 데려가라고 하겠습니다.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_abcf3b39",
       "jumpTo": null,
@@ -1489,7 +1497,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1497,7 +1505,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -1518,7 +1526,7 @@
       "locKey": "CH3_1_1_50",
       "speaker": "간부 개미1",
       "text": "유출 상황은 어떤가? 많이 신고가 됐나?",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_c1579156",
       "jumpTo": null,
@@ -1527,7 +1535,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -1535,7 +1543,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -1556,7 +1564,7 @@
       "locKey": "CH3_1_1_51",
       "speaker": "간부 개미2",
       "text": "신고율이 높아서 예상보다 빨리 마무리 지을 것 같습니다.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_5470cc27",
       "jumpTo": null,
@@ -1565,7 +1573,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1573,7 +1581,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -1594,7 +1602,7 @@
       "locKey": "CH3_1_1_52",
       "speaker": "간부 개미1",
       "text": "벌써? 굉장하군. 이렇게나 빠르게...",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_5dee7391",
       "jumpTo": null,
@@ -1603,7 +1611,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -1611,7 +1619,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -1632,7 +1640,7 @@
       "locKey": "CH3_1_1_53",
       "speaker": "간부 개미1",
       "text": "자네가 아주 묘안을 내놓았어.",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_a3003084",
       "jumpTo": null,
@@ -1653,7 +1661,7 @@
       "locKey": "CH3_1_1_54",
       "speaker": "간부 개미2",
       "text": "별 말씀을요. ‘흰개미’를 신고하라고 하는 것쯤이야 일도 아니지요.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_9ab2a159",
       "jumpTo": null,
@@ -1662,7 +1670,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1670,7 +1678,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -1691,7 +1699,7 @@
       "locKey": "CH3_1_1_55",
       "speaker": "간부 개미2",
       "text": "'어머니'도 저쪽에서 먼저 쳐들어왔다고 하면, 반박하기 어려우실 테니까요.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_db37ae59",
       "jumpTo": null,
@@ -1712,7 +1720,7 @@
       "locKey": "CH3_1_1_56",
       "speaker": "간부 개미2",
       "text": "... 그렇지만 여전히 이해를 못하겠습니다. ",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_ed4cd3df",
       "jumpTo": null,
@@ -1733,7 +1741,7 @@
       "locKey": "CH3_1_1_57",
       "speaker": "간부 개미2",
       "text": "'어머니'는 왜 흰여왕개미를 아직까지도 감싸고 도시는지...",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_56209b50",
       "jumpTo": null,
@@ -1754,7 +1762,7 @@
       "locKey": "CH3_1_1_58",
       "speaker": "간부 개미1",
       "text": "이전부터 우리 여왕님과 흰여왕개미 사이가 각별하긴 했으니 말일세.",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_ecb49beb",
       "jumpTo": null,
@@ -1763,7 +1771,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -1771,7 +1779,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -1792,7 +1800,7 @@
       "locKey": "CH3_1_1_59",
       "speaker": "간부 개미1",
       "text": "서로 고민상담이라도 많이 했나보지.",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_38b9c67b",
       "jumpTo": null,
@@ -1813,7 +1821,7 @@
       "locKey": "CH3_1_1_60",
       "speaker": "간부 개미2",
       "text": "군집을 더 융성하게 하려면 어떻게 해야 할지 같은 걸까요...",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_074eb9f8",
       "jumpTo": null,
@@ -1822,7 +1830,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1830,7 +1838,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -1851,7 +1859,7 @@
       "locKey": "CH3_1_1_61",
       "speaker": "간부 개미1",
       "text": "아니면 군집을 버리고 몰래 도망을 가는 방법 같은 거? 하하하.",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_bd27b6b6",
       "jumpTo": null,
@@ -1860,7 +1868,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -1868,7 +1876,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
@@ -1889,7 +1897,7 @@
       "locKey": "CH3_1_1_62",
       "speaker": "간부 개미2",
       "text": "농담이 지나치십니다. '어머니'가 들으면 화내실걸요.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_12f4460d",
       "jumpTo": null,
@@ -1898,7 +1906,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1906,7 +1914,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -1927,7 +1935,7 @@
       "locKey": "CH3_1_1_63",
       "speaker": "간부 개미1",
       "text": "자네, 젊은 개미가 너무 꽉 막힌 것 아닌가?",
-      "portrait": "",
+      "portrait": "executive1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_c73b9ff6",
       "jumpTo": null,
@@ -1936,7 +1944,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
@@ -1944,7 +1952,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1965,7 +1973,7 @@
       "locKey": "CH3_1_1_64",
       "speaker": "간부 개미2",
       "text": "무슨 그런 서운한 말씀을.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b01f9f56",
       "jumpTo": null,
@@ -1974,7 +1982,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
@@ -1982,7 +1990,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
@@ -2003,7 +2011,7 @@
       "locKey": "CH3_1_1_65",
       "speaker": "간부 개미2",
       "text": "아, 병정개미들이 왔나 봅니다. 이제 데려가죠.",
-      "portrait": "",
+      "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_68788b64",
       "jumpTo": null,
@@ -2033,7 +2041,7 @@
       "actors": [
         {
           "id": "sergeant1",
-          "sprite": "",
+          "sprite": "executive1-normal-64px",
           "brightness": 1.0,
           "slot": "Off",
           "fadeIn": true,
@@ -2041,7 +2049,7 @@
         },
         {
           "id": "sergeant2",
-          "sprite": "",
+          "sprite": "executive2-normal-64px",
           "brightness": 1.0,
           "slot": "Off",
           "fadeIn": true,
@@ -2049,7 +2057,7 @@
         },
         {
           "id": "student1",
-          "sprite": "",
+          "sprite": "detained-student1-grey-64px",
           "brightness": 1.0,
           "slot": "Off",
           "fadeIn": true,
