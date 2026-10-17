@@ -4,7 +4,7 @@
   "background": "BG_GarbageDump",
   "nextScene": "SC_Ingame",
   "nextStage": "Stage3_2",
-  "chapterLabel": "Chapter3",
+  "chapterLabel": "Chapter 3",
   "day": 7,
   "summary": "친구를 따라 쓰레기처리장으로 갔어요. 이미 흰개미의 비밀 통로를 찾은 줄 알았더니, 이제부터 같이 찾자고 하지 뭐예요. 허! ",
   "nodes": [
