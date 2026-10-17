@@ -7,6 +7,9 @@ public class InputManager : MonoBehaviour
     private MagnifierController _magnifier;
     private DialogueRunner _dialogue;
     [SerializeField] private LayerMask clickMask;
+    
+    [SerializeField, Range(0.5f, 1.2f)]
+    private float judgeRadiusScale = 1f;
 
     static bool NextPressed() =>
         Input.GetKeyDown(KeyCode.Space)
@@ -118,10 +121,24 @@ public class InputManager : MonoBehaviour
         Camera cam = (_magnifier != null) ? _magnifier.mainCam : Camera.main;
         if (cam == null) return;
 
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        if (_magnifier != null)
+        {
+            _magnifier.GetJudgeCircle(out Vector2 center, out float radius);
+            Termite best = FindTermiteInCircle(cam, center, radius * judgeRadiusScale);
+            if (best != null) { best.Judge(); return; }
+        }
+
+        Vector2 mouse = Input.mousePosition;
+
+        if (_magnifier != null && _magnifier.IsSearchMode)
+        {
+            Termite best = FindTermiteInCircle(cam, mouse);
+            if (best != null) { best.Judge(); return; }
+        }
+
+        Ray ray = cam.ScreenPointToRay(mouse);
         var hits = Physics.RaycastAll(ray, 2000f, clickMask);
         if (hits.Length == 0) return;
-
         System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
 
         foreach (var h in hits)
@@ -134,5 +151,51 @@ public class InputManager : MonoBehaviour
             var box = h.collider.GetComponentInParent<HiddenContainer>();
             if (box != null) { box.Toggle(); return; }
         }
+    }
+    Termite FindTermiteInCircle(Camera cam, Vector2 mouse)
+    {
+        float radius = _magnifier.SearchJudgeRadiusPx * judgeRadiusScale;
+        Termite best = null;
+        float bestDist = float.MaxValue;
+
+        foreach (var t in FindObjectsByType<Termite>(FindObjectsSortMode.None))
+        {
+            if (t.IsDying) continue;
+
+            var col = t.GetComponentInChildren<Collider>();
+            Vector3 worldPos = col != null ? col.bounds.center : t.transform.position;
+
+            Vector3 sp = cam.WorldToScreenPoint(worldPos);
+            if (sp.z < 0) continue;
+
+            float d = Vector2.Distance(mouse, sp);
+            if (d <= radius && d < bestDist)
+            {
+                best = t;
+                bestDist = d;
+            }
+        }
+        return best;
+    }
+    
+    Termite FindTermiteInCircle(Camera cam, Vector2 center, float radius)
+    {
+        Termite best = null;
+        float bestDist = float.MaxValue;
+
+        foreach (var t in FindObjectsByType<Termite>(FindObjectsSortMode.None))
+        {
+            if (t.IsDying) continue;
+
+            var col = t.GetComponentInChildren<Collider>();
+            Vector3 worldPos = col != null ? col.bounds.center : t.transform.position;
+
+            Vector3 sp = cam.WorldToScreenPoint(worldPos);
+            if (sp.z < 0) continue;
+
+            float d = Vector2.Distance(center, sp);
+            if (d <= radius && d < bestDist) { best = t; bestDist = d; }
+        }
+        return best;
     }
 }

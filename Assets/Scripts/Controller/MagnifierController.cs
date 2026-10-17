@@ -12,11 +12,14 @@ public class MagnifierController : MonoBehaviour
     public Vector2 searchLightOffset = new Vector2(60f, -60f);
     public RectTransform magnifierSprite;
     public Vector2 magnifierOffset = new Vector2(60f, -60f);
+    public RectTransform lensArea; 
 
     [Header("Zoom")]
     public float normalSize = 1.5f;
     public Vector3 AimPoint { get; private set; }
     public bool AimValid { get; private set; }
+    public float SearchJudgeRadiusPx =>
+        searchCircleSize.y * 0.5f * canvas.scaleFactor / searchMagnification;
 
     [Header("Search Mode")]
     private Vector2 normalCircleSize;
@@ -54,6 +57,20 @@ public class MagnifierController : MonoBehaviour
         if (magnifierSprite && !isSearchMode)
             magnifierSprite.position = mouse + magnifierOffset;
         AimMagnifierCamera(mouse);
+    }
+    
+    public void GetJudgeCircle(out Vector2 center, out float radius)
+    {
+        if (isSearchMode)
+        {
+            center = magnifierRoot.position;
+            radius = searchCircleSize.y * 0.5f * canvas.scaleFactor / searchMagnification;
+        }
+        else
+        {
+            center = lensArea.position;
+            radius = lensArea.rect.width * 0.5f * canvas.scaleFactor;
+        }
     }
 
     void ApplyMode()
