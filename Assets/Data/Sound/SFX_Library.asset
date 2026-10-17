@@ -33,3 +33,13 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 530af58ce306244e4bf7b4cf5f617fd3, type: 3}
     volume: 0.5
     pitchRange: {x: 1, y: 1}
+  - id: shotgun_shoot
+    clips:
+    - {fileID: 8300000, guid: b618e1e4b0e9e4002827869089b155d0, type: 3}
+    volume: 0.5
+    pitchRange: {x: 1, y: 1}
+  - id: footsteps
+    clips:
+    - {fileID: 8300000, guid: fc20bc167484a4ea58021775c1c98968, type: 3}
+    volume: 0.5
+    pitchRange: {x: 1, y: 1}

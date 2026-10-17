@@ -1167,6 +1167,6 @@
       "hold": -1.0
     }
   ],
-  "bgm": null,
+  "bgm": "BGM_Story_Cutscene1",
   "skipLoading": false
 }

@@ -520,6 +520,6 @@
       "hold": -1.0
     }
   ],
-  "bgm": "",
+  "bgm": "BGM_Story_Cutscene1",
   "skipLoading": false
 }

@@ -479,6 +479,7 @@ public class DialogueRunner : MonoBehaviour
 
     void Next()
     {
+        SoundManager.instance?.StopAllSfx();
         if (current.next == null) { EndDialogue(); return; }
         current = data.nodes.FirstOrDefault(n => n.id == current.next);
         if (current == null) { EndDialogue(); return; }
@@ -487,6 +488,7 @@ public class DialogueRunner : MonoBehaviour
 
     void Choose(string nextId)
     {
+        SoundManager.instance?.StopAllSfx();
         if (string.IsNullOrEmpty(nextId)) { EndDialogue(); return; }
         current = data.nodes.FirstOrDefault(n => n.id == nextId);
         if (current == null) { EndDialogue(); return; }
