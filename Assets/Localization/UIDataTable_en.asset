@@ -294,6 +294,11 @@ MonoBehaviour:
     m_Localized: Sanitation Ant
     m_Metadata:
       m_Items: []
+  - m_Id: 11705510293135360
+    m_Localized: A termite might be hiding inside something this time! Try clicking
+      anything suspicious!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

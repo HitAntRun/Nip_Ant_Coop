@@ -287,6 +287,10 @@ MonoBehaviour:
     m_Key: char_janitor
     m_Metadata:
       m_Items: []
+  - m_Id: 11705510293135360
+    m_Key: stage2_1_intro_1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

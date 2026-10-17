@@ -23,6 +23,16 @@ public class TutorialController : MonoBehaviour
         public Trigger trigger;
         public Sprite image;
     }
+    
+    [System.Serializable]
+    public class StageIntro
+    {
+        public string stageId;
+        public List<Step> steps = new();
+    }
+
+    [SerializeField] private List<StageIntro> stageIntros = new();
+    private bool isStageIntro = false;
 
     [SerializeField] private GameObject tutorialPanel;
     [SerializeField] private TMP_Text tutorialText;
@@ -46,6 +56,15 @@ public class TutorialController : MonoBehaviour
     {
         if (GameFlow.CurrentStage != "Tutorial")
         {
+            var intro = stageIntros.Find(x => x.stageId == GameFlow.CurrentStage);
+            if (intro != null && intro.steps.Count > 0)
+            {
+                steps = intro.steps;
+                isStageIntro = true;
+                Next();
+                return;
+            }
+
             if (tutorialPanel != null) tutorialPanel.SetActive(false);
             if (stepImage != null) stepImage.gameObject.SetActive(false);
             enabled = false;
@@ -137,6 +156,12 @@ public class TutorialController : MonoBehaviour
     {
         if (tutorialPanel != null) tutorialPanel.SetActive(false);
         if (stepImage != null) stepImage.gameObject.SetActive(false);
+        
+        if (isStageIntro)
+        {
+            enabled = false;
+            return;
+        }
 
         var mag = FindFirstObjectByType<MagnifierController>();
         if (mag != null && mag.IsSearchMode) mag.ToggleSearchMode();

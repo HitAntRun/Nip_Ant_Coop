@@ -27,7 +27,7 @@ MonoBehaviour:
     isReal: 1
     containerId: 
   - antType: 0
-    localPosition: {x: -8.26, y: 0.969, z: 11.47}
+    localPosition: {x: -8.865, y: 0.863, z: 10.475}
     surfaceNormal: {x: 0, y: 1, z: 0}
     scale: 1.5
     isReal: 1
