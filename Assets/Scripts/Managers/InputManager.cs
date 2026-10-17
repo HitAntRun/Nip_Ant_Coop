@@ -119,12 +119,20 @@ public class InputManager : MonoBehaviour
         if (cam == null) return;
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (!Physics.Raycast(ray, out RaycastHit hit, 2000f, clickMask)) return;
+        var hits = Physics.RaycastAll(ray, 2000f, clickMask);
+        if (hits.Length == 0) return;
 
-        var t = hit.collider.GetComponent<Termite>();
-        if (t != null) { t.Judge(); return; }
+        System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
 
-        var box = hit.collider.GetComponentInParent<HiddenContainer>();
-        if (box != null) box.Toggle();
+        foreach (var h in hits)
+        {
+            var t = h.collider.GetComponentInParent<Termite>();
+            if (t != null) { t.Judge(); return; }
+        }
+        foreach (var h in hits)
+        {
+            var box = h.collider.GetComponentInParent<HiddenContainer>();
+            if (box != null) { box.Toggle(); return; }
+        }
     }
 }
