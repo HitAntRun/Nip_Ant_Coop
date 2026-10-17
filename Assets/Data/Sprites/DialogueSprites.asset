@@ -57,18 +57,6 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: f28a69ded6e3a4291a576446f575c990, type: 3}
   - name: new-student-32px
     sprite: {fileID: 21300000, guid: cee5cfbcd3d564412a153ca3d0981baa, type: 3}
-  - name: New-student-bored-32px
-    sprite: {fileID: 21300000, guid: 2dc0832b453ef4dca8cb1c054cf73e9e, type: 3}
-  - name: New-student-closed-32px
-    sprite: {fileID: 21300000, guid: c22dfd013ec2c4d7fac425c4807d4c60, type: 3}
-  - name: New-student-embarrassed-32px
-    sprite: {fileID: 21300000, guid: c1ede04d6e17142349679ccefba099a2, type: 3}
-  - name: New-student-normal-32px
-    sprite: {fileID: 21300000, guid: 4d4f6d05a8cb04892b743e73cf0765c0, type: 3}
-  - name: New-student-smile-32px
-    sprite: {fileID: 21300000, guid: 34a29af8430dc4efdb1d8db4440fc27b, type: 3}
-  - name: New-student-wink-32px
-    sprite: {fileID: 21300000, guid: 8b9d581c4ff114941904568192c47c67, type: 3}
   - name: first_CutScene_900
     sprite: {fileID: 21300000, guid: c47b462d569164071809a4d88c161ab7, type: 3}
   - name: first_CutScene_901
@@ -116,7 +104,7 @@ MonoBehaviour:
   - name: executive1-normal-64px
     sprite: {fileID: 21300000, guid: 773883bd1d56f49a4a784dc681af157a, type: 3}
   - name: detained-mr-soldier
-    sprite: {fileID: 21300000, guid: df2f1dab846b24d668863dede99a0e30, type: 3}
+    sprite: {fileID: 21300000, guid: bf6e0e096be044a3d8eb9ef9745c3981, type: 3}
   - name: executive1-portrait
     sprite: {fileID: 21300000, guid: 3d4f8dd1f880f4af2a9ba0b544593a02, type: 3}
   - name: executive-portrait

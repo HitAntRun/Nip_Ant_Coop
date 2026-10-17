@@ -1,0 +1,9 @@
+newmtl WIP_tilemap1_ch3
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Tr 0.000000
+illum 0
+Ns 0.000000
+map_Kd WIP_tilemap1_ch3.png
+map_d WIP_tilemap1_ch3.png

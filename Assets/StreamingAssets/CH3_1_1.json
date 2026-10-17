@@ -1172,24 +1172,7 @@
       "jumpTo": null,
       "endHere": false,
       "choices": [],
-      "actors": [
-        {
-          "id": "emil",
-          "sprite": "emil-embarrassed-32px",
-          "brightness": 0.5,
-          "slot": "Right",
-          "fadeIn": false,
-          "flip": false
-        },
-        {
-          "id": "student1",
-          "sprite": "detained-student1-grey-64px",
-          "brightness": 1.0,
-          "slot": "Left",
-          "fadeIn": false,
-          "flip": false
-        }
-      ],
+      "actors": [],
       "shake": false,
       "bgm": "",
       "sfx": "",
@@ -1216,14 +1199,6 @@
           "sprite": "emil-embarrassed-32px",
           "brightness": 1.0,
           "slot": "Right",
-          "fadeIn": false,
-          "flip": false
-        },
-        {
-          "id": "student1",
-          "sprite": "detained-student1-grey-64px",
-          "brightness": 0.5,
-          "slot": "Left",
           "fadeIn": false,
           "flip": false
         }
@@ -2054,22 +2029,14 @@
           "slot": "Off",
           "fadeIn": true,
           "flip": false
-        },
-        {
-          "id": "student1",
-          "sprite": "detained-student1-grey-64px",
-          "brightness": 1.0,
-          "slot": "Off",
-          "fadeIn": true,
-          "flip": false
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
       "mode": "",
-      "bg": "",
-      "fadeBreak": false,
+      "bg": "BG_HomeIn_Empty",
+      "fadeBreak": true,
       "wipe": false,
       "hold": -1.0
     },

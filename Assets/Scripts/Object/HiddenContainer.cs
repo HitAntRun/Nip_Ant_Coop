@@ -38,11 +38,28 @@ public class HiddenContainer : MonoBehaviour
 
         IsOpen = true;
         if (body) body.sprite = openSprite;
-        if (clickCollider) clickCollider.enabled = false;
 
         if (hidden != null)
         {
             hidden.gameObject.SetActive(true);
         }
+    }
+
+    public void Close()
+    {
+        if(!IsOpen) return;
+        if (StageFlow.instance != null && StageFlow.instance.IsEnded) return;
+        if (hidden != null && hidden.IsDying) return;
+
+        IsOpen = false;
+        if (body) body.sprite = closedSprite;
+        
+        if(hidden != null) hidden.gameObject.SetActive(false);
+    }
+
+    public void Toggle()
+    {
+        if (IsOpen) Close();
+        else Open();
     }
 }

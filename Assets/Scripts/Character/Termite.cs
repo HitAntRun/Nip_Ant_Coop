@@ -11,6 +11,7 @@ public class Termite : MonoBehaviour
     private TermiteSpawnInfo info;
     private AntMonologue monologue;
     private bool dying;
+    public bool IsDying => dying;
 
     void Awake() => monologue = GetComponent<AntMonologue>();
 
