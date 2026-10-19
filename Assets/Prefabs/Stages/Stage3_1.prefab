@@ -64,6 +64,37 @@ Transform:
   - {fileID: 3970755892494390671}
   m_Father: {fileID: 7134771366967765403}
   m_LocalEulerAnglesHint: {x: -3.446, y: -7.546, z: 6.142}
+--- !u!1 &296128016609636987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7455135069250837371}
+  m_Layer: 7
+  m_Name: AntAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7455135069250837371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296128016609636987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7836110925188750122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &571945106797718017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,11 +1906,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0008bb394fc764fdc8b0c513e32d8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  containerId: 
+  containerId: leaf_04
   body: {fileID: 8687096079168013349}
   closedSprite: {fileID: 21300000, guid: edb8ce9f8975244348d4b4681bcd84ba, type: 3}
   openSprite: {fileID: 21300000, guid: 8f6dd6ba768e84a85a624cb0f8c56654, type: 3}
-  antAnchor: {fileID: 0}
+  antAnchor: {fileID: 7455135069250837371}
   clickCollider: {fileID: 1152085811568065199}
 --- !u!1 &7864065776704193792
 GameObject:
@@ -1943,7 +1974,8 @@ Transform:
   m_LocalPosition: {x: -0.14, y: 0.69, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7455135069250837371}
   m_Father: {fileID: 4628548937751639028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8687096079168013349
@@ -2323,95 +2355,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &958616496125975854
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7134771366967765403}
-    m_Modifications:
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.445
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -15.714
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.90576744
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.26944947
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.3134818
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.09333563
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 47.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5264465881617317395, guid: 85adb3946c3d9439b9b6779ca2853962,
-        type: 3}
-      propertyPath: m_Name
-      value: BlackAnt (12)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 85adb3946c3d9439b9b6779ca2853962, type: 3}
---- !u!4 &5419675280947796984 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5078720537810749142, guid: 85adb3946c3d9439b9b6779ca2853962,
-    type: 3}
-  m_PrefabInstance: {fileID: 958616496125975854}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1479756154430381215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3572,10 +3515,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3302972389483668245}
-    - targetCorrespondingSourceObject: {fileID: -5893945366124035099, guid: 36532549253b04f088c95354b8dae7b7,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5419675280947796984}
     - targetCorrespondingSourceObject: {fileID: -5893945366124035099, guid: 36532549253b04f088c95354b8dae7b7,
         type: 3}
       insertIndex: -1

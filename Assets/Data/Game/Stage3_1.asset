@@ -115,7 +115,7 @@ MonoBehaviour:
     surfaceNormal: {x: 0, y: 1, z: 0}
     scale: 0.7
     isReal: 0
-    containerId: 
+    containerId: leaf_04
   - antType: 1
     localPosition: {x: -1.58, y: 0.96, z: 1.43}
     surfaceNormal: {x: 0, y: 1, z: 0}
