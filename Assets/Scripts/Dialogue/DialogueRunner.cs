@@ -11,26 +11,8 @@ using UnityEngine.UI;
 
 public class DialogueRunner : MonoBehaviour
 {
-    static readonly Dictionary<string, string> speakerKeys = new Dictionary<string, string>
-    {
-        { "에밀",          "char_emil"          },
-        { "선생 개미",     "char_teacher"       },
-        { "학생 개미1",    "char_student1"      },
-        { "학생 개미2",    "char_student2"      },
-        { "진딧물 아저씨", "char_aphid"         },
-        { "병정 개미",     "char_soldier"       },
-        { "상사 병정개미", "char_soldier_chief" },
-        { "간부 개미1",    "char_official1"     },
-        { "간부 개미2",    "char_official2"     },
-        { "미화원 개미",   "char_janitor"       },
-    };
-
-    public static string LocalizeSpeaker(string raw)
-    {
-        if (string.IsNullOrEmpty(raw)) return raw;
-        var name = raw.Trim();
-        return speakerKeys.TryGetValue(name, out var k) ? Loc.Get(Loc.UI, k, raw) : raw;
-    }
+    const string SpeakerPrefix = "char_";
+    static Dictionary<string, string> speakerKeys;
     
     [Header("Dialogue UI")]
     [SerializeField] private GameObject panel;
@@ -43,8 +25,11 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private GameObject[] choiceSlots;
     [SerializeField] private TMP_Text[] choiceLabels;
     [SerializeField] private GameObject[] choiceChecks;
+    [SerializeField] private float choiceInputDelay = 0.4f;
     public bool choosing;
     private string chosenNextStage;
+    private float choiceReadyTime;
+    public bool CanConfirm => choosing && Time.unscaledTime >= choiceReadyTime;
 
     [Header("Backlog")]
     [SerializeField] private string choiceSpeaker = "에밀";
@@ -133,10 +118,40 @@ public class DialogueRunner : MonoBehaviour
     void Awake()
     {
         if (shakeRoot != null) shakeHome = shakeRoot.anchoredPosition;
+        for (int i = 0; i < choiceSlots.Length; i++)
+        {
+            int idx = i;
+            var btn = choiceSlots[i].GetComponentInParent<Button>(true);
+            if (btn != null) btn.onClick.AddListener(() => ClickChoice(idx));
+        }
     }
     
     void OnEnable()  { LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged; }
     void OnDisable() { LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged; }
+    
+    static void BuildSpeakerKeys()
+    {
+        speakerKeys = new Dictionary<string, string>();
+        var ko = LocalizationSettings.AvailableLocales.GetLocale("ko");
+        var table = LocalizationSettings.StringDatabase.GetTable(Loc.UI, ko);
+        if (table == null) return;
+
+        foreach (var entry in table.Values)
+        {
+            if (entry == null || string.IsNullOrEmpty(entry.Value)) continue;
+            if (!entry.Key.StartsWith(SpeakerPrefix)) continue;
+            speakerKeys[entry.Value.Trim()] = entry.Key;
+        }
+    }
+    
+    public static string LocalizeSpeaker(string raw)
+    {
+        if (string.IsNullOrEmpty(raw)) return raw;
+        if (speakerKeys == null || speakerKeys.Count == 0) BuildSpeakerKeys();
+
+        var name = raw.Trim();
+        return speakerKeys.TryGetValue(name, out var k) ? Loc.Get(Loc.UI, k, raw) : raw;
+    }
     
     // -------------------- 재생 --------------------
     public void Play(string storyId, int startIndex = 0)
@@ -316,6 +331,12 @@ public class DialogueRunner : MonoBehaviour
             if (key == currentBgKey && currentBgInstance != null) return;
             if (currentBgInstance != null) Destroy(currentBgInstance);
             currentBgInstance = Instantiate(prefab, bgContainer);
+            
+            var cg = currentBgInstance.GetComponent<CanvasGroup>();
+            if (cg == null) cg = currentBgInstance.AddComponent<CanvasGroup>();
+            cg.blocksRaycasts = false;
+            cg.interactable = false;
+            
             currentBgKey = key;
             if (backgroundImage != null) backgroundImage.enabled = false;
             return;
@@ -616,6 +637,7 @@ public class DialogueRunner : MonoBehaviour
     void ShowChoices()
     {
         choosing = true;
+        choiceReadyTime = Time.unscaledTime + choiceInputDelay;
         selectedIndex = 0;
 
         for (int i = 0; i < choiceSlots.Length; i++)
@@ -627,6 +649,20 @@ public class DialogueRunner : MonoBehaviour
         }
         UpdateChecks();
         if (choicePopup != null) choicePopup.Open();
+    }
+    
+    public void ClickChoice(int index)
+    {
+        if (!CanConfirm || index >= current.choices.Count) return;
+        selectedIndex = index;
+        Confirm();
+    }
+    
+    public void Hover(int index)
+    {
+        if (!choosing || index >= current.choices.Count) return;
+        selectedIndex = index;
+        UpdateChecks();
     }
 
     void UpdateChecks()
@@ -644,6 +680,7 @@ public class DialogueRunner : MonoBehaviour
 
     public void Confirm()
     {
+        if (!CanConfirm) return;
         choosing = false;
         if (choicePopup != null) choicePopup.Close();
         
