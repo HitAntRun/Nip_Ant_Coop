@@ -15,6 +15,14 @@ public class InputManager : MonoBehaviour
         Input.GetKeyDown(KeyCode.Space)
         || Input.GetKeyDown(KeyCode.Return)
         || Input.GetKeyDown(KeyCode.KeypadEnter);
+    
+    static bool UpPressed() =>
+        Input.GetKeyDown(KeyCode.UpArrow)
+        || Input.GetKeyDown(KeyCode.W);
+
+    static bool DownPressed() =>
+        Input.GetKeyDown(KeyCode.DownArrow)
+        || Input.GetKeyDown(KeyCode.S);
 
     private void Start()
     {
@@ -46,8 +54,8 @@ public class InputManager : MonoBehaviour
         {
             if (_dialogue.choosing)
             {
-                if (Input.GetKeyDown(KeyCode.UpArrow))   _dialogue.Move(-1);
-                if (Input.GetKeyDown(KeyCode.DownArrow)) _dialogue.Move(1);
+                if (UpPressed())   _dialogue.Move(-1);
+                if (DownPressed()) _dialogue.Move(1);
                 if(NextPressed()) _dialogue.Confirm();
             }
             else
