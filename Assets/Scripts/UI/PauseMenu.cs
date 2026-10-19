@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
         IsOpen = false;
         panel.Close();
         Time.timeScale = 1f;
-        CursorManager.instance?.SetHidden(true);
+        CursorManager.instance?.Refresh();
     }
 
     public void QuitGame()

@@ -15,6 +15,8 @@ public class CursorManager : MonoBehaviour
 
     [Header("Option")]
     public string[] hiddenScenes = { SceneRouter.IngameScene };
+    
+    public void Refresh() => Apply(SceneManager.GetActiveScene().name);
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Bootstrap()
