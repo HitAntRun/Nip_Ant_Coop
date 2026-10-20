@@ -439,11 +439,28 @@ MonoBehaviour:
   label: {fileID: 6259814008998605215}
   bubble: {fileID: 3477462806888021116}
   padding: {x: 0.3, y: 0.2}
-  maxWidth: 20
   bubbleWorldScale: 1
   showTime: 3
   hideTime: 3
   maxStartDelay: 2
+  popInFrames:
+  - 0.25
+  - 0.5
+  - 0.75
+  - 1.1
+  - 1.2
+  - 1
+  - 0.9
+  - 1
+  popOutFrames:
+  - 1.1
+  - 0.5
+  - 0
+  reactFrames:
+  - 1.25
+  - 0.9
+  - 1
+  frameRate: 24
   occluderMask:
     serializedVersion: 2
     m_Bits: 64

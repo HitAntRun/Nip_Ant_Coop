@@ -17,6 +17,16 @@ public class AntMonologue : MonoBehaviour
     [SerializeField] private float hideTime = 3f;
     [SerializeField] private float maxStartDelay = 2f;
 
+    [Header("Pop (Pixel)")]
+    [SerializeField] private float[] popInFrames  = { 0.5f, 1.2f, 0.9f, 1f };
+    [SerializeField] private float[] popOutFrames = { 1.1f, 0.5f, 0f };
+    [SerializeField] private float[] reactFrames  = { 1.25f, 0.9f, 1f };
+    [SerializeField] private float   frameRate    = 24f;
+
+    private float     popScale = 0f;
+    private bool      shown;
+    private Coroutine popCo;
+    
     [Header("Occlusion")]
     [SerializeField] private LayerMask occluderMask;
     [SerializeField] private float rayBackDistance = 100f;
@@ -48,6 +58,9 @@ public class AntMonologue : MonoBehaviour
             label.gameObject.SetActive(true);
         }
 
+        popScale = 0f;
+        shown = false;
+
         SetVisible(false);
         ApplyBubbleScale();
     }
@@ -62,6 +75,39 @@ public class AntMonologue : MonoBehaviour
         if (bubble != null) bubble.gameObject.SetActive(v);
         else if (label != null) label.gameObject.SetActive(v);
     }
+    
+    private void PopIn()
+    {
+        shown = true;
+        if (popCo != null) StopCoroutine(popCo);
+        SetVisible(true);
+        popCo = StartCoroutine(PlayFrames(popInFrames, false));
+    }
+
+    private void PopOut()
+    {
+        shown = false;
+        if (popCo != null) StopCoroutine(popCo);
+        popCo = StartCoroutine(PlayFrames(popOutFrames, true));
+    }
+
+    private IEnumerator PlayFrames(float[] frames, bool hideAtEnd)
+    {
+        float frameTime = 1f / Mathf.Max(1f, frameRate);
+
+        for (int i = 0; i < frames.Length; i++)
+        {
+            popScale = frames[i];
+            bool last = (i == frames.Length - 1);
+            if (!(last && hideAtEnd))
+                yield return new WaitForSeconds(frameTime);
+        }
+
+        if (hideAtEnd) SetVisible(false);
+        popCo = null;
+    }
+
+    private float PopOutTime => popOutFrames.Length / Mathf.Max(1f, frameRate);
 
     private void LateUpdate()
     {
@@ -75,8 +121,11 @@ public class AntMonologue : MonoBehaviour
         }
 
         bool visible = wantVisible && notOccluded;
-        if (bubble.gameObject.activeSelf != visible)
-            SetVisible(visible);
+        if (visible != shown)
+        {
+            if (visible) PopIn();
+            else         PopOut();
+        }
     }
 
     public void Begin(string line)
@@ -108,11 +157,18 @@ public class AntMonologue : MonoBehaviour
     {
         label.text = Loc.Get(Loc.UI, line, "");
         FitBubble();
+        if (shown)
+        {
+            if (popCo != null) StopCoroutine(popCo);
+            popCo = StartCoroutine(PlayFrames(reactFrames, false));
+        }
         wantVisible = true;
         
         yield return new WaitForSeconds(duration);
         
         wantVisible = false;
+
+        yield return new WaitForSeconds(PopOutTime);
         reactCo = null;
 
         if (!string.IsNullOrEmpty(idleLine))
@@ -167,7 +223,8 @@ public class AntMonologue : MonoBehaviour
         Vector3 ps = (p != null) ? p.lossyScale : Vector3.one;
         float sx = Mathf.Approximately(ps.x, 0f) ? 1f : Mathf.Abs(ps.x);
         float sy = Mathf.Approximately(ps.y, 0f) ? 1f : Mathf.Abs(ps.y);
-        bubble.transform.localScale = new Vector3(bubbleWorldScale / sx, bubbleWorldScale / sy, 1f);
+        float s = bubbleWorldScale * popScale;
+        bubble.transform.localScale = new Vector3(s / sx, s / sy, 1f);
     }
 
     private bool IsOccluded()
@@ -186,6 +243,7 @@ public class AntMonologue : MonoBehaviour
     {
         if (loop != null)    { StopCoroutine(loop);    loop = null; }
         if (reactCo != null) { StopCoroutine(reactCo); reactCo = null; }
+        if (popCo != null)   { StopCoroutine(popCo);   popCo = null; }
         enabled = false;
     }
 }
