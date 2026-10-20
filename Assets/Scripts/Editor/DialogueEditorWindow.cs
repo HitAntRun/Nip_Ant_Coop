@@ -182,7 +182,7 @@ public class DialogueEditorWindow : EditorWindow
                 if (nar)
                 {
                     EditorGUI.indentLevel++;
-                    n.wipe = EditorGUILayout.Toggle("좌→우 와이프", n.wipe, GUILayout.Width(innerW));
+                    n.fade = EditorGUILayout.Toggle("페이드 전환", n.fade, GUILayout.Width(innerW));
                     EditorGUI.indentLevel--;
                 }
                 

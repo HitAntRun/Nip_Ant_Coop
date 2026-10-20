@@ -66,12 +66,21 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private TMP_Text narrationText;
     [SerializeField] private CanvasGroup narrationGroup;
     [SerializeField] private Image cutsceneImage;
-    [SerializeField] private Image cutsceneImageWipe;
-    [SerializeField] private float wipeDuration = 0.6f;
     [SerializeField] private float narrationFadeDuration = 0.35f;
     [SerializeField] private float breakFadeDuration = 0.45f;
     [SerializeField] private float narrationHold = 2f; 
     [SerializeField] private GameObject[] hideInNarration;
+
+    [SerializeField] private float cutFadeOut = 0.8f;
+    [SerializeField] private float cutBlackHold = 0.3f;
+    [SerializeField] private float cutFadeIn = 1.0f;
+    [SerializeField] private bool autoBlackBackdrop = true;
+
+    [SerializeField] private bool useCutsceneDrift = true;
+    [SerializeField] private float driftAmplitude = 4f;
+    [SerializeField] private float driftRotation = 0.25f;
+    [SerializeField] private float driftSpeed = 0.4f;
+    [SerializeField] private float driftOverscale = 1.03f;
     
     [Header("Typing Sound")]
     [SerializeField] private int typingSfxEvery = 2;
@@ -118,6 +127,7 @@ public class DialogueRunner : MonoBehaviour
     void Awake()
     {
         if (shakeRoot != null) shakeHome = shakeRoot.anchoredPosition;
+        SetupCutsceneLayers();
         for (int i = 0; i < choiceSlots.Length; i++)
         {
             int idx = i;
@@ -229,13 +239,14 @@ public class DialogueRunner : MonoBehaviour
         string m = string.IsNullOrEmpty(node.mode) ? "dialogue" : node.mode;
         bool modeChanged = (m != currentMode);
         bool bgChanged   = !string.IsNullOrEmpty(node.bg);
-        bool doWipe = node.wipe && bgChanged && cutsceneImageWipe != null
+        bool doCutFade = node.fade && bgChanged && cutsceneImage != null
                       && (string.IsNullOrEmpty(node.mode) ? currentMode : node.mode) == "narration";
 
         bool doFade = node.fadeBreak && fader != null && (modeChanged || bgChanged)
-                      && !isIntro && !doWipe;
+                      && !isIntro && !doCutFade;
         isIntro = false;
         bool sceneChange = doFade && bgChanged;
+        bool imageFaded = false;   // 이미지 페이드 교체가 일어난 컷이면 텍스트는 페이드 없이 바로 표시
 
         transitioning = true;
         yield return FadeOutActors(node, sceneChange);
@@ -267,13 +278,14 @@ public class DialogueRunner : MonoBehaviour
             bool nar = currentMode == "narration";
             bool isPrefab = bgDB != null && bgDB.Get(node.bg) != null;
 
-            if (doWipe && !isPrefab && spriteDB != null)
+            if (doCutFade && !isPrefab && spriteDB != null)
             {
                 Sprite s = spriteDB.Get(node.bg);
                 if (s != null)
                 {
                     transitioning = true;
-                    yield return WipeRoutine(s);
+                    imageFaded = true;
+                    yield return FadeSwapRoutine(s);
                     transitioning = false;
                 }
             }
@@ -312,8 +324,13 @@ public class DialogueRunner : MonoBehaviour
 
         if (currentMode == "narration" && narrationGroup != null)
         {
-            narrationGroup.alpha = 0f;
-            StartCoroutine(FadeCanvas(narrationGroup, 0f, 1f, narrationFadeDuration));
+            if (imageFaded)
+                narrationGroup.alpha = 1f;
+            else
+            {
+                narrationGroup.alpha = 0f;
+                StartCoroutine(FadeCanvas(narrationGroup, 0f, 1f, narrationFadeDuration));
+            }
         }
 
         AddLog(node, currentMode);
@@ -521,6 +538,7 @@ public class DialogueRunner : MonoBehaviour
         transitioning = false;
         if (showCo != null) { StopCoroutine(showCo); showCo = null; }
         if (fader != null) fader.ResetOverlay();
+        ResetCutsceneOverlay();
         
         if (ending || data == null || current == null) return;
         if (typing != null)
@@ -856,24 +874,89 @@ public class DialogueRunner : MonoBehaviour
         shakeRoot.anchoredPosition = shakeHome; 
     }
     
-    IEnumerator WipeRoutine(Sprite next)
+    void SetupCutsceneLayers()
     {
-        cutsceneImageWipe.sprite = next;
-        cutsceneImageWipe.fillAmount = 0f;
-        cutsceneImageWipe.gameObject.SetActive(true);
+        if (cutsceneImage == null) return;
+        var imgRt = cutsceneImage.rectTransform;
+        var parent = imgRt.parent as RectTransform;
+        if (parent == null) return;
 
-        float t = 0f;
-        while (t < wipeDuration)
+        int index = imgRt.GetSiblingIndex();
+
+        if (autoBlackBackdrop)
         {
-            t += Time.deltaTime;
-            float k = Mathf.Clamp01(t / wipeDuration);
-            k = 1f - (1f - k) * (1f - k);
-            cutsceneImageWipe.fillAmount = k;
-            yield return null;
+            var black = new GameObject("CutsceneBlack", typeof(RectTransform), typeof(Image));
+            var brt = (RectTransform)black.transform;
+            brt.SetParent(parent, false);
+            Stretch(brt);
+            brt.SetSiblingIndex(index);
+            index++;
+            var bimg = black.GetComponent<Image>();
+            bimg.color = Color.black;
+            bimg.raycastTarget = false;
         }
 
-        cutsceneImage.sprite = next; 
-        cutsceneImageWipe.fillAmount = 0f;
+        if (useCutsceneDrift && parent.GetComponent<CutsceneDrift>() == null)
+        {
+            var driftGo = new GameObject("CutsceneDrift", typeof(RectTransform));
+            var drt = (RectTransform)driftGo.transform;
+            drt.SetParent(parent, false);
+            Stretch(drt);
+            drt.SetSiblingIndex(index);
+
+            imgRt.SetParent(drt, false);
+
+            var drift = driftGo.AddComponent<CutsceneDrift>();
+            drift.Configure(driftAmplitude, driftRotation, driftSpeed, driftOverscale);
+        }
+    }
+
+    static void Stretch(RectTransform rt)
+    {
+        rt.anchorMin = Vector2.zero;
+        rt.anchorMax = Vector2.one;
+        rt.pivot = new Vector2(0.5f, 0.5f);
+        rt.offsetMin = Vector2.zero;
+        rt.offsetMax = Vector2.zero;
+        rt.localScale = Vector3.one;
+        rt.localRotation = Quaternion.identity;
+    }
+
+    IEnumerator FadeSwapRoutine(Sprite next)
+    {
+        float t = 0f;
+        while (t < cutFadeOut)
+        {
+            t += Time.deltaTime;
+            SetImageAlpha(cutsceneImage, 1f - Mathf.SmoothStep(0f, 1f, t / cutFadeOut));
+            yield return null;
+        }
+        SetImageAlpha(cutsceneImage, 0f);
+
+        cutsceneImage.sprite = next;
+        if (cutBlackHold > 0f) yield return new WaitForSeconds(cutBlackHold);
+
+        t = 0f;
+        while (t < cutFadeIn)
+        {
+            t += Time.deltaTime;
+            SetImageAlpha(cutsceneImage, Mathf.SmoothStep(0f, 1f, t / cutFadeIn));
+            yield return null;
+        }
+        SetImageAlpha(cutsceneImage, 1f);
+    }
+
+    static void SetImageAlpha(Image img, float a)
+    {
+        if (img == null) return;
+        var c = img.color;
+        c.a = a;
+        img.color = c;
+    }
+
+    void ResetCutsceneOverlay()
+    {
+        SetImageAlpha(cutsceneImage, 1f);
     }
 
     void ApplyStateBeforeJump(string lastMode, string lastBg, DialogueNode target)

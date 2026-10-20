@@ -16,6 +16,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_da136af5",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -25,7 +26,7 @@
       "mode": "narration",
       "bg": "first_CutScene_900",
       "fadeBreak": true,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -36,6 +37,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_6ba38eb1",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -45,7 +47,7 @@
       "mode": "narration",
       "bg": "first_CutScene_901",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -56,6 +58,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_99ab15a6",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -65,7 +68,7 @@
       "mode": "narration",
       "bg": "first_CutScene_902",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -76,6 +79,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_c9e3a9aa",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -85,7 +89,7 @@
       "mode": "narration",
       "bg": "first_CutScene_903",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -96,6 +100,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_8008528e",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -105,7 +110,7 @@
       "mode": "narration",
       "bg": "first_CutScene_904",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -116,6 +121,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_0e7d91f9",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -125,7 +131,7 @@
       "mode": "narration",
       "bg": "first_CutScene_905",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -136,6 +142,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_123e32f4",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -145,7 +152,7 @@
       "mode": "narration",
       "bg": "first_CutScene_906_907",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -156,6 +163,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_6bf5d3bb",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -165,7 +173,7 @@
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -176,6 +184,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": null,
+      "jumpTo": null,
       "endHere": true,
       "choices": [],
       "actors": [],
@@ -185,7 +194,7 @@
       "mode": "narration",
       "bg": "first_CutScene_908",
       "fadeBreak": false,
-      "wipe": true,
+      "fade": true,
       "hold": -1.0
     }
   ],

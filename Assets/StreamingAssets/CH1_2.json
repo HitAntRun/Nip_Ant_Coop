@@ -16,6 +16,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b1b9edc4",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -34,7 +35,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -45,6 +46,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_16411930",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -54,7 +56,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -65,6 +67,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_7960693a",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -74,7 +77,7 @@
       "mode": "narration",
       "bg": "ch1_CutScene_family",
       "fadeBreak": true,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -85,6 +88,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_4d6597e0",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -94,7 +98,7 @@
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -105,6 +109,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_bf17adac",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -114,7 +119,7 @@
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -125,6 +130,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_c362cb28",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -134,7 +140,7 @@
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -145,6 +151,7 @@
       "portrait": "",
       "portraitBrightness": 1.0,
       "next": "n_3b4efbb6",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -154,7 +161,7 @@
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -165,6 +172,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_03046cf0",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -183,7 +191,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": true,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -194,6 +202,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": null,
+      "jumpTo": null,
       "endHere": true,
       "choices": [],
       "actors": [],
@@ -203,7 +212,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     }
   ],

@@ -6854,14 +6854,21 @@ MonoBehaviour:
   narrationText: {fileID: 1980001339}
   narrationGroup: {fileID: 1528833004}
   cutsceneImage: {fileID: 1814352351}
-  cutsceneImageWipe: {fileID: 1494408716}
-  wipeDuration: 1.2
   narrationFadeDuration: 0.35
   breakFadeDuration: 0.45
   narrationHold: 2
   hideInNarration:
   - {fileID: 1339350847}
   - {fileID: 1935940712}
+  cutFadeOut: 0.8
+  cutBlackHold: 0.15
+  cutFadeIn: 1
+  autoBlackBackdrop: 1
+  useCutsceneDrift: 1
+  driftAmplitude: 6
+  driftRotation: 0.25
+  driftSpeed: 0.4
+  driftOverscale: 1.03
   typingSfxEvery: 2
 --- !u!4 &1848783816
 Transform:
