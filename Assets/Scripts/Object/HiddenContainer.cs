@@ -10,11 +10,17 @@ public class HiddenContainer : MonoBehaviour
     [SerializeField] private Sprite openSprite;
     [SerializeField] private Transform antAnchor;
     [SerializeField] private Collider clickCollider;
+    [SerializeField] private bool startOpen;
     
     [Header("Pop")]
     [SerializeField] private float popHeight = 0.5f;
     [SerializeField] private float popDuration = 0.25f;
     private Coroutine popRoutine;
+
+    [Header("Layered")]
+    [SerializeField] private SpriteRenderer backLayer;
+    [SerializeField] private SpriteRenderer frontLayer;
+    private bool Layered => backLayer != null && frontLayer != null;
     
     public string Id => containerId;
     public Transform AntAnchor => antAnchor != null ? antAnchor : transform;
@@ -24,9 +30,9 @@ public class HiddenContainer : MonoBehaviour
 
     public void ResetState()
     {
-        IsOpen = false;
+        IsOpen = startOpen;
         hidden = null;
-        if (body) body.sprite = closedSprite;
+        ApplyVisual(startOpen);
         StopPop();
         if (clickCollider) clickCollider.enabled = true;
     }
@@ -43,7 +49,7 @@ public class HiddenContainer : MonoBehaviour
         if (StageFlow.instance != null && StageFlow.instance.IsEnded) return;
 
         IsOpen = true;
-        if (body) body.sprite = openSprite;
+        ApplyVisual(true);
 
         if (hidden != null)
         {
@@ -60,7 +66,7 @@ public class HiddenContainer : MonoBehaviour
         if (hidden != null && hidden.IsDying) return;
 
         IsOpen = false;
-        if (body) body.sprite = closedSprite;
+        ApplyVisual(false);
         
         StopPop();
         if(hidden != null) hidden.gameObject.SetActive(false);
@@ -70,6 +76,24 @@ public class HiddenContainer : MonoBehaviour
     {
         if (IsOpen) Close();
         else Open();
+    }
+
+    private void ApplyVisual(bool open)
+    {
+        if (Layered)
+        {
+            if (body)
+            {
+                body.sprite = closedSprite;
+                body.enabled = !open;
+            }
+            backLayer.enabled = open;
+            frontLayer.enabled = open;
+        }
+        else if (body)
+        {
+            body.sprite = open ? openSprite : closedSprite;
+        }
     }
     
     private IEnumerator Pop(Transform ant)

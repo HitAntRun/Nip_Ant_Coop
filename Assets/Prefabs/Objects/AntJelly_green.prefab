@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2274468230353326313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1427722131711766479, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 56ff8d94ab8714043b8048e0cf8ca3b1,
+        type: 3}
+    - target: {fileID: 3078807833466443743, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 00b3c04cb361748749d4cf872d5583a4,
+        type: 3}
+    - target: {fileID: 3578856139939889510, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e00b8b4f85cd64ab5ae131afb2802209,
+        type: 3}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9630399
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.05546818
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.1245019
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.23232934
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597218765390386453, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088783953395246427, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: m_Name
+      value: AntJelly_green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189192448752706249, guid: d08313f4a6d1249b19a2882552cc28c7,
+        type: 3}
+      propertyPath: closedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 56ff8d94ab8714043b8048e0cf8ca3b1,
+        type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d08313f4a6d1249b19a2882552cc28c7, type: 3}
