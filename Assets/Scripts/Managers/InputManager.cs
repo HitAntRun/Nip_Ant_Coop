@@ -149,16 +149,43 @@ public class InputManager : MonoBehaviour
         if (hits.Length == 0) return;
         System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
 
-        foreach (var h in hits)
+        for (int i = 0; i < hits.Length; i++)
         {
-            var t = h.collider.GetComponentInParent<Termite>();
+            var t = hits[i].collider.GetComponentInParent<Termite>();
             if (t != null) { t.Judge(); return; }
+
+            var box = hits[i].collider.GetComponentInParent<HiddenContainer>();
+            if (box == null) continue;
+
+            if (box.IsOpen)
+            {
+                for (int j = i + 1; j < hits.Length; j++)
+                {
+                    var inner = hits[j].collider.GetComponentInParent<Termite>();
+                    if (inner != null && inner.transform.IsChildOf(box.transform))
+                    { inner.Judge(); return; }
+                }
+            }
+            box.Toggle();
+            return;
         }
+    }
+    
+    bool IsOccluded(Camera cam, Termite t, Vector3 worldPos, Vector3 screenPos)
+    {
+        Ray r = cam.ScreenPointToRay(screenPos);
+        float dist = Vector3.Distance(r.origin, worldPos) - 0.01f;
+        var hits = Physics.RaycastAll(r, dist, clickMask);
+
         foreach (var h in hits)
         {
             var box = h.collider.GetComponentInParent<HiddenContainer>();
-            if (box != null) { box.Toggle(); return; }
+            if (box == null) continue;
+            if (box.IsOpen && t.transform.IsChildOf(box.transform)) continue;
+
+            return true;
         }
+        return false;
     }
     Termite FindTermiteInCircle(Camera cam, Vector2 mouse)
     {
@@ -175,6 +202,7 @@ public class InputManager : MonoBehaviour
 
             Vector3 sp = cam.WorldToScreenPoint(worldPos);
             if (sp.z < 0) continue;
+            if (IsOccluded(cam, t, worldPos, sp)) continue;
 
             float d = Vector2.Distance(mouse, sp);
             if (d <= radius && d < bestDist)
