@@ -612,6 +612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6981566384111366564}
   - component: {fileID: 581170482091100553}
+  - component: {fileID: 3661050726101284929}
   m_Layer: 6
   m_Name: leaf_02
   m_TagString: Untagged
@@ -658,6 +659,24 @@ MonoBehaviour:
   popDuration: 0.25
   backLayer: {fileID: 0}
   frontLayer: {fileID: 0}
+--- !u!114 &3661050726101284929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841892957085235784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4452e65e90f4d16b067a6076899fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 581170482091100553}
+  targets:
+  - {fileID: 4162882227821258808}
+  flipWhenFlat: 00010001
+  flipWhenRolled: 00010001
+  logDirection: 1
 --- !u!1 &1864624572971626722
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812722878707735550}
   - component: {fileID: 5761178767576961405}
+  - component: {fileID: 5323356959660785105}
   m_Layer: 6
   m_Name: leaf_01
   m_TagString: Untagged
@@ -746,6 +766,24 @@ MonoBehaviour:
   popDuration: 0.25
   backLayer: {fileID: 0}
   frontLayer: {fileID: 0}
+--- !u!114 &5323356959660785105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333765672286248748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4452e65e90f4d16b067a6076899fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 5761178767576961405}
+  targets:
+  - {fileID: 6414717461118683772}
+  flipWhenFlat: 00010001
+  flipWhenRolled: 00010001
+  logDirection: 1
 --- !u!1 &2552579821763686824
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4248551351943437352}
   - component: {fileID: 8767940957074043749}
+  - component: {fileID: 5350060066568820331}
   m_Layer: 6
   m_Name: leaf_03
   m_TagString: Untagged
@@ -888,6 +927,24 @@ MonoBehaviour:
   popDuration: 0.25
   backLayer: {fileID: 0}
   frontLayer: {fileID: 0}
+--- !u!114 &5350060066568820331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855289094721317353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4452e65e90f4d16b067a6076899fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 8767940957074043749}
+  targets:
+  - {fileID: 4151559118662531134}
+  flipWhenFlat: 00010001
+  flipWhenRolled: 00010001
+  logDirection: 1
 --- !u!1 &3227868329936957844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4628548937751639028}
   - component: {fileID: 2832073843875324553}
+  - component: {fileID: 2706266790499013198}
   m_Layer: 6
   m_Name: leaf_04
   m_TagString: Untagged
@@ -1588,6 +1646,24 @@ MonoBehaviour:
   popDuration: 0.25
   backLayer: {fileID: 0}
   frontLayer: {fileID: 0}
+--- !u!114 &2706266790499013198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440959120471467067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4452e65e90f4d16b067a6076899fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  container: {fileID: 2832073843875324553}
+  targets:
+  - {fileID: 8687096079168013349}
+  flipWhenFlat: 00010001
+  flipWhenRolled: 00010001
+  logDirection: 1
 --- !u!1 &7864065776704193792
 GameObject:
   m_ObjectHideFlags: 0
