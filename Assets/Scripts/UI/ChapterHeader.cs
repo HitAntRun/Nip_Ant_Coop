@@ -10,7 +10,8 @@ public class ChapterHeader : MonoBehaviour
 {
     public static ChapterHeader instance;
 
-    [SerializeField] private TMP_Text chapterText;
+    [SerializeField] private TMP_Text chapterNumberText;
+    [SerializeField] private TMP_Text locationText;
     [SerializeField] private TMP_Text dayText;
     [SerializeField] private string dayFormat = "개미력 {0}일";
 
@@ -31,7 +32,10 @@ public class ChapterHeader : MonoBehaviour
 
     public void Refresh()
     {
-        if (chapterText != null) chapterText.text = GameFlow.ChapterLabel;
+        if (chapterNumberText != null)
+            chapterNumberText.text = GameFlow.ChapterNumber.ToString("D2");
+        if (locationText != null)
+            locationText.text = Loc.Get(Loc.UI, GameFlow.Location, GameFlow.Location);
         if (dayText != null)
             dayText.text = string.Format(
                 Loc.Get(Loc.UI, "ant_date", dayFormat), GameFlow.Day);

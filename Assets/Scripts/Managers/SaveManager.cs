@@ -36,7 +36,8 @@ public static class SaveManager
         GameFlow.LastStoryStage = d.currentStage;
         GameFlow.CurrentStage   = d.currentStage;
         GameFlow.ChapterStoryId = d.chapterStoryId;
-        GameFlow.ChapterLabel   = d.chapterLabel;
+        GameFlow.ChapterNumber = d.chapterNumber;
+        GameFlow.Location = d.location;
         GameFlow.Day            = d.day;
         GameFlow.SetTermites(d.termitesFound);
     }
@@ -45,7 +46,8 @@ public static class SaveManager
     {
         d.currentStage = GameFlow.LastStoryStage;
         d.chapterStoryId = GameFlow.ChapterStoryId;
-        d.chapterLabel = GameFlow.ChapterLabel;
+        d.chapterNumber = GameFlow.ChapterNumber;
+        d.location = GameFlow.Location;
         d.day          = GameFlow.Day;
         d.savedAtUnix  = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
         d.termitesFound = GameFlow.CopyTermites();

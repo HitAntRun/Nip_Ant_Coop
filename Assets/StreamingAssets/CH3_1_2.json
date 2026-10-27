@@ -4,7 +4,8 @@
   "background": "BG_GarbageDump",
   "nextScene": "",
   "nextStage": "",
-  "chapterLabel": "Chapter 3",
+  "chapterNumber": 3,
+  "location": "loc_GarbageDump",
   "day": 7,
   "summary": "",
   "nodes": [
@@ -35,7 +36,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -56,7 +57,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -94,7 +95,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -132,7 +133,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -170,7 +171,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -208,7 +209,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -238,7 +239,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -276,7 +277,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -297,7 +298,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -318,7 +319,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -348,7 +349,7 @@
       "mode": "",
       "bg": "emils_home_ch1",
       "fadeBreak": true,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -369,7 +370,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -399,7 +400,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -420,7 +421,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     }
   ],

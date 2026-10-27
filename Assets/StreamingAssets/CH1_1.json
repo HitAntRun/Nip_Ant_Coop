@@ -4,7 +4,8 @@
   "background": "bg_classroom_ch1 ",
   "nextScene": "SC_Ingame",
   "nextStage": "Tutorial",
-  "chapterLabel": "Chapter 1",
+  "chapterNumber": 1,
+  "location": "loc_Classroom",
   "day": 3,
   "summary": "오늘도 평화로운 검은개미마을! 하지만 마을에는 슬픈 역사가 있어요. 개미력으로 162년 전, 사이가 좋던 흰개미마을과 전쟁을 벌인 이래로 쭉 휴전 상태인 것이지요. 먼저 잘못을 저지른 흰개미들은 검은개미들에게 아직까지도 사죄하지 않은, 아주 나쁜 개미들이에요.\n그런데 그것도 모자라서, 악랄한 그들이 또 계략을 꾸미나 봐요! 검은개미마을에 흰개미들이 몰래 침입해서는 마을의 질서를 해치려는 게 아니겠어요? 검은개미마을의 평화를 위해, <b>흰개미</b>를 발견하여 신고합시다. 신고를 많이 하면 학교에서 특별한 상도 준대요!",
   "nodes": [
@@ -16,6 +17,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_449fd604",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -42,7 +44,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -53,6 +55,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_dfe2c587",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -62,7 +65,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -73,6 +76,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_51f60d28",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -99,7 +103,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -110,6 +114,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_4878ed94",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -119,7 +124,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -130,6 +135,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_085e7551",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -139,7 +145,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -150,6 +156,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_43c62c6f",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -159,7 +166,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -170,6 +177,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_93d30656",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -188,7 +196,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -199,6 +207,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f65e763b",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -208,7 +217,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -219,6 +228,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_dbce2f9e",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -245,7 +255,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -256,6 +266,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_859db57a",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -265,7 +276,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -276,6 +287,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_5187c593",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -302,7 +314,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -313,6 +325,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_ab2c5f72",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -331,7 +344,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -342,6 +355,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_1ef84324",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -351,7 +365,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -362,6 +376,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f8acc9c1",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -371,7 +386,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -382,6 +397,7 @@
       "portrait": "Student2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_daff3ddc",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -416,7 +432,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -427,6 +443,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b6f776e7",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -453,7 +470,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -464,6 +481,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_6969aa43",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -473,7 +491,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -484,6 +502,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_733a3f96",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -493,7 +512,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -504,6 +523,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f0a1a2d4",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -513,7 +533,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -524,6 +544,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_a1154c28",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -550,7 +571,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -561,6 +582,7 @@
       "portrait": "Student2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_855ff2b4",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -587,7 +609,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -598,6 +620,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_b2b75d16",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -624,7 +647,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -635,6 +658,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_887322d4",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -644,7 +668,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -655,6 +679,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_74a5912f",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -664,7 +689,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -675,6 +700,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_97f0bda3",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -701,7 +727,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -712,6 +738,7 @@
       "portrait": "Student2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_79dd699b",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -738,7 +765,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -749,6 +776,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_d56e4134",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -775,7 +803,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -786,6 +814,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_a856c4c2",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -795,7 +824,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -806,6 +835,7 @@
       "portrait": "Student1-portrait",
       "portraitBrightness": 1.0,
       "next": "n_05347337",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -832,7 +862,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -843,6 +873,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_8426b29f",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -869,7 +900,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -880,6 +911,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_2d151f73",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -889,7 +921,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -900,6 +932,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_e3a7ad40",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -918,7 +951,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -929,6 +962,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_cb82450d",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -938,7 +972,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -949,6 +983,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_9aa89bc9",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -983,7 +1018,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -994,6 +1029,7 @@
       "portrait": "Teacher-portrait",
       "portraitBrightness": 1.0,
       "next": "n_f1e7fa62",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -1012,7 +1048,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1023,6 +1059,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_280a809e",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [
@@ -1049,7 +1086,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1060,6 +1097,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_defc56de",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -1069,7 +1107,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1080,6 +1118,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_50ae9ebe",
+      "jumpTo": null,
       "endHere": false,
       "choices": [],
       "actors": [],
@@ -1089,7 +1128,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1100,6 +1139,7 @@
       "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": null,
+      "jumpTo": null,
       "endHere": true,
       "choices": [],
       "actors": [],
@@ -1109,7 +1149,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     }
   ],

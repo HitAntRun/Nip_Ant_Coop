@@ -131,7 +131,8 @@ public class DialogueEditorWindow : EditorWindow
 
             EditorGUILayout.Space(6);
             EditorGUILayout.LabelField("상단 UI 표시", EditorStyles.boldLabel, GUILayout.Width(fieldW));
-            data.chapterLabel = EditorGUILayout.TextField("챕터 표시명", data.chapterLabel, GUILayout.Width(fieldW));
+            data.chapterNumber = EditorGUILayout.IntField("챕터 번호", data.chapterNumber, GUILayout.Width(fieldW));
+            data.location      = EditorGUILayout.TextField("장소 키", data.location, GUILayout.Width(fieldW));
             data.day          = EditorGUILayout.IntField("개미력 (일)", data.day, GUILayout.Width(fieldW));
             Wrapped("비워두면 이전 값이 그대로 유지됩니다.", EditorStyles.miniLabel, fieldW);
 

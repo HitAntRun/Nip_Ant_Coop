@@ -299,6 +299,26 @@ MonoBehaviour:
       anything suspicious!
     m_Metadata:
       m_Items: []
+  - m_Id: 15253418795851776
+    m_Localized: Classroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254653737361408
+    m_Localized: Emil's Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254722804965376
+    m_Localized: Cave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254760973131776
+    m_Localized: GarbageDump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254815431974912
+    m_Localized: HomeOut
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -85,7 +85,7 @@ public class MainMenu : MonoBehaviour
         {
             progressText.gameObject.SetActive(has);
             if (has) progressText.text = string.Format(
-                Loc.Get(Loc.UI, "progress", progressFormat), GameFlow.ChapterLabel);
+                Loc.Get(Loc.UI, "progress", progressFormat), GameFlow.ChapterNumber.ToString("D2"));
         }
     }
     

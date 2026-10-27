@@ -5,12 +5,13 @@ public static class GameFlow
 {
     
     static Dictionary<string, int> termitesFound = new Dictionary<string, int>();
+    private static int chapterNumber = 0;
+    private static string location = "";
 
     public static int TotalTermitesFound => termitesFound.Values.Sum();
     
     static string currentStage = "Prologue";
     static int day = 1;
-    private static string chapterLabel = "";
 
     public static string CurrentStage
     {
@@ -42,13 +43,24 @@ public static class GameFlow
         set { if (chapterStoryId == value) return; chapterStoryId = value; SaveManager.MarkDirty(); }
     }
 
-    public static string ChapterLabel
+    public static int ChapterNumber
     {
-        get => chapterLabel;
+        get => chapterNumber;
         set
         {
-            if (chapterLabel == value) return;
-            chapterLabel = value;
+            if (chapterNumber == value) return;
+            chapterNumber = value;
+            SaveManager.MarkDirty();
+        }
+    }
+
+    public static string Location
+    {
+        get => location;
+        set
+        {
+            if (location == value) return;
+            location = value;
             SaveManager.MarkDirty();
         }
     }

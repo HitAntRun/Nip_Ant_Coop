@@ -4,7 +4,8 @@
   "background": "bg_classroom_ch2",
   "nextScene": "SC_Ingame",
   "nextStage": "Stage2_1",
-  "chapterLabel": "Chapter 2",
+  "chapterNumber": 2,
+  "location": "loc_Classroom",
   "day": 5,
   "summary": "살아있는 개미와 죽은 개미의 몸에서 발산되는 페로몬은 그 화학적 성질이 다르대요. 내용이 어려워서, 수업을 열심히 듣고 복습도 틈틈이 해야할 것 같아요. 그나저나 친구가 흰개미를 너무 열심히 찾아다닌 나머지 몸살이 나서 학교에 오지 못했대요! \n",
   "nodes": [
@@ -51,7 +52,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -89,7 +90,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -127,7 +128,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -165,7 +166,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -211,7 +212,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -249,7 +250,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -287,7 +288,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -333,7 +334,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -354,7 +355,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -392,7 +393,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -438,7 +439,7 @@
       "mode": "",
       "bg": "bg_board_ch2",
       "fadeBreak": true,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -459,7 +460,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -480,7 +481,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -501,7 +502,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -522,7 +523,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -560,7 +561,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -598,7 +599,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -619,7 +620,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -665,7 +666,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -703,7 +704,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -733,7 +734,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -771,7 +772,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -792,7 +793,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -813,7 +814,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -851,7 +852,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -872,7 +873,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -893,7 +894,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -931,7 +932,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -969,7 +970,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -990,7 +991,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1011,7 +1012,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1032,7 +1033,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1062,7 +1063,7 @@
       "mode": "",
       "bg": "bg_classroom_ch2",
       "fadeBreak": true,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1094,7 +1095,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1124,7 +1125,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1154,7 +1155,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1195,7 +1196,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1225,7 +1226,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1255,7 +1256,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1285,7 +1286,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1306,7 +1307,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1344,7 +1345,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1374,7 +1375,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1404,7 +1405,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1425,7 +1426,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1446,7 +1447,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -1467,7 +1468,7 @@
       "mode": "",
       "bg": "",
       "fadeBreak": false,
-      "wipe": false,
+      "fade": false,
       "hold": -1.0
     }
   ],

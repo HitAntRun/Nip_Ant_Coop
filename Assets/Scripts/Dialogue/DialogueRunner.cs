@@ -179,11 +179,12 @@ public class DialogueRunner : MonoBehaviour
         if (data == null) return;
 
         GameFlow.LastStoryStage = storyId;
-        if (!string.IsNullOrEmpty(data.chapterLabel))
+        if (data.chapterNumber > 0)
         {
+            GameFlow.ChapterNumber = data.chapterNumber;
             GameFlow.ChapterStoryId = data.storyId;
-            GameFlow.ChapterLabel = data.chapterLabel;
         }
+        if (!string.IsNullOrEmpty(data.location)) GameFlow.Location = data.location;
         if (data.day > 0) GameFlow.Day = data.day;
         SaveManager.Save(force: true);  
         

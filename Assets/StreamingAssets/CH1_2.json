@@ -2,10 +2,11 @@
   "storyId": "CH1_2",
   "startNodeId": "n_9f44cf23",
   "background": "emils_home_ch1",
-  "nextScene": "SC_Ingame",
-  "nextStage": "Stage1_2",
-  "chapterLabel": "Chapter 1",
-  "day": 0,
+  "nextScene": "SC_Story",
+  "nextStage": "CH2_1",
+  "chapterNumber": 1,
+  "location": "loc_Home",
+  "day": 3,
   "summary": "",
   "nodes": [
     {

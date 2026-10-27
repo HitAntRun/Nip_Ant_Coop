@@ -291,6 +291,26 @@ MonoBehaviour:
     m_Key: stage2_1_intro_1
     m_Metadata:
       m_Items: []
+  - m_Id: 15253418795851776
+    m_Key: loc_Classroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254653737361408
+    m_Key: loc_Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254722804965376
+    m_Key: loc_Cave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254760973131776
+    m_Key: loc_GarbageDump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15254815431974912
+    m_Key: loc_HomeOut
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
