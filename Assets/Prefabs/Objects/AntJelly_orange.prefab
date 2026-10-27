@@ -263,7 +263,7 @@ MonoBehaviour:
   antAnchor: {fileID: 5227410231375193165}
   clickCollider: {fileID: 0}
   startOpen: 0
-  popHeight: 0.5
+  popHeight: 1
   popDuration: 0.25
   backLayer: {fileID: 5300681962337339371}
   frontLayer: {fileID: 5953609113913184594}
