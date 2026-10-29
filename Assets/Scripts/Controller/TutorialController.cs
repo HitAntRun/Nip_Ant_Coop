@@ -52,8 +52,9 @@ public class TutorialController : MonoBehaviour
     public Trigger CurrentTrigger =>
         (index >= 0 && index < steps.Count) ? steps[index].trigger : Trigger.Continue;
 
-    void Start()
+    IEnumerator Start()
     {
+        while (GoalIntro.instance != null && GoalIntro.instance.IsShowing) yield return null;
         if (GameFlow.CurrentStage != "Tutorial")
         {
             var intro = stageIntros.Find(x => x.stageId == GameFlow.CurrentStage);
@@ -62,13 +63,13 @@ public class TutorialController : MonoBehaviour
                 steps = intro.steps;
                 isStageIntro = true;
                 Next();
-                return;
+                yield break;
             }
 
             if (tutorialPanel != null) tutorialPanel.SetActive(false);
             if (stepImage != null) stepImage.gameObject.SetActive(false);
             enabled = false;
-            return;
+            yield break;
         }
         Next();
     }

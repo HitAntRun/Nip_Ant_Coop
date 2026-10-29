@@ -9,6 +9,7 @@ public class GameTimer : MonoBehaviour
 {
     [SerializeField] private Slider slider;
     [SerializeField] private TMP_Text timeText;
+    [SerializeField] private bool waitForIntro = true;
 
     private float totalTime = 60f;
     private float remaining;
@@ -27,7 +28,7 @@ public class GameTimer : MonoBehaviour
             return;
         }
         remaining = totalTime;
-        running = true;
+        running = !waitForIntro;
         UpdateUI();
     }
 
@@ -45,6 +46,11 @@ public class GameTimer : MonoBehaviour
         }
 
         UpdateUI();
+    }
+    
+    public void Begin()
+    {
+        if (!unlimited) running = true;
     }
 
     void UpdateUI()

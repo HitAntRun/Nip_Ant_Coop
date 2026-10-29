@@ -44,6 +44,13 @@ public class InputManager : MonoBehaviour
             if (pause.IsOpen) return;
         }
         
+        var goal = GoalIntro.instance;
+        if (goal != null && goal.IsShowing)
+        {
+            if (NextPressed() || Input.GetMouseButtonDown(0)) goal.Skip();
+            return;
+        }
+        
         var skip = SkipController.instance;
         if (skip != null && skip.IsOpen) return;
         

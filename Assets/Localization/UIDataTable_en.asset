@@ -319,6 +319,14 @@ MonoBehaviour:
     m_Localized: HomeOut
     m_Metadata:
       m_Items: []
+  - m_Id: 16052106875101184
+    m_Localized: Find {0} hidden termites!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16052220540739584
+    m_Localized: Goal
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

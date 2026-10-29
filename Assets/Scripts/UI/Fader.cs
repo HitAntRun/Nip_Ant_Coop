@@ -44,6 +44,20 @@ public class Fader : MonoBehaviour
 
         if (disableAtEnd) fadeOverlay.gameObject.SetActive(false); 
     }
+
+    public IEnumerator FadeTo(float to, float dur, bool disableAtEnd = false)
+    {
+        if (fadeOverlay == null) yield break;
+        float from = fadeOverlay.gameObject.activeSelf ? fadeOverlay.color.a : 0f;
+        yield return Fade(from, to, disableAtEnd, dur);
+    }
+    
+    public void SetAlpha(float a)
+    {
+        if (fadeOverlay == null) return;
+        fadeOverlay.gameObject.SetActive(a > 0f);
+        Color c = fadeOverlay.color; c.a = a; fadeOverlay.color = c;
+    }
     
     public void ResetOverlay()
     {
