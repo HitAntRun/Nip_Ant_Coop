@@ -319,6 +319,10 @@ MonoBehaviour:
     m_Key: goal_title
     m_Metadata:
       m_Items: []
+  - m_Id: 16319853567664128
+    m_Key: loc_morgue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

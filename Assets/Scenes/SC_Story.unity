@@ -4118,12 +4118,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 0
+    m_Right: 13
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildAlignment: 5
+  m_Spacing: 27
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
@@ -7442,7 +7442,7 @@ MonoBehaviour:
   narrationGroup: {fileID: 1528833004}
   cutsceneImage: {fileID: 1814352351}
   narrationFadeDuration: 0.35
-  breakFadeDuration: 0.45
+  breakFadeDuration: 2
   narrationHold: 2
   hideInNarration:
   - {fileID: 1339350847}
