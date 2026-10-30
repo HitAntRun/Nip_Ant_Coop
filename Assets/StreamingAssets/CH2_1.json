@@ -1170,12 +1170,12 @@
       "endHere": false,
       "choices": [
         {
-          "text": "시각 정보요!",
+          "text": "페로몬요!",
           "next": "n_d8bab6f0",
-          "nextStage": null
+          "nextStage": ""
         },
         {
-          "text": "페로몬요!",
+          "text": "시각 정보요!",
           "next": "n_34ab3d3d",
           "nextStage": null
         }
