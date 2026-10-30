@@ -127,3 +127,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 16751d027a796411ba14f70bae219223, type: 3}
   - name: detained-student1-grey-64px
     sprite: {fileID: 21300000, guid: a6ce1c3358b0d4991a46aaf0d0185bd4, type: 3}
+  - name: bg_classroom_ch4
+    sprite: {fileID: 21300000, guid: c57b23c65de89401dbceb7061bf0deee, type: 3}
+  - name: morgue_ch4
+    sprite: {fileID: 21300000, guid: d51381008650143658473112bc7d1257, type: 3}
