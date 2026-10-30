@@ -1648,9 +1648,6 @@ MonoBehaviour:
   - chapterId: Stage1_1
     envPrefab: {fileID: 2444377545445482492, guid: fbb9200d045d0452b823a828f3184b7b,
       type: 3}
-  - chapterId: Stage1_2
-    envPrefab: {fileID: 2444377545445482492, guid: 328c6d996c7be47919ddcf664757552c,
-      type: 3}
   - chapterId: Stage2_1
     envPrefab: {fileID: 1737707433027535424, guid: 57b16a15aab754f1eb49ef1901a93de5,
       type: 3}
