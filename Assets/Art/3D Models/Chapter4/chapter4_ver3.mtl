@@ -5,5 +5,5 @@ Ks 0.000000 0.000000 0.000000
 Tr 0.000000
 illum 0
 Ns 0.000000
-map_Kd chapter4_tilemap.png
-map_d chapter4_tilemap.png
+map_Kd texture_chapter4_tilemap.png
+map_d texture_chapter4_tilemap.png
