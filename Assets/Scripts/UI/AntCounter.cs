@@ -11,6 +11,9 @@ public class AntCounter : MonoBehaviour
     [SerializeField] private GameObject iconPrefab;
     [SerializeField] private string crossChildName = "Cross";
     
+    [SerializeField] private int iconsPerRow = 7;
+    [SerializeField] private float iconSpacing = 8f;
+    
     [SerializeField] private float stampStartScale = 2.2f;
     [SerializeField] private float stampStartAngle = -25f;
     [SerializeField] private float stampDuration = 0.25f;
@@ -51,13 +54,16 @@ public class AntCounter : MonoBehaviour
 
     void BuildIcons()
     {
-        for(int i = iconContainer.childCount - 1; i >= 0; i--)
+        for (int i = iconContainer.childCount - 1; i >= 0; i--)
             Destroy(iconContainer.GetChild(i).gameObject);
         crosses.Clear();
 
+        Transform row = null;
         for (int i = 0; i < total; i++)
         {
-            GameObject icon = Instantiate(iconPrefab, iconContainer);
+            if (i % iconsPerRow == 0) row = CreateRow();
+
+            GameObject icon = Instantiate(iconPrefab, row);   // 부모를 row로
             Transform cross = icon.transform.Find(crossChildName);
             if (cross != null)
             {
@@ -107,5 +113,18 @@ public class AntCounter : MonoBehaviour
             if (iconImg != null) iconImg.DOColor(foundIconTint, 0.15f).SetLink(iconImg.gameObject);
         });
         seq.Append(crossRect.DOPunchScale(Vector3.one * 0.15f, 0.2f, 6, 0.5f));
+    }
+    
+    Transform CreateRow()
+    {
+        var go = new GameObject("Row", typeof(RectTransform), typeof(HorizontalLayoutGroup));
+        go.transform.SetParent(iconContainer, false);
+
+        var h = go.GetComponent<HorizontalLayoutGroup>();
+        h.spacing = iconSpacing;
+        h.childAlignment = TextAnchor.MiddleCenter;
+        h.childControlWidth = h.childControlHeight = false;
+        h.childForceExpandWidth = h.childForceExpandHeight = false;
+        return go.transform;
     }
 }
