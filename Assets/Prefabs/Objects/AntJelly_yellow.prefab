@@ -17,7 +17,7 @@ PrefabInstance:
         type: 3}
       propertyPath: closedSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9342aa4c59b454490b284e9623ceed12,
+      objectReference: {fileID: 21300000, guid: 6ead07e94168c4941b21f35689e2dbad,
         type: 3}
     - target: {fileID: 5300681962337339371, guid: 0cb7e87322c144fd0989544018e55697,
         type: 3}
@@ -85,8 +85,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9342aa4c59b454490b284e9623ceed12,
+      objectReference: {fileID: 21300000, guid: 6ead07e94168c4941b21f35689e2dbad,
         type: 3}
+    - target: {fileID: 7779160410145646914, guid: 0cb7e87322c144fd0989544018e55697,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

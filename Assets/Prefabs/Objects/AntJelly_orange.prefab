@@ -162,7 +162,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3783c178395b24eaf9e6b7cf7c1708a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: becb1ca30e965419191b1ddcf2098c3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   containerId: 
   body: {fileID: 7779160410145646914}
-  closedSprite: {fileID: 21300000, guid: 3783c178395b24eaf9e6b7cf7c1708a7, type: 3}
+  closedSprite: {fileID: 21300000, guid: becb1ca30e965419191b1ddcf2098c3e, type: 3}
   openSprite: {fileID: 0}
   antAnchor: {fileID: 5227410231375193165}
   clickCollider: {fileID: 0}
