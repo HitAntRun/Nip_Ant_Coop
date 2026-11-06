@@ -1420,6 +1420,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
+  - component: {fileID: 330585549}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1575,6 +1576,21 @@ MonoBehaviour:
   searchMagnification: 4
   searchBackground: {fileID: 407705187}
   hideSystemCursor: 0
+--- !u!114 &330585549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4585b2564290b426f93b74af48e64130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.25
+  strength: 0.2
+  frequency: 30
 --- !u!1 &331736543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,6 +2300,7 @@ GameObject:
   - component: {fileID: 383519975}
   - component: {fileID: 383519974}
   - component: {fileID: 383519976}
+  - component: {fileID: 383519977}
   m_Layer: 0
   m_Name: UIController
   m_TagString: Untagged
@@ -2345,6 +2362,86 @@ MonoBehaviour:
   showDuration: 1.5
   bubbleDuration: 2
   hideDuringTutorial: 1
+--- !u!114 &383519977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383519973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393b8e2a9595d44929cc56e39bbc0eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pixel: 4
+  animFps: 20
+  sortingOrder: 500
+  poolSize: 96
+  click:
+    count: 7
+    sizeRange: {x: 1, y: 2}
+    speedRange: {x: 120, y: 260}
+    upBias: 80
+    lifeRange: {x: 0.25, y: 0.45}
+    gravity: -900
+    drag: 4
+    colors:
+    - {r: 0.9098039, g: 0.827451, b: 0.63529414, a: 1}
+    - {r: 0.7882353, g: 0.6431373, b: 0.41960785, a: 1}
+    - {r: 0.5568628, g: 0.39215687, b: 0.2509804, a: 1}
+    ringDots: 12
+    ringRadius: {x: 3, y: 9}
+    ringDuration: 0.22
+    ringColor: {r: 1, g: 0.9647059, b: 0.8666667, a: 0.9019608}
+    sparkles: 0
+    sparkleRadius: 90
+    sparkleLife: 0.5
+    sparkleDelayMax: 0.35
+    sparkleColor: {r: 1, g: 1, b: 1, a: 1}
+  found:
+    count: 16
+    sizeRange: {x: 1, y: 3}
+    speedRange: {x: 250, y: 520}
+    upBias: 60
+    lifeRange: {x: 0.4, y: 0.7}
+    gravity: -600
+    drag: 3
+    colors:
+    - {r: 1, g: 0.9529412, b: 0.6901961, a: 1}
+    - {r: 1, g: 0.83137256, b: 0.2784314, a: 1}
+    - {r: 1, g: 0.60784316, b: 0.23921569, a: 1}
+    - {r: 1, g: 1, b: 1, a: 1}
+    ringDots: 20
+    ringRadius: {x: 4, y: 22}
+    ringDuration: 0.4
+    ringColor: {r: 1, g: 0.9019608, b: 0.5019608, a: 1}
+    sparkles: 5
+    sparkleRadius: 90
+    sparkleLife: 0.5
+    sparkleDelayMax: 0.35
+    sparkleColor: {r: 1, g: 1, b: 1, a: 1}
+  wrong:
+    count: 6
+    sizeRange: {x: 1, y: 2}
+    speedRange: {x: 60, y: 140}
+    upBias: 40
+    lifeRange: {x: 0.3, y: 0.5}
+    gravity: -700
+    drag: 5
+    colors:
+    - {r: 0.22745098, g: 0.18039216, b: 0.16470589, a: 1}
+    - {r: 0.36078432, g: 0.2901961, b: 0.25882354, a: 1}
+    - {r: 0.5411765, g: 0.5176471, b: 0.5019608, a: 1}
+    ringDots: 0
+    ringRadius: {x: 3, y: 9}
+    ringDuration: 0.22
+    ringColor: {r: 1, g: 1, b: 1, a: 1}
+    sparkles: 0
+    sparkleRadius: 90
+    sparkleLife: 0.5
+    sparkleDelayMax: 0.35
+    sparkleColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &407456647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7024,6 +7121,8 @@ MonoBehaviour:
   minAlpha: 0.15
   maxAlpha: 0.6
   pulseDuration: 0.5
+  flashPeak: 0.6
+  flashDuration: 0.4
 --- !u!114 &1880164482
 MonoBehaviour:
   m_ObjectHideFlags: 0

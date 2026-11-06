@@ -22,6 +22,9 @@ public class Termite : MonoBehaviour
         if (dying) return;
         if (StageFlow.instance != null && StageFlow.instance.IsEnded) return;
 
+        var col = GetComponentInChildren<Collider>();
+        Vector3 fxPos = col != null ? col.bounds.center : transform.position;
+
         if (info != null && info.isReal)
         {
             dying = true;
@@ -29,6 +32,7 @@ public class Termite : MonoBehaviour
             foreach (var c in GetComponentsInChildren<Collider>(true))
                 c.enabled = false;
 
+            PixelFX.instance?.PlayFoundAtWorld(fxPos);
             InteractionPopup.instance?.ShowTermiteFound(monologue);
             AntCounter.instance?.AddFound();
             TutorialController.instance?.NotifyReportAnt();
@@ -37,6 +41,9 @@ public class Termite : MonoBehaviour
         }
         else
         {
+            PixelFX.instance?.PlayWrongAtWorld(fxPos);
+            CameraShake.instance?.Shake();
+            WarningVignette.instance?.Flash();
             InteractionPopup.instance?.ShowWrongTarget(monologue);
         }
     }

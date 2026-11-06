@@ -36,6 +36,7 @@ public class InputManager : MonoBehaviour
         var pause = PauseMenu.instance;
         if (pause != null)
         {
+            
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 pause.Toggle();
@@ -95,6 +96,7 @@ public class InputManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            PixelFX.instance?.PlayClick(Input.mousePosition);
             if (Allowed(TutorialController.Trigger.ReportAnt))
                 JudgeAnt();
             else if (tut != null && tut.enabled)
