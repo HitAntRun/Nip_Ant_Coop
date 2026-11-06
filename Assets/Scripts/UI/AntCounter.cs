@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,75 +7,68 @@ public class AntCounter : MonoBehaviour
 {
     public static AntCounter instance;
 
-    [SerializeField] private Transform iconContainer;
-    [SerializeField] private GameObject iconPrefab;
-    [SerializeField] private string crossChildName = "Cross";
-    
-    [SerializeField] private int iconsPerRow = 7;
-    [SerializeField] private float iconSpacing = 8f;
-    
-    [SerializeField] private float stampStartScale = 2.2f;
-    [SerializeField] private float stampStartAngle = -25f;
-    [SerializeField] private float stampDuration = 0.25f;
-    [SerializeField] private float iconShakeStrength = 8f;
-    [SerializeField] private Color foundIconTint = new Color(0.6f, 0.6f, 0.6f, 1f);
-    
-    private readonly List<GameObject> crosses = new List<GameObject>();
-    
+    [SerializeField] private RectTransform iconRect;
+    [SerializeField] private Image iconImg;
+    [SerializeField] private RectTransform crossRect;
+    [SerializeField] private Image crossImg;
+
+    [Header("Count")]
+    [SerializeField] private RectTransform countCard;
+    [SerializeField] private TMP_Text countText;
+    [SerializeField] private string countFormat = "{0}";
+
+    private float stampStartScale = 2.2f;
+    private float stampStartAngle = -25f;
+    private float stampDuration = 0.25f;
+    private float iconShakeStrength = 8f;
+    private Color foundIconTint = new Color(0.6f, 0.6f, 0.6f, 1f);
+
+    private float holdDuration = 0.4f;
+    private float resetDuration = 0.2f;
+    private bool keepCrossWhenCleared = true;
+
+    private float flipHalfDuration = 0.12f;
+    private float flipAngle = 90f;
+
     private int total;
     private int found;
+    private Vector2 iconBasePos;
+    private Color iconBaseColor;
+    private Sequence stampSeq;
+    private Sequence flipSeq;
 
     public int Found => found;
     public int Total => total;
+    public int Remaining => Mathf.Max(0, total - found);
 
-    void Awake() { instance = this; }
+    void Awake()
+    {
+        instance = this;
+        iconBasePos = iconRect.anchoredPosition;
+        iconBaseColor = iconImg.color;
+    }
+
     void OnDestroy() { if (instance == this) instance = null; }
 
     public void SetTotal(int t)
     {
         total = t;
         found = 0;
-        BuildIcons();
-        UpdateUI();
+        ResetIcon();
+        SetCountImmediate(Remaining);
     }
 
     public void AddFound()
     {
         found++;
-        UpdateUI();
-        PlayStamp(found - 1);
-        
+        PlayStamp();
+        PlayFlip(Remaining);
+
         string stage = GameFlow.CurrentStage;
         int others = GameFlow.TotalTermitesFound - GameFlow.TermitesFoundIn(stage);
         Debug.Log($"[Termite] {stage}: {found}/{total} | 누적 {others + found}");
-        
+
         if (found >= total) OnAllFound();
-    }
-
-    void BuildIcons()
-    {
-        for (int i = iconContainer.childCount - 1; i >= 0; i--)
-            Destroy(iconContainer.GetChild(i).gameObject);
-        crosses.Clear();
-
-        Transform row = null;
-        for (int i = 0; i < total; i++)
-        {
-            if (i % iconsPerRow == 0) row = CreateRow();
-
-            GameObject icon = Instantiate(iconPrefab, row);   // 부모를 row로
-            Transform cross = icon.transform.Find(crossChildName);
-            if (cross != null)
-            {
-                cross.gameObject.SetActive(false);
-                crosses.Add(cross.gameObject);
-            }
-        }
-    }
-    void UpdateUI()
-    {
-        for (int i = 0; i < crosses.Count; i++)
-            crosses[i].SetActive(i < found);
     }
 
     void OnAllFound()
@@ -84,47 +77,74 @@ public class AntCounter : MonoBehaviour
         if (StageFlow.instance != null) StageFlow.instance.Finish();
     }
     
-    void PlayStamp(int index)
+    void ResetIcon()
     {
-        if (index < 0 || index >= crosses.Count) return;
-
-        GameObject cross = crosses[index];
-        RectTransform crossRect = (RectTransform)cross.transform;
-        Image crossImg = cross.GetComponent<Image>();
-        RectTransform iconRect = (RectTransform)cross.transform.parent;
-        Image iconImg = iconRect.GetComponent<Image>();
-
-        cross.SetActive(true);
-        crossRect.DOKill();
+        stampSeq?.Kill();
         iconRect.DOKill();
+        iconImg.DOKill();
 
+        crossRect.gameObject.SetActive(false);
+        crossRect.localScale = Vector3.one;
+        crossRect.localEulerAngles = Vector3.zero;
+        iconRect.anchoredPosition = iconBasePos;
+        iconImg.color = iconBaseColor;
+    }
+
+    void PlayStamp()
+    {
+        ResetIcon();
+
+        crossRect.gameObject.SetActive(true);
         crossRect.localScale = Vector3.one * stampStartScale;
         crossRect.localEulerAngles = new Vector3(0, 0, stampStartAngle);
-        if (crossImg != null) { crossImg.DOKill(); crossImg.color = new Color(1, 1, 1, 0); }
+        crossImg.color = new Color(1, 1, 1, 0);
 
-        Sequence seq = DOTween.Sequence().SetLink(cross);
-        seq.Append(crossRect.DOScale(1f, stampDuration).SetEase(Ease.InBack));
-        seq.Join(crossRect.DORotate(Vector3.zero, stampDuration).SetEase(Ease.OutQuad));
-        if (crossImg != null) seq.Join(crossImg.DOFade(1f, stampDuration * 0.5f));
-
-        seq.AppendCallback(() =>
+        stampSeq = DOTween.Sequence().SetLink(gameObject);
+        stampSeq.Append(crossRect.DOScale(1f, stampDuration).SetEase(Ease.InBack));
+        stampSeq.Join(crossRect.DORotate(Vector3.zero, stampDuration).SetEase(Ease.OutQuad));
+        stampSeq.Join(crossImg.DOFade(1f, stampDuration * 0.5f));
+        stampSeq.AppendCallback(() =>
         {
             iconRect.DOShakeAnchorPos(0.2f, iconShakeStrength, 20).SetLink(iconRect.gameObject);
-            if (iconImg != null) iconImg.DOColor(foundIconTint, 0.15f).SetLink(iconImg.gameObject);
+            iconImg.DOColor(foundIconTint, 0.15f).SetLink(iconImg.gameObject);
         });
-        seq.Append(crossRect.DOPunchScale(Vector3.one * 0.15f, 0.2f, 6, 0.5f));
+        stampSeq.Append(crossRect.DOPunchScale(Vector3.one * 0.15f, 0.2f, 6, 0.5f));
+
+        if (found >= total && keepCrossWhenCleared) return;
+
+        stampSeq.AppendInterval(holdDuration);
+        stampSeq.Append(crossImg.DOFade(0f, resetDuration));
+        stampSeq.Join(crossRect.DOScale(0.6f, resetDuration).SetEase(Ease.InBack));
+        stampSeq.Join(iconImg.DOColor(iconBaseColor, resetDuration));
+        stampSeq.OnComplete(() =>
+        {
+            crossRect.gameObject.SetActive(false);
+            crossRect.localScale = Vector3.one;
+            iconRect.anchoredPosition = iconBasePos;
+        });
     }
     
-    Transform CreateRow()
+    void SetCountImmediate(int value)
     {
-        var go = new GameObject("Row", typeof(RectTransform), typeof(HorizontalLayoutGroup));
-        go.transform.SetParent(iconContainer, false);
+        flipSeq?.Kill();
+        countCard.localEulerAngles = Vector3.zero;
+        countText.text = string.Format(countFormat, value);
+    }
 
-        var h = go.GetComponent<HorizontalLayoutGroup>();
-        h.spacing = iconSpacing;
-        h.childAlignment = TextAnchor.MiddleCenter;
-        h.childControlWidth = h.childControlHeight = false;
-        h.childForceExpandWidth = h.childForceExpandHeight = false;
-        return go.transform;
+    void PlayFlip(int value)
+    {
+        flipSeq?.Kill();
+        countCard.localEulerAngles = Vector3.zero;
+
+        flipSeq = DOTween.Sequence().SetLink(countCard.gameObject);
+        flipSeq.Append(countCard.DOLocalRotate(new Vector3(flipAngle, 0, 0), flipHalfDuration)
+                                .SetEase(Ease.InQuad));
+        flipSeq.AppendCallback(() =>
+        {
+            countText.text = string.Format(countFormat, value);
+            countCard.localEulerAngles = new Vector3(-flipAngle, 0, 0);
+        });
+        flipSeq.Append(countCard.DOLocalRotate(Vector3.zero, flipHalfDuration * 1.5f)
+                                .SetEase(Ease.OutBack));
     }
 }
