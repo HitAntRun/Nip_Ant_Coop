@@ -43,3 +43,23 @@ MonoBehaviour:
     - {fileID: 8300000, guid: fc20bc167484a4ea58021775c1c98968, type: 3}
     volume: 0.5
     pitchRange: {x: 1, y: 1}
+  - id: ant_found
+    clips:
+    - {fileID: 8300000, guid: 152b94dd6fe4d49359fb26fdb5707f55, type: 3}
+    volume: 0.3
+    pitchRange: {x: 1, y: 1}
+  - id: ant_wrong
+    clips:
+    - {fileID: 8300000, guid: 16d60d9d74ee147e38ff0518d1b6fd15, type: 3}
+    volume: 0.3
+    pitchRange: {x: 1, y: 1}
+  - id: story_click
+    clips:
+    - {fileID: 8300000, guid: 672444e8a7c704ab88af9301c30047bd, type: 3}
+    volume: 0.5
+    pitchRange: {x: 1, y: 1}
+  - id: ingame_click
+    clips:
+    - {fileID: 8300000, guid: d5c9c271253c7410fa3e413c6051e44f, type: 3}
+    volume: 0.5
+    pitchRange: {x: 1, y: 1}

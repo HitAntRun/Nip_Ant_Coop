@@ -515,6 +515,14 @@ public class DialogueRunner : MonoBehaviour
         if (current.choices != null && current.choices.Count > 0) return;
         Next();
     }
+    
+    void SelectChoice(int index)
+    {
+        if (index == selectedIndex) return;
+        selectedIndex = index;
+        UpdateChecks();
+        SoundManager.instance?.PlayUiSfx("ui_hover");
+    }
 
     void Next()
     {
@@ -673,6 +681,7 @@ public class DialogueRunner : MonoBehaviour
     public void ClickChoice(int index)
     {
         if (!CanConfirm || index >= current.choices.Count) return;
+        SoundManager.instance?.PlayUiSfx("story_click");
         selectedIndex = index;
         Confirm();
     }
@@ -680,8 +689,7 @@ public class DialogueRunner : MonoBehaviour
     public void Hover(int index)
     {
         if (!choosing || index >= current.choices.Count) return;
-        selectedIndex = index;
-        UpdateChecks();
+        SelectChoice(index);
     }
 
     void UpdateChecks()
@@ -693,8 +701,7 @@ public class DialogueRunner : MonoBehaviour
     public void Move(int dir)
     {
         int count = current.choices.Count;
-        selectedIndex = (selectedIndex + dir + count) % count;
-        UpdateChecks();
+        SelectChoice((selectedIndex + dir + count) % count);
     }
 
     public void Confirm()

@@ -1581,7 +1581,7 @@ MonoBehaviour:
   smooth: 1
   openTime: 0.15
   closeTime: 0.1
-  animFps: 24
+  animFps: 45
   overshootPixels: 1
   pixelUnit: 4
   minHeight: 16
@@ -2578,6 +2578,7 @@ GameObject:
   - component: {fileID: 551865169}
   - component: {fileID: 551865168}
   - component: {fileID: 551865167}
+  - component: {fileID: 551865170}
   m_Layer: 5
   m_Name: Btn_Quit
   m_TagString: Untagged
@@ -2699,6 +2700,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551865165}
   m_CullTransparentMesh: 1
+--- !u!114 &551865170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551865165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &552285847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,6 +3728,7 @@ GameObject:
   - component: {fileID: 867020192}
   - component: {fileID: 867020191}
   - component: {fileID: 867020190}
+  - component: {fileID: 867020193}
   m_Layer: 5
   m_Name: Btn_Cancel
   m_TagString: Untagged
@@ -3835,6 +3850,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867020188}
   m_CullTransparentMesh: 1
+--- !u!114 &867020193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867020188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &868236165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,6 +4502,7 @@ GameObject:
   - component: {fileID: 1203162616}
   - component: {fileID: 1203162615}
   - component: {fileID: 1203162614}
+  - component: {fileID: 1203162617}
   m_Layer: 5
   m_Name: Btn_Resume
   m_TagString: Untagged
@@ -4595,6 +4624,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203162612}
   m_CullTransparentMesh: 1
+--- !u!114 &1203162617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203162612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &1210436801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5767,6 +5809,7 @@ GameObject:
   - component: {fileID: 1386431260}
   - component: {fileID: 1386431259}
   - component: {fileID: 1386431258}
+  - component: {fileID: 1386431261}
   m_Layer: 5
   m_Name: Btn_Confirm
   m_TagString: Untagged
@@ -5888,6 +5931,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386431256}
   m_CullTransparentMesh: 1
+--- !u!114 &1386431261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386431256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &1431125553
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,6 +7540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a89f75ba85c47958d76e15f5847d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  searchInputEnabled: 0
   clickMask:
     serializedVersion: 2
     m_Bits: 0
@@ -8155,6 +8212,7 @@ GameObject:
   - component: {fileID: 1935940715}
   - component: {fileID: 1935940714}
   - component: {fileID: 1935940717}
+  - component: {fileID: 1935940718}
   m_Layer: 5
   m_Name: LogButton
   m_TagString: Untagged
@@ -8295,6 +8353,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c49d0e9b560247e0ba009eaacfaeda1, type: 3}
   - {fileID: 21300000, guid: 9750d2ff647c54ac989c3724648df064, type: 3}
   frameTime: 0.05
+--- !u!114 &1935940718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935940712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &1951919041
 GameObject:
   m_ObjectHideFlags: 0
@@ -8836,6 +8907,7 @@ GameObject:
   - component: {fileID: 2066945385}
   - component: {fileID: 2066945384}
   - component: {fileID: 2066945387}
+  - component: {fileID: 2066945388}
   m_Layer: 5
   m_Name: SkipButton
   m_TagString: Untagged
@@ -8973,6 +9045,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 048e56050c9e34da5a02d81a37bdccd2, type: 3}
   - {fileID: 21300000, guid: 55503df56324849c2afdf845c85b3157, type: 3}
   frameTime: 0.05
+--- !u!114 &2066945388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066945382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &2070729224
 GameObject:
   m_ObjectHideFlags: 0
@@ -8986,6 +9071,7 @@ GameObject:
   - component: {fileID: 2070729227}
   - component: {fileID: 2070729226}
   - component: {fileID: 2070729229}
+  - component: {fileID: 2070729230}
   m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
@@ -9123,6 +9209,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dd85180c45ce4416e9ef4b5d709c136c, type: 3}
   - {fileID: 21300000, guid: e5861d7a0bfde40cca5192c9bdf956ad, type: 3}
   frameTime: 0.04
+--- !u!114 &2070729230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070729224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52104bbf331f248bd8c76977e86cee04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxId: story_click
 --- !u!1 &2097034572
 GameObject:
   m_ObjectHideFlags: 0

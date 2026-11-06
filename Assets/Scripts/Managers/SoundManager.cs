@@ -39,6 +39,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource bgmSource;
     private AudioSource[] sfxSources;
     private AudioSource typingSource;
+    private AudioSource uiSource;
     private float lastTypingTime = -999f;
 
     private BgmPlaylist currentPlaylist;
@@ -78,6 +79,11 @@ public class SoundManager : MonoBehaviour
         typingSource.playOnAwake = false;
         typingSource.spatialBlend = 0f;
         typingSource.outputAudioMixerGroup = sfxGroup;
+        
+        uiSource = gameObject.AddComponent<AudioSource>();
+        uiSource.playOnAwake = false;
+        uiSource.spatialBlend = 0f;
+        uiSource.outputAudioMixerGroup = sfxGroup; 
         
         for (int i = 0; i < sfxSources.Length; i++)
         {
@@ -269,6 +275,16 @@ public class SoundManager : MonoBehaviour
         var src = GetFreeSfxSource();
         src.pitch = Random.Range(e.pitchRange.x, e.pitchRange.y);
         src.PlayOneShot(clip, e.volume);
+    }
+    
+    public void PlayUiSfx(string id)
+    {
+        if (sfxLibrary == null || uiSource == null) return;
+        var e = sfxLibrary.Find(id);
+        if (e == null || e.clips == null || e.clips.Length == 0) return;
+
+        uiSource.pitch = Random.Range(e.pitchRange.x, e.pitchRange.y);
+        uiSource.PlayOneShot(e.clips[Random.Range(0, e.clips.Length)], e.volume);
     }
 
     public void StopAllSfx()

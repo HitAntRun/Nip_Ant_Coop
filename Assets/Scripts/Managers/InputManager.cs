@@ -6,6 +6,7 @@ public class InputManager : MonoBehaviour
     private RotateController _rotateController;
     private MagnifierController _magnifier;
     private DialogueRunner _dialogue;
+    [SerializeField] private bool searchInputEnabled = true; 
     [SerializeField] private LayerMask clickMask;
     
     [SerializeField, Range(0.5f, 1.2f)]
@@ -33,6 +34,9 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonUp(0) && EventSystem.current != null)
+            EventSystem.current.SetSelectedGameObject(null);
+        
         var pause = PauseMenu.instance;
         if (pause != null)
         {
@@ -84,7 +88,7 @@ public class InputManager : MonoBehaviour
                 tut.Advance();
             return;
         }
-        
+        if (!searchInputEnabled) return;
 
         if (Input.GetMouseButtonDown(1) && _magnifier != null)
         {
@@ -97,6 +101,7 @@ public class InputManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             PixelFX.instance?.PlayClick(Input.mousePosition);
+            SoundManager.instance?.PlayUiSfx("ingame_click");
             if (Allowed(TutorialController.Trigger.ReportAnt))
                 JudgeAnt();
             else if (tut != null && tut.enabled)

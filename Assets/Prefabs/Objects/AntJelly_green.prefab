@@ -90,7 +90,7 @@ PrefabInstance:
         type: 3}
       propertyPath: closedSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 56ff8d94ab8714043b8048e0cf8ca3b1,
+      objectReference: {fileID: 21300000, guid: 984745e768b6842029acfd943a1982a3,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

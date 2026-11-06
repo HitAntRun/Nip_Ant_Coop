@@ -33,6 +33,7 @@ public class Termite : MonoBehaviour
                 c.enabled = false;
 
             PixelFX.instance?.PlayFoundAtWorld(fxPos);
+            SoundManager.instance?.PlaySfx("ant_found");
             InteractionPopup.instance?.ShowTermiteFound(monologue);
             AntCounter.instance?.AddFound();
             TutorialController.instance?.NotifyReportAnt();
@@ -42,6 +43,7 @@ public class Termite : MonoBehaviour
         else
         {
             PixelFX.instance?.PlayWrongAtWorld(fxPos);
+            SoundManager.instance?.PlaySfx("ant_wrong");
             CameraShake.instance?.Shake();
             WarningVignette.instance?.Flash();
             InteractionPopup.instance?.ShowWrongTarget(monologue);
