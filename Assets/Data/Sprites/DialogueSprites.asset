@@ -131,3 +131,23 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: c57b23c65de89401dbceb7061bf0deee, type: 3}
   - name: morgue_ch4
     sprite: {fileID: 21300000, guid: d51381008650143658473112bc7d1257, type: 3}
+  - name: ch4-2_1
+    sprite: {fileID: 21300000, guid: a2480d7f24cf04c44b41e380ad33367c, type: 3}
+  - name: ch4-2_2
+    sprite: {fileID: 21300000, guid: 7deef73010b5c434e83953d1f24f2602, type: 3}
+  - name: ch4-2_3
+    sprite: {fileID: 21300000, guid: 00ede27189db2440794b2d8f8c392d13, type: 3}
+  - name: ch4-2_4
+    sprite: {fileID: 21300000, guid: 2cd0352396a56477f9d96c4b3d67ccf1, type: 3}
+  - name: ch4-2_5
+    sprite: {fileID: 21300000, guid: 03b4f08a1e0bf41bda1da02c4c02d11b, type: 3}
+  - name: ch4-2_6
+    sprite: {fileID: 21300000, guid: 57accea9a65d44f20b9be5657175159f, type: 3}
+  - name: ch4-2_7
+    sprite: {fileID: 21300000, guid: fd0e0b38f990d4c65b5706148eeabb98, type: 3}
+  - name: ch4-2_8
+    sprite: {fileID: 21300000, guid: 8df85657b78c14291aaf058712358ae0, type: 3}
+  - name: ch4-2_9
+    sprite: {fileID: 21300000, guid: 74b199d0ae5c146d8a561133a1d64d8b, type: 3}
+  - name: cut_black
+    sprite: {fileID: 21300000, guid: e9750869e4967483e8d7f3dd404caa7d, type: 3}
