@@ -530,7 +530,7 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "ch1_CutScene_family",
+      "bg": "ch4-2_1",
       "fadeBreak": true,
       "fade": false,
       "hold": -1.0
@@ -614,7 +614,7 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_2",
       "fadeBreak": false,
       "fade": true,
       "hold": -1.0
@@ -635,9 +635,9 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_3",
       "fadeBreak": false,
-      "fade": true,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -719,7 +719,7 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_4",
       "fadeBreak": false,
       "fade": true,
       "hold": -1.0
@@ -782,7 +782,7 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "BG_Black",
+      "bg": "cut_black",
       "fadeBreak": false,
       "fade": true,
       "hold": -1.0
@@ -824,9 +824,9 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_5",
       "fadeBreak": false,
-      "fade": false,
+      "fade": true,
       "hold": -1.0
     },
     {
@@ -845,9 +845,9 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_6",
       "fadeBreak": false,
-      "fade": true,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -866,7 +866,7 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_7",
       "fadeBreak": false,
       "fade": true,
       "hold": -1.0
@@ -887,9 +887,9 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_8",
       "fadeBreak": false,
-      "fade": true,
+      "fade": false,
       "hold": -1.0
     },
     {
@@ -950,7 +950,7 @@
       "bgm": "",
       "sfx": "",
       "mode": "narration",
-      "bg": "",
+      "bg": "ch4-2_9",
       "fadeBreak": false,
       "fade": true,
       "hold": -1.0
