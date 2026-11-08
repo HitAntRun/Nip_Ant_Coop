@@ -331,6 +331,26 @@ MonoBehaviour:
     m_Localized: Morgue
     m_Metadata:
       m_Items: []
+  - m_Id: 19582469731770368
+    m_Localized: Mute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19583085614981120
+    m_Localized: Press ESC to go back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19583899477729280
+    m_Localized: Restart stage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19584052293001216
+    m_Localized: Return to main
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19584347160961024
+    m_Localized: Option
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

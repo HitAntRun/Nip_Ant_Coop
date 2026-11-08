@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
 
     public const string BgmVolumeKey = "Audio.BGM";
     public const string SfxVolumeKey = "Audio.SFX";
+    public const string MuteKey = "Audio.Mute";
     private const string BgmParam = "BGMVolume";
     private const string SfxParam = "SFXVolume";
 
@@ -47,7 +48,7 @@ public class SoundManager : MonoBehaviour
     private Coroutine bgmRoutine;
     private Coroutine stopRoutine;
     private bool bgmPaused;
-
+    
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void BootStrap() => EnsureExists();
 
@@ -93,13 +94,17 @@ public class SoundManager : MonoBehaviour
             s.outputAudioMixerGroup = sfxGroup;
             sfxSources[i] = s;
         }
-
-        SetBgmVolume(PlayerPrefs.GetFloat(BgmVolumeKey, 0.8f));
-        SetSfxVolume(PlayerPrefs.GetFloat(SfxVolumeKey, 0.8f));
-
+        
+        SetMuted(IsMuted);
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
-    
+
+    private void Start()
+    {
+        SetBgmVolume(GetBgmVolume());
+        SetSfxVolume(GetSfxVolume());
+    }
+
     private void OnDestroy()
     {
         if (instance == this)
@@ -302,6 +307,7 @@ public class SoundManager : MonoBehaviour
     
     public void SetBgmVolume(float v01) => ApplyVolume(BgmParam, BgmVolumeKey, v01);
     public void SetSfxVolume(float v01) => ApplyVolume(SfxParam, SfxVolumeKey, v01);
+    public bool IsMuted => PlayerPrefs.GetInt(MuteKey, 0) == 1;
     public float GetBgmVolume() => PlayerPrefs.GetFloat(BgmVolumeKey, 0.8f);
     public float GetSfxVolume() => PlayerPrefs.GetFloat(SfxVolumeKey, 0.8f);
 
@@ -311,6 +317,12 @@ public class SoundManager : MonoBehaviour
         PlayerPrefs.SetFloat(key, v01);
         if (mixer != null)
             mixer.SetFloat(param, v01 <= 0.0001f ? -80f : Mathf.Log10(v01) * 20f);
+    }
+
+    public void SetMuted(bool muted)
+    {
+        PlayerPrefs.SetInt(MuteKey, muted ? 1 : 0);
+        AudioListener.volume = muted ? 0f : 1f;
     }
 
 }

@@ -8,6 +8,14 @@ public class ButtonAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private Sprite[] frames = new Sprite[3];
     [SerializeField] private float frameTime = 0.04f;
+    
+    [Header("Content (Text / Icon)")]
+    [SerializeField] private RectTransform[] content;
+    [SerializeField] private Vector2[] frameOffsets = {
+        new Vector2(0, 0), new Vector2(0, -2), new Vector2(0, -4)
+    };
+
+    private Vector2[] homePos;
 
     private Image image;
     private Button button;
@@ -19,6 +27,14 @@ public class ButtonAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         image = GetComponent<Image>();
         TryGetComponent(out button);
+        
+        if (content != null)
+        {
+            homePos = new Vector2[content.Length];
+            for (int i = 0; i < content.Length; i++)
+                if (content[i] != null) homePos[i] = content[i].anchoredPosition;
+        }
+        
         SetFrame(0);
     }
 
@@ -62,6 +78,11 @@ public class ButtonAnim : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         current = i;
         image.sprite = frames[i];
+
+        if (content == null || homePos == null) return;
+        Vector2 off = (frameOffsets != null && i < frameOffsets.Length) ? frameOffsets[i] : Vector2.zero;
+        for (int k = 0; k < content.Length; k++)
+            if (content[k] != null) content[k].anchoredPosition = homePos[k] + off;
     }
 
     private void OnDisable()

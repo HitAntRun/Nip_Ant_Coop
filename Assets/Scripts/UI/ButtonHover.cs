@@ -28,6 +28,10 @@ public class ButtonHover : MonoBehaviour,
         public bool moveOnPress = true;
         public float selectedScale = 1.12f;
 
+        public Vector2 hoverOffset = Vector2.zero;
+        public Vector2 selectedOffset = Vector2.zero;
+        public bool boldWhenSelected = false;
+        
         [HideInInspector] public Vector2 home;
     }
 
@@ -53,7 +57,14 @@ public class ButtonHover : MonoBehaviour,
     }
     
     void OnEnable() { enabledTime = Time.unscaledTime; }
-    void OnDisable() { KillAll(); }
+
+    void OnDisable()
+    {
+        KillAll();
+        hovering = false;
+        pressed = false;
+        Apply(instant : true);
+    }
 
     void KillAll()
     {
@@ -83,31 +94,42 @@ public class ButtonHover : MonoBehaviour,
     public void OnPointerExit (PointerEventData p) { hovering = false; pressed = false; Apply(); }
     public void OnPointerUp   (PointerEventData p) { pressed  = false; Apply(); }
 
-    void Apply()
+    void Apply(bool instant = false)
     {
         foreach (var e in labels)
         {
             if (e == null || e.text == null) continue;
+            var rt = e.text.rectTransform;
 
-            Vector2 off = (pressed && e.moveOnPress) ? pressOffset : Vector2.zero;
+            Vector2 off = selected ? e.selectedOffset
+                : (hovering ? e.hoverOffset : Vector2.zero);
+            if (pressed && e.moveOnPress) off += pressOffset;
 
-            e.text.rectTransform.DOKill();
-            e.text.rectTransform
-                  .DOAnchorPos(e.home + off, moveDuration, true)
-                  .SetUpdate(true)
-                  .SetLink(e.text.gameObject);
-            
             Color target = selected ? e.selected : (hovering ? e.hover : e.normal);
-            
-            e.text.DOKill();
-            e.text.DOColor(target, fadeDuration)
-                .SetUpdate(true)
-                .SetLink(e.text.gameObject);
-            
             float s = selected ? e.selectedScale : 1f;
-            e.text.rectTransform.DOScale(s, fadeDuration)
-                .SetUpdate(true)
-                .SetLink(e.text.gameObject);
+
+            if (e.boldWhenSelected)
+                e.text.fontStyle = selected
+                    ? e.text.fontStyle | FontStyles.Bold
+                    : e.text.fontStyle & ~FontStyles.Bold;
+
+            rt.DOKill();
+            e.text.DOKill();
+
+            if (instant)
+            {
+                rt.anchoredPosition = e.home + off;
+                rt.localScale = Vector3.one * s;
+                e.text.color = target;
+                continue;
+            }
+
+            rt.DOAnchorPos(e.home + off, moveDuration, true)
+                .SetUpdate(true).SetLink(e.text.gameObject);
+            rt.DOScale(s, fadeDuration)
+                .SetUpdate(true).SetLink(e.text.gameObject);
+            e.text.DOColor(target, fadeDuration)
+                .SetUpdate(true).SetLink(e.text.gameObject);
         }
     }
 

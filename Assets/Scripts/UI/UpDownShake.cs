@@ -25,7 +25,7 @@ public class UpDownShake : MonoBehaviour
         {
             rt.anchoredPosition = basePos + new Vector2(0f, offsets[i]);
             i = (i + 1) % offsets.Length;
-            yield return new WaitForSeconds(stepTime);
+            yield return new WaitForSecondsRealtime(stepTime);
         }
     }
 }
