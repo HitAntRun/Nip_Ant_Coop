@@ -179,6 +179,7 @@ public class DialogueEditorWindow : EditorWindow
                 n.bg        = EditorGUILayout.TextField("배경 교체(선택)", n.bg, GUILayout.Width(innerW));
                 n.bgm       = EditorGUILayout.TextField("BGM 교체(선택)", n.bgm, GUILayout.Width(innerW));
                 n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
+                n.flash = EditorGUILayout.Toggle("플래시 전환", n.flash, GUILayout.Width(innerW));
 
                 if (nar)
                 {

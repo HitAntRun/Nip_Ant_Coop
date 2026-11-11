@@ -59,6 +59,8 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private CanvasGroup characterGroup;       
     [SerializeField] private float characterFadeDuration = 0.5f;
     [SerializeField] private float actorFadeDuration = 0.5f;
+    [SerializeField] private float flashInDuration = 0.08f;
+    [SerializeField] private float flashOutDuration = 0.7f;
     private Dictionary<string, Coroutine> fades = new Dictionary<string, Coroutine>();
 
     [Header("CutScene")]
@@ -245,9 +247,10 @@ public class DialogueRunner : MonoBehaviour
 
         bool doFade = node.fadeBreak && fader != null && (modeChanged || bgChanged)
                       && !isIntro && !doCutFade;
+        bool doFlash = node.flash && bgChanged && fader != null && !doFade && !doCutFade;
         isIntro = false;
         bool sceneChange = doFade && bgChanged;
-        bool imageFaded = false;   // 이미지 페이드 교체가 일어난 컷이면 텍스트는 페이드 없이 바로 표시
+        bool imageFaded = false;
 
         transitioning = true;
         yield return FadeOutActors(node, sceneChange);
@@ -272,6 +275,12 @@ public class DialogueRunner : MonoBehaviour
                 foreach (var go in hideInNarration)
                     if (go != null) go.SetActive(!nar);
             currentMode = m;
+        }
+        
+        if (doFlash)
+        {
+            transitioning = true;
+            yield return fader.FlashIn(Color.white, flashInDuration);
         }
         
         if (bgChanged)
@@ -310,6 +319,11 @@ public class DialogueRunner : MonoBehaviour
         {
             yield return fader.FadeIn(breakFadeDuration);
             transitioning = false;
+        }
+        
+        if (doFlash)
+        {
+            StartCoroutine(FlashOutAndRelease());
         }
         if (sceneChange && currentMode != "narration")
             ApplyActors(node);    
@@ -395,6 +409,12 @@ public class DialogueRunner : MonoBehaviour
             }
             else portraitImage.gameObject.SetActive(false);
         }
+    }
+    
+    IEnumerator FlashOutAndRelease()
+    {
+        yield return fader.FlashOut(flashOutDuration);
+        transitioning = false;
     }
 
     IEnumerator IntroRoutine(int startIndex)
@@ -760,9 +780,16 @@ public class DialogueRunner : MonoBehaviour
             img.rectTransform.localScale = new Vector3(a.flip ? -1f : 1f, 1f, 1f);
             
             if (a.fadeIn)
-                StartActorFade(a.id, img, a.brightness);                        // 서서히 등장
+                StartActorFade(a.id, img, a.brightness);
             else
+            {
+                if (fades.TryGetValue(a.id, out var running) && running != null)
+                {
+                    StopCoroutine(running);
+                    fades.Remove(a.id);
+                }
                 img.color = new Color(a.brightness, a.brightness, a.brightness, 1f);
+            }
         }
     }
 

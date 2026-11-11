@@ -41,6 +41,7 @@ public class DialogueNode
     public string bg;
     public bool fadeBreak;
     public bool fade;
+    public bool flash;
     public float hold = -1f;
 }
 

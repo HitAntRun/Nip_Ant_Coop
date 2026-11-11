@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runner: {fileID: 1848783815}
   overrideStoryId: 
-  startFromLine: 1
+  startFromLine: 0
 --- !u!4 &276021732
 Transform:
   m_ObjectHideFlags: 0
@@ -11040,6 +11040,8 @@ MonoBehaviour:
   characterGroup: {fileID: 1992163239}
   characterFadeDuration: 0.5
   actorFadeDuration: 1
+  flashInDuration: 0.08
+  flashOutDuration: 1.5
   narrationRoot: {fileID: 684900306}
   narrationText: {fileID: 1980001339}
   narrationGroup: {fileID: 1528833004}
@@ -11107,6 +11109,10 @@ MonoBehaviour:
   fadeOverlay: {fileID: 206356863}
   fadeDuration: 2.5
   fadeInOnStart: 1
+  flashBlinks: 2
+  blinkFrame: 0.05
+  flashSteps: 8
+  flashFps: 30
 --- !u!114 &1848783819
 MonoBehaviour:
   m_ObjectHideFlags: 0
