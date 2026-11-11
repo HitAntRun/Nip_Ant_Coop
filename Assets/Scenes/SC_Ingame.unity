@@ -2521,6 +2521,7 @@ GameObject:
   - component: {fileID: 326750979}
   - component: {fileID: 326750978}
   - component: {fileID: 326750980}
+  - component: {fileID: 326750981}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -2665,6 +2666,46 @@ MonoBehaviour:
   - 0
   - -2
   stepTime: 0.15
+--- !u!114 &326750981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326750976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:05434eb67f97a43e48907c55aadce4a5
+    m_TableEntryReference:
+      m_KeyId: 16052220540739584
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 326750978}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,6 +3064,8 @@ MonoBehaviour:
   characterGroup: {fileID: 0}
   characterFadeDuration: 0.5
   actorFadeDuration: 0.5
+  flashInDuration: 0.08
+  flashOutDuration: 0.7
   narrationRoot: {fileID: 0}
   narrationText: {fileID: 0}
   narrationGroup: {fileID: 0}
@@ -3153,6 +3196,10 @@ MonoBehaviour:
   fadeOverlay: {fileID: 1799033587}
   fadeDuration: 2
   fadeInOnStart: 0
+  flashBlinks: 2
+  blinkFrame: 0.05
+  flashSteps: 4
+  flashFps: 12
 --- !u!114 &335378077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12930,83 +12977,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4837679270682903525, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4416331375388913718, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7300521825033896013, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8320928536194779889, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 648019202885476976, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3356563890963097136, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 334549017071603226, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 9050356745264572085, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5593709846820114718, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1926923166191486291, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7254787472496437176, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 2197244281128069087, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 717953080056087090, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8078241312102111865, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6078609839223459596, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 8043042124721990268, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 9005034900072264173, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6023032107561937880, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5000204314452354394, guid: e2f2badcff2814aa9a17716a32f5526b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2f2badcff2814aa9a17716a32f5526b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

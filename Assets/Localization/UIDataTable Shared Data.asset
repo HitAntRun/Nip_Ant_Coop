@@ -343,6 +343,18 @@ MonoBehaviour:
     m_Key: option
     m_Metadata:
       m_Items: []
+  - m_Id: 20768051346530304
+    m_Key: sign_police
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20768117545230336
+    m_Key: sign_hospital
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20768177037238272
+    m_Key: sign_library
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

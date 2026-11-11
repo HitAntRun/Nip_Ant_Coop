@@ -1810,6 +1810,839 @@ MonoBehaviour:
     m_Localized: Once my friends get better, I'll ask them to search with me.
     m_Metadata:
       m_Items: []
+  - m_Id: 19314104819769344
+    m_Localized: "I spent days wandering all over the village, but I still couldn't
+      find the outside passage the termites use, or the place called 'the Underground.'
+      \nMy friends still don't seem to have recovered. Not a single one has come
+      back to school."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963648
+    m_Localized: Phew...... I've been searching for days,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963649
+    m_Localized: and I still haven't found a secret passage the termites could be
+      using.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963650
+    m_Localized: If they keep showing up, there must be a way in from outside...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963651
+    m_Localized: Where on earth are they getting in?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963652
+    m_Localized: ...... It's already this late?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963653
+    m_Localized: I'd better hurry to school.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963654
+    m_Localized: ... I hope my friends are back today.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963655
+    m_Localized: ... Nobody's here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963656
+    m_Localized: Good morning, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963657
+    m_Localized: Good morning, Teacher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963658
+    m_Localized: Hehe, Emil. I have some surprising news~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963659
+    m_Localized: Huh? What is it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963660
+    m_Localized: For your hard work finding and reporting termites,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963661
+    m_Localized: <b>you've been chosen to receive the award, Emil!</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963662
+    m_Localized: ......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963663
+    m_Localized: ......What?! Me??!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963664
+    m_Localized: Uh... um... This is really unexpected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104823963665
+    m_Localized: You don't look very happy. Aren't you glad~?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157952
+    m_Localized: But... I didn't search for termites so hard that I got sick, like
+      my other friends did,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157953
+    m_Localized: ... and, um, I know you told us not to do anything else, but
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157954
+    m_Localized: I was also looking for a secret passage the termites might be using,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157955
+    m_Localized: and I couldn't even find that in the end.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157956
+    m_Localized: Of all the students, someone like me getting the award...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157957
+    m_Localized: I'm not sure I really deserve it...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157958
+    m_Localized: That wasn't my decision alone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157959
+    m_Localized: We gathered the other teachers' opinions too, and decided to give
+      it to you, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157960
+    m_Localized: So you can be proud of it. All right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157961
+    m_Localized: Oh! So you're Emil?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157962
+    m_Localized: Oh, Principal! What brings you here?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157963
+    m_Localized: (I've never met the principal before...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157964
+    m_Localized: I wanted to come meet the student receiving the award in person.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157965
+    m_Localized: ...Mm, just as I heard. A very bright-looking ant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157966
+    m_Localized: Thank you...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157967
+    m_Localized: I hear you did something wonderful for our village?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157968
+    m_Localized: Truly impressive! Emil, you're a model for every black ant!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157969
+    m_Localized: I only did what I was supposed to do.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157970
+    m_Localized: Hahaha, I like that answer very much!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157971
+    m_Localized: There will be an award ceremony in the main auditorium tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157972
+    m_Localized: When I call your name, just come up on stage and receive the award.
+      Understood?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157973
+    m_Localized: Yes, Principal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157974
+    m_Localized: Good, good. But don't get too nervous.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157975
+    m_Localized: Then I'll see you tomorrow. Teacher, you have a splendid student.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157976
+    m_Localized: I can't tell you how grateful I am. I've been learning a lot from
+      students like Emil, too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157977
+    m_Localized: What a fine teacher and student! Haha, very good, very good!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157978
+    m_Localized: I'll excuse myself now!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157979
+    m_Localized: ... You heard the principal, Emil?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157980
+    m_Localized: The award ceremony starts in the morning tomorrow, so go straight
+      to the main auditorium instead of the classroom.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157981
+    m_Localized: Not many students came today, so I'll end class early. Get some
+      rest and I'll see you tomorrow~
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157982
+    m_Localized: Okay... Thank you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157983
+    m_Localized: (The next day, Ant Date 11)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157984
+    m_Localized: Today's the award ceremony...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157985
+    m_Localized: It doesn't really feel real.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157986
+    m_Localized: I should be happy, so what's this uneasy feeling...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157987
+    m_Localized: (Slam)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157988
+    m_Localized: Huh? There's a note in front of the door...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157989
+    m_Localized: '"Emil, help us. You might be our only hope."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157990
+    m_Localized: '"Lately your friends have been disappearing one by one, supposedly
+      sick, right?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157991
+    m_Localized: '"We know the secret, and we can tell you."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157992
+    m_Localized: '"So please don''t think this is strange,"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157993
+    m_Localized: '"and just do exactly what''s written here. I''ll explain everything
+      later."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157994
+    m_Localized: '"As soon as you read this, go to the corpse disposal site and roll
+      around on the corpses,"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157995
+    m_Localized: '"until the smell of the dead soaks into your whole body."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157996
+    m_Localized: '"Then come to the Underground Restricted Zone in the deepest part
+      of the village."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157997
+    m_Localized: '"You''ll find a fork along the way. Take the tunnel blocked off
+      with wooden boards."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157998
+    m_Localized: '"You should be able to crawl in through the gap at the very bottom.."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828157999
+    m_Localized: '"I know exactly how strange this sounds, but...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158000
+    m_Localized: '"Please, Emil."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158001
+    m_Localized: '"Trust this note just this once! There isn''t much time!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158002
+    m_Localized: ......What is this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158003
+    m_Localized: How do they even know my name?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158004
+    m_Localized: And rolling around on corpses? What kind of crazy talk is that?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158005
+    m_Localized: And the Underground Restricted Zone...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158006
+    m_Localized: What should I do...?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158007
+    m_Localized: Nothing to lose. Let's just do what the note says.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158008
+    m_Localized: It's suspicious that they know my name... Let me get the award first
+      and think about it later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158009
+    m_Localized: ...Oh, whatever. Let's just go!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158010
+    m_Localized: There aren't that many corpses lying around,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158011
+    m_Localized: but it should be enough to get the smell on me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158012
+    m_Localized: ...... Rolling around on corpses feels like I'm insulting the dead,
+      but
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158013
+    m_Localized: (Roll, roll)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158014
+    m_Localized: Ugh, I'm sorry, I'm so sorry!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158015
+    m_Localized: (Scurry)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158016
+    m_Localized: I had no idea our village went this deep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158017
+    m_Localized: It's like a whole different world...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158018
+    m_Localized: The note said the one blocked off with wooden boards, right..?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158019
+    m_Localized: Hoo, hah... Let me take a deep breath...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158020
+    m_Localized: Okay, let's go in.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158021
+    m_Localized: It's so dark I can't see a thing, even with my eyes open.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158022
+    m_Localized: It feels like a pretty steep downhill slope,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158023
+    m_Localized: ...Huh? I see something over there?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158024
+    m_Localized: ......?!!!!!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158025
+    m_Localized: There are so many termites gathered here!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158026
+    m_Localized: I-I have to report this, quick...!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158027
+    m_Localized: This is obviously suspicious... There's no need to do what it says.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158028
+    m_Localized: Besides, it's full of nothing but weird stuff, isn't it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158029
+    m_Localized: I'm late. I should just hurry to school.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158030
+    m_Localized: Oh, right. She told me to come straight to the main auditorium.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158031
+    m_Localized: ... Even if I get the award, there's no one to show it off to.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158032
+    m_Localized: When is everyone going to get better...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158033
+    m_Localized: ... Should I have done what the note said...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158034
+    m_Localized: I did think it was fishy, my friends not showing up one by one.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158035
+    m_Localized: Ugh, I don't know. What am I supposed to do?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158036
+    m_Localized: Emil, there you are.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158037
+    m_Localized: Oh, Teacher. I forgot to go to the auditorium and came to the classroom
+      instead.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158038
+    m_Localized: Is something troubling you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158039
+    m_Localized: Huh?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158040
+    m_Localized: I thought I heard you groaning just now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158041
+    m_Localized: Ah... it's, it's nothing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158042
+    m_Localized: What's that note you're holding?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158043
+    m_Localized: Oh, this is...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158044
+    m_Localized: Hmm, it's full of nothing but suspicious things.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158045
+    m_Localized: When, where, and from whom did you get this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104828158046
+    m_Localized: Well... it was lying in front of my door when I left home today...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352256
+    m_Localized: ... I see.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352257
+    m_Localized: Hmm, but the fact that you still came to school after reading this
+      means you have that much resolve, doesn't it, Emil?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352258
+    m_Localized: Very well, I think I can tell you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352259
+    m_Localized: Huh? Tell me what......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352260
+    m_Localized: How to become the village's true hero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352261
+    m_Localized: This morning's award ceremony has been postponed to the afternoon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352262
+    m_Localized: And right now, as it happens, there's something I'd like to ask
+      of you, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352263
+    m_Localized: What do you say? Are you ready to become a hero?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352264
+    m_Localized: I don't understand what you mean.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352265
+    m_Localized: The note you received, Emil, was written by termite spies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352266
+    m_Localized: Spies...?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352267
+    m_Localized: Yes, they tried to deceive even you, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352268
+    m_Localized: <b>So let's turn it around. We use it as a clue to find their hideout
+      ourselves and bring them to justice.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352269
+    m_Localized: ...... Is this student Emil?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352270
+    m_Localized: Uh... Wh-who are you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352271
+    m_Localized: Hehe, don't be so scared, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352272
+    m_Localized: This gentleman will be guiding us there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352273
+    m_Localized: (What? It's like she knew in advance that I'd get the note.)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352274
+    m_Localized: Don't worry, I'll be coming with you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352275
+    m_Localized: Both of you, follow me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352276
+    m_Localized: "I spent days wandering all over the village, but I still couldn't
+      find the outside passage the termites use. \nMy friends still don't seem to
+      have recovered. Not a single one has come back to school."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352277
+    m_Localized: Phew...... I've been searching for days,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352278
+    m_Localized: and I still haven't found a secret passage the termites could be
+      using.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352279
+    m_Localized: If those guys keep showing up in the village, there must be a way
+      in from outside
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352280
+    m_Localized: Where on earth are they getting in?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352281
+    m_Localized: ...... It's already this late?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352282
+    m_Localized: I'd better hurry to school.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352283
+    m_Localized: ... I hope my friends are back today.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352284
+    m_Localized: ... Nobody's here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352285
+    m_Localized: Good morning, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352286
+    m_Localized: Good morning, Teacher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352287
+    m_Localized: Emil, you know I care about you a lot, don't you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352288
+    m_Localized: ..? Why are you asking that all of a sudden... Well, of course...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352289
+    m_Localized: You looked after me at Dad's funeral... and you've always said kind
+      things to me...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352290
+    m_Localized: Haha, that's right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352291
+    m_Localized: I'm hoping you'll receive the award this time too, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352292
+    m_Localized: You said you'd give an award for reporting lots of termites, right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352293
+    m_Localized: Yes, I did.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352294
+    m_Localized: But I don't think I tried as hard as my other friends, who got sick
+      from it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352295
+    m_Localized: That's not the only way to prove your passion.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352296
+    m_Localized: But... it's true that, compared to the others, your number of reports
+      wasn't all that outstanding.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352297
+    m_Localized: So I'd like to give you one last chance, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352298
+    m_Localized: A chance? What kind of......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352299
+    m_Localized: Before that, this is something that takes resolve.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352300
+    m_Localized: Emil, are you ready to become the village's hero?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352301
+    m_Localized: ......I don't understand what you mean. Why me, of all ants...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352302
+    m_Localized: You're the right fit for it, and...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352303
+    m_Localized: <b>it's a very secret and very important task.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352304
+    m_Localized: Are you ready?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352305
+    m_Localized: Yes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352306
+    m_Localized: Yes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352307
+    m_Localized: I knew you'd say that, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352308
+    m_Localized: ...... Is this student Emil?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352309
+    m_Localized: Uh... Wh-who are you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352310
+    m_Localized: Hehe, don't be so scared, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352311
+    m_Localized: This gentleman will be our guide.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352312
+    m_Localized: Guide? To where?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352313
+    m_Localized: Why, of course...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352314
+    m_Localized: Down the path to becoming a hero and a model student!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352315
+    m_Localized: Don't worry, I'll be coming with you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352316
+    m_Localized: ...Both of you, follow me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352317
+    m_Localized: I had no idea there was a place like this in our village...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352318
+    m_Localized: This way, please. You can't go through over there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352319
+    m_Localized: (Step, step)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352320
+    m_Localized: That smell is getting stronger and stronger...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352321
+    m_Localized: We're almost there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352322
+    m_Localized: ......??!!!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352323
+    m_Localized: Hngh...! Wh-what on earth is this??
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352324
+    m_Localized: Emil, I told you, didn't I?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352325
+    m_Localized: This is the perfect chance to bring them to justice.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352326
+    m_Localized: Here, take this. It's a new weapon called a 'gun.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352327
+    m_Localized: It's a weapon humans invented a very long time ago.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352328
+    m_Localized: A new weapon...? A gun...?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352329
+    m_Localized: Why are you giving me something like this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352330
+    m_Localized: It's simple to use. Look through this scope, aim at the target,
+      and pull this thing here, called the trigger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352331
+    m_Localized: I'm asking why you're telling me this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352332
+    m_Localized: <b>Now, shoot every termite you see in front of you.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352333
+    m_Localized: Then you'll become the true hero of the Black Ant Village, Emil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352334
+    m_Localized: What?? You're telling me to kill ants right now?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352335
+    m_Localized: Emil, you mustn't think of them as living creatures like us.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352336
+    m_Localized: Wh-why are you doing this to me... I'm just an ordinary...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352337
+    m_Localized: Emil, if you don't shoot them now, our village will be in danger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352338
+    m_Localized: Do you want to put the other black ants in danger too?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352339
+    m_Localized: ....?! No, of course not, but..!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352340
+    m_Localized: For the village, you must do this right now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352341
+    m_Localized: We don't have much time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352342
+    m_Localized: Huff... huff....
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -351,6 +351,18 @@ MonoBehaviour:
     m_Localized: Option
     m_Metadata:
       m_Items: []
+  - m_Id: 20768177037238272
+    m_Localized: Library
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20768117545230336
+    m_Localized: Hospital
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20768051346530304
+    m_Localized: Police Station
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

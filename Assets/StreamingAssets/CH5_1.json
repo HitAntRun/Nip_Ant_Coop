@@ -11,7 +11,7 @@
   "nodes": [
     {
       "id": "n_edc63de9",
-      "locKey": "CH5_1_1a_1",
+      "locKey": "CH5_1_1",
       "speaker": "에밀",
       "text": "휴...... 며칠이나 돌아다녔는데도",
       "portrait": "Emil-portrait",
@@ -42,7 +42,7 @@
     },
     {
       "id": "n_8641e4ce",
-      "locKey": "CH5_1_1a_2",
+      "locKey": "CH5_1_2",
       "speaker": "에밀",
       "text": "흰개미들이 드나들 만한 비밀통로를 발견하지 못했어.",
       "portrait": "Emil-portrait",
@@ -64,7 +64,7 @@
     },
     {
       "id": "n_1d3a41e0",
-      "locKey": "CH5_1_1a_3",
+      "locKey": "CH5_1_3",
       "speaker": "에밀",
       "text": "계속 출몰한다는 건 분명 외부로 통하는 길이 있다는 걸텐데...",
       "portrait": "Emil-portrait",
@@ -95,7 +95,7 @@
     },
     {
       "id": "n_b9c13b33",
-      "locKey": "CH5_1_1a_4",
+      "locKey": "CH5_1_4",
       "speaker": "에밀",
       "text": "대체 어디로 들어오는 거야?",
       "portrait": "Emil-portrait",
@@ -117,7 +117,7 @@
     },
     {
       "id": "n_47448f3c",
-      "locKey": "CH5_1_1a_5",
+      "locKey": "CH5_1_5",
       "speaker": "에밀",
       "text": "...... 벌써 시간이 이렇게나.",
       "portrait": "Emil-portrait",
@@ -139,7 +139,7 @@
     },
     {
       "id": "n_81f43eab",
-      "locKey": "CH5_1_1a_6",
+      "locKey": "CH5_1_6",
       "speaker": "에밀",
       "text": "얼른 학교에 가야겠다.",
       "portrait": "Emil-portrait",
@@ -161,7 +161,7 @@
     },
     {
       "id": "n_7ffd0c3c",
-      "locKey": "CH5_1_1a_7",
+      "locKey": "CH5_1_7",
       "speaker": "에밀",
       "text": "... 오늘은 친구들이 돌아왔으면 좋겠다.",
       "portrait": "Emil-portrait",
@@ -183,7 +183,7 @@
     },
     {
       "id": "n_e5a4fd63",
-      "locKey": "CH5_1_1a_8",
+      "locKey": "CH5_1_8",
       "speaker": "에밀",
       "text": "... 아무도 없네.",
       "portrait": "Emil-portrait",
@@ -214,7 +214,7 @@
     },
     {
       "id": "n_20bf37ea",
-      "locKey": "CH5_1_1a_9",
+      "locKey": "CH5_1_9",
       "speaker": "선생 개미",
       "text": "좋은 아침이에요, 에밀.",
       "portrait": "Teacher-portrait",
@@ -253,7 +253,7 @@
     },
     {
       "id": "n_d6c41b58",
-      "locKey": "CH5_1_1a_10",
+      "locKey": "CH5_1_10",
       "speaker": "에밀",
       "text": "안녕하세요, 선생님.",
       "portrait": "Emil-portrait",
@@ -292,7 +292,7 @@
     },
     {
       "id": "n_466ff6b4",
-      "locKey": "CH5_1_1a_11",
+      "locKey": "CH5_1_11",
       "speaker": "선생 개미",
       "text": "후후, 에밀. 놀랄 만한 소식이 있어요~",
       "portrait": "Teacher-portrait",
@@ -331,7 +331,7 @@
     },
     {
       "id": "n_2bcf5d02",
-      "locKey": "CH5_1_1a_12",
+      "locKey": "CH5_1_12",
       "speaker": "에밀",
       "text": "네? 어떤 건데요?",
       "portrait": "Emil-portrait",
@@ -370,7 +370,7 @@
     },
     {
       "id": "n_a97d68a3",
-      "locKey": "CH5_1_1a_13",
+      "locKey": "CH5_1_13",
       "speaker": "선생 개미",
       "text": "흰개미를 열심히 찾아 신고한 공로로,",
       "portrait": "Teacher-portrait",
@@ -409,7 +409,7 @@
     },
     {
       "id": "n_59bf3a22",
-      "locKey": "CH5_1_1a_14",
+      "locKey": "CH5_1_14",
       "speaker": "선생 개미",
       "text": "<b>에밀이 대표로 상을 받게 되었어요!</b>",
       "portrait": "Teacher-portrait",
@@ -431,7 +431,7 @@
     },
     {
       "id": "n_d1858356",
-      "locKey": "CH5_1_1a_15",
+      "locKey": "CH5_1_15",
       "speaker": "에밀",
       "text": "......",
       "portrait": "Emil-portrait",
@@ -470,7 +470,7 @@
     },
     {
       "id": "n_7d307d32",
-      "locKey": "CH5_1_1a_16",
+      "locKey": "CH5_1_16",
       "speaker": "에밀",
       "text": "......네?! 제가요??!!",
       "portrait": "Emil-portrait",
@@ -501,7 +501,7 @@
     },
     {
       "id": "n_45d19451",
-      "locKey": "CH5_1_1a_17",
+      "locKey": "CH5_1_17",
       "speaker": "에밀",
       "text": "어어... 어... 정말 당황스럽네요.",
       "portrait": "Emil-portrait",
@@ -523,7 +523,7 @@
     },
     {
       "id": "n_d0a60300",
-      "locKey": "CH5_1_1a_18",
+      "locKey": "CH5_1_18",
       "speaker": "선생 개미",
       "text": "별로 좋아 보이지 않는군요. 기쁘지 않나요~?",
       "portrait": "Teacher-portrait",
@@ -562,7 +562,7 @@
     },
     {
       "id": "n_0319cd3e",
-      "locKey": "CH5_1_1a_19",
+      "locKey": "CH5_1_19",
       "speaker": "에밀",
       "text": "그치만... 저는 다른 친구들처럼 몸살이 날 정도로 열심히 흰개미를 찾아다니지도 않았고",
       "portrait": "Emil-portrait",
@@ -601,7 +601,7 @@
     },
     {
       "id": "n_9472e32d",
-      "locKey": "CH5_1_1a_20",
+      "locKey": "CH5_1_20",
       "speaker": "에밀",
       "text": "... 어, 선생님이 다른 짓은 하지 말라고 하셨지만,",
       "portrait": "Emil-portrait",
@@ -623,7 +623,7 @@
     },
     {
       "id": "n_fe8f2265",
-      "locKey": "CH5_1_1a_21",
+      "locKey": "CH5_1_21",
       "speaker": "에밀",
       "text": "그동안 흰개미들이 드나들 만한 비밀통로 같은 것도 찾아다녔었는데요,",
       "portrait": "Emil-portrait",
@@ -645,7 +645,7 @@
     },
     {
       "id": "n_90bdd8f8",
-      "locKey": "CH5_1_1a_22",
+      "locKey": "CH5_1_22",
       "speaker": "에밀",
       "text": "결국 그것마저 못 찾았거든요.",
       "portrait": "Emil-portrait",
@@ -667,7 +667,7 @@
     },
     {
       "id": "n_4e6c5e31",
-      "locKey": "CH5_1_1a_23",
+      "locKey": "CH5_1_23",
       "speaker": "에밀",
       "text": "다른 친구들도 아니고, 이런 제가 상을 받는다니",
       "portrait": "Emil-portrait",
@@ -689,7 +689,7 @@
     },
     {
       "id": "n_2ea7b5bc",
-      "locKey": "CH5_1_1a_24",
+      "locKey": "CH5_1_24",
       "speaker": "에밀",
       "text": "과연 자격이 있나 싶은 생각이 들어요...",
       "portrait": "Emil-portrait",
@@ -711,7 +711,7 @@
     },
     {
       "id": "n_1bad990c",
-      "locKey": "CH5_1_1a_25",
+      "locKey": "CH5_1_25",
       "speaker": "선생 개미",
       "text": "그건 선생님만의 결정은 아니에요.",
       "portrait": "Teacher-portrait",
@@ -750,7 +750,7 @@
     },
     {
       "id": "n_21b2dab6",
-      "locKey": "CH5_1_1a_26",
+      "locKey": "CH5_1_26",
       "speaker": "선생 개미",
       "text": "다른 선생님들의 의견까지 모아서, 에밀에게 주기로 한 거예요.",
       "portrait": "Teacher-portrait",
@@ -772,7 +772,7 @@
     },
     {
       "id": "n_39ea8c8d",
-      "locKey": "CH5_1_1a_27",
+      "locKey": "CH5_1_27",
       "speaker": "선생 개미",
       "text": "그러니 자랑스럽게 여겨도 돼요. 아시겠죠?",
       "portrait": "Teacher-portrait",
@@ -803,7 +803,7 @@
     },
     {
       "id": "n_a1c47f6b",
-      "locKey": "CH5_1_1a_28",
+      "locKey": "CH5_1_28",
       "speaker": "교장 개미",
       "text": "오! 자네가 에밀 학생인가?!",
       "portrait": "executive1-portrait",
@@ -842,7 +842,7 @@
     },
     {
       "id": "n_91f6bfb1",
-      "locKey": "CH5_1_1a_29",
+      "locKey": "CH5_1_29",
       "speaker": "선생 개미",
       "text": "엇, 교장 선생님, 어쩐 일이시죠?!",
       "portrait": "Teacher-portrait",
@@ -881,7 +881,7 @@
     },
     {
       "id": "n_5687b63c",
-      "locKey": "CH5_1_1a_30",
+      "locKey": "CH5_1_30",
       "speaker": "에밀",
       "text": "(교장 선생님은 처음 뵙는데...)",
       "portrait": "Emil-portrait",
@@ -920,7 +920,7 @@
     },
     {
       "id": "n_4c990679",
-      "locKey": "CH5_1_1a_31",
+      "locKey": "CH5_1_31",
       "speaker": "교장 개미",
       "text": "이번에 상을 받을 아이를 직접 만나보고 싶어서 한 번 와봤습니다.",
       "portrait": "executive1-portrait",
@@ -959,7 +959,7 @@
     },
     {
       "id": "n_f8b5c993",
-      "locKey": "CH5_1_1a_32",
+      "locKey": "CH5_1_32",
       "speaker": "교장 개미",
       "text": "...음, 역시 듣던 대로  아주 총명하게 생긴 개미구나.",
       "portrait": "executive1-portrait",
@@ -981,7 +981,7 @@
     },
     {
       "id": "n_3b58f5da",
-      "locKey": "CH5_1_1a_33",
+      "locKey": "CH5_1_33",
       "speaker": "에밀",
       "text": "감사합니다...",
       "portrait": "Emil-portrait",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": "n_e13271e8",
-      "locKey": "CH5_1_1a_34",
+      "locKey": "CH5_1_34",
       "speaker": "교장 개미",
       "text": "우리 마을을 위해 아주 멋진 일을 했다지?",
       "portrait": "executive1-portrait",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": "n_daf0fb52",
-      "locKey": "CH5_1_1a_35",
+      "locKey": "CH5_1_35",
       "speaker": "교장 개미",
       "text": "정말 대단해! 에밀 학생, 자네는 다른 모든 검은개미들의 모범이야!",
       "portrait": "executive1-portrait",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": "n_88223c13",
-      "locKey": "CH5_1_1a_36",
+      "locKey": "CH5_1_36",
       "speaker": "에밀",
       "text": "마땅히 해야 할 일을 했을 뿐인걸요.",
       "portrait": "Emil-portrait",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": "n_a33db644",
-      "locKey": "CH5_1_1a_37",
+      "locKey": "CH5_1_37",
       "speaker": "교장 개미",
       "text": "하하하, 대답도 아주 마음에 쏙 들어!",
       "portrait": "executive1-portrait",
@@ -1159,7 +1159,7 @@
     },
     {
       "id": "n_51243a27",
-      "locKey": "CH5_1_1a_38",
+      "locKey": "CH5_1_38",
       "speaker": "교장 개미",
       "text": "내일 대강당에서 상장 수여식이 있을 거야.",
       "portrait": "executive1-portrait",
@@ -1181,7 +1181,7 @@
     },
     {
       "id": "n_9aff4a30",
-      "locKey": "CH5_1_1a_39",
+      "locKey": "CH5_1_39",
       "speaker": "교장 개미",
       "text": "내가 호명하면, 에밀 학생은 무대 위로 올라와서 상을 받으면 돼. 알겠지?",
       "portrait": "executive1-portrait",
@@ -1203,7 +1203,7 @@
     },
     {
       "id": "n_56b13255",
-      "locKey": "CH5_1_1a_40",
+      "locKey": "CH5_1_40",
       "speaker": "에밀",
       "text": "네, 교장 선생님.",
       "portrait": "Emil-portrait",
@@ -1242,7 +1242,7 @@
     },
     {
       "id": "n_2210c926",
-      "locKey": "CH5_1_1a_41",
+      "locKey": "CH5_1_41",
       "speaker": "교장 개미",
       "text": "그래그래. 그렇다고 너무 긴장하지는 말고.",
       "portrait": "executive1-portrait",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": "n_fe88cbfe",
-      "locKey": "CH5_1_1a_42",
+      "locKey": "CH5_1_42",
       "speaker": "교장 개미",
       "text": "그럼 내일 보자꾸나. 선생, 아주 훌륭한 학생을 제자로 뒀군.",
       "portrait": "executive1-portrait",
@@ -1303,7 +1303,7 @@
     },
     {
       "id": "n_93e156ca",
-      "locKey": "CH5_1_1a_43",
+      "locKey": "CH5_1_43",
       "speaker": "선생 개미",
       "text": "얼마나 고마운지 모릅니다. 저도 에밀 같은 학생을 보면서 많이 배워가고 있습니다.",
       "portrait": "Teacher-portrait",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": "n_b725d9d9",
-      "locKey": "CH5_1_1a_44",
+      "locKey": "CH5_1_44",
       "speaker": "교장 개미",
       "text": "아주 훌륭한 사제의 모습이로군! 하하 좋아좋아!",
       "portrait": "executive1-portrait",
@@ -1381,7 +1381,7 @@
     },
     {
       "id": "n_1bcad606",
-      "locKey": "CH5_1_1a_45",
+      "locKey": "CH5_1_45",
       "speaker": "교장 개미",
       "text": "이만 먼저 실례하겠네!",
       "portrait": "executive1-portrait",
@@ -1403,7 +1403,7 @@
     },
     {
       "id": "n_02d26ee3",
-      "locKey": "CH5_1_1a_46",
+      "locKey": "CH5_1_46",
       "speaker": "선생 개미",
       "text": "... 교장 선생님 말씀 들었죠, 에밀?",
       "portrait": "Teacher-portrait",
@@ -1442,7 +1442,7 @@
     },
     {
       "id": "n_8af0c1d2",
-      "locKey": "CH5_1_1a_47",
+      "locKey": "CH5_1_47",
       "speaker": "선생 개미",
       "text": "내일은 오전부터 상장 수여식이 있을 예정이니까, 교실 말고 바로 대강당으로 오면 됩니다.",
       "portrait": "Teacher-portrait",
@@ -1464,7 +1464,7 @@
     },
     {
       "id": "n_b7f73ec3",
-      "locKey": "CH5_1_1a_48",
+      "locKey": "CH5_1_48",
       "speaker": "선생 개미",
       "text": "학생들도 많이 안 왔으니, 오늘은 일찍 끝낼게요. 푹 쉬고 내일 만나요~",
       "portrait": "Teacher-portrait",
@@ -1486,7 +1486,7 @@
     },
     {
       "id": "n_fded4602",
-      "locKey": "CH5_1_1a_49",
+      "locKey": "CH5_1_49",
       "speaker": "에밀",
       "text": "네... 감사합니다.",
       "portrait": "Emil-portrait",
@@ -1525,7 +1525,7 @@
     },
     {
       "id": "n_9edeb7c9",
-      "locKey": "CH5_1_1a_50",
+      "locKey": "CH5_1_50",
       "speaker": "",
       "text": "(다음 날, 개미력 11일)",
       "portrait": "",
@@ -1547,7 +1547,7 @@
     },
     {
       "id": "n_ee07fdda",
-      "locKey": "CH5_1_1a_51",
+      "locKey": "CH5_1_51",
       "speaker": "에밀",
       "text": "오늘이 상장 수여식...",
       "portrait": "Emil-portrait",
@@ -1578,7 +1578,7 @@
     },
     {
       "id": "n_810c38a7",
-      "locKey": "CH5_1_1a_52",
+      "locKey": "CH5_1_52",
       "speaker": "에밀",
       "text": "뭔가 실감이 잘 안 나.",
       "portrait": "Emil-portrait",
@@ -1600,7 +1600,7 @@
     },
     {
       "id": "n_7d2142e9",
-      "locKey": "CH5_1_1a_53",
+      "locKey": "CH5_1_53",
       "speaker": "에밀",
       "text": "기분이 좋아야 마땅한데, 이 찝찝함은 뭐지...",
       "portrait": "Emil-portrait",
@@ -1631,7 +1631,7 @@
     },
     {
       "id": "n_7b06b40a",
-      "locKey": "CH5_1_1a_54",
+      "locKey": "CH5_1_54",
       "speaker": "",
       "text": "(벌컥)",
       "portrait": "",
@@ -1653,7 +1653,7 @@
     },
     {
       "id": "n_11feb2a6",
-      "locKey": "CH5_1_1a_55",
+      "locKey": "CH5_1_55",
       "speaker": "에밀",
       "text": "어? 웬 쪽지가 문 앞에...",
       "portrait": "Emil-portrait",
@@ -1684,7 +1684,7 @@
     },
     {
       "id": "n_10ee23a7",
-      "locKey": "CH5_1_1a_56",
+      "locKey": "CH5_1_56",
       "speaker": "",
       "text": "\"에밀, 도와줘. 어쩌면 네가 우리의 유일한 희망일지도 몰라.\"",
       "portrait": "",
@@ -1706,7 +1706,7 @@
     },
     {
       "id": "n_817a95dc",
-      "locKey": "CH5_1_1a_57",
+      "locKey": "CH5_1_57",
       "speaker": "",
       "text": "\"요즘 주위의 친구들이 몸살을 이유로 하나둘씩 사라졌지?\"",
       "portrait": "",
@@ -1728,7 +1728,7 @@
     },
     {
       "id": "n_6af5dd56",
-      "locKey": "CH5_1_1a_58",
+      "locKey": "CH5_1_58",
       "speaker": "",
       "text": "\"우리는 그 비밀을 알고 있고, 너에게 알려줄 수도 있어.\"",
       "portrait": "",
@@ -1750,7 +1750,7 @@
     },
     {
       "id": "n_a263d8d1",
-      "locKey": "CH5_1_1a_59",
+      "locKey": "CH5_1_59",
       "speaker": "",
       "text": "\"그러니까 이걸 이상하게 여기지 말고,\"",
       "portrait": "",
@@ -1772,7 +1772,7 @@
     },
     {
       "id": "n_4a8ca58f",
-      "locKey": "CH5_1_1a_60",
+      "locKey": "CH5_1_60",
       "speaker": "",
       "text": "\"여기 적힌 그대로 해줬으면 좋겠어. 나중에 다 설명할게.\"",
       "portrait": "",
@@ -1794,7 +1794,7 @@
     },
     {
       "id": "n_2f35ad88",
-      "locKey": "CH5_1_1a_61",
+      "locKey": "CH5_1_61",
       "speaker": "",
       "text": "\"이 쪽지를 확인하는 대로 시체처리장에 가서, 시체 위에서 한 번 뒹굴어\"",
       "portrait": "",
@@ -1816,7 +1816,7 @@
     },
     {
       "id": "n_9743651f",
-      "locKey": "CH5_1_1a_62",
+      "locKey": "CH5_1_62",
       "speaker": "",
       "text": "\"시체 냄새가 네 몸 전체에 밸 때까지.\"",
       "portrait": "",
@@ -1838,7 +1838,7 @@
     },
     {
       "id": "n_d48f9113",
-      "locKey": "CH5_1_1a_63",
+      "locKey": "CH5_1_63",
       "speaker": "",
       "text": "\"그런 다음 마을 가장 깊은 곳에 있는 지하통제구역으로 와줘.\"",
       "portrait": "",
@@ -1860,7 +1860,7 @@
     },
     {
       "id": "n_37c213a6",
-      "locKey": "CH5_1_1a_64",
+      "locKey": "CH5_1_64",
       "speaker": "",
       "text": "\"중간에 갈림길이 있을 텐데, 나무 판자로 막혀 있는 굴로 들어와.\"",
       "portrait": "",
@@ -1882,7 +1882,7 @@
     },
     {
       "id": "n_dd5228cb",
-      "locKey": "CH5_1_1a_65",
+      "locKey": "CH5_1_65",
       "speaker": "",
       "text": "\"맨 아래쪽 틈새로 기어서 들어올 수 있을 거야..\"",
       "portrait": "",
@@ -1904,7 +1904,7 @@
     },
     {
       "id": "n_abc0567d",
-      "locKey": "CH5_1_1a_66",
+      "locKey": "CH5_1_66",
       "speaker": "",
       "text": "\"얼마나 이상한 말인지, 아주 잘 알지만...",
       "portrait": "",
@@ -1926,7 +1926,7 @@
     },
     {
       "id": "n_127feb34",
-      "locKey": "CH5_1_1a_67",
+      "locKey": "CH5_1_67",
       "speaker": "",
       "text": "\"부탁이야, 에밀.\"",
       "portrait": "",
@@ -1948,7 +1948,7 @@
     },
     {
       "id": "n_4f2a4fe2",
-      "locKey": "CH5_1_1a_68",
+      "locKey": "CH5_1_68",
       "speaker": "",
       "text": "\"딱 한 번만 이 쪽지를 믿어 줘! 시간이 많이 없어!\"",
       "portrait": "",
@@ -1970,7 +1970,7 @@
     },
     {
       "id": "n_c4c5cf17",
-      "locKey": "CH5_1_1a_69",
+      "locKey": "CH5_1_69",
       "speaker": "에밀",
       "text": "......이게 대체 뭐야?",
       "portrait": "Emil-portrait",
@@ -2001,7 +2001,7 @@
     },
     {
       "id": "n_cee827b0",
-      "locKey": "CH5_1_1a_70",
+      "locKey": "CH5_1_70",
       "speaker": "에밀",
       "text": "내 이름을 대체 어떻게 알고 있는 거지?",
       "portrait": "Emil-portrait",
@@ -2023,7 +2023,7 @@
     },
     {
       "id": "n_13bf1b58",
-      "locKey": "CH5_1_1a_71",
+      "locKey": "CH5_1_71",
       "speaker": "에밀",
       "text": "아니, 시체밭에 뒹굴라는 건 또 무슨 미친 소리야?",
       "portrait": "Emil-portrait",
@@ -2045,7 +2045,7 @@
     },
     {
       "id": "n_dd72ce88",
-      "locKey": "CH5_1_1a_72",
+      "locKey": "CH5_1_72",
       "speaker": "에밀",
       "text": "그리고 지하통제구역이라니...",
       "portrait": "Emil-portrait",
@@ -2067,7 +2067,7 @@
     },
     {
       "id": "n_d48cba3a",
-      "locKey": "CH5_1_1a_73",
+      "locKey": "CH5_1_73",
       "speaker": "에밀",
       "text": "어떡하지...?",
       "portrait": "Emil-portrait",
@@ -2100,7 +2100,7 @@
     },
     {
       "id": "n_a79c2b8d",
-      "locKey": "CH5_1_1a_74",
+      "locKey": "CH5_1_74",
       "speaker": "에밀",
       "text": "...에이, 모르겠다. 일단 가보자!",
       "portrait": "Emil-portrait",
@@ -2131,7 +2131,7 @@
     },
     {
       "id": "n_ffa75833",
-      "locKey": "CH5_1_1a_75",
+      "locKey": "CH5_1_75",
       "speaker": "에밀",
       "text": "땅에 널브러진 시체는 그닥 많지 않아도",
       "portrait": "Emil-portrait",
@@ -2162,7 +2162,7 @@
     },
     {
       "id": "n_c37fa9e2",
-      "locKey": "CH5_1_1a_76",
+      "locKey": "CH5_1_76",
       "speaker": "에밀",
       "text": "냄새를 몸에 묻히기엔 충분할 것 같아.",
       "portrait": "Emil-portrait",
@@ -2184,7 +2184,7 @@
     },
     {
       "id": "n_5ae2ba00",
-      "locKey": "CH5_1_1a_77",
+      "locKey": "CH5_1_77",
       "speaker": "에밀",
       "text": "...... 시체 위에서 뒹군다니, 죽은 개미를 모욕하는 기분이 들지만",
       "portrait": "Emil-portrait",
@@ -2215,7 +2215,7 @@
     },
     {
       "id": "n_b5fb0f80",
-      "locKey": "CH5_1_1a_78",
+      "locKey": "CH5_1_78",
       "speaker": "에밀",
       "text": "(뒹굴뒹굴)",
       "portrait": "Emil-portrait",
@@ -2237,7 +2237,7 @@
     },
     {
       "id": "n_c1a4e368",
-      "locKey": "CH5_1_1a_79",
+      "locKey": "CH5_1_79",
       "speaker": "에밀",
       "text": "으으, 죄송합니다 죄송합니다!",
       "portrait": "Emil-portrait",
@@ -2268,7 +2268,7 @@
     },
     {
       "id": "n_e16ca952",
-      "locKey": "CH5_1_1a_80",
+      "locKey": "CH5_1_80",
       "speaker": "에밀",
       "text": "(호다닥)",
       "portrait": "Emil-portrait",
@@ -2290,7 +2290,7 @@
     },
     {
       "id": "n_519fff92",
-      "locKey": "CH5_1_1a_81",
+      "locKey": "CH5_1_81",
       "speaker": "에밀",
       "text": "우리 마을이 이만큼 깊은 곳까지 있었다니",
       "portrait": "Emil-portrait",
@@ -2321,7 +2321,7 @@
     },
     {
       "id": "n_c09c30c6",
-      "locKey": "CH5_1_1a_82",
+      "locKey": "CH5_1_82",
       "speaker": "에밀",
       "text": "완전 다른 세상 같아...",
       "portrait": "Emil-portrait",
@@ -2343,7 +2343,7 @@
     },
     {
       "id": "n_bed8cec5",
-      "locKey": "CH5_1_1a_83",
+      "locKey": "CH5_1_83",
       "speaker": "에밀",
       "text": "아까 나무 판자로 막힌 쪽이라고 적혀 있었지..?",
       "portrait": "Emil-portrait",
@@ -2374,7 +2374,7 @@
     },
     {
       "id": "n_6ae6b8f1",
-      "locKey": "CH5_1_1a_84",
+      "locKey": "CH5_1_84",
       "speaker": "에밀",
       "text": "스읍, 후... 심호흡 한 번 하고...",
       "portrait": "Emil-portrait",
@@ -2405,7 +2405,7 @@
     },
     {
       "id": "n_6e2c7192",
-      "locKey": "CH5_1_1a_85",
+      "locKey": "CH5_1_85",
       "speaker": "에밀",
       "text": "좋아, 들어가보자.",
       "portrait": "Emil-portrait",
@@ -2436,7 +2436,7 @@
     },
     {
       "id": "n_32874318",
-      "locKey": "CH5_1_1a_86",
+      "locKey": "CH5_1_86",
       "speaker": "에밀",
       "text": "너무 어두워서 눈을 뜨고 있는데도 아무 것도 보이지 않아.",
       "portrait": "Emil-portrait",
@@ -2467,7 +2467,7 @@
     },
     {
       "id": "n_005cf326",
-      "locKey": "CH5_1_1a_87",
+      "locKey": "CH5_1_87",
       "speaker": "에밀",
       "text": "꽤 경사가 진 내리막길인 것 같은데,",
       "portrait": "Emil-portrait",
@@ -2489,7 +2489,7 @@
     },
     {
       "id": "n_792650e6",
-      "locKey": "CH5_1_1a_88",
+      "locKey": "CH5_1_88",
       "speaker": "에밀",
       "text": "...어? 저기 뭔가가 보이는데?",
       "portrait": "Emil-portrait",
@@ -2511,7 +2511,7 @@
     },
     {
       "id": "n_78c736de",
-      "locKey": "CH5_1_1a_89",
+      "locKey": "CH5_1_89",
       "speaker": "에밀",
       "text": "......?!!!!!!!",
       "portrait": "Emil-portrait",
@@ -2542,7 +2542,7 @@
     },
     {
       "id": "n_eefce6a1",
-      "locKey": "CH5_1_1a_90",
+      "locKey": "CH5_1_90",
       "speaker": "에밀",
       "text": "흰개미들이 엄청 많이 모여 있잖아!!",
       "portrait": "Emil-portrait",
@@ -2564,7 +2564,7 @@
     },
     {
       "id": "n_2a86d057",
-      "locKey": "CH5_1_1a_91",
+      "locKey": "CH5_1_91",
       "speaker": "에밀",
       "text": "빠, 빨리 신고를...!",
       "portrait": "Emil-portrait",
@@ -2586,7 +2586,7 @@
     },
     {
       "id": "n_951d84ae",
-      "locKey": "CH5_1_1a_92",
+      "locKey": "CH5_1_92",
       "speaker": "에밀",
       "text": "딱 봐도 수상한데... 여기 적힌 대로 할 필요는 없지.",
       "portrait": "Emil-portrait",
@@ -2608,7 +2608,7 @@
     },
     {
       "id": "n_c96b8ae1",
-      "locKey": "CH5_1_1a_93",
+      "locKey": "CH5_1_93",
       "speaker": "에밀",
       "text": "게다가 순 이상한 말만 적혀 있잖아?",
       "portrait": "Emil-portrait",
@@ -2630,7 +2630,7 @@
     },
     {
       "id": "n_6b4bfc59",
-      "locKey": "CH5_1_1a_94",
+      "locKey": "CH5_1_94",
       "speaker": "에밀",
       "text": "늦었는데 빨리 학교나 가자.",
       "portrait": "Emil-portrait",
@@ -2652,7 +2652,7 @@
     },
     {
       "id": "n_e5e910c9",
-      "locKey": "CH5_1_1a_95",
+      "locKey": "CH5_1_95",
       "speaker": "에밀",
       "text": "아, 맞다. 대강당으로 바로 오라고 말씀하셨었지.",
       "portrait": "Emil-portrait",
@@ -2674,7 +2674,7 @@
     },
     {
       "id": "n_90c2acaa",
-      "locKey": "CH5_1_1a_96",
+      "locKey": "CH5_1_96",
       "speaker": "에밀",
       "text": "... 상 받아도 자랑할 개미 하나 없는데.",
       "portrait": "Emil-portrait",
@@ -2705,7 +2705,7 @@
     },
     {
       "id": "n_a1ed1fb2",
-      "locKey": "CH5_1_1a_97",
+      "locKey": "CH5_1_97",
       "speaker": "에밀",
       "text": "다들 언제쯤 다 낫는 거야...",
       "portrait": "Emil-portrait",
@@ -2727,7 +2727,7 @@
     },
     {
       "id": "n_2217de11",
-      "locKey": "CH5_1_1a_98",
+      "locKey": "CH5_1_98",
       "speaker": "에밀",
       "text": "... 쪽지에 적힌 대로 했어야 했나...",
       "portrait": "Emil-portrait",
@@ -2749,7 +2749,7 @@
     },
     {
       "id": "n_a79db184",
-      "locKey": "CH5_1_1a_99",
+      "locKey": "CH5_1_99",
       "speaker": "에밀",
       "text": "친구들이 하나둘씩 안 나오는 게, 미심쩍긴 했는데.",
       "portrait": "Emil-portrait",
@@ -2771,7 +2771,7 @@
     },
     {
       "id": "n_3077aea3",
-      "locKey": "CH5_1_1a_100",
+      "locKey": "CH5_1_100",
       "speaker": "에밀",
       "text": "으, 모르겠어. 어떻게 해야 하지?",
       "portrait": "Emil-portrait",
@@ -2802,7 +2802,7 @@
     },
     {
       "id": "n_ce8bc8dc",
-      "locKey": "CH5_1_1a_101",
+      "locKey": "CH5_1_101",
       "speaker": "선생 개미",
       "text": "에밀, 여기 있었군요.",
       "portrait": "Teacher-portrait",
@@ -2841,7 +2841,7 @@
     },
     {
       "id": "n_fbea85bf",
-      "locKey": "CH5_1_1a_102",
+      "locKey": "CH5_1_102",
       "speaker": "에밀",
       "text": "아, 선생님. 대강당으로 가는 걸 깜빡하고 교실로 와버렸어요.",
       "portrait": "Emil-portrait",
@@ -2880,7 +2880,7 @@
     },
     {
       "id": "n_dfa9cda4",
-      "locKey": "CH5_1_1a_103",
+      "locKey": "CH5_1_103",
       "speaker": "선생 개미",
       "text": "골치 아픈 일이라도 있나요?",
       "portrait": "Teacher-portrait",
@@ -2919,7 +2919,7 @@
     },
     {
       "id": "n_6a3d44bd",
-      "locKey": "CH5_1_1a_104",
+      "locKey": "CH5_1_104",
       "speaker": "에밀",
       "text": "네?",
       "portrait": "Emil-portrait",
@@ -2958,7 +2958,7 @@
     },
     {
       "id": "n_50df9f09",
-      "locKey": "CH5_1_1a_105",
+      "locKey": "CH5_1_105",
       "speaker": "선생 개미",
       "text": "아까 앓는 소리를 했던 것 같아서요.",
       "portrait": "Teacher-portrait",
@@ -2997,7 +2997,7 @@
     },
     {
       "id": "n_d2fff084",
-      "locKey": "CH5_1_1a_106",
+      "locKey": "CH5_1_106",
       "speaker": "에밀",
       "text": "아하... 그, 별일 아니에요.",
       "portrait": "Emil-portrait",
@@ -3036,7 +3036,7 @@
     },
     {
       "id": "n_342de870",
-      "locKey": "CH5_1_1a_107",
+      "locKey": "CH5_1_107",
       "speaker": "선생 개미",
       "text": "손에 들고 있는 그 쪽지는 뭔가요?",
       "portrait": "Teacher-portrait",
@@ -3075,7 +3075,7 @@
     },
     {
       "id": "n_d4771b73",
-      "locKey": "CH5_1_1a_108",
+      "locKey": "CH5_1_108",
       "speaker": "에밀",
       "text": "엇, 이건...",
       "portrait": "Emil-portrait",
@@ -3114,7 +3114,7 @@
     },
     {
       "id": "n_ca76bbe8",
-      "locKey": "CH5_1_1a_109",
+      "locKey": "CH5_1_109",
       "speaker": "선생 개미",
       "text": "흐음, 수상한 내용만 잔뜩 적혀 있군요.",
       "portrait": "Teacher-portrait",
@@ -3153,7 +3153,7 @@
     },
     {
       "id": "n_84254b41",
-      "locKey": "CH5_1_1a_110",
+      "locKey": "CH5_1_110",
       "speaker": "선생 개미",
       "text": "언제 어디서 누구에게 받은 거지요?",
       "portrait": "Teacher-portrait",
@@ -3175,7 +3175,7 @@
     },
     {
       "id": "n_66bb4f9f",
-      "locKey": "CH5_1_1a_111",
+      "locKey": "CH5_1_111",
       "speaker": "에밀",
       "text": "그게... 오늘 집을 나서다 문 앞에 떨어져 있었어요...",
       "portrait": "Emil-portrait",
@@ -3214,7 +3214,7 @@
     },
     {
       "id": "n_b745e1d9",
-      "locKey": "CH5_1_1a_112",
+      "locKey": "CH5_1_112",
       "speaker": "선생 개미",
       "text": "... 그렇군요.",
       "portrait": "Teacher-portrait",
@@ -3253,7 +3253,7 @@
     },
     {
       "id": "n_7fccf58b",
-      "locKey": "CH5_1_1a_113",
+      "locKey": "CH5_1_113",
       "speaker": "선생 개미",
       "text": "흐음, 그래도 이 쪽지를 보고 학교를 왔다는 건, 에밀의 심지가 그만큼 굳다는 의미겠지요?",
       "portrait": "Teacher-portrait",
@@ -3275,7 +3275,7 @@
     },
     {
       "id": "n_386ee827",
-      "locKey": "CH5_1_1a_114",
+      "locKey": "CH5_1_114",
       "speaker": "선생 개미",
       "text": "좋아요, 에밀에게 알려줘도 될 것 같군요.",
       "portrait": "Teacher-portrait",
@@ -3306,7 +3306,7 @@
     },
     {
       "id": "n_f3cdc64c",
-      "locKey": "CH5_1_1a_115",
+      "locKey": "CH5_1_115",
       "speaker": "에밀",
       "text": "네? 어떤......",
       "portrait": "Emil-portrait",
@@ -3345,7 +3345,7 @@
     },
     {
       "id": "n_c816c0c3",
-      "locKey": "CH5_1_1a_116",
+      "locKey": "CH5_1_116",
       "speaker": "선생 개미",
       "text": "마을의 진정한 영웅이 되는 방법 말이지요.",
       "portrait": "Teacher-portrait",
@@ -3384,7 +3384,7 @@
     },
     {
       "id": "n_ac3e9d7a",
-      "locKey": "CH5_1_1a_117",
+      "locKey": "CH5_1_117",
       "speaker": "선생 개미",
       "text": "오전의 상장수여식은 오후로 연기되었어요.",
       "portrait": "Teacher-portrait",
@@ -3406,7 +3406,7 @@
     },
     {
       "id": "n_89d82c89",
-      "locKey": "CH5_1_1a_118",
+      "locKey": "CH5_1_118",
       "speaker": "선생 개미",
       "text": "그래서 지금, 때마침 에밀에게 부탁하고 싶은 게 생겼는데,",
       "portrait": "Teacher-portrait",
@@ -3428,7 +3428,7 @@
     },
     {
       "id": "n_38124c19",
-      "locKey": "CH5_1_1a_119",
+      "locKey": "CH5_1_119",
       "speaker": "선생 개미",
       "text": "어때요, 영웅이 될 각오가 있나요?",
       "portrait": "Teacher-portrait",
@@ -3450,7 +3450,7 @@
     },
     {
       "id": "n_1869e65b",
-      "locKey": "CH5_1_1a_120",
+      "locKey": "CH5_1_120",
       "speaker": "에밀",
       "text": "무슨 말씀을 하시는지 모르겠어요.",
       "portrait": "Emil-portrait",
@@ -3489,7 +3489,7 @@
     },
     {
       "id": "n_73081f34",
-      "locKey": "CH5_1_1a_121",
+      "locKey": "CH5_1_121",
       "speaker": "선생 개미",
       "text": "에밀이 받은 쪽지, 그건 흰개미 스파이들이 적은 거예요.",
       "portrait": "Teacher-portrait",
@@ -3528,7 +3528,7 @@
     },
     {
       "id": "n_562fa4fe",
-      "locKey": "CH5_1_1a_122",
+      "locKey": "CH5_1_122",
       "speaker": "에밀",
       "text": "스파이요...?!",
       "portrait": "Emil-portrait",
@@ -3567,7 +3567,7 @@
     },
     {
       "id": "n_0092be98",
-      "locKey": "CH5_1_1a_123",
+      "locKey": "CH5_1_123",
       "speaker": "선생 개미",
       "text": "네, 그들이 에밀까지 속이려 한 거죠.",
       "portrait": "Teacher-portrait",
@@ -3606,7 +3606,7 @@
     },
     {
       "id": "n_f4fd8013",
-      "locKey": "CH5_1_1a_124",
+      "locKey": "CH5_1_124",
       "speaker": "선생 개미",
       "text": "<b>그러니까 반대로, 그걸 힌트로 삼아서 그들의 은거지를 직접 찾아가 정의를 구현하는 거예요.</b>",
       "portrait": "Teacher-portrait",
@@ -3628,7 +3628,7 @@
     },
     {
       "id": "n_2911dd19",
-      "locKey": "CH5_1_1a_125",
+      "locKey": "CH5_1_125",
       "speaker": "??",
       "text": "...... 이 학생이 에밀입니까?",
       "portrait": "executive-portrait",
@@ -3667,7 +3667,7 @@
     },
     {
       "id": "n_956850b2",
-      "locKey": "CH5_1_1a_126",
+      "locKey": "CH5_1_126",
       "speaker": "에밀",
       "text": "어... 누, 누구세요?",
       "portrait": "Emil-portrait",
@@ -3706,7 +3706,7 @@
     },
     {
       "id": "n_2987a62b",
-      "locKey": "CH5_1_1a_127",
+      "locKey": "CH5_1_127",
       "speaker": "선생 개미",
       "text": "후후, 너무 겁먹지 말아요, 에밀.",
       "portrait": "Teacher-portrait",
@@ -3745,7 +3745,7 @@
     },
     {
       "id": "n_9693c8a3",
-      "locKey": "CH5_1_1a_128",
+      "locKey": "CH5_1_128",
       "speaker": "선생 개미",
       "text": "이 분이 바로 그곳으로 안내를 해주실 거예요.",
       "portrait": "Teacher-portrait",
@@ -3767,7 +3767,7 @@
     },
     {
       "id": "n_429dbf33",
-      "locKey": "CH5_1_1a_129",
+      "locKey": "CH5_1_129",
       "speaker": "에밀",
       "text": "(뭐지? 내가 미리 쪽지를 받을 거라고 예상이라도 하신 것 같아.)",
       "portrait": "Emil-portrait",
@@ -3806,7 +3806,7 @@
     },
     {
       "id": "n_51b280a4",
-      "locKey": "CH5_1_1a_130",
+      "locKey": "CH5_1_130",
       "speaker": "선생 개미",
       "text": "걱정 마세요, 선생님도 같이 갈 거예요.",
       "portrait": "Teacher-portrait",
@@ -3845,7 +3845,7 @@
     },
     {
       "id": "n_c88e03c3",
-      "locKey": "CH5_1_1a_131",
+      "locKey": "CH5_1_131",
       "speaker": "??",
       "text": "두 분 모두 따라오십쇼.",
       "portrait": "executive-portrait",
