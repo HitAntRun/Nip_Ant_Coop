@@ -49,6 +49,9 @@ public class InputManager : MonoBehaviour
             if (pause.IsOpen) return;
         }
         
+        var profile = ProfilePanel.instance;
+        if (profile != null && profile.IsOpen) return;
+        
         var goal = GoalIntro.instance;
         if (goal != null && goal.IsShowing)
         {

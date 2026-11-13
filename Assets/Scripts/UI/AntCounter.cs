@@ -32,12 +32,15 @@ public class AntCounter : MonoBehaviour
 
     private int total;
     private int found;
+    private int wrong;
+    
     private Vector2 iconBasePos;
     private Color iconBaseColor;
     private Sequence stampSeq;
     private Sequence flipSeq;
 
     public int Found => found;
+    public int Wrong => wrong;
     public int Total => total;
     public int Remaining => Mathf.Max(0, total - found);
 
@@ -54,6 +57,7 @@ public class AntCounter : MonoBehaviour
     {
         total = t;
         found = 0;
+        wrong = 0;
         ResetIcon();
         SetCountImmediate(Remaining);
     }
@@ -70,6 +74,8 @@ public class AntCounter : MonoBehaviour
 
         if (found >= total) OnAllFound();
     }
+
+    public void AddWrong() => wrong++;
 
     void OnAllFound()
     {

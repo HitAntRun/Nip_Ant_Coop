@@ -32,9 +32,14 @@ public class StageFlow : MonoBehaviour
             return;
 
         ended = true;
-        
-        if(AntCounter.instance != null)
+
+        if (AntCounter.instance != null)
+        {
             GameFlow.RecordTermites(GameFlow.CurrentStage, AntCounter.instance.Found);
+            GameFlow.RecordWrong(GameFlow.CurrentStage, AntCounter.instance.Wrong);
+        }
+            
+        
         SaveManager.Save(force: true);
         
         StartCoroutine(Routine(r.nextStoryId));

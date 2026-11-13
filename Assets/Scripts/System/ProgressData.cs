@@ -18,6 +18,7 @@ public class ProgressData
     public static ProgressData NewGame() => new ProgressData();
     
     public Dictionary<string, int> termitesFound = new Dictionary<string, int>();
+    public Dictionary<string, int> wrongReports = new Dictionary<string, int>();
 
     public DateTime SavedAtLocal =>
         DateTimeOffset.FromUnixTimeSeconds(savedAtUnix).ToLocalTime().DateTime;

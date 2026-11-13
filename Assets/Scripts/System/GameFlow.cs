@@ -5,10 +5,12 @@ public static class GameFlow
 {
     
     static Dictionary<string, int> termitesFound = new Dictionary<string, int>();
+    private static Dictionary<string, int> wrongReports = new Dictionary<string, int>();
     private static int chapterNumber = 0;
     private static string location = "";
 
     public static int TotalTermitesFound => termitesFound.Values.Sum();
+    public static int TotalWrongReports => wrongReports.Values.Sum();
     
     static string currentStage = "Prologue";
     static int day = 1;
@@ -33,6 +35,27 @@ public static class GameFlow
     
     public static void SetTermites(Dictionary<string, int> src)
         => termitesFound = src != null ? new Dictionary<string, int>(src) : new Dictionary<string, int>();
+    
+    public static float ReportAccuracy
+    {
+        get
+        {
+            int tries = TotalTermitesFound + TotalWrongReports;
+            return tries == 0 ? 0f : (float)TotalTermitesFound / tries;
+        }
+    }
+
+    public static void RecordWrong(string stageId, int wrong)
+    {
+        wrongReports[stageId] = wrong;
+        SaveManager.MarkDirty();
+    }
+
+    public static void SetWrong(Dictionary<string, int> src)
+        => wrongReports = src != null ? new Dictionary<string, int>(src) : new Dictionary<string, int>();
+
+    public static Dictionary<string, int> CopyWrong()
+        => new Dictionary<string, int>(wrongReports);
 
     public static Dictionary<string, int> CopyTermites()
         => new Dictionary<string, int>(termitesFound);

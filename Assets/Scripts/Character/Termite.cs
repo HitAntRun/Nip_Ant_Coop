@@ -47,6 +47,10 @@ public class Termite : MonoBehaviour
             CameraShake.instance?.Shake();
             WarningVignette.instance?.Flash();
             InteractionPopup.instance?.ShowWrongTarget(monologue);
+            if (GameFlow.CurrentStage != "Tutorial")
+            {
+                AntCounter.instance?.AddWrong();
+            }
         }
     }
 
