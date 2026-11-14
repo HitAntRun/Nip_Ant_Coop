@@ -16,3 +16,12 @@ illum 0
 Ns 0.000000
 map_Kd texture_pixellab-tileset-dark-dirt-sometimes-have-larva-and-poop-64a4ce32.png
 map_d texture_pixellab-tileset-dark-dirt-sometimes-have-larva-and-poop-64a4ce32.png
+newmtl chapter4_tilemap
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Tr 0.000000
+illum 0
+Ns 0.000000
+map_Kd texture_chapter4_tilemap.png
+map_d texture_chapter4_tilemap.png

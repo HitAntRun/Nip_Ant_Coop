@@ -1420,7 +1420,7 @@ MonoBehaviour:
   progressFill: {fileID: 1593070447}
   fillDuration: 0.5
   fillDelay: 0.2
-  useDebugValues: 1
+  useDebugValues: 0
   debugFound: 16
   debugWrong: 5
   duration: 0.35

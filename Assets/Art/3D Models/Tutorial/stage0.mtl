@@ -1,0 +1,8 @@
+newmtl 1
+Kd 1.000000 1.000000 1.000000
+illum 0
+map_Kd stage0_1.png
+newmtl Gemini_Generated_Image_2qm3mg2qm3mg2qm3
+Kd 1.000000 1.000000 1.000000
+illum 0
+map_Kd stage0_Gemini_Generated_Image_2qm3mg2qm3mg2qm3.png
