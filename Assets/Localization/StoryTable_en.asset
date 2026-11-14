@@ -893,8 +893,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8703697495253005
-    m_Localized: If we say the other side attacked first, even 'Mother' will find
-      it hard to argue.
+    m_Localized: "If we say the other side attacked first, even <b>\u300CMother\u300D</b>
+      will find it hard to argue."
     m_Metadata:
       m_Items: []
   - m_Id: 8703697495253006
@@ -902,7 +902,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8703697495253007
-    m_Localized: Why 'Mother' keeps protecting the Termite Queen even now...
+    m_Localized: "Why <b>\u300CMother\u300D</b>keeps protecting the Termite Queen
+      even now..."
     m_Metadata:
       m_Items: []
   - m_Id: 8703697495253008
@@ -1489,7 +1490,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14880629924552751
-    m_Localized: I still haven't found where 'the Underground' is, but...
+    m_Localized: I still haven't found where <b>the Underground</b> is, but...
     m_Metadata:
       m_Items: []
   - m_Id: 14880629924552752

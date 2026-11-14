@@ -37,6 +37,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -58,6 +59,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -88,6 +90,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -118,6 +121,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -139,6 +143,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -177,6 +182,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -207,6 +213,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -245,6 +252,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -283,6 +291,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -304,6 +313,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -342,6 +352,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -380,6 +391,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -410,6 +422,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -448,6 +461,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -486,6 +500,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -507,6 +522,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -545,6 +561,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -583,6 +600,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -621,6 +639,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -659,6 +678,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -689,6 +709,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -719,6 +740,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -749,6 +771,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -770,6 +793,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -808,6 +832,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -846,6 +871,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -876,6 +902,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -914,6 +941,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -935,6 +963,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -956,6 +985,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -977,6 +1007,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1007,6 +1038,7 @@
       "bg": "BG_Black",
       "fadeBreak": true,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1037,6 +1069,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1058,6 +1091,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1079,6 +1113,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1100,6 +1135,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1130,6 +1166,7 @@
       "bg": "BG_HomeIn",
       "fadeBreak": true,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1160,6 +1197,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1181,6 +1219,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1211,6 +1250,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1232,6 +1272,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1262,6 +1303,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1292,6 +1334,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1313,6 +1356,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1343,6 +1387,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1381,6 +1426,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1419,6 +1465,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1457,6 +1504,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1495,6 +1543,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1533,6 +1582,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1571,6 +1621,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1609,6 +1660,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1630,6 +1682,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1668,13 +1721,14 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
       "id": "n_9ab2a159",
       "locKey": "CH3_1_1_55",
       "speaker": "간부 개미2",
-      "text": "'어머니'도 저쪽에서 먼저 쳐들어왔다고 하면, 반박하기 어려우실 테니까요.",
+      "text": "<b>「어머니」</b>도 저쪽에서 먼저 쳐들어왔다고 하면, 반박하기 어려우실 테니까요.",
       "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_db37ae59",
@@ -1689,6 +1743,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1710,13 +1765,14 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
       "id": "n_ed4cd3df",
       "locKey": "CH3_1_1_57",
       "speaker": "간부 개미2",
-      "text": "'어머니'는 왜 흰여왕개미를 아직까지도 감싸고 도시는지...",
+      "text": "<b>「어머니」</b>는 왜 흰여왕개미를 아직까지도 감싸고 도시는지...",
       "portrait": "executive2-portrait",
       "portraitBrightness": 1.0,
       "next": "n_56209b50",
@@ -1731,6 +1787,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1769,6 +1826,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1790,6 +1848,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1828,6 +1887,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1866,6 +1926,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1904,6 +1965,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1942,6 +2004,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1980,6 +2043,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2001,6 +2065,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2039,6 +2104,7 @@
       "bg": "BG_HomeIn_Empty",
       "fadeBreak": true,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2069,6 +2135,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2090,6 +2157,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2120,6 +2188,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2150,6 +2219,7 @@
       "bg": "emils_home_ch1",
       "fadeBreak": true,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2171,6 +2241,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -2192,6 +2263,7 @@
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     }
   ],
