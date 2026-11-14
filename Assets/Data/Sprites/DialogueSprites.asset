@@ -144,9 +144,9 @@ MonoBehaviour:
   - name: ch4-2_6
     sprite: {fileID: 21300000, guid: 57accea9a65d44f20b9be5657175159f, type: 3}
   - name: ch4-2_7
-    sprite: {fileID: 21300000, guid: fd0e0b38f990d4c65b5706148eeabb98, type: 3}
+    sprite: {fileID: 21300000, guid: 92cd4c21c44cf4844add70c85a8eaac4, type: 3}
   - name: ch4-2_8
-    sprite: {fileID: 21300000, guid: 8df85657b78c14291aaf058712358ae0, type: 3}
+    sprite: {fileID: 21300000, guid: 919acf9efa2ca4a3780a65fe9dd839eb, type: 3}
   - name: ch4-2_9
     sprite: {fileID: 21300000, guid: 74b199d0ae5c146d8a561133a1d64d8b, type: 3}
   - name: cut_black
