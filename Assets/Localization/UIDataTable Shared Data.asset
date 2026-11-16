@@ -355,6 +355,18 @@ MonoBehaviour:
     m_Key: sign_library
     m_Metadata:
       m_Items: []
+  - m_Id: 22508663515111424
+    m_Key: loc_HomeIn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22510422673317888
+    m_Key: loc_Tunnel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22510674889400320
+    m_Key: loc_Restricted
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -305,6 +305,12 @@ public class DialogueRunner : MonoBehaviour
 
         if (!string.IsNullOrEmpty(node.bgm)) ApplyBgm(node.bgm);
         
+        if (!string.IsNullOrEmpty(node.location))
+        {
+            GameFlow.Location = node.location;
+            ChapterHeader.instance?.Refresh();
+        }
+        
         Target.text = "";
         Target.maxVisibleCharacters = 0;
 
@@ -590,6 +596,7 @@ public class DialogueRunner : MonoBehaviour
         string lastBg = null;
         string lastMode = null;
         string lastBgm = null;
+        string lastLocation = null;
         
         var guard = new HashSet<string>();
         string logMode = currentMode;
@@ -606,6 +613,8 @@ public class DialogueRunner : MonoBehaviour
             if (!string.IsNullOrEmpty(node.bg)) lastBg = node.bg;
             if (!string.IsNullOrEmpty(node.mode)) lastMode = node.mode;
             if (!string.IsNullOrEmpty(node.bgm)) lastBgm = node.bgm;
+            if (!string.IsNullOrEmpty(node.location)) lastLocation = node.location;
+
 
             if (node.endHere || string.IsNullOrEmpty(node.next))
             {
@@ -637,6 +646,11 @@ public class DialogueRunner : MonoBehaviour
         ApplyStateBeforeJump(lastMode, lastBg, node);
         if(!string.IsNullOrEmpty(lastBgm) && string.IsNullOrEmpty(node.bgm))
             ApplyBgm(lastBgm);
+        if (!string.IsNullOrEmpty(lastLocation) && string.IsNullOrEmpty(node.location))
+        {
+            GameFlow.Location = lastLocation;
+            ChapterHeader.instance?.Refresh();
+        }
         current = node;
         Show(current);
     }

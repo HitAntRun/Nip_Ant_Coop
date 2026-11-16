@@ -35,6 +35,7 @@ public class DialogueNode
     public bool shake;
     public string bgm;
     public string sfx;
+    public string location;
     
     // CutScene
     public string mode;

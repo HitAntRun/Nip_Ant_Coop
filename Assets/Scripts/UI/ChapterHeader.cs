@@ -9,6 +9,7 @@ using UnityEngine.Localization.Settings;
 public class ChapterHeader : MonoBehaviour
 {
     public static ChapterHeader instance;
+    private const string EmptyLocationKey = "loc_empty";
 
     [SerializeField] private TMP_Text chapterNumberText;
     [SerializeField] private TMP_Text locationText;
@@ -35,7 +36,13 @@ public class ChapterHeader : MonoBehaviour
         if (chapterNumberText != null)
             chapterNumberText.text = GameFlow.ChapterNumber.ToString("D2");
         if (locationText != null)
-            locationText.text = Loc.Get(Loc.UI, GameFlow.Location, GameFlow.Location);
+        {
+            string key = GameFlow.Location;
+            locationText.text = (key == EmptyLocationKey)
+                ? ""
+                : Loc.Get(Loc.UI, key, key);
+        }
+            
         if (dayText != null)
             dayText.text = string.Format(
                 Loc.Get(Loc.UI, "ant_date", dayFormat), GameFlow.Day);
