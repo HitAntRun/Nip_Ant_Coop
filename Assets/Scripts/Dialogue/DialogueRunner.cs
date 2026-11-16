@@ -593,8 +593,8 @@ public class DialogueRunner : MonoBehaviour
             return;
         }
 
-        string lastBg = null;
-        string lastMode = null;
+        string lastDlgBg = null;
+        string lastCutBg = null;
         string lastBgm = null;
         string lastLocation = null;
         
@@ -610,8 +610,12 @@ public class DialogueRunner : MonoBehaviour
             AddLog(node, logMode);
             
             ApplyActors(node);
-            if (!string.IsNullOrEmpty(node.bg)) lastBg = node.bg;
-            if (!string.IsNullOrEmpty(node.mode)) lastMode = node.mode;
+            string nodeMode = string.IsNullOrEmpty(node.mode) ? "dialogue" : node.mode;
+            if (!string.IsNullOrEmpty(node.bg))
+            {
+                if (nodeMode == "narration") lastCutBg = node.bg;
+                else                         lastDlgBg = node.bg;
+            }
             if (!string.IsNullOrEmpty(node.bgm)) lastBgm = node.bgm;
             if (!string.IsNullOrEmpty(node.location)) lastLocation = node.location;
 
@@ -643,7 +647,7 @@ public class DialogueRunner : MonoBehaviour
             return;
         }
 
-        ApplyStateBeforeJump(lastMode, lastBg, node);
+        ApplyStateBeforeJump(lastDlgBg, lastCutBg, node);
         if(!string.IsNullOrEmpty(lastBgm) && string.IsNullOrEmpty(node.bgm))
             ApplyBgm(lastBgm);
         if (!string.IsNullOrEmpty(lastLocation) && string.IsNullOrEmpty(node.location))
@@ -1008,11 +1012,12 @@ public class DialogueRunner : MonoBehaviour
         SetImageAlpha(cutsceneImage, 1f);
     }
 
-    void ApplyStateBeforeJump(string lastMode, string lastBg, DialogueNode target)
+    void ApplyStateBeforeJump(string lastDlgBg, string lastCutBg, DialogueNode target)
     {
-        if (!string.IsNullOrEmpty(lastMode)) currentMode = lastMode;
-        if (!string.IsNullOrEmpty(lastBg) && string.IsNullOrEmpty(target.bg))
-            ApplyBackground(lastBg, currentMode == "narration");
+        if (!string.IsNullOrEmpty(lastCutBg))
+            ApplyBackground(lastCutBg, true);
+        if (!string.IsNullOrEmpty(lastDlgBg) && string.IsNullOrEmpty(target.bg))
+            ApplyBackground(lastDlgBg, false);
     }
 
     void ApplyBgm(string id)

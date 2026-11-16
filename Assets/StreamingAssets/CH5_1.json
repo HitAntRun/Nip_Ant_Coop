@@ -2062,7 +2062,7 @@
       "sfx": "",
       "location": null,
       "mode": "",
-      "bg": "emils_home_ch1.png",
+      "bg": "emils_home_ch1",
       "fadeBreak": true,
       "fade": false,
       "flash": false,
