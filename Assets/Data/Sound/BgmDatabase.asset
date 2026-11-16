@@ -21,3 +21,19 @@ MonoBehaviour:
     playlist: {fileID: 11400000, guid: bbf11e9e039c6470fa5f1b0182b4ec7a, type: 2}
   - name: BGM_Story_Cutscene1
     playlist: {fileID: 11400000, guid: 3e632e33c277c4062bcb2cbe597eb657, type: 2}
+  - name: BGM_Cave
+    playlist: {fileID: 11400000, guid: a2042275689ab447eb453180da035263, type: 2}
+  - name: BGM_GarbageDump
+    playlist: {fileID: 11400000, guid: bcb9bd7ffb72b439d83290276081b407, type: 2}
+  - name: BGM_Home
+    playlist: {fileID: 11400000, guid: be28780ee798a48caa9af6e2658f1782, type: 2}
+  - name: BGM_Morgue
+    playlist: {fileID: 11400000, guid: 09291ec6cb9f143fdb1ded7c36c3101e, type: 2}
+  - name: BGM_Tunnel
+    playlist: {fileID: 11400000, guid: ebda1d19f1b2d45959a33d500e81be9b, type: 2}
+  - name: BGM_Underground
+    playlist: {fileID: 11400000, guid: 16f3d420d04e14b87bc1709bda545891, type: 2}
+  - name: BGM_Underground2
+    playlist: {fileID: 11400000, guid: 3d00a4cef106c4f6b97bd32f3f86fcd9, type: 2}
+  - name: BGM_Village
+    playlist: {fileID: 11400000, guid: e86c58feaca234e2a8f23a6cd597d3ed, type: 2}
