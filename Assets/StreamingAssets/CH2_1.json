@@ -49,10 +49,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -87,10 +89,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -125,10 +129,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -163,10 +169,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -209,10 +217,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -247,10 +257,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -285,10 +297,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -331,10 +345,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -352,10 +368,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -390,10 +408,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -436,10 +456,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "chalk",
+      "location": null,
       "mode": "",
       "bg": "bg_board_ch2",
       "fadeBreak": true,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -457,10 +479,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -478,10 +502,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -499,10 +525,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -520,10 +548,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -558,10 +588,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -596,10 +628,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -617,10 +651,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -663,10 +699,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -701,10 +739,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -731,10 +771,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -769,10 +811,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -790,10 +834,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -811,10 +857,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -849,10 +897,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -870,10 +920,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -891,10 +943,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -929,10 +983,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -967,10 +1023,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -988,10 +1046,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1009,10 +1069,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1030,10 +1092,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1060,10 +1124,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "bg_classroom_ch2",
       "fadeBreak": true,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1092,10 +1158,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1122,10 +1190,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1152,10 +1222,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1193,10 +1265,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1223,10 +1297,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1253,10 +1329,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1283,10 +1361,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1304,10 +1384,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1342,10 +1424,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1372,10 +1456,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1402,10 +1488,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1413,7 +1501,7 @@
       "locKey": "CH2_1_45",
       "speaker": "에밀",
       "text": "보통 스파이라면, 적진의 중요한 곳을 노리겠지?",
-      "portrait": "밀",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_de25d014",
       "jumpTo": null,
@@ -1423,10 +1511,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1434,7 +1524,7 @@
       "locKey": "CH2_1_46",
       "speaker": "에밀",
       "text": "지난 번 역사 수업에서는 배급이 중요하다고 했으니까...",
-      "portrait": "이번엔 마을 식량창고에 가서 흰개미를 찾아봐야겠어.",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": "n_1ef53873",
       "jumpTo": null,
@@ -1444,10 +1534,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1455,7 +1547,7 @@
       "locKey": "CH2_1_47",
       "speaker": "에밀",
       "text": "이번엔 마을 식량창고에 가서 흰개미를 찾아봐야겠어.",
-      "portrait": "이번엔 마을 식량창고에 가서 흰개미를 찾아봐야겠어.",
+      "portrait": "Emil-portrait",
       "portraitBrightness": 1.0,
       "next": null,
       "jumpTo": "",
@@ -1465,10 +1557,12 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "location": null,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     }
   ],

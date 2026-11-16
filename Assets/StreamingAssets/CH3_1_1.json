@@ -2282,9 +2282,9 @@
         }
       ],
       "shake": false,
-      "bgm": "loc_Home",
+      "bgm": "BGM_Story_School",
       "sfx": "",
-      "location": "",
+      "location": "loc_Home",
       "mode": "",
       "bg": "emils_home_ch1",
       "fadeBreak": true,

@@ -367,6 +367,10 @@ MonoBehaviour:
     m_Key: loc_Restricted
     m_Metadata:
       m_Items: []
+  - m_Id: 22517269341921280
+    m_Key: char_principal
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
