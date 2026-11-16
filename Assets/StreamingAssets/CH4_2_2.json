@@ -37,6 +37,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -67,6 +68,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -88,6 +90,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -118,6 +121,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -148,6 +152,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -169,6 +174,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -190,6 +196,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -220,9 +227,10 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     }
   ],
-  "bgm": null,
+  "bgm": "BGM_Morgue",
   "skipLoading": false
 }

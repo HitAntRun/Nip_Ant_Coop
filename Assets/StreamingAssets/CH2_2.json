@@ -37,6 +37,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -58,6 +59,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -88,6 +90,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -118,6 +121,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -156,6 +160,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -194,6 +199,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -232,6 +238,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -262,6 +269,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -300,6 +308,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -338,6 +347,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -368,6 +378,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -398,6 +409,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -436,6 +448,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -474,6 +487,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -512,6 +526,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -542,6 +557,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -580,6 +596,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -618,6 +635,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -656,6 +674,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -694,6 +713,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -732,6 +752,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -764,6 +785,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -802,6 +824,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -823,6 +846,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -861,6 +885,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -899,6 +924,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -937,6 +963,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -975,6 +1002,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1013,6 +1041,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1051,6 +1080,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1089,6 +1119,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1127,6 +1158,7 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     },
     {
@@ -1165,9 +1197,10 @@
       "bg": null,
       "fadeBreak": false,
       "fade": false,
+      "flash": false,
       "hold": -1.0
     }
   ],
-  "bgm": "BGM_Story_Cutscene1",
+  "bgm": "BGM_Cave",
   "skipLoading": false
 }
