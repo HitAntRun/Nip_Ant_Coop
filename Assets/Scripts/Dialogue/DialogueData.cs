@@ -16,6 +16,7 @@ public class DialogueData
     public List<DialogueNode> nodes = new List<DialogueNode>();
     public string bgm;
     public bool skipLoading;
+    public StageBranch stageBranch;
 }
 
 [System.Serializable]
@@ -63,4 +64,12 @@ public class ActorState
     public string slot;
     public bool fadeIn;
     public bool flip;
+}
+
+[System.Serializable]
+public class StageBranch
+{
+    public string checkStage;
+    public string clearedStage;
+    public string failedStage;
 }

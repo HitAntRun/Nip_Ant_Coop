@@ -6,9 +6,17 @@ public class StoryTester : MonoBehaviour
     [SerializeField] private string overrideStoryId = ""; 
     [SerializeField] private int startFromLine = 1;
 
+    static bool overrideUsed;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics() => overrideUsed = false;
+
     void Start()
     {
-        string id = string.IsNullOrEmpty(overrideStoryId) ? GameFlow.CurrentStage : overrideStoryId;
-        runner.Play(id, Mathf.Max(0, startFromLine - 1));
+        bool useOverride = !overrideUsed && !string.IsNullOrEmpty(overrideStoryId);
+        string id = useOverride ? overrideStoryId : GameFlow.CurrentStage;
+        overrideUsed = true;
+
+        runner.Play(id, useOverride ? Mathf.Max(0, startFromLine - 1) : 0);
     }
 }

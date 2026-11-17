@@ -464,6 +464,13 @@ public class DialogueRunner : MonoBehaviour
         if(data == null) yield break;
 
         string stage = string.IsNullOrEmpty(chosenNextStage) ? data.nextStage : chosenNextStage;
+        
+        var br = data.stageBranch;
+        if (br != null && !string.IsNullOrEmpty(br.checkStage))
+        {
+            bool cleared = GameFlow.IsAllFound(br.checkStage);
+            stage = cleared ? br.clearedStage : br.failedStage;
+        }
 
         if (!string.IsNullOrEmpty(data.nextScene))
         {

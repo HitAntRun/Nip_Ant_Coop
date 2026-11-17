@@ -2,8 +2,13 @@
   "storyId": "CH4_2_2",
   "startNodeId": "n_d2b4510f",
   "background": "morgue_ch4",
-  "nextScene": "",
-  "nextStage": null,
+  "nextScene": "SC_Story",
+  "nextStage": "CH5_2",
+  "stageBranch": {
+    "checkStage": "Stage4_2",
+    "clearedStage": "CH5_1",
+    "failedStage": "CH5_2"
+  },
   "chapterNumber": 4,
   "location": "loc_morgue",
   "day": 8,

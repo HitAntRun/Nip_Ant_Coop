@@ -6,6 +6,7 @@ public static class GameFlow
     
     static Dictionary<string, int> termitesFound = new Dictionary<string, int>();
     private static Dictionary<string, int> wrongReports = new Dictionary<string, int>();
+    static Dictionary<string, int> termiteTotals = new Dictionary<string, int>();
     private static int chapterNumber = 0;
     private static string location = "";
 
@@ -35,6 +36,23 @@ public static class GameFlow
     
     public static void SetTermites(Dictionary<string, int> src)
         => termitesFound = src != null ? new Dictionary<string, int>(src) : new Dictionary<string, int>();
+    
+    public static void RecordTotal(string stageId, int total)
+    {
+        termiteTotals[stageId] = total;
+        SaveManager.MarkDirty();
+    }
+    
+    public static void SetTotals(Dictionary<string, int> src)
+        => termiteTotals = src != null ? new Dictionary<string, int>(src) : new Dictionary<string, int>();
+
+    public static Dictionary<string, int> CopyTotals()
+        => new Dictionary<string, int>(termiteTotals);
+
+    public static bool IsAllFound(string stageId)
+        => termiteTotals.TryGetValue(stageId, out var total)
+           && total > 0
+           && TermitesFoundIn(stageId) >= total;
     
     public static float ReportAccuracy
     {

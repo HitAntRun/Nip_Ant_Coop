@@ -37,6 +37,7 @@ public class StageFlow : MonoBehaviour
         {
             GameFlow.RecordTermites(GameFlow.CurrentStage, AntCounter.instance.Found);
             GameFlow.RecordWrong(GameFlow.CurrentStage, AntCounter.instance.Wrong);
+            GameFlow.RecordTotal(GameFlow.CurrentStage, AntCounter.instance.Total);
         }
             
         
