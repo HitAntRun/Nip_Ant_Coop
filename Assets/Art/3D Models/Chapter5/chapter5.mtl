@@ -1,0 +1,3 @@
+newmtl chapter5_tilemap
+Kd 1 1 1
+map_Kd chapter5_tilemap.png
