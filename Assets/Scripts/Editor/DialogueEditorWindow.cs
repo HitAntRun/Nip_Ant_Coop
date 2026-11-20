@@ -252,6 +252,14 @@ public class DialogueEditorWindow : EditorWindow
                     n.actors[a].fadeIn = GUILayout.Toggle(n.actors[a].fadeIn, fadeLabel, GUILayout.Width(66));
                     n.actors[a].flip   = GUILayout.Toggle(n.actors[a].flip,   "좌우반전", GUILayout.Width(66));
                     EditorGUILayout.EndHorizontal();
+                    EditorGUIUtility.labelWidth = 60f;
+                    n.actors[a].wiggle = Mathf.Max(0, EditorGUILayout.IntField("좌우움직임", n.actors[a].wiggle, GUILayout.Width(innerW)));
+                    if (n.actors[a].wiggle > 0)
+                    {
+                        int wi = SlotIndex(string.IsNullOrEmpty(n.actors[a].wiggleTo) ? "Left" : n.actors[a].wiggleTo);
+                        n.actors[a].wiggleTo = Slots[EditorGUILayout.Popup("목적지", wi, Slots, GUILayout.Width(innerW))];
+                    }
+                    EditorGUIUtility.labelWidth = LabelWidth;
                 }
                 if (GUILayout.Button("배우 추가", GUILayout.Width(innerW))) addActorNode = i;
 

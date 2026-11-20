@@ -54,6 +54,10 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private RectTransform shakeRoot;
     [SerializeField] private float shakeDuration = 0.3f;
     [SerializeField] private float shakeMagnitude = 15f;
+    
+    [Header("Actor Wiggle")]
+    [SerializeField] private float wiggleDistance  = 40f;
+    [SerializeField] private float wiggleCycleTime = 0.35f;
 
     [Header("Fade")]
     [SerializeField] private Fader fader;
@@ -821,6 +825,12 @@ public class DialogueRunner : MonoBehaviour
             
             img.rectTransform.localScale = new Vector3(a.flip ? -1f : 1f, 1f, 1f);
             
+            if (a.wiggle > 0)
+            {
+                Transform dest = string.IsNullOrEmpty(a.wiggleTo) ? slotLeft : GetSlot(a.wiggleTo);
+                movers[a.id] = StartCoroutine(WiggleRoutine(img.rectTransform, dest.position, a.wiggle));
+            }
+            
             if (a.fadeIn)
                 StartActorFade(a.id, img, a.brightness);
             else
@@ -949,6 +959,28 @@ public class DialogueRunner : MonoBehaviour
             yield return null;
         }
         shakeRoot.anchoredPosition = shakeHome; 
+    }
+    
+    void StopMover(string id)
+    {
+        if (movers.TryGetValue(id, out var c) && c != null) StopCoroutine(c);
+        movers.Remove(id);
+    }
+
+    IEnumerator WiggleRoutine(RectTransform rt, Vector3 dest, int count)
+    {
+        Vector3 home = rt.position;
+        float total = wiggleCycleTime * count;
+        float t = 0f;
+        while (t < total)
+        {
+            if (rt == null) yield break;
+            t += Time.deltaTime;
+            float k = (1f - Mathf.Cos(t / wiggleCycleTime * Mathf.PI * 2f)) * 0.5f;
+            rt.position = Vector3.Lerp(home, dest, k);
+            yield return null;
+        }
+        if (rt != null) rt.position = home;
     }
     
     void SetupCutsceneLayers()

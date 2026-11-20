@@ -27,20 +27,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_8641e4ce",
@@ -57,14 +60,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_1d3a41e0",
@@ -84,20 +88,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b9c13b33",
@@ -114,14 +121,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_47448f3c",
@@ -138,14 +146,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_81f43eab",
@@ -162,14 +171,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_7ffd0c3c",
@@ -186,14 +196,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_e5a4fd63",
@@ -213,7 +224,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
@@ -226,7 +239,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_20bf37ea",
@@ -246,7 +260,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -254,20 +270,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": true,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d6c41b58",
@@ -287,7 +306,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -295,20 +316,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_466ff6b4",
@@ -328,7 +352,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -336,20 +362,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2bcf5d02",
@@ -369,7 +398,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -377,20 +408,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a97d68a3",
@@ -410,7 +444,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -418,20 +454,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_59bf3a22",
@@ -448,14 +487,15 @@
       "shake": true,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d1858356",
@@ -475,7 +515,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -483,20 +525,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_7d307d32",
@@ -516,20 +561,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": true,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_45d19451",
@@ -546,14 +594,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d0a60300",
@@ -573,7 +622,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -581,20 +632,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_0319cd3e",
@@ -614,7 +668,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -622,20 +678,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9472e32d",
@@ -652,14 +711,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_fe8f2265",
@@ -676,14 +736,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_90bdd8f8",
@@ -700,14 +761,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_4e6c5e31",
@@ -724,14 +786,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2ea7b5bc",
@@ -748,14 +811,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_1bad990c",
@@ -775,7 +839,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -783,20 +849,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_21b2dab6",
@@ -813,14 +882,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_39ea8c8d",
@@ -840,20 +910,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a1c47f6b",
@@ -873,7 +946,9 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -881,20 +956,23 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_91f6bfb1",
@@ -914,7 +992,9 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -922,20 +1002,23 @@
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_5687b63c",
@@ -955,7 +1038,9 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "emil",
@@ -963,20 +1048,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_4c990679",
@@ -996,7 +1084,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1004,20 +1094,23 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_f8b5c993",
@@ -1034,14 +1127,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_3b58f5da",
@@ -1061,7 +1155,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1069,20 +1165,23 @@
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_e13271e8",
@@ -1102,7 +1201,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1110,20 +1211,23 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_daf0fb52",
@@ -1140,14 +1244,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_88223c13",
@@ -1167,7 +1272,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1175,20 +1282,23 @@
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a33db644",
@@ -1208,7 +1318,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1216,20 +1328,23 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_51243a27",
@@ -1246,14 +1361,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9aff4a30",
@@ -1270,14 +1386,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_56b13255",
@@ -1297,7 +1414,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1305,20 +1424,23 @@
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2210c926",
@@ -1338,7 +1460,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1346,20 +1470,23 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_fe88cbfe",
@@ -1376,14 +1503,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_93e156ca",
@@ -1403,7 +1531,9 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1411,20 +1541,23 @@
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b725d9d9",
@@ -1444,7 +1577,9 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1452,20 +1587,23 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_1bcad606",
@@ -1482,14 +1620,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_02d26ee3",
@@ -1509,7 +1648,9 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -1517,20 +1658,23 @@
           "brightness": 1.0,
           "slot": "Off",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_8af0c1d2",
@@ -1547,14 +1691,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b7f73ec3",
@@ -1571,14 +1716,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_fded4602",
@@ -1598,7 +1744,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -1606,20 +1754,23 @@
           "brightness": 1.0,
           "slot": "Off",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9edeb7c9",
@@ -1643,7 +1794,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_ee07fdda",
@@ -1663,20 +1815,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_810c38a7",
@@ -1693,14 +1848,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_7d2142e9",
@@ -1720,20 +1876,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_7b06b40a",
@@ -1750,14 +1909,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_11feb2a6",
@@ -1777,20 +1937,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_10ee23a7",
@@ -1807,14 +1970,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "ch5-1a_letters",
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_817a95dc",
@@ -1831,14 +1995,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_6af5dd56",
@@ -1855,14 +2020,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a263d8d1",
@@ -1879,14 +2045,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_4a8ca58f",
@@ -1903,14 +2070,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2f35ad88",
@@ -1927,14 +2095,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9743651f",
@@ -1951,14 +2120,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d48f9113",
@@ -1975,14 +2145,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_37c213a6",
@@ -1999,14 +2170,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_dd5228cb",
@@ -2023,14 +2195,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_abc0567d",
@@ -2047,14 +2220,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_127feb34",
@@ -2071,14 +2245,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_4f2a4fe2",
@@ -2095,14 +2270,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "narration",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c4c5cf17",
@@ -2122,20 +2298,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "emils_home_ch1",
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_cee827b0",
@@ -2152,14 +2331,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_13bf1b58",
@@ -2176,14 +2356,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_dd72ce88",
@@ -2200,14 +2381,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d48cba3a",
@@ -2224,7 +2406,7 @@
           "text": "밑져야 본전이니 일단 쪽지에 적힌 대로 해보자.",
           "next": "n_a79c2b8d",
           "nextStage": "",
-          "nextScene": null
+          "nextScene": ""
         },
         {
           "text": "내 이름을 아는 것도 수상하고... 일단 상부터 받고 생각해보자.",
@@ -2237,14 +2419,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a79c2b8d",
@@ -2264,20 +2447,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_ffa75833",
@@ -2297,7 +2483,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
@@ -2310,7 +2498,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c37fa9e2",
@@ -2327,14 +2516,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_5ae2ba00",
@@ -2354,20 +2544,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b5fb0f80",
@@ -2380,18 +2573,30 @@
       "jumpTo": null,
       "endHere": false,
       "choices": [],
-      "actors": [],
+      "actors": [
+        {
+          "id": "emil",
+          "sprite": "emil-sad-32px",
+          "brightness": 1.0,
+          "slot": "Right",
+          "fadeIn": false,
+          "flip": false,
+          "wiggle": 2,
+          "wiggleTo": "Left"
+        }
+      ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c1a4e368",
@@ -2411,20 +2616,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_e16ca952",
@@ -2441,14 +2649,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_519fff92",
@@ -2468,7 +2677,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
@@ -2481,7 +2692,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c09c30c6",
@@ -2498,14 +2710,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_bed8cec5",
@@ -2525,20 +2738,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_6ae6b8f1",
@@ -2558,20 +2774,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_6e2c7192",
@@ -2591,20 +2810,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_32874318",
@@ -2624,7 +2846,9 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": true,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
@@ -2637,7 +2861,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_005cf326",
@@ -2654,14 +2879,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_792650e6",
@@ -2678,14 +2904,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_78c736de",
@@ -2705,7 +2932,9 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": true,
@@ -2718,7 +2947,8 @@
       "fadeBreak": false,
       "fade": false,
       "flash": true,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_eefce6a1",
@@ -2735,14 +2965,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2a86d057",
@@ -2759,14 +2990,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_951d84ae",
@@ -2783,14 +3015,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c96b8ae1",
@@ -2807,14 +3040,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_6b4bfc59",
@@ -2831,14 +3065,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_e5e910c9",
@@ -2862,7 +3097,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_90c2acaa",
@@ -2882,20 +3118,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a1ed1fb2",
@@ -2912,14 +3151,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2217de11",
@@ -2936,14 +3176,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a79db184",
@@ -2960,14 +3201,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_3077aea3",
@@ -2987,20 +3229,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_ce8bc8dc",
@@ -3020,7 +3265,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3028,20 +3275,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_fbea85bf",
@@ -3061,7 +3311,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3069,20 +3321,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_dfa9cda4",
@@ -3102,7 +3357,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3110,20 +3367,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_6a3d44bd",
@@ -3143,7 +3403,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3151,20 +3413,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_50df9f09",
@@ -3184,7 +3449,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3192,20 +3459,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d2fff084",
@@ -3225,7 +3495,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3233,20 +3505,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_342de870",
@@ -3266,7 +3541,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3274,20 +3551,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d4771b73",
@@ -3307,7 +3587,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3315,20 +3597,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_ca76bbe8",
@@ -3348,7 +3633,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3356,20 +3643,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_84254b41",
@@ -3386,14 +3676,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_66bb4f9f",
@@ -3413,7 +3704,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3421,20 +3714,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b745e1d9",
@@ -3454,7 +3750,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3462,20 +3760,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_7fccf58b",
@@ -3492,14 +3793,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_386ee827",
@@ -3519,20 +3821,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_f3cdc64c",
@@ -3552,7 +3857,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3560,20 +3867,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c816c0c3",
@@ -3593,7 +3903,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3601,20 +3913,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_ac3e9d7a",
@@ -3631,14 +3946,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_89d82c89",
@@ -3655,14 +3971,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_38124c19",
@@ -3679,14 +3996,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_1869e65b",
@@ -3706,7 +4024,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3714,20 +4034,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_73081f34",
@@ -3747,7 +4070,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3755,20 +4080,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_562fa4fe",
@@ -3788,7 +4116,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3796,20 +4126,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_0092be98",
@@ -3829,7 +4162,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3837,20 +4172,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_f4fd8013",
@@ -3867,14 +4205,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2911dd19",
@@ -3894,7 +4233,9 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": true,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3902,20 +4243,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_956850b2",
@@ -3935,7 +4279,9 @@
           "brightness": 0.5,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "emil",
@@ -3943,20 +4289,23 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_2987a62b",
@@ -3976,7 +4325,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -3984,20 +4335,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9693c8a3",
@@ -4014,14 +4368,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_429dbf33",
@@ -4041,7 +4396,9 @@
           "brightness": 1.0,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -4049,20 +4406,23 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_51b280a4",
@@ -4082,7 +4442,9 @@
           "brightness": 0.5,
           "slot": "Right",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "teacher",
@@ -4090,20 +4452,23 @@
           "brightness": 1.0,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_c88e03c3",
@@ -4123,7 +4488,9 @@
           "brightness": 0.5,
           "slot": "Left",
           "fadeIn": false,
-          "flip": true
+          "flip": true,
+          "wiggle": 0,
+          "wiggleTo": ""
         },
         {
           "id": "executive",
@@ -4131,23 +4498,30 @@
           "brightness": 1.0,
           "slot": "Center",
           "fadeIn": false,
-          "flip": false
+          "flip": false,
+          "wiggle": 0,
+          "wiggleTo": ""
         }
       ],
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     }
   ],
   "bgm": "BGM_Story_Cutscene1",
   "skipLoading": false,
-  "stageBranch": null
+  "stageBranch": {
+    "checkStage": "",
+    "clearedStage": "",
+    "failedStage": ""
+  }
 }

@@ -66,6 +66,8 @@ public class ActorState
     public string slot;
     public bool fadeIn;
     public bool flip;
+    public int wiggle;
+    public string wiggleTo;
 }
 
 [System.Serializable]
