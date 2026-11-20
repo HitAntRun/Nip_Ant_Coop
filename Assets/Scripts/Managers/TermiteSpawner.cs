@@ -6,6 +6,7 @@ public class TermiteSpawner : MonoBehaviour
 {
     [SerializeField] private Transform cubeTransform;
     [SerializeField] private GameObject termitePrefab;
+    [SerializeField] private GameObject termite2Prefab;
     [SerializeField] private GameObject blackAntPrefab;
     [SerializeField] private StageTermiteData currentStage;
     [SerializeField] private AntMonologueData antMonologueData;
@@ -20,6 +21,14 @@ public class TermiteSpawner : MonoBehaviour
     {
         currentStage = stage;
         ClearExisting();
+
+        if (stage.endlessRespawn)
+        {
+            var endless = GetComponent<EndlessTermiteSpawner>();
+            if (endless == null) endless = gameObject.AddComponent<EndlessTermiteSpawner>();
+            endless.Begin(stage, cubeTransform, termitePrefab, termite2Prefab);
+            return;
+        }
 
         int realCount = 0;
         var blackAnts = new List<AntMonologue>();

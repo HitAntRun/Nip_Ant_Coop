@@ -53,6 +53,7 @@ public class InteractionPopup : MonoBehaviour
             bubble.React(correctBubbleBag.Next(), 99f);
         
         if (IsTutorial) return;
+        if (IsStage5) return;
 
         Show(correctBag != null ? correctBag.Next() : null,
             data != null ? data.correctFace : null);
@@ -100,4 +101,6 @@ public class InteractionPopup : MonoBehaviour
         hideDuringTutorial &&
         (GameFlow.CurrentStage == "Tutorial" ||
          (TutorialController.instance != null && TutorialController.instance.enabled));
+    bool IsStage5 => GameFlow.CurrentStage != null
+                     && GameFlow.CurrentStage.StartsWith("Stage5");
 }

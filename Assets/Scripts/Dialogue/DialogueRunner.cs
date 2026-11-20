@@ -28,6 +28,7 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private float choiceInputDelay = 0.4f;
     public bool choosing;
     private string chosenNextStage;
+    private string chosenNextScene;
     private float choiceReadyTime;
     public bool CanConfirm => choosing && Time.unscaledTime >= choiceReadyTime;
 
@@ -178,6 +179,7 @@ public class DialogueRunner : MonoBehaviour
         data = JsonConvert.DeserializeObject<DialogueData>(File.ReadAllText(path));
         ending = false;
         chosenNextStage = null;
+        chosenNextScene = null;
         if (data == null) return;
 
         GameFlow.LastStoryStage = storyId;
@@ -308,6 +310,11 @@ public class DialogueRunner : MonoBehaviour
         if (!string.IsNullOrEmpty(node.location))
         {
             GameFlow.Location = node.location;
+            ChapterHeader.instance?.Refresh();
+        }
+        if (node.day > 0)
+        {
+            GameFlow.Day = node.day;
             ChapterHeader.instance?.Refresh();
         }
         
@@ -464,6 +471,7 @@ public class DialogueRunner : MonoBehaviour
         if(data == null) yield break;
 
         string stage = string.IsNullOrEmpty(chosenNextStage) ? data.nextStage : chosenNextStage;
+        string scene = string.IsNullOrEmpty(chosenNextScene) ? data.nextScene : chosenNextScene;
         
         var br = data.stageBranch;
         if (br != null && !string.IsNullOrEmpty(br.checkStage))
@@ -472,10 +480,10 @@ public class DialogueRunner : MonoBehaviour
             stage = cleared ? br.clearedStage : br.failedStage;
         }
 
-        if (!string.IsNullOrEmpty(data.nextScene))
+        if (!string.IsNullOrEmpty(scene))
         {
-            if (data.skipLoading) SceneRouter.LoadDirect(data.nextScene, stage);
-            else                  SceneRouter.Load(data.nextScene, stage);
+            if (data.skipLoading) SceneRouter.LoadDirect(scene, stage);
+            else                  SceneRouter.Load(scene, stage);
         }
         else if (!string.IsNullOrEmpty(stage))
             GameFlow.CurrentStage = stage;
@@ -604,6 +612,7 @@ public class DialogueRunner : MonoBehaviour
         string lastCutBg = null;
         string lastBgm = null;
         string lastLocation = null;
+        int lastDay = 0;
         
         var guard = new HashSet<string>();
         string logMode = currentMode;
@@ -625,6 +634,7 @@ public class DialogueRunner : MonoBehaviour
             }
             if (!string.IsNullOrEmpty(node.bgm)) lastBgm = node.bgm;
             if (!string.IsNullOrEmpty(node.location)) lastLocation = node.location;
+            if(node.day > 0) lastDay = node.day;
 
 
             if (node.endHere || string.IsNullOrEmpty(node.next))
@@ -660,6 +670,11 @@ public class DialogueRunner : MonoBehaviour
         if (!string.IsNullOrEmpty(lastLocation) && string.IsNullOrEmpty(node.location))
         {
             GameFlow.Location = lastLocation;
+            ChapterHeader.instance?.Refresh();
+        }
+        if (lastDay > 0 && node.day <= 0)
+        {
+            GameFlow.Day = lastDay;
             ChapterHeader.instance?.Refresh();
         }
         current = node;
@@ -758,6 +773,8 @@ public class DialogueRunner : MonoBehaviour
         var choice = current.choices[selectedIndex];
         if (!string.IsNullOrEmpty(choice.nextStage))
             chosenNextStage = choice.nextStage;
+        if (!string.IsNullOrEmpty(choice.nextScene))
+            chosenNextScene = choice.nextScene;
         log.Add(new LogLine {
             speaker  = choiceSpeaker,
             text     = choice.text,

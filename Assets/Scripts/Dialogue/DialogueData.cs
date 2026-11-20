@@ -37,6 +37,7 @@ public class DialogueNode
     public string bgm;
     public string sfx;
     public string location;
+    public int day;
     
     // CutScene
     public string mode;
@@ -53,6 +54,7 @@ public class Choice
     public string text;
     public string next;
     public string nextStage;
+    public string nextScene;
 }
 
 [System.Serializable]

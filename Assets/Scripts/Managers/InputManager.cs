@@ -104,7 +104,8 @@ public class InputManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             PixelFX.instance?.PlayClick(Input.mousePosition);
-            SoundManager.instance?.PlayUiSfx("ingame_click");
+            bool gun = _magnifier != null && _magnifier.IsGunMode;
+            SoundManager.instance?.PlayUiSfx(gun ? "shotgun_shoot" : "ingame_click");
             if (Allowed(TutorialController.Trigger.ReportAnt))
                 JudgeAnt();
             else if (tut != null && tut.enabled)

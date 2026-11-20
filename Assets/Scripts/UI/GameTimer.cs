@@ -29,6 +29,8 @@ public class GameTimer : MonoBehaviour
     private float remaining;
     private bool running;
     private bool unlimited;
+    private float elapsed;
+    public float Elapsed => elapsed;
 
     void Start()
     {
@@ -55,6 +57,7 @@ public class GameTimer : MonoBehaviour
         if (!running) return;
         
         remaining -= Time.deltaTime;
+        elapsed += Time.deltaTime;
 
         if (remaining <= 0f)
         {

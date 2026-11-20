@@ -12,6 +12,7 @@ public class Termite : MonoBehaviour
     private AntMonologue monologue;
     private bool dying;
     public bool IsDying => dying;
+    public event System.Action<Termite> Reported;
 
     void Awake() => monologue = GetComponent<AntMonologue>();
 
@@ -37,6 +38,7 @@ public class Termite : MonoBehaviour
             InteractionPopup.instance?.ShowTermiteFound(monologue);
             AntCounter.instance?.AddFound();
             TutorialController.instance?.NotifyReportAnt();
+            Reported?.Invoke(this);
 
             StartCoroutine(FadeOutAndDie());
         }

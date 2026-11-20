@@ -33,6 +33,7 @@ public class AntCounter : MonoBehaviour
     private int total;
     private int found;
     private int wrong;
+    private bool endless;
     
     private Vector2 iconBasePos;
     private Color iconBaseColor;
@@ -55,6 +56,7 @@ public class AntCounter : MonoBehaviour
 
     public void SetTotal(int t)
     {
+        endless = false;
         total = t;
         found = 0;
         wrong = 0;
@@ -62,17 +64,27 @@ public class AntCounter : MonoBehaviour
         SetCountImmediate(Remaining);
     }
 
+    public void SetEndless()
+    {
+        endless = true;
+        total = 0;
+        found = 0;
+        wrong = 0;
+        ResetIcon();
+        SetCountImmediate(0);
+    }
+
     public void AddFound()
     {
         found++;
         PlayStamp();
-        PlayFlip(Remaining);
+        PlayFlip(endless ? found : Remaining);
 
         string stage = GameFlow.CurrentStage;
         int others = GameFlow.TotalTermitesFound - GameFlow.TermitesFoundIn(stage);
         Debug.Log($"[Termite] {stage}: {found}/{total} | 누적 {others + found}");
 
-        if (found >= total) OnAllFound();
+        if (!endless && found >= total) OnAllFound();
     }
 
     public void AddWrong() => wrong++;
@@ -116,7 +128,7 @@ public class AntCounter : MonoBehaviour
         });
         stampSeq.Append(crossRect.DOPunchScale(Vector3.one * 0.15f, 0.2f, 6, 0.5f));
 
-        if (found >= total && keepCrossWhenCleared) return;
+        if (!endless && found >= total && keepCrossWhenCleared) return;
 
         stampSeq.AppendInterval(holdDuration);
         stampSeq.Append(crossImg.DOFade(0f, resetDuration));

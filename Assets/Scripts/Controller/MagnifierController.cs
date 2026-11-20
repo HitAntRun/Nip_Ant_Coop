@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MagnifierController : MonoBehaviour
 {
@@ -29,6 +30,15 @@ public class MagnifierController : MonoBehaviour
     private bool isSearchMode = false;
     public bool IsSearchMode => isSearchMode;
     
+    [Header("Gun Mode")]
+    public string gunStageId = "Stage5_2";
+    public Sprite crosshairSprite;
+    public Vector2 crosshairOffset = Vector2.zero;
+    public Vector2 crosshairSize = new Vector2(96, 96);
+    public Vector2 crosshairJudgeSize = new Vector2(60, 60);
+    private bool isGunMode = false;
+    public bool IsGunMode => isGunMode;
+    
     [Header("Options")]
     public bool hideSystemCursor = false;
     
@@ -41,6 +51,8 @@ public class MagnifierController : MonoBehaviour
         normalCircleSize = magnifierRoot.sizeDelta;
         normalSize = ComputeOneToOneSize();
 
+        isGunMode = GameFlow.CurrentStage == gunStageId;
+        if (isGunMode) ApplyGunMode();
         ApplyMode();
     }
 
@@ -84,6 +96,20 @@ public class MagnifierController : MonoBehaviour
         
         magnifierRoot.sizeDelta = isSearchMode ? searchCircleSize : normalCircleSize;
         magnifierCam.orthographicSize = isSearchMode ? ComputeSearchSize() : normalSize;
+    }
+    
+    void ApplyGunMode()
+    {
+        if (magnifierSprite == null || crosshairSprite == null) return;
+
+        var img = magnifierSprite.GetComponent<Image>();
+        if (img != null) img.sprite = crosshairSprite;
+
+        magnifierOffset = crosshairOffset;
+        if (lensArea != null)
+            lensArea.anchoredPosition = Vector2.zero;
+        magnifierSprite.sizeDelta = crosshairSize;
+        lensArea.sizeDelta = crosshairJudgeSize;
     }
 
     public void ToggleSearchMode()

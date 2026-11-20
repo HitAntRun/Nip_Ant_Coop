@@ -179,6 +179,7 @@ public class DialogueEditorWindow : EditorWindow
                 n.bg        = EditorGUILayout.TextField("배경 교체(선택)", n.bg, GUILayout.Width(innerW));
                 n.bgm       = EditorGUILayout.TextField("BGM 교체(선택)", n.bgm, GUILayout.Width(innerW));
                 n.location = EditorGUILayout.TextField("장소 교체(선택)", n.location, GUILayout.Width(innerW));
+                n.day = EditorGUILayout.IntField("개미력 교체(0=유지)", n.day, GUILayout.Width(innerW));
                 n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
                 n.flash = EditorGUILayout.Toggle("플래시 전환", n.flash, GUILayout.Width(innerW));
 
@@ -219,6 +220,7 @@ public class DialogueEditorWindow : EditorWindow
                         if (GUILayout.Button("x", GUILayout.Width(20))) { removeChoiceNode = i; removeChoiceIdx = j; }
                         EditorGUILayout.EndHorizontal();
                         n.choices[j].nextStage = EditorGUILayout.TextField("   ↳ 끝나면 이동", n.choices[j].nextStage, GUILayout.Width(innerW));
+                        n.choices[j].nextScene = EditorGUILayout.TextField("   ↳ 이동할 씬", n.choices[j].nextScene, GUILayout.Width(innerW));
                     }
                 }
                 if (GUILayout.Button("선택지 추가", GUILayout.Width(innerW))) addChoiceNode = i;
