@@ -161,3 +161,5 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: c54322545db824ab69daa7f963437787, type: 3}
   - name: underground_restricted_area_2
     sprite: {fileID: 21300000, guid: c48091ce3e6ee4f94978e6e00326098d, type: 3}
+  - name: ch5-1a_letters
+    sprite: {fileID: 21300000, guid: f83276d0a7d5648a9891daac6c4a6c10, type: 3}

@@ -12,5 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd12b0daf60fb4cd196cb19e8c8fd965, type: 3}
   m_Name: Stage5
   m_EditorClassIdentifier: 
-  stageIndex: 0
+  stageIndex: 5
   termites: []
+  endlessRespawn: 1
+  endless:
+    initialCount: 20
+    maxAlive: 30
+    respawnDelay: 0.6
+    extraSpawnStagger: 0.25
+    popDuration: 0.25
+    scaleRange: {x: 1.2, y: 1.5}
+    surfaceOffset: 0
+    minDistFromCaught: 3
+    minDistFromAlive: 1
+    cursorAvoidPixels: 150
+    maxSlopeAngle: 35
+    edgeMargin: 1.5
+    maxEdgeStep: 0.4
+    candidateSpacing: 0.5
+    sampleAttempts: 1500
+    maxCandidates: 200
+    escalateStartTime: 15
+    escalateFullTime: 45
+    maxSpawnPerCatch: 3
+    termite2Ratio: 0.3
