@@ -49,14 +49,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_69d5b219",
@@ -90,14 +91,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_753a9a4b",
@@ -138,7 +140,7 @@
       ],
       "shake": false,
       "bgm": "",
-      "sfx": "",
+      "sfx": "footsteps",
       "location": "loc_Restricted",
       "day": 0,
       "mode": "",
@@ -146,7 +148,8 @@
       "fadeBreak": true,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b3103f25",
@@ -188,14 +191,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9a80ac27",
@@ -229,14 +233,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_f3a9218d",
@@ -270,14 +275,15 @@
       "shake": true,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "underground_restricted_area_2",
       "fadeBreak": false,
       "fade": false,
       "flash": true,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_dbe8524d",
@@ -294,14 +300,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_efbc21ee",
@@ -335,14 +342,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_795525b0",
@@ -359,14 +367,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_b90d58bc",
@@ -400,14 +409,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": "gun"
     },
     {
       "id": "n_d8806f54",
@@ -441,14 +451,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_aa1626f6",
@@ -482,14 +493,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_de5e23c5",
@@ -506,14 +518,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_60886aad",
@@ -547,14 +560,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_9e356357",
@@ -588,14 +602,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_a50d21b9",
@@ -629,14 +644,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_162a770a",
@@ -653,14 +669,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_d51aea5f",
@@ -694,14 +711,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_628bf1f7",
@@ -727,14 +745,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_6a8c3422",
@@ -768,14 +787,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_554786c6",
@@ -809,14 +829,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_21f0e4a9",
@@ -833,14 +854,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_243f533c",
@@ -874,14 +896,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_54593b20",
@@ -915,14 +938,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_537f9a10",
@@ -956,14 +980,15 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     },
     {
       "id": "n_ad00da2f",
@@ -997,17 +1022,22 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
-      "location": null,
+      "location": "",
       "day": 0,
       "mode": "",
       "bg": "",
       "fadeBreak": false,
       "fade": false,
       "flash": false,
-      "hold": -1.0
+      "hold": -1.0,
+      "item": ""
     }
   ],
   "bgm": "BGM_Underground2",
   "skipLoading": false,
-  "stageBranch": null
+  "stageBranch": {
+    "checkStage": "",
+    "clearedStage": "",
+    "failedStage": ""
+  }
 }

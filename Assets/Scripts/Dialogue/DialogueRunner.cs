@@ -31,6 +31,23 @@ public class DialogueRunner : MonoBehaviour
     private string chosenNextScene;
     private float choiceReadyTime;
     public bool CanConfirm => choosing && Time.unscaledTime >= choiceReadyTime;
+    
+    [Header("Item Spotlight")]
+    [SerializeField] private RectTransform itemRoot;
+    [SerializeField] private RectTransform itemGlow;
+    [SerializeField] private Image itemFlash;
+
+    [SerializeField] private float popDuration = 0.35f;
+    [SerializeField] private float glowRotateSpeed = 20f;
+    [SerializeField] private float glowPulse = 0.08f;
+    [SerializeField] private float flashDuration = 0.3f;
+    private Coroutine itemFxCo;
+    private Vector2 itemRootHome;
+    [SerializeField] private CanvasGroup itemSpotlight;
+    [SerializeField] private Image itemImage;
+    [SerializeField] private float itemFadeDuration = 0.25f;
+    private bool itemShowing;
+    private Coroutine itemCo;
 
     [Header("Backlog")]
     [SerializeField] private string choiceSpeaker = "에밀";
@@ -134,6 +151,7 @@ public class DialogueRunner : MonoBehaviour
     void Awake()
     {
         if (shakeRoot != null) shakeHome = shakeRoot.anchoredPosition;
+        if (itemRoot != null) itemRootHome = itemRoot.anchoredPosition;
         SetupCutsceneLayers();
         for (int i = 0; i < choiceSlots.Length; i++)
         {
@@ -345,6 +363,7 @@ public class DialogueRunner : MonoBehaviour
         if (sceneChange && currentMode != "narration")
             ApplyActors(node);    
 
+        if (!string.IsNullOrEmpty(node.item)) ShowItem(node.item);
         if (node.shake) Shake();
         
         if (!string.IsNullOrEmpty(node.sfx) && node.id != lastSfxNodeId)
@@ -556,6 +575,11 @@ public class DialogueRunner : MonoBehaviour
             if (current.choices != null && current.choices.Count > 0) ShowChoices();
             return;
         }
+        if (itemShowing)
+        {
+            HideItem();
+            return;
+        }
 
         if (current.choices != null && current.choices.Count > 0) return;
         Next();
@@ -589,6 +613,7 @@ public class DialogueRunner : MonoBehaviour
 
     public void Skip()
     {
+        HideItem(true);
         transitioning = false;
         if (showCo != null) { StopCoroutine(showCo); showCo = null; }
         if (fader != null) fader.ResetOverlay();
@@ -703,6 +728,7 @@ public class DialogueRunner : MonoBehaviour
 
     void EndDialogue()
     {
+        HideItem(true);
         if (ending) return;
         ending = true;
         current = null;
@@ -788,6 +814,80 @@ public class DialogueRunner : MonoBehaviour
         
         Choose(current.choices[selectedIndex].next);
     }
+    
+    void ShowItem(string key)
+    {
+        Sprite s = spriteDB != null ? spriteDB.Get(key) : null;
+        if (s == null || itemSpotlight == null) return;
+
+        itemImage.sprite = s;
+        itemSpotlight.gameObject.SetActive(true);
+        itemShowing = true;
+        if (itemCo != null) StopCoroutine(itemCo);
+        itemCo = StartCoroutine(FadeCanvas(itemSpotlight, 0f, 1f, itemFadeDuration));
+        if (itemFxCo != null) StopCoroutine(itemFxCo);
+        itemFxCo = StartCoroutine(ItemFxRoutine());
+    }
+    IEnumerator ItemFxRoutine()
+    {
+        if (itemFlash != null)
+        {
+            itemFlash.sprite = itemImage.sprite;
+            SetImageAlpha(itemFlash, 1f);
+        }
+
+        float t = 0f;
+        while (t < popDuration)
+        {
+            t += Time.deltaTime;
+            float p = Mathf.Clamp01(t / popDuration);
+            float s = p < 0.6f
+                ? Mathf.Lerp(0.6f, 1.1f, p / 0.6f)
+                : Mathf.Lerp(1.1f, 1.0f, (p - 0.6f) / 0.4f);
+            itemRoot.localScale = Vector3.one * s;
+
+            if (itemFlash != null)
+                SetImageAlpha(itemFlash, 1f - Mathf.Clamp01(t / flashDuration));
+            yield return null;
+        }
+        itemRoot.localScale = Vector3.one;
+        if (itemFlash != null) SetImageAlpha(itemFlash, 0f);
+
+        float time = 0f;
+        while (true)
+        {
+            time += Time.deltaTime;
+
+            if (itemGlow != null)
+            {
+                itemGlow.Rotate(0f, 0f, -glowRotateSpeed * Time.deltaTime);
+                float g = 1f + Mathf.Sin(time * 2f) * glowPulse;
+                itemGlow.localScale = Vector3.one * g;
+            }
+            yield return null;
+        }
+    }
+
+    void HideItem(bool instant = false)
+    {
+        if (itemFxCo != null) { StopCoroutine(itemFxCo); itemFxCo = null; }
+        if (itemRoot != null)
+        {
+            itemRoot.anchoredPosition = itemRootHome;
+            itemRoot.localScale = Vector3.one;
+        }
+        if (itemSpotlight == null) return;
+        itemShowing = false;
+        if (itemCo != null) StopCoroutine(itemCo);
+        if (instant) { itemSpotlight.alpha = 0f; itemSpotlight.gameObject.SetActive(false); return; }
+        itemCo = StartCoroutine(HideItemRoutine());
+    }
+
+    IEnumerator HideItemRoutine()
+    {
+        yield return FadeCanvas(itemSpotlight, itemSpotlight.alpha, 0f, itemFadeDuration);
+        itemSpotlight.gameObject.SetActive(false);
+    }
 
     // ------------------------------------------------------------- 무대(배우)
     Transform GetSlot(string s) => s switch
@@ -820,6 +920,7 @@ public class DialogueRunner : MonoBehaviour
                 else Debug.LogWarning($"스프라이트 '{a.sprite}' 를 DB에서 못 찾음");
             }
 
+            StopMover(a.id);
             Transform target = GetSlot(a.slot);
             if (target != null) img.rectTransform.position = target.position;
             
@@ -884,7 +985,7 @@ public class DialogueRunner : MonoBehaviour
 
         if (stage.TryGetValue(id, out var img) && img != null) Destroy(img.gameObject);
         stage.Remove(id);
-        movers.Remove(id);
+        StopMover(id);
     }
     
     IEnumerator FadeOutActors(DialogueNode node, bool all)
@@ -932,11 +1033,14 @@ public class DialogueRunner : MonoBehaviour
 
     void ClearStage()
     {
+        HideItem(true);
         foreach (var kv in fades) if (kv.Value != null) StopCoroutine(kv.Value);
         fades.Clear();
 
         foreach (var kv in stage) if (kv.Value != null) Destroy(kv.Value.gameObject);
         stage.Clear();
+        foreach (var kv in movers)
+            if (kv.Value != null) StopCoroutine(kv.Value);
         movers.Clear();
     }
     

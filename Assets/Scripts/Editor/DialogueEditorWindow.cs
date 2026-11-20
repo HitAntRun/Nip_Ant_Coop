@@ -191,6 +191,7 @@ public class DialogueEditorWindow : EditorWindow
                 }
                 
                 n.sfx = EditorGUILayout.TextField("효과음(선택)", n.sfx, GUILayout.Width(innerW));
+                n.item = EditorGUILayout.TextField("아이템 스포트라이트(선택)", n.item, GUILayout.Width(innerW));
 
                 EditorGUILayout.Space(2);
                 if (n.choices.Count == 0)

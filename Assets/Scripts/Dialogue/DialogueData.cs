@@ -46,6 +46,9 @@ public class DialogueNode
     public bool fade;
     public bool flash;
     public float hold = -1f;
+    
+    // Item Spotlight
+    public string item;
 }
 
 [System.Serializable]
