@@ -10,11 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b125c7a623ac49d2a992dc20d576c76, type: 3}
-  m_Name: AntMonologueData
+  m_Name: AntMonologue_Stage5
   m_EditorClassIdentifier: 
-  lines:
-  - mono_1
-  - mono_2
-  - mono_3
-  - mono_4
-  - mono_5
+  lines: []
+  termiteFoundLines:
+  - bubble_correct_s5_1
+  - bubble_correct_s5_2
+  - bubble_correct_s5_3
+  - bubble_correct_s5_4
+  - bubble_correct_s5_5
+  gunTermiteFoundLines:
+  - bubble_correct_s5gun_1
+  - bubble_correct_s5gun_2
+  - bubble_correct_s5gun_3
+  - bubble_correct_s5gun_4
+  - bubble_correct_s5gun_5

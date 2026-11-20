@@ -1,5 +1,5 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
@@ -95,6 +95,24 @@ public class InteractionPopup : MonoBehaviour
     {
         if(dialoguePanel != null) dialoguePanel.SetActive(v);
         if(characterRoot != null) characterRoot.SetActive(v);
+    }
+    
+    public void ShowHold(string line, bool positive)
+    {
+        if (string.IsNullOrEmpty(line)) return;
+        if (hideCo != null) { StopCoroutine(hideCo); hideCo = null; }
+
+        if (label != null) label.text = Loc.Get(Loc.UI, line, "");
+        Sprite face = data == null ? null : (positive ? data.correctFace : data.wrongFace);
+        if (characterImage != null && face != null) characterImage.sprite = face;
+
+        SetVisible(true);
+    }
+
+    public void SetStageTermiteLines(List<string> lines)
+    {
+        if (lines == null || lines.Count == 0) return;
+        correctBubbleBag = new ShuffleBag<string>(lines);
     }
     
     private bool IsTutorial =>

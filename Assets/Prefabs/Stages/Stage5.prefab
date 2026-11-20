@@ -2400,7 +2400,7 @@ MonoBehaviour:
   blackAntPrefab: {fileID: 5264465881617317395, guid: 85adb3946c3d9439b9b6779ca2853962,
     type: 3}
   currentStage: {fileID: 11400000, guid: 389eb0ea3ad23482c8bae10d6254bbe8, type: 2}
-  antMonologueData: {fileID: 11400000, guid: e6f7d7a91cb2147a8bc6c91c81b7d0ad, type: 2}
+  antMonologueData: {fileID: 11400000, guid: d69ea83afde5d4ab692d573c3d2c1430, type: 2}
   speakerCount: 3
 --- !u!1001 &82945229398605925
 PrefabInstance:

@@ -12,10 +12,17 @@ public class StageFlow : MonoBehaviour
     {
         public string stageId;
         public string nextStoryId;
+        public List<string> endLines = new List<string>();
     }
 
     [SerializeField] private Fader fader;
     [SerializeField] private Route[] routes;
+
+    [Header("End Lines")]
+    [SerializeField] private List<string> clearLines = new List<string>();
+    [SerializeField] private List<string> missLines = new List<string>();
+    [SerializeField] private float lineDuration = 1.5f;
+    [SerializeField] private float delayBeforeFade = 1f;
     private bool ended;
 
     public bool IsEnded => ended;
@@ -43,12 +50,31 @@ public class StageFlow : MonoBehaviour
         
         SaveManager.Save(force: true);
         
-        StartCoroutine(Routine(r.nextStoryId));
+        StartCoroutine(Routine(r));
     }
 
-    IEnumerator Routine(string storyId)
+    IEnumerator Routine(Route r)
     {
+        bool hasRouteLines = r.endLines != null && r.endLines.Count > 0;
+        bool allFound = IsAllFound();
+        List<string> lines = hasRouteLines ? r.endLines : (allFound ? clearLines : missLines);
+        bool positive = !hasRouteLines && allFound;
+
+        if (InteractionPopup.instance != null && lines != null && lines.Count > 0)
+        {
+            string line = lines[UnityEngine.Random.Range(0, lines.Count)];
+            InteractionPopup.instance.ShowHold(line, positive);
+            yield return new WaitForSeconds(lineDuration);
+            yield return new WaitForSeconds(delayBeforeFade);
+        }
+
         if (fader != null) yield return fader.FadeOut();
-        SceneRouter.Load(SceneRouter.StoryScene, storyId);
+        SceneRouter.Load(SceneRouter.StoryScene, r.nextStoryId);
+    }
+
+    bool IsAllFound()
+    {
+        var c = AntCounter.instance;
+        return c != null && c.Total > 0 && c.Found >= c.Total;
     }
 }

@@ -21,6 +21,7 @@ public class TermiteSpawner : MonoBehaviour
     {
         currentStage = stage;
         ClearExisting();
+        ApplyTermiteFoundLines();
 
         if (stage.endlessRespawn)
         {
@@ -29,7 +30,6 @@ public class TermiteSpawner : MonoBehaviour
             endless.Begin(stage, cubeTransform, termitePrefab, termite2Prefab);
             return;
         }
-
         int realCount = 0;
         var blackAnts = new List<AntMonologue>();
 
@@ -80,6 +80,23 @@ public class TermiteSpawner : MonoBehaviour
 
         AntCounter.instance?.SetTotal(realCount);
         AssignMonologues(blackAnts);
+    }
+
+    private void ApplyTermiteFoundLines()
+    {
+        if (antMonologueData == null) return;
+
+        var lines = antMonologueData.termiteFoundLines;
+        if (IsGunStage() && antMonologueData.gunTermiteFoundLines.Count > 0)
+            lines = antMonologueData.gunTermiteFoundLines;
+
+        InteractionPopup.instance?.SetStageTermiteLines(lines);
+    }
+
+    private bool IsGunStage()
+    {
+        var mag = FindFirstObjectByType<MagnifierController>();
+        return mag != null && GameFlow.CurrentStage == mag.gunStageId;
     }
 
     private void AssignMonologues(List<AntMonologue> ants)

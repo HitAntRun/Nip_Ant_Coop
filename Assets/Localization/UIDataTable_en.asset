@@ -213,7 +213,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2139869861109787
-    m_Localized: A termite, hiding somewhere around here?
+    m_Localized: "A termite, hiding somewhere in the village?"
     m_Metadata:
       m_Items: []
   - m_Id: 2139869861109788
@@ -377,6 +377,218 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22517269341921280
     m_Localized: Principal Ant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109792
+    m_Localized: "This isn't right!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109793
+    m_Localized: "Open your eyes!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109794
+    m_Localized: "Aaagh! Help me!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109795
+    m_Localized: "I don't want to be locked up again..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109796
+    m_Localized: "Something's wrong."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109797
+    m_Localized: "These termites are making me so anxious!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109798
+    m_Localized: "Looks like the food is about to rot."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109799
+    m_Localized: "The floor's a little slippery."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109800
+    m_Localized: "Protecting our food is important."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109801
+    m_Localized: "They say there aren't enough soldier ants to gather food."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109802
+    m_Localized: "Please don't report me!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109803
+    m_Localized: "It's not fair, not fair at all!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109804
+    m_Localized: "I was just so hungry..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109805
+    m_Localized: "Things aren't what they seem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109806
+    m_Localized: "I wish it would all just fall apart"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109807
+    m_Localized: "The rotten smell has gotten worse lately."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109808
+    m_Localized: "There's less trash than before, right?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109809
+    m_Localized: "We're short on hands."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109810
+    m_Localized: "It's so easy now that machines handle the work."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109811
+    m_Localized: "Why haven't I seen hide nor hair of the rookie?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109812
+    m_Localized: "You came all the way here to find us..!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109813
+    m_Localized: "Just hear us out!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109814
+    m_Localized: "I saw a terrifying weapon..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109815
+    m_Localized: "I have to run! Aaagh!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109816
+    m_Localized: "What about the others?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109817
+    m_Localized: "Dad died because of the termites"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109818
+    m_Localized: "They say the spies will be executed soon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109819
+    m_Localized: "I hope the village settles down soon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109820
+    m_Localized: "Termites and dead black ants are hard to tell apart"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109821
+    m_Localized: "Breathing this smell all day, I feel kind of strange..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109822
+    m_Localized: "Wait, at least let me say goodbye...!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109823
+    m_Localized: "This is all your fault"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109824
+    m_Localized: "It's all over now"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109825
+    m_Localized: "We're as good as dead"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109826
+    m_Localized: "Fine, fine, just take me"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109827
+    m_Localized: "Take a closer look at us!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109828
+    m_Localized: "Do you see what we really are?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109829
+    m_Localized: "So hungry... so dizzy..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109830
+    m_Localized: "How much time has passed?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109831
+    m_Localized: "Will we ever get out of here..?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109832
+    m_Localized: "Please don't kill us!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109833
+    m_Localized: "Aaagh! Help me!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109834
+    m_Localized: "What on earth is that weapon?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109835
+    m_Localized: "I knew this would happen..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109836
+    m_Localized: "There's no escaping this"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109837
+    m_Localized: "Yes! I didn't miss a single one!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109838
+    m_Localized: "The village should be a little safer now, right?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109839
+    m_Localized: "There must still be some hiding somewhere..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109840
+    m_Localized: "Ugh, I think I missed a few."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109841
+    m_Localized: "There are too many termites. I can't report them all..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109842
+    m_Localized: "The termites... they were all looking at me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109843
+    m_Localized: "Huff... huff..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2139869861109844
+    m_Localized: "What.. did I just do?"
     m_Metadata:
       m_Items: []
   references:
