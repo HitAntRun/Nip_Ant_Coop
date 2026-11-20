@@ -15,7 +15,7 @@ MonoBehaviour:
   stageIndex: 0
   termites:
   - antType: 0
-    localPosition: {x: 0.73, y: -0.26, z: 0.23}
+    localPosition: {x: 0.34, y: -0.4, z: -0.09}
     surfaceNormal: {x: 0, y: 1, z: 0}
     scale: 0.5
     isReal: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
     isReal: 0
     containerId: 
   - antType: 1
-    localPosition: {x: 7.445, y: 1.26, z: -15.714}
+    localPosition: {x: 0.27, y: -0.39, z: -0.53}
     surfaceNormal: {x: 0, y: 1, z: 0}
     scale: 0.7
     isReal: 0
@@ -152,3 +152,25 @@ MonoBehaviour:
     scale: 2
     isReal: 0
     containerId: 
+  endlessRespawn: 0
+  endless:
+    initialCount: 20
+    maxAlive: 30
+    respawnDelay: 0.6
+    extraSpawnStagger: 0.25
+    popDuration: 0.25
+    scaleRange: {x: 0.8, y: 1.3}
+    surfaceOffset: 0
+    minDistFromCaught: 3
+    minDistFromAlive: 1
+    cursorAvoidPixels: 150
+    maxSlopeAngle: 35
+    edgeMargin: 1.5
+    maxEdgeStep: 0.4
+    candidateSpacing: 0.5
+    sampleAttempts: 1500
+    maxCandidates: 200
+    escalateStartTime: 15
+    escalateFullTime: 45
+    maxSpawnPerCatch: 3
+    termite2Ratio: 0
