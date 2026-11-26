@@ -63,3 +63,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d5c9c271253c7410fa3e413c6051e44f, type: 3}
     volume: 0.5
     pitchRange: {x: 1, y: 1}
+  - id: camera_shutter
+    clips:
+    - {fileID: 8300000, guid: 4ea96aba03b604bddbb317d0453306f3, type: 3}
+    volume: 1
+    pitchRange: {x: 1, y: 1}

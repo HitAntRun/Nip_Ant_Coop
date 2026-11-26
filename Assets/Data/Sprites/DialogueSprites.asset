@@ -165,3 +165,27 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: f83276d0a7d5648a9891daac6c4a6c10, type: 3}
   - name: gun
     sprite: {fileID: 21300000, guid: 286dcb78bd38245d8bb88fb9c8e66189, type: 3}
+  - name: ed-a_01
+    sprite: {fileID: 21300000, guid: c12e6c4ca89c24570965edcf3da905d7, type: 3}
+  - name: ed-a_02
+    sprite: {fileID: 21300000, guid: fa8aa230723a94b28aa20e9160dfa43d, type: 3}
+  - name: ed-a_03
+    sprite: {fileID: 21300000, guid: dd0ef7b6662bc4d4694e14f3d5ec9982, type: 3}
+  - name: ed-a_04
+    sprite: {fileID: 21300000, guid: 9fe04a0e588244e6588f08712ed46ff3, type: 3}
+  - name: ed-a_05
+    sprite: {fileID: 21300000, guid: 082c4dd4d34b445cfa3336c8d413acde, type: 3}
+  - name: ed-a_06
+    sprite: {fileID: 21300000, guid: 503650090172f43ed9cf429dc1c66546, type: 3}
+  - name: ed-a_07
+    sprite: {fileID: 21300000, guid: 73e921d1245a54ecc8b7a39d3f400f5e, type: 3}
+  - name: ed-a_08
+    sprite: {fileID: 21300000, guid: 47f2fb2e1ee4140e5a5271c964cca580, type: 3}
+  - name: ed-a_09
+    sprite: {fileID: 21300000, guid: 24622ba492515419a9ff49558e81e5fa, type: 3}
+  - name: ed-a_10
+    sprite: {fileID: 21300000, guid: 1a0566c92f864402ba70b55d6fc300b8, type: 3}
+  - name: ed-a_11
+    sprite: {fileID: 21300000, guid: bb202fc70e6e749ec906cd24d8381649, type: 3}
+  - name: ed-a_12
+    sprite: {fileID: 21300000, guid: 8c05f8babc8474e64b75436f9852b578, type: 3}

@@ -37,3 +37,5 @@ MonoBehaviour:
     playlist: {fileID: 11400000, guid: 3d00a4cef106c4f6b97bd32f3f86fcd9, type: 2}
   - name: BGM_Village
     playlist: {fileID: 11400000, guid: e86c58feaca234e2a8f23a6cd597d3ed, type: 2}
+  - name: BGM_End_A
+    playlist: {fileID: 11400000, guid: 5ba5703aa1dcb486c9418a9bd7932e8d, type: 2}
