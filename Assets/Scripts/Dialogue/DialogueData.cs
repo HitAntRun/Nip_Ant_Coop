@@ -13,6 +13,7 @@ public class DialogueData
     public string location;
     public int day;
     public string summary;
+    public bool hideChapterHeader;
     public List<DialogueNode> nodes = new List<DialogueNode>();
     public string bgm;
     public bool skipLoading;
@@ -45,6 +46,8 @@ public class DialogueNode
     public bool fadeBreak;
     public bool fade;
     public bool flash;
+    public bool shutter;
+    public bool centerText;
     public float hold = -1f;
     
     // Item Spotlight

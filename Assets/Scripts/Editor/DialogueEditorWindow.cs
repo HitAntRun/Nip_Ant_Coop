@@ -15,13 +15,11 @@ public class DialogueEditorWindow : EditorWindow
 
     private string DialogueFolder => Application.streamingAssetsPath;
 
-    static readonly string[] Slots = { "Left", "Center", "Right", "Off" };
-
-    // 대화 종료 후 이동할 씬 목록. 0번은 "이동 안 함" 의미.
+    static readonly string[] Slots = { "Left", "CenterLeft", "Center", "CenterRight", "Right", "Off" };
+    
     const string NoScene = "(없음 - 여기서 멈춤)";
     static readonly string[] EndScenes = { NoScene, "SC_Ingame", "SC_Story", "SC_Main" };
 
-    // 가로 스크롤 없이 모든 내용이 들어가는 최소 창 크기
     const float SideBarWidth   = 170f;   // 왼쪽 파일 목록 폭
     const float MinRightWidth  = 380f;   // 오른쪽 편집 영역이 필요로 하는 최소 폭
     const float LabelWidth     = 105f;   // 라벨 열 폭 (기본 150 → 축소)
@@ -182,6 +180,8 @@ public class DialogueEditorWindow : EditorWindow
                 n.day = EditorGUILayout.IntField("개미력 교체(0=유지)", n.day, GUILayout.Width(innerW));
                 n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
                 n.flash = EditorGUILayout.Toggle("플래시 전환", n.flash, GUILayout.Width(innerW));
+                n.shutter = EditorGUILayout.Toggle("셔터 전환", n.shutter, GUILayout.Width(innerW));
+                n.centerText = EditorGUILayout.Toggle("가운데 대사", n.centerText, GUILayout.Width(innerW));
 
                 if (nar)
                 {

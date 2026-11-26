@@ -66,6 +66,7 @@ public class DialogueRunner : MonoBehaviour
     [Header("Stage")]
     [SerializeField] private RectTransform characterRoot;
     [SerializeField] private RectTransform slotLeft, slotCenter, slotRight, slotOff;
+    [SerializeField] private float centerPairOffset = 150f;
     
     [Header("Shake")]
     [SerializeField] private RectTransform shakeRoot;
@@ -105,6 +106,13 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private float driftRotation = 0.25f;
     [SerializeField] private float driftSpeed = 0.4f;
     [SerializeField] private float driftOverscale = 1.03f;
+    
+    [SerializeField] private ShutterFx shutterFx;
+    
+    [SerializeField] private float centerTextOffsetY = 444f;   // 가운데 대사일 때 TextGroup을 올릴 양
+    private RectTransform textGroupRt;
+    private Vector2 textGroupHome;
+    private bool textGroupHomeSaved;
     
     [Header("Typing Sound")]
     [SerializeField] private int typingSfxEvery = 2;
@@ -227,8 +235,7 @@ public class DialogueRunner : MonoBehaviour
         if(narrationRoot != null) narrationRoot.SetActive(false);
         
         if (hideInNarration != null)
-            foreach (var go in hideInNarration)
-                if (go != null) go.SetActive(true);
+            ApplyHideInNarration(false);
 
         ApplyBackground(data.background, false);
 
@@ -242,8 +249,7 @@ public class DialogueRunner : MonoBehaviour
         if (narrationRoot != null) narrationRoot.SetActive(startNar);
 
         if (hideInNarration != null)
-            foreach (var go in hideInNarration)
-                if (go != null) go.SetActive(!startNar);
+            ApplyHideInNarration(startNar);
 
         string startBg = !string.IsNullOrEmpty(first.bg) ? first.bg : data.background;
         ApplyBackground(startBg, startNar);
@@ -271,10 +277,14 @@ public class DialogueRunner : MonoBehaviour
 
         bool doFade = node.fadeBreak && fader != null && (modeChanged || bgChanged)
                       && !isIntro && !doCutFade;
-        bool doFlash = node.flash && bgChanged && fader != null && !doFade && !doCutFade;
+        bool targetNar = (string.IsNullOrEmpty(node.mode) ? currentMode : node.mode) == "narration";
+        bool doShutter = node.shutter && bgChanged && shutterFx != null && targetNar
+                          && !doCutFade;
+        bool doFlash = node.flash && bgChanged && fader != null && !doFade && !doCutFade && !doShutter;
         isIntro = false;
         bool sceneChange = doFade && bgChanged;
         bool imageFaded = false;
+        bool shutterAfterFade = false;
 
         transitioning = true;
         yield return FadeOutActors(node, sceneChange);
@@ -296,8 +306,7 @@ public class DialogueRunner : MonoBehaviour
             if (narrationRoot != null) narrationRoot.SetActive(nar);
             
             if (hideInNarration != null)
-                foreach (var go in hideInNarration)
-                    if (go != null) go.SetActive(!nar);
+                ApplyHideInNarration(nar);
             currentMode = m;
         }
         
@@ -323,6 +332,23 @@ public class DialogueRunner : MonoBehaviour
                     transitioning = false;
                 }
             }
+            else if (doShutter && doFade)
+            {
+                ApplyBackground("black", nar);
+                shutterAfterFade = true;
+            }
+            else if (doShutter)
+            {
+                transitioning = true;
+                if (!string.IsNullOrEmpty(node.sfx))
+                {
+                    lastSfxNodeId = node.id;
+                    SoundManager.EnsureExists();
+                    SoundManager.instance?.PlaySfx(node.sfx);
+                }
+                yield return shutterFx.Play(() => ApplyBackground(node.bg, nar));
+                transitioning = false;
+            }
             else ApplyBackground(node.bg, nar);
         }
         
@@ -342,6 +368,7 @@ public class DialogueRunner : MonoBehaviour
         
         Target.text = "";
         Target.maxVisibleCharacters = 0;
+        ApplyTextPosition(node);
 
         if (currentMode != "narration")
         {
@@ -353,6 +380,13 @@ public class DialogueRunner : MonoBehaviour
         if (doFade)
         {
             yield return fader.FadeIn(breakFadeDuration);
+            transitioning = false;
+        }
+        if (shutterAfterFade)
+        {
+            PlayNodeSfx(node);
+            transitioning = true;
+            yield return shutterFx.Play(() => ApplyBackground(node.bg, currentMode == "narration"));
             transitioning = false;
         }
         
@@ -392,6 +426,12 @@ public class DialogueRunner : MonoBehaviour
     void ApplyBackground(string key, bool narration)
     {
         if (string.IsNullOrEmpty(key)) return;
+        
+        if (narration && key == "black" && cutsceneImage != null)
+        {
+            SetImageAlpha(cutsceneImage, 0f);
+            return;
+        }
 
         var prefab = bgDB != null ? bgDB.Get(key) : null;
         if (prefab != null)
@@ -416,6 +456,7 @@ public class DialogueRunner : MonoBehaviour
         if (narration && cutsceneImage != null)
         {
             cutsceneImage.sprite = s;
+            SetImageAlpha(cutsceneImage, 1f);
             return;
         }
 
@@ -426,6 +467,31 @@ public class DialogueRunner : MonoBehaviour
             backgroundImage.enabled = true;
             backgroundImage.sprite = s;
         }
+    }
+    
+    void ApplyTextPosition(DialogueNode node)
+    {
+        if (narrationText == null) return;
+        if (!textGroupHomeSaved)
+        {
+            textGroupRt = narrationText.rectTransform.parent as RectTransform;   // TextGroup
+            if (textGroupRt == null) return;
+            textGroupHome = textGroupRt.anchoredPosition;
+            textGroupHomeSaved = true;
+        }
+        textGroupRt.anchoredPosition = node.centerText
+            ? textGroupHome + new Vector2(0f, centerTextOffsetY)
+            : textGroupHome;
+    }
+    
+    void ApplyHideInNarration(bool nar)
+    {
+        if (hideInNarration != null)
+            foreach (var go in hideInNarration)
+                if (go != null) go.SetActive(!nar);
+
+        if (data != null && data.hideChapterHeader && ChapterHeader.instance != null)
+            ChapterHeader.instance.gameObject.SetActive(false);
     }
 
     void ApplyPortrait(DialogueNode node)
@@ -450,6 +516,20 @@ public class DialogueRunner : MonoBehaviour
     IEnumerator FlashOutAndRelease()
     {
         yield return fader.FlashOut(flashOutDuration);
+        transitioning = false;
+    }
+    
+    void PlayNodeSfx(DialogueNode node)
+    {
+        if (string.IsNullOrEmpty(node.sfx) || node.id == lastSfxNodeId) return;
+        lastSfxNodeId = node.id;
+        SoundManager.EnsureExists();
+        SoundManager.instance?.PlaySfx(node.sfx);
+    }
+    
+    IEnumerator ShutterOpenAndRelease(DialogueNode node, bool nar)
+    {
+        yield return shutterFx.Play(() => ApplyBackground(node.bg, nar));  // 닫힘 → 교체 → 열림
         transitioning = false;
     }
 
@@ -890,12 +970,14 @@ public class DialogueRunner : MonoBehaviour
     }
 
     // ------------------------------------------------------------- 무대(배우)
-    Transform GetSlot(string s) => s switch
+    Vector3 GetSlotPos(string s) => s switch
     {
-        "Left"  => slotLeft,
-        "Right" => slotRight,
-        "Off"   => slotOff,
-        _       => slotCenter,
+        "Left"        => slotLeft.position,
+        "Right"       => slotRight.position,
+        "Off"         => slotOff.position,
+        "CenterLeft"  => slotCenter.TransformPoint(new Vector3(-centerPairOffset, 0f, 0f)),
+        "CenterRight" => slotCenter.TransformPoint(new Vector3( centerPairOffset, 0f, 0f)),
+        _             => slotCenter.position,
     };
 
     void ApplyActors(DialogueNode node)
@@ -921,15 +1003,14 @@ public class DialogueRunner : MonoBehaviour
             }
 
             StopMover(a.id);
-            Transform target = GetSlot(a.slot);
-            if (target != null) img.rectTransform.position = target.position;
+            img.rectTransform.position = GetSlotPos(a.slot);
             
             img.rectTransform.localScale = new Vector3(a.flip ? -1f : 1f, 1f, 1f);
             
             if (a.wiggle > 0)
             {
-                Transform dest = string.IsNullOrEmpty(a.wiggleTo) ? slotLeft : GetSlot(a.wiggleTo);
-                movers[a.id] = StartCoroutine(WiggleRoutine(img.rectTransform, dest.position, a.wiggle));
+                Vector3 dest = string.IsNullOrEmpty(a.wiggleTo) ? slotLeft.position : GetSlotPos(a.wiggleTo);
+                movers[a.id] = StartCoroutine(WiggleRoutine(img.rectTransform, dest, a.wiggle));
             }
             
             if (a.fadeIn)
