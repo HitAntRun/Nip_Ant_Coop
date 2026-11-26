@@ -189,3 +189,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: bb202fc70e6e749ec906cd24d8381649, type: 3}
   - name: ed-a_12
     sprite: {fileID: 21300000, guid: 8c05f8babc8474e64b75436f9852b578, type: 3}
+  - name: ch5_radio_scene
+    sprite: {fileID: 21300000, guid: c512ae9df0af9437b94521c60bcba5ef, type: 3}
+  - name: ch5_radio_scene_nomarks
+    sprite: {fileID: 21300000, guid: b013b67d51a934fe1ae0161792aea9fe, type: 3}

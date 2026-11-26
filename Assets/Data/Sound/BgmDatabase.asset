@@ -39,3 +39,7 @@ MonoBehaviour:
     playlist: {fileID: 11400000, guid: e86c58feaca234e2a8f23a6cd597d3ed, type: 2}
   - name: BGM_End_A
     playlist: {fileID: 11400000, guid: 5ba5703aa1dcb486c9418a9bd7932e8d, type: 2}
+  - name: BGM_Radio_Noise
+    playlist: {fileID: 11400000, guid: 4e1fae3a27a59498eaf327c4a48eac54, type: 2}
+  - name: BGM_End_B
+    playlist: {fileID: 11400000, guid: a7d420aaea290455db39afa264558bbe, type: 2}
