@@ -14,6 +14,7 @@ public class DialogueData
     public int day;
     public string summary;
     public bool hideChapterHeader;
+    public bool hideLogButton;
     public List<DialogueNode> nodes = new List<DialogueNode>();
     public string bgm;
     public bool skipLoading;
@@ -49,6 +50,9 @@ public class DialogueNode
     public bool shutter;
     public bool centerText;
     public float hold = -1f;
+    public bool scroll;
+    public bool fullscreenBg;
+    public bool glitch;
     
     // Item Spotlight
     public string item;

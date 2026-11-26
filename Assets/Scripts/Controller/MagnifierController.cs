@@ -114,6 +114,7 @@ public class MagnifierController : MonoBehaviour
 
     public void ToggleSearchMode()
     {
+        if (isGunMode) return;
         isSearchMode = !isSearchMode;
         ApplyMode();
         TutorialController.instance?.NotifyMagnify();

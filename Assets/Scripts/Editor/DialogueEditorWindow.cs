@@ -181,7 +181,10 @@ public class DialogueEditorWindow : EditorWindow
                 n.fadeBreak = EditorGUILayout.Toggle("암전 전환", n.fadeBreak, GUILayout.Width(innerW));
                 n.flash = EditorGUILayout.Toggle("플래시 전환", n.flash, GUILayout.Width(innerW));
                 n.shutter = EditorGUILayout.Toggle("셔터 전환", n.shutter, GUILayout.Width(innerW));
+                n.scroll = EditorGUILayout.Toggle("세로 스크롤", n.scroll, GUILayout.Width(innerW));
                 n.centerText = EditorGUILayout.Toggle("가운데 대사", n.centerText, GUILayout.Width(innerW));
+                n.fullscreenBg = EditorGUILayout.Toggle("배경만 표시", n.fullscreenBg, GUILayout.Width(innerW));
+                n.glitch = EditorGUILayout.Toggle("지지직 전환", n.glitch, GUILayout.Width(innerW));
 
                 if (nar)
                 {

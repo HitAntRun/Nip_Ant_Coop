@@ -62,6 +62,8 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private Vector2 actorSize = new Vector2(400, 400);
     private GameObject currentBgInstance;
     private string currentBgKey;
+    [SerializeField] private float cutFlickerInterval = 1f;
+    private Coroutine cutFlickerCo;
 
     [Header("Stage")]
     [SerializeField] private RectTransform characterRoot;
@@ -95,6 +97,7 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private float breakFadeDuration = 0.45f;
     [SerializeField] private float narrationHold = 2f; 
     [SerializeField] private GameObject[] hideInNarration;
+    [SerializeField] private GameObject logButton;
 
     [SerializeField] private float cutFadeOut = 0.8f;
     [SerializeField] private float cutBlackHold = 0.3f;
@@ -108,6 +111,7 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private float driftOverscale = 1.03f;
     
     [SerializeField] private ShutterFx shutterFx;
+    [SerializeField] private GlitchFx glitchFx;   // 비워두면 처음 쓸 때 자동 생성
     
     [SerializeField] private float centerTextOffsetY = 444f;   // 가운데 대사일 때 TextGroup을 올릴 양
     private RectTransform textGroupRt;
@@ -281,6 +285,8 @@ public class DialogueRunner : MonoBehaviour
         bool doShutter = node.shutter && bgChanged && shutterFx != null && targetNar
                           && !doCutFade;
         bool doFlash = node.flash && bgChanged && fader != null && !doFade && !doCutFade && !doShutter;
+        if (node.glitch && bgChanged && glitchFx == null) glitchFx = CreateGlitchFx();
+        bool doGlitch = node.glitch && bgChanged && glitchFx != null && !doFade && !doCutFade && !doShutter;
         isIntro = false;
         bool sceneChange = doFade && bgChanged;
         bool imageFaded = false;
@@ -310,6 +316,22 @@ public class DialogueRunner : MonoBehaviour
             currentMode = m;
         }
         
+        if (m != "narration") StopCutFlicker();
+
+        if (currentMode != "narration" && !node.scroll)
+        {
+            bool showUI = !node.fullscreenBg;
+            panel.SetActive(showUI);
+            if (characterRoot != null) characterRoot.gameObject.SetActive(showUI);
+            if (!showUI && portraitImage != null) portraitImage.gameObject.SetActive(false);
+        }
+        
+        if (node.scroll)
+        {
+            panel.SetActive(false);
+            if (characterRoot != null) characterRoot.gameObject.SetActive(false);
+        }
+        
         if (doFlash)
         {
             transitioning = true;
@@ -321,7 +343,7 @@ public class DialogueRunner : MonoBehaviour
             bool nar = currentMode == "narration";
             bool isPrefab = bgDB != null && bgDB.Get(node.bg) != null;
 
-            if (doCutFade && !isPrefab && spriteDB != null)
+            if (doCutFade && !isPrefab && spriteDB != null && !node.bg.Contains("|"))
             {
                 Sprite s = spriteDB.Get(node.bg);
                 if (s != null)
@@ -349,6 +371,13 @@ public class DialogueRunner : MonoBehaviour
                 yield return shutterFx.Play(() => ApplyBackground(node.bg, nar));
                 transitioning = false;
             }
+            else if (doGlitch)
+            {
+                transitioning = true;
+                PlayNodeSfx(node);   // 지지직 소리를 효과 시작과 동시에
+                yield return glitchFx.Play(() => ApplyBackground(node.bg, nar));
+                transitioning = false;
+            }
             else ApplyBackground(node.bg, nar);
         }
         
@@ -373,7 +402,7 @@ public class DialogueRunner : MonoBehaviour
         if (currentMode != "narration")
         {
             ApplyPortrait(node);
-            if (!sceneChange) ApplyActors(node);
+            if (!sceneChange && !node.scroll) ApplyActors(node);   ApplyActors(node);
             speakerText.text = LocalizeSpeaker(node.speaker);
         }
 
@@ -394,7 +423,7 @@ public class DialogueRunner : MonoBehaviour
         {
             StartCoroutine(FlashOutAndRelease());
         }
-        if (sceneChange && currentMode != "narration")
+        if (sceneChange && currentMode != "narration" && !node.scroll) ApplyActors(node);
             ApplyActors(node);    
 
         if (!string.IsNullOrEmpty(node.item)) ShowItem(node.item);
@@ -417,15 +446,41 @@ public class DialogueRunner : MonoBehaviour
                 StartCoroutine(FadeCanvas(narrationGroup, 0f, 1f, narrationFadeDuration));
             }
         }
+        
+        if (node.scroll)
+        {
+            typing = StartCoroutine(ScrollRoutine(node));
+            yield break;
+        }
 
         AddLog(node, currentMode);
         if (typing != null) StopCoroutine(typing);
         typing = StartCoroutine(TypeText(Loc.Get(Loc.Story, node.locKey, node.text)));
     }
 
+    GlitchFx CreateGlitchFx()
+    {
+        if (backgroundImage == null) return null;
+        var parent = backgroundImage.rectTransform.parent as RectTransform;
+        if (parent == null) return null;
+
+        // 배경(backgroundImage / bgContainer) 바로 위에 깔리도록
+        int index = backgroundImage.rectTransform.GetSiblingIndex();
+        if (bgContainer != null && bgContainer.parent == parent)
+            index = Mathf.Max(index, bgContainer.GetSiblingIndex());
+
+        return GlitchFx.Create(parent, index + 1, backgroundImage.rectTransform, bgContainer);
+    }
+
     void ApplyBackground(string key, bool narration)
     {
         if (string.IsNullOrEmpty(key)) return;
+        
+        if (narration && key.Contains("|") && cutsceneImage != null)
+        {
+            StartCutFlicker(key);
+            return;
+        }
         
         if (narration && key == "black" && cutsceneImage != null)
         {
@@ -455,6 +510,7 @@ public class DialogueRunner : MonoBehaviour
 
         if (narration && cutsceneImage != null)
         {
+            StopCutFlicker();
             cutsceneImage.sprite = s;
             SetImageAlpha(cutsceneImage, 1f);
             return;
@@ -492,6 +548,9 @@ public class DialogueRunner : MonoBehaviour
 
         if (data != null && data.hideChapterHeader && ChapterHeader.instance != null)
             ChapterHeader.instance.gameObject.SetActive(false);
+        
+        if (data != null && data.hideLogButton && logButton != null)
+            logButton.SetActive(false);
     }
 
     void ApplyPortrait(DialogueNode node)
@@ -557,8 +616,11 @@ public class DialogueRunner : MonoBehaviour
         isIntro = true;
         Show(current);
 
-        if (!nar && characterGroup != null)
-            yield return FadeCanvas(characterGroup, 0f, 1f, characterFadeDuration);
+        if (characterGroup != null)
+        {
+            if (!nar) yield return FadeCanvas(characterGroup, 0f, 1f, characterFadeDuration);
+            else      characterGroup.alpha = 1f;
+        }
     }
 
     IEnumerator OutroRoutine()
@@ -606,13 +668,13 @@ public class DialogueRunner : MonoBehaviour
     IEnumerator TypeText(string full)
     {
         isTyping = true;
-        bool typingSfxOn = (currentMode != "narration");
-
         var t = Target;
+        bool typingSfxOn = currentMode != "narration" && !string.IsNullOrEmpty(full)
+                                                      && t.gameObject.activeInHierarchy;
         t.maxVisibleCharacters = 0;
         t.text = full;
         t.ForceMeshUpdate();
-        int total = t.textInfo.characterCount;
+        int total = string.IsNullOrEmpty(full) ? 0 : t.textInfo.characterCount;
         for (int i = 0; i <= total; i++)
         {
             t.maxVisibleCharacters = i;
@@ -797,6 +859,26 @@ public class DialogueRunner : MonoBehaviour
         
         if(current.choices != null && current.choices.Count >= 0) { ShowChoices(); return; }
         if (IsAuto(current)) typing = StartCoroutine(AutoAdvance(current));
+    }
+    
+    IEnumerator ScrollRoutine(DialogueNode node)
+    {
+        transitioning = true;
+        var scroller = currentBgInstance != null
+            ? currentBgInstance.GetComponentInChildren<VerticalBgScroller>()
+            : null;
+        if (scroller != null) yield return scroller.Play();
+
+        panel.SetActive(true);
+        if (characterRoot != null) characterRoot.gameObject.SetActive(true);
+        ApplyActors(node);
+        transitioning = false;
+        typing = null;
+        if (current != node) yield break;
+
+        if (string.IsNullOrEmpty(node.text)) { Next(); yield break; }
+        AddLog(node, currentMode);
+        typing = StartCoroutine(TypeText(Loc.Get(Loc.Story, node.locKey, node.text)));
     }
 
     IEnumerator AutoAdvance(DialogueNode node)
@@ -1218,6 +1300,7 @@ public class DialogueRunner : MonoBehaviour
 
     IEnumerator FadeSwapRoutine(Sprite next)
     {
+        StopCutFlicker();
         float t = 0f;
         while (t < cutFadeOut)
         {
@@ -1238,6 +1321,39 @@ public class DialogueRunner : MonoBehaviour
             yield return null;
         }
         SetImageAlpha(cutsceneImage, 1f);
+    }
+    
+    void StartCutFlicker(string key)
+    {
+        StopCutFlicker();
+        var frames = new List<Sprite>();
+        foreach (var k in key.Split('|'))
+        {
+            var s = spriteDB != null ? spriteDB.Get(k.Trim()) : null;
+            if (s != null) frames.Add(s);
+        }
+        if (frames.Count == 0) return;
+
+        cutsceneImage.sprite = frames[0];
+        SetImageAlpha(cutsceneImage, 1f);
+        if (frames.Count > 1)
+            cutFlickerCo = StartCoroutine(CutFlickerRoutine(frames));
+    }
+
+    IEnumerator CutFlickerRoutine(List<Sprite> frames)
+    {
+        int i = 0;
+        while (true)
+        {
+            yield return new WaitForSeconds(cutFlickerInterval);
+            i = (i + 1) % frames.Count;
+            cutsceneImage.sprite = frames[i];
+        }
+    }
+
+    void StopCutFlicker()
+    {
+        if (cutFlickerCo != null) { StopCoroutine(cutFlickerCo); cutFlickerCo = null; }
     }
 
     static void SetImageAlpha(Image img, float a)

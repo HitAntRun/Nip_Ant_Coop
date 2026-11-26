@@ -47,6 +47,7 @@ public class SoundManager : MonoBehaviour
     private ShuffleBag<AudioClip> bag;
     private Coroutine bgmRoutine;
     private Coroutine stopRoutine;
+    private Coroutine speedRoutine;
     private bool bgmPaused;
     
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -133,6 +134,9 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBgm(BgmPlaylist playlist, bool restartIfSame = false)
     {
+        if (speedRoutine != null) { StopCoroutine(speedRoutine); speedRoutine = null; }
+        bgmSource.pitch = 1f;
+        
         lastClaimFrame = Time.frameCount;
         if (stopRoutine != null) { StopCoroutine(stopRoutine); stopRoutine = null; }
         
@@ -177,6 +181,9 @@ public class SoundManager : MonoBehaviour
 
     public void StopBgm(bool fade = true)
     {
+        if (speedRoutine != null) { StopCoroutine(speedRoutine); speedRoutine = null; }
+        bgmSource.pitch = 1f;
+        
         if (bgmRoutine != null) { StopCoroutine(bgmRoutine); bgmRoutine = null; }
         currentPlaylist = null;
 
@@ -268,6 +275,32 @@ public class SoundManager : MonoBehaviour
     {
         yield return FadeTo(0f, fadeDuration);
         bgmSource.Stop();
+    }
+    
+    public void SetBgmSpeed(float target, float dur = 0.5f)
+    {
+        if (speedRoutine != null) StopCoroutine(speedRoutine);
+        speedRoutine = StartCoroutine(SpeedTo(target, dur));
+    }
+
+    // 매 프레임 호출용: 목표 속도를 1초에 최대 0.5씩 따라감
+    public void SetBgmSpeedImmediate(float target)
+    {
+        if (speedRoutine != null) { StopCoroutine(speedRoutine); speedRoutine = null; }
+        bgmSource.pitch = Mathf.MoveTowards(bgmSource.pitch, target, Time.deltaTime * 0.5f);
+    }
+
+    IEnumerator SpeedTo(float target, float dur)
+    {
+        float start = bgmSource.pitch, t = 0f;
+        while (t < dur)
+        {
+            t += Time.unscaledDeltaTime;
+            bgmSource.pitch = Mathf.Lerp(start, target, t / dur);
+            yield return null;
+        }
+        bgmSource.pitch = target;
+        speedRoutine = null;
     }
     
     public void PlaySfx(string id)

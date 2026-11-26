@@ -15,6 +15,7 @@ public class GameTimer : MonoBehaviour
     [SerializeField] private WarningVignette vignette;
     [SerializeField] private ArrowShake clockIdleShake;
     [SerializeField] private AlarmShake clockAlarmShake;
+    [SerializeField] private float urgentBgmSpeed = 1.5f;
     
     [Header("Fill Sprites")]
     [SerializeField] private Sprite fillGreen;
@@ -83,6 +84,15 @@ public class GameTimer : MonoBehaviour
         
         bool show = !unlimited && remaining <= warningThreshold;
         SetClockAlarm(show);
+        
+        // 경고 구간(20초→0초) 동안 BGM이 점점 빨라짐
+        float bgmTarget = 1f;
+        if (show)
+        {
+            float k = Mathf.InverseLerp(warningThreshold, 0f, remaining);  // 20초→0, 0초→1
+            bgmTarget = Mathf.Lerp(1.15f, urgentBgmSpeed, k);              // 살짝 빨라진 상태로 시작해 끝에 1.5배
+        }
+        SoundManager.instance?.SetBgmSpeedImmediate(bgmTarget);
 
         if (warning != null && warning.activeSelf != show) warning.SetActive(show);
 

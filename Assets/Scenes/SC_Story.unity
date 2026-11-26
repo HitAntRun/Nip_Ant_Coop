@@ -16332,6 +16332,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 266271905}
   portraitImage: {fileID: 662598328}
   actorSize: {x: 400, y: 400}
+  cutFlickerInterval: 1
   characterRoot: {fileID: 1992163238}
   slotLeft: {fileID: 575231479}
   slotCenter: {fileID: 1897679924}
@@ -16359,6 +16360,7 @@ MonoBehaviour:
   hideInNarration:
   - {fileID: 1339350847}
   - {fileID: 1935940712}
+  logButton: {fileID: 1935940712}
   cutFadeOut: 0.8
   cutBlackHold: 0.15
   cutFadeIn: 1
@@ -16369,6 +16371,7 @@ MonoBehaviour:
   driftSpeed: 0.4
   driftOverscale: 1.03
   shutterFx: {fileID: 615449249}
+  glitchFx: {fileID: 0}
   centerTextOffsetY: 444
   typingSfxEvery: 2
 --- !u!4 &1848783816
