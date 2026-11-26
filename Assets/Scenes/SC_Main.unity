@@ -1570,6 +1570,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -1637,6 +1640,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   - text: {fileID: 608688927}
     normal: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
@@ -1644,6 +1650,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -1774,9 +1783,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d45562bf2c1b4db480ff1a3367da25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openTime: 0.25
-  closeTime: 0.15
-  overshoot: 1.7
+  openSteps:
+  - 0.15
+  - 0.15
+  - 0.55
+  - 0.55
+  closeSteps:
+  - 0.55
+  - 0.15
+  stepTime: 0.05
+  smooth: 1
+  openTime: 0.15
+  closeTime: 0.1
+  animFps: 45
+  overshootPixels: 1
+  pixelUnit: 4
+  minHeight: 16
+  frames: []
   group: {fileID: 841507012}
 --- !u!225 &841507012
 CanvasGroup:
@@ -2079,6 +2102,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -2417,6 +2443,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   - text: {fileID: 0}
     normal: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
@@ -2424,6 +2453,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -2837,6 +2869,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -3260,6 +3295,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -3628,6 +3666,9 @@ MonoBehaviour:
     selected: {r: 1, g: 0.78431374, b: 0.27058825, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -3870,6 +3911,9 @@ MonoBehaviour:
     selected: {r: 1, g: 1, b: 1, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08
@@ -4377,6 +4421,9 @@ MonoBehaviour:
     selected: {r: 1, g: 0.78431374, b: 0.27058825, a: 1}
     moveOnPress: 1
     selectedScale: 1.12
+    hoverOffset: {x: 0, y: 0}
+    selectedOffset: {x: 0, y: 0}
+    boldWhenSelected: 0
     home: {x: 0, y: 0}
   pressOffset: {x: 0, y: -4}
   moveDuration: 0.08

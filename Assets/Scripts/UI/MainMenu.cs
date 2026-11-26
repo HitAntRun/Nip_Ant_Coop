@@ -26,6 +26,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject confirmRoot;
     [SerializeField] private PanelPopup confirmPopup;
 
+    public bool IsPlayOpen => playPanel != null && playPanel.activeSelf;
+
     private bool HasProgress => SaveManager.HasSave && GameFlow.LastStoryStage != startStage;
     
     private void Start()
@@ -36,6 +38,10 @@ public class MainMenu : MonoBehaviour
     
     private void Update()
     {
+        // 디버그 스토리 점프 창이 열려 있거나 Shift+Esc(창 닫기)일 땐 메뉴 Esc 처리 안 함
+        if (DebugStoryJump.IsOpen) return;
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) return;
+
         if (!Input.GetKeyDown(KeyCode.Escape)) return;
 
         if (confirmRoot != null && confirmRoot.activeSelf) { CloseConfirm(); return; }
@@ -75,7 +81,7 @@ public class MainMenu : MonoBehaviour
         ShowOnly(settingsPanel);
     }
     
-    private void RefreshPlayPanel()
+    public void RefreshPlayPanel()
     {
         bool has = HasProgress;
 
