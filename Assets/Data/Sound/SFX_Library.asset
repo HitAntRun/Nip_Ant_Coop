@@ -60,6 +60,21 @@ MonoBehaviour:
     pitchRange: {x: 1, y: 1}
   - id: clap
     clips:
-    - {fileID: 8300000, guid: 8fb84caeaef5a429cac56ad5158f602c, type: 3}
+    - {fileID: 8300000, guid: 4b44e83cf221444fa9f6b62702f73f3b, type: 3}
     volume: 0.5
+    pitchRange: {x: 1, y: 1}
+  - id: ingame_click
+    clips:
+    - {fileID: 8300000, guid: 672444e8a7c704ab88af9301c30047bd, type: 3}
+    volume: 0.5
+    pitchRange: {x: 1, y: 1}
+  - id: static
+    clips:
+    - {fileID: 8300000, guid: d92e2c0330264bb3acaf071792d90cc5, type: 3}
+    volume: 0.5
+    pitchRange: {x: 1, y: 1}
+  - id: camera_shutter
+    clips:
+    - {fileID: 8300000, guid: 4ea96aba03b604bddbb317d0453306f3, type: 3}
+    volume: 1
     pitchRange: {x: 1, y: 1}
