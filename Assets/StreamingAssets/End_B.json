@@ -2,7 +2,7 @@
   "storyId": "End_B",
   "startNodeId": "n_d14fae2c",
   "background": "",
-  "nextScene": "",
+  "nextScene": "SC_EndCredits",
   "nextStage": "",
   "chapterNumber": 0,
   "location": "",
@@ -1036,7 +1036,7 @@
     }
   ],
   "bgm": "BGM_Radio_Noise",
-  "skipLoading": false,
+  "skipLoading": true,
   "stageBranch": {
     "checkStage": "",
     "clearedStage": "",

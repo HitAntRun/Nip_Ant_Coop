@@ -2,7 +2,7 @@
   "storyId": "End_A",
   "startNodeId": "n_e818186e",
   "background": "underground_area1_ch5",
-  "nextScene": "",
+  "nextScene": "SC_EndCredits",
   "nextStage": "",
   "chapterNumber": 0,
   "location": "loc_Restricted",
@@ -2134,7 +2134,7 @@
     }
   ],
   "bgm": "BGM_Underground",
-  "skipLoading": false,
+  "skipLoading": true,
   "stageBranch": {
     "checkStage": "",
     "clearedStage": "",

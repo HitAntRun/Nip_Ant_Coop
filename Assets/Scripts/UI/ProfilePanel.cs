@@ -12,9 +12,7 @@ public class ProfilePanel : MonoBehaviour
     [SerializeField] private TMP_Text accuracyText;
 
     [Header("Title")]
-    [SerializeField] private TitleTier[] tiers;          // 뉴비 → 감시자 → 매의 눈 → 신고왕 (낮은 순)
-    [SerializeField] private TitleTier hiddenTier;       // 의심병자
-    [SerializeField, Range(0f, 1f)] private float hiddenMaxAccuracy = 0.5f;
+    [SerializeField] private TitleTable titleTable;      // 칭호 단계·판정 (엔딩 크레딧과 공유)
 
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text nextTitleText;
@@ -92,37 +90,16 @@ public class ProfilePanel : MonoBehaviour
 
     // ───────── 칭호 ─────────
 
-    // 정확도를 빼고 신고 수만으로 도달한 단계
-    private int CountIndex(int found)
-    {
-        for (int i = tiers.Length - 1; i >= 0; i--)
-            if (found >= tiers[i].minFound) return i;
-        return 0;
-    }
-
-    // 판정 순서: 신고왕 → 의심병자 → 나머지
-    private TitleTier CurrentTitle(int found, float acc, int countIdx)
-    {
-        int last = tiers.Length - 1;
-
-        if (countIdx == last && acc >= tiers[last].minAccuracy)
-            return tiers[last];
-
-        if (hiddenTier != null && found >= hiddenTier.minFound && acc < hiddenMaxAccuracy)
-            return hiddenTier;
-
-        return tiers[Mathf.Min(countIdx, last - 1)];
-    }
-
-    private string Name(TitleTier t) => Loc.Get(Loc.UI, t.locKey, t.fallback);
+    private string Name(TitleTier t) => titleTable.Name(t);
 
     private void RefreshTitle(int found, float acc)
     {
-        if (tiers == null || tiers.Length < 2) return;
+        if (titleTable == null || titleTable.tiers == null || titleTable.tiers.Length < 2) return;
 
+        TitleTier[] tiers = titleTable.tiers;
         int last = tiers.Length - 1;
-        int countIdx = CountIndex(found);
-        TitleTier current = CurrentTitle(found, acc, countIdx);
+        int countIdx = titleTable.CountIndex(found);
+        TitleTier current = titleTable.CurrentTitle(found, acc);
 
         if (titleText) titleText.text = Name(current);
         if (titleText) titleText.color = current.color;

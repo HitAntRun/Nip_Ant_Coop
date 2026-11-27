@@ -1386,34 +1386,7 @@ MonoBehaviour:
   foundText: {fileID: 1357976100}
   wrongText: {fileID: 1717899635}
   accuracyText: {fileID: 1356832437}
-  tiers:
-  - locKey: title_newbie
-    fallback: "\uB274\uBE44"
-    minFound: 0
-    color: {r: 0.41960785, g: 0.3137255, b: 0.32156864, a: 1}
-    minAccuracy: 0
-  - locKey: title_watcher
-    fallback: "\uAC10\uC2DC\uC790"
-    minFound: 5
-    color: {r: 0.5411765, g: 0.29411766, b: 0.07058824, a: 1}
-    minAccuracy: 0
-  - locKey: title_hawkeye
-    fallback: "\uB9E4\uC758 \uB208"
-    minFound: 15
-    color: {r: 0.47843137, g: 0.20784314, b: 0.14117648, a: 1}
-    minAccuracy: 0
-  - locKey: title_king
-    fallback: "\uC2E0\uACE0\uC655"
-    minFound: 30
-    color: {r: 0.9490196, g: 0.69803923, b: 0.16862746, a: 1}
-    minAccuracy: 0.8
-  hiddenTier:
-    locKey: title_paranoid
-    fallback: "\uC758\uC2EC\uBCD1\uC790"
-    minFound: 25
-    color: {r: 0.9019608, g: 0.24705882, b: 0.21960784, a: 1}
-    minAccuracy: 0
-  hiddenMaxAccuracy: 0.5
+  titleTable: {fileID: 11400000, guid: 2ae6d59f045e4423a7dc1d0f4bf0a80a, type: 2}
   titleText: {fileID: 1074871604}
   nextTitleText: {fileID: 1696219263}
   progressText: {fileID: 976227232}

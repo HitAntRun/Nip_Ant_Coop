@@ -91,10 +91,19 @@ public class MainMenu : MonoBehaviour
         {
             progressText.gameObject.SetActive(has);
             if (has) progressText.text = string.Format(
-                Loc.Get(Loc.UI, "progress", progressFormat), GameFlow.ChapterNumber.ToString("D2"));
+                Loc.Get(Loc.UI, "progress", progressFormat), ProgressLabel());
         }
     }
     
+    // 엔딩 진행 중이면 어떤 엔딩이든 "Ending" (언어 상관없이 영어 고정), 아니면 챕터 번호
+    private static string ProgressLabel()
+    {
+        string stage = GameFlow.LastStoryStage;
+        if (!string.IsNullOrEmpty(stage) && stage.StartsWith("End_"))
+            return "Ending";
+        return GameFlow.ChapterNumber.ToString("D2");
+    }
+
     public void OnClickContinue()
     {
         SceneRouter.Load(SceneRouter.StoryScene, GameFlow.LastStoryStage);
