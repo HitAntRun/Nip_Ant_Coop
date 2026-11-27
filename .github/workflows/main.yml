@@ -1,7 +1,7 @@
 name: Automated Build ⭐
 
 on:
-  push: # Master 브랜치에 Push가 되면 빌드가 되도록 동작시킵니다.
+  push: # main 브랜치에 Push가 되면 빌드가 되도록 동작시킵니다.
     branches: [ main ]
     
 jobs:
@@ -20,9 +20,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: Library
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          key: Library-Windows-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
-            Library-
+            Library-Windows-
 
       # Build
       - name: Build project
@@ -43,7 +43,7 @@ jobs:
  
   buildMacOS:
     name: 💻 MacOS
-    runs-on: macos-latest # MacOS를 사용합니다.
+    runs-on: ubuntu-latest # Linux 도커에서 macOS(Mono) 빌드를 합니다.
     
     steps:
       # Checkout
@@ -56,9 +56,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: Library
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          key: Library-MacOS-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
-            Library-
+            Library-MacOS-
 
       # Build
       - name: Build project
@@ -71,8 +71,12 @@ jobs:
           targetPlatform: StandaloneOSX
           buildName : Nip_Ant_Coop
 
+      # Linux에서 만든 .app은 그대로 올리면 실행 권한이 사라지므로 tar로 묶어서 업로드
+      - name: Pack macOS build
+        run: tar -czf Nip_Ant_Coop-macOS.tar.gz -C build StandaloneOSX
+
       # Output
       - uses: actions/upload-artifact@v4
         with:
           name: MacOS Build
-          path: build
+          path: Nip_Ant_Coop-macOS.tar.gz
