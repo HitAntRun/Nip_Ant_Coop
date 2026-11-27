@@ -2644,6 +2644,398 @@ MonoBehaviour:
     m_Localized: Huff... huff....
     m_Metadata:
       m_Items: []
+  - m_Id: 19314104832352343
+    m_Localized: "What on earth is going on here?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352344
+    m_Localized: "Emil! It's us!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352345
+    m_Localized: "Emil, I'm here too!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352346
+    m_Localized: "How did this even happen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352347
+    m_Localized: "Are the ants here black ants? Or termites?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352348
+    m_Localized: "Everyone locked up here is a black ant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352349
+    m_Localized: "But to the other ants, we might look like termites."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352350
+    m_Localized: "Just the way they looked to you and to us, Emil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352351
+    m_Localized: "I don't understand what you mean."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352352
+    m_Localized: "It's going to be a bit of a long story."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352353
+    m_Localized: "(Murmur, murmur)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352354
+    m_Localized: "Queen or not, this has gone way too far."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352355
+    m_Localized: "Biting our workers to death just for damaging the queen's wings..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352356
+    m_Localized: "How is that even remotely acceptable?!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352357
+    m_Localized: "Still, it's true they laid hands on the Queen's royal body."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352358
+    m_Localized: "We're not without fault either."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352359
+    m_Localized: "A queen ant's wings are useless anyway once she's founded a colony after her nuptial flight!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352360
+    m_Localized: "A queen who has founded a colony and still won't shed her wings? That goes against nature, and there's no precedent for it!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352361
+    m_Localized: "The Termite Queen, still carrying around what she should have shed long ago, is hardly normal either."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352362
+    m_Localized: "But that's the termites' own business. It's not our place to guess, is it?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352363
+    m_Localized: "Or maybe, being a mutant, she's changed to behave differently from ordinary ant instincts."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352364
+    m_Localized: "Even so, was it serious enough to kill worker ants? That's my point!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352365
+    m_Localized: "And by that logic, there's no need for us to understand their side either, is there?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352366
+    m_Localized: "I'm saying we, the genetically advanced and superior ones, should be the ones to understand."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352367
+    m_Localized: "No, all the more reason to knock their antennae flat!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352368
+    m_Localized: "Are you suggesting we start another war?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352369
+    m_Localized: "Everyone, that's enough."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352370
+    m_Localized: "Y-Your Majesty...?!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352371
+    m_Localized: "Why, Mother, what brings you all the way here..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352372
+    m_Localized: "Everyone... please don't hate the Termite Queen too much."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352373
+    m_Localized: "That child, too... only wanted to be free."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352374
+    m_Localized: "You all know well what a queen ant's life is like."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352375
+    m_Localized: "Building a colony is deeply rewarding and fulfilling, but..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352376
+    m_Localized: "... you spend your whole life in a tunnel, doing nothing but laying eggs."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352377
+    m_Localized: "The Termite Queen simply grew disillusioned with that life."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352378
+    m_Localized: "I chose responsibility for this colony over freedom,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352379
+    m_Localized: "but the Termite Queen wanted to pass her colony to the next queen and fly freely across the world."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352380
+    m_Localized: "Something she could never have had, as long as she kept her throne..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352381
+    m_Localized: "...... What do you make of what Mother said?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352382
+    m_Localized: "What do I make of it? What is there to make of it?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352383
+    m_Localized: "It's absurd, obviously!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352384
+    m_Localized: "Then she should never have founded a colony and just died alone."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352385
+    m_Localized: "Trying to defy the order a queen is bound to keep from the day she's born"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352386
+    m_Localized: "can never be a just reason for killing our ants."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352387
+    m_Localized: "Hah... the more I chew on it, the angrier I get."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352388
+    m_Localized: "Ahem... then, how about we try this?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352389
+    m_Localized: "Try what?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352390
+    m_Localized: "Behind the Queen's back, no, no, behind everyone else's back too,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352391
+    m_Localized: "we storm their side and kill their queen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352392
+    m_Localized: "She wants to leave so badly, so let's send her off."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352393
+    m_Localized: "This operation must go ahead without Mother or the other residents knowing."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352394
+    m_Localized: "We'd better start digging from here."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352395
+    m_Localized: "This route is the shortest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352396
+    m_Localized: "Got it. We'll focus the digging over there."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352397
+    m_Localized: "Huh? What's this?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352398
+    m_Localized: "Aaagh!! Help me!!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352399
+    m_Localized: "Hey, hey! Seal the entrance, now!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352400
+    m_Localized: "Let us out!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352401
+    m_Localized: "Open it right now!!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352402
+    m_Localized: "By now the olive oil should have soaked all the way into the ground."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352403
+    m_Localized: "But the oleic acid is going to reek from every direction."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352404
+    m_Localized: "Then how about we turn that area into a separate quarantine zone?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352405
+    m_Localized: "The entrance... it's open...?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352406
+    m_Localized: "What are those guys? They look like total zombies."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352407
+    m_Localized: "All pale and washed-out, like termite zombies. Twice as disgusting."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352408
+    m_Localized: "Hey, everyone, line up!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352409
+    m_Localized: "Ah, hey, don't break formation!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352410
+    m_Localized: "!! Agh, no!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352411
+    m_Localized: "There was still some liquid left!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352412
+    m_Localized: "Seal it again, quick!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352413
+    m_Localized: "This is where our story ends."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352414
+    m_Localized: "What you do now is up to you."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352415
+    m_Localized: "\"Krrsh... krrsshh...\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352416
+    m_Localized: "\"Next up in the news.\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352417
+    m_Localized: "\"A few days ago, we reported the discovery of a den where termite spies had gathered in droves.\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352418
+    m_Localized: "\"Today, a student who discovered the den and played a key role in wiping them out,\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352419
+    m_Localized: "\"was honored at a grand award ceremony.\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352420
+    m_Localized: "\"We now bring you the excitement from the scene, in sound.\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352421
+    m_Localized: "Impressive, for such a young student."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352422
+    m_Localized: "Since when do you hand out compliments?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352423
+    m_Localized: "Out of pity, sir. Just pity."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352424
+    m_Localized: "You really are cold-blooded, sir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352425
+    m_Localized: "I just sacrificed the few for the many."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352426
+    m_Localized: "Someone that young, with that much hostility toward termites,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352427
+    m_Localized: "a student who steps up for the village."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352428
+    m_Localized: "That way, neither Mother nor the other ants can say a word against it."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352429
+    m_Localized: "Compared to soldiers like us, or other adults,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352430
+    m_Localized: "isn't it easier to dress up what a child did as a hero's deed?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352431
+    m_Localized: "And just as easy to bury if things go south."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352432
+    m_Localized: "That's how propaganda works."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352433
+    m_Localized: "It looks easy to steer, but it takes finesse, so it's hard,"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352434
+    m_Localized: "and words are something you can trust and yet never quite trust."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352435
+    m_Localized: "In a way, sir, you might be the scariest ant of all."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352436
+    m_Localized: "Could you call it \"capable\" instead?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352437
+    m_Localized: "Anyway, this should wrap things up without a hitch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352438
+    m_Localized: "Right. Good work up to now."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352439
+    m_Localized: "I think I'll treat myself to some sugar water on ice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19314104832352440
+    m_Localized: "Sounds good."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
