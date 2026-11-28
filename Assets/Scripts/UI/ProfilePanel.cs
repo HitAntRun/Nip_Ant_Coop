@@ -28,6 +28,10 @@ public class ProfilePanel : MonoBehaviour
     [SerializeField] private int debugWrong;
 #endif
 
+    [Header("Unlock")]
+    [Tooltip("이 스테이지를 끝낸 뒤부터 Tab으로 열 수 있음")]
+    [SerializeField] private string unlockAfterStage = "Stage1_1";
+
     [Header("Slide")]
     [SerializeField] private float duration = 0.35f;
     [SerializeField] private Ease openEase = Ease.OutBack;
@@ -36,6 +40,7 @@ public class ProfilePanel : MonoBehaviour
 
     public static ProfilePanel instance;
     public bool IsOpen => isOpen;
+    public bool IsUnlocked => GameFlow.HasStageRecord(unlockAfterStage);
     private RectTransform rect;
     private CanvasGroup group;
     private float shownX;
@@ -64,7 +69,7 @@ public class ProfilePanel : MonoBehaviour
     {
         bool paused = PauseMenu.instance != null && PauseMenu.instance.IsOpen;
 
-        if (!paused && Input.GetKeyDown(KeyCode.Tab))
+        if (!paused && (isOpen || IsUnlocked) && Input.GetKeyDown(KeyCode.Tab))
             Toggle();
 
         group.blocksRaycasts = isOpen && !paused;

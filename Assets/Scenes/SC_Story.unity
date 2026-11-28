@@ -1396,6 +1396,7 @@ MonoBehaviour:
   useDebugValues: 0
   debugFound: 16
   debugWrong: 5
+  unlockAfterStage: Stage1_1
   duration: 0.35
   openEase: 27
   closeEase: 26

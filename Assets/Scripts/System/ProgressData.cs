@@ -15,6 +15,7 @@ public class ProgressData
     public int day = 1;
 
     public long savedAtUnix;
+    public bool profileGuideSeen;   // 프로필(Tab) 안내를 본 적 있는지
     public static ProgressData NewGame() => new ProgressData();
     
     public Dictionary<string, int> termitesFound = new Dictionary<string, int>();

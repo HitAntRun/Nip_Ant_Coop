@@ -602,6 +602,10 @@ public class DialogueRunner : MonoBehaviour
 
         if (fader != null)
             yield return fader.FadeIn();
+
+        // Stage1 이후 첫 스토리: 대사 시작 전에 Tab(프로필) 안내
+        if (ProfileGuide.ShouldShow)
+            yield return ProfileGuide.GetOrCreate().Run();
         
         if (!nar)
         {

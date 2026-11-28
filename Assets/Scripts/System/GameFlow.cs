@@ -25,6 +25,10 @@ public static class GameFlow
     public static string LastStoryStage { get; set; } = "Prologue";
 
     static string chapterStoryId = "Prologue";
+    // 해당 스테이지를 끝까지 플레이해 기록이 남았는지 (0마리여도 true)
+    public static bool HasStageRecord(string stageId)
+        => termitesFound.ContainsKey(stageId) || termiteTotals.ContainsKey(stageId);
+
     public static int TermitesFoundIn(string stageId)
             => termitesFound.TryGetValue(stageId, out var n) ? n : 0;
 
