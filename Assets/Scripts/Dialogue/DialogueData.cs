@@ -38,6 +38,7 @@ public class DialogueNode
     public bool shake;
     public string bgm;
     public string sfx;
+    public bool keepSfx;
     public string location;
     public int day;
     

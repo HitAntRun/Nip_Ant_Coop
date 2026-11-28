@@ -76,7 +76,6 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] private float shakeMagnitude = 15f;
     
     [Header("Actor Wiggle")]
-    [SerializeField] private float wiggleDistance  = 40f;
     [SerializeField] private float wiggleCycleTime = 0.35f;
 
     [Header("Fade")]
@@ -741,7 +740,8 @@ public class DialogueRunner : MonoBehaviour
 
     void Next()
     {
-        SoundManager.instance?.StopAllSfx();
+        if (current == null || !current.keepSfx)
+            SoundManager.instance?.StopAllSfx();
         if (current.next == null) { EndDialogue(); return; }
         current = data.nodes.FirstOrDefault(n => n.id == current.next);
         if (current == null) { EndDialogue(); return; }
@@ -854,15 +854,6 @@ public class DialogueRunner : MonoBehaviour
         }
         current = node;
         Show(current);
-    }
-
-    void OnTypingFinished()
-    {
-        isTyping = false;
-        SoundManager.instance?.StopTyping();
-        
-        if(current.choices != null && current.choices.Count >= 0) { ShowChoices(); return; }
-        if (IsAuto(current)) typing = StartCoroutine(AutoAdvance(current));
     }
     
     IEnumerator ScrollRoutine(DialogueNode node)

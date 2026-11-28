@@ -18,7 +18,7 @@ public class DialogueEditorWindow : EditorWindow
     static readonly string[] Slots = { "Left", "CenterLeft", "Center", "CenterRight", "Right", "Off" };
     
     const string NoScene = "(없음 - 여기서 멈춤)";
-    static readonly string[] EndScenes = { NoScene, "SC_Ingame", "SC_Story", "SC_Main" };
+    static readonly string[] EndScenes = { NoScene, "SC_Ingame", "SC_Story", "SC_Main", "SC_EndCredits" };
 
     const float SideBarWidth   = 170f;   // 왼쪽 파일 목록 폭
     const float MinRightWidth  = 380f;   // 오른쪽 편집 영역이 필요로 하는 최소 폭
@@ -194,6 +194,7 @@ public class DialogueEditorWindow : EditorWindow
                 }
                 
                 n.sfx = EditorGUILayout.TextField("효과음(선택)", n.sfx, GUILayout.Width(innerW));
+                n.keepSfx = EditorGUILayout.Toggle("효과음 다음 노드까지 유지", n.keepSfx, GUILayout.Width(innerW));
                 n.item = EditorGUILayout.TextField("아이템 스포트라이트(선택)", n.item, GUILayout.Width(innerW));
 
                 EditorGUILayout.Space(2);

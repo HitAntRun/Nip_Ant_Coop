@@ -26,6 +26,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "narration",
@@ -38,6 +39,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -55,6 +57,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "narration",
@@ -67,6 +70,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -84,6 +88,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "narration",
@@ -96,6 +101,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -113,6 +119,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "narration",
@@ -125,6 +132,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -142,6 +150,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "narration",
@@ -154,6 +163,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -171,6 +181,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "narration",
@@ -183,6 +194,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -221,6 +233,7 @@
       "shake": false,
       "bgm": "BGM_End_B",
       "sfx": "clap",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -233,6 +246,7 @@
       "hold": -1.0,
       "scroll": true,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -271,6 +285,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -283,6 +298,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -321,6 +337,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -333,6 +350,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -350,6 +368,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -362,6 +381,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -400,6 +420,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -412,6 +433,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -429,6 +451,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -441,6 +464,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -458,6 +482,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -470,6 +495,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -487,6 +513,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -499,6 +526,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -516,6 +544,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -528,6 +557,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -545,6 +575,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -557,6 +588,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -574,6 +606,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -586,6 +619,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -603,6 +637,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -615,6 +650,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -632,6 +668,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -644,6 +681,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -661,6 +699,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -673,6 +712,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -711,6 +751,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -723,6 +764,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -761,6 +803,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -773,6 +816,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -811,6 +855,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -823,6 +868,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -861,6 +907,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -873,6 +920,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -911,6 +959,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -923,6 +972,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -961,6 +1011,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",
@@ -973,6 +1024,7 @@
       "hold": -1.0,
       "scroll": false,
       "fullscreenBg": false,
+      "glitch": false,
       "item": ""
     },
     {
@@ -989,7 +1041,8 @@
       "actors": [],
       "shake": false,
       "bgm": "",
-      "sfx": "",
+      "sfx": "clap",
+      "keepSfx": true,
       "location": "",
       "day": 0,
       "mode": "",
@@ -1002,6 +1055,7 @@
       "hold": 5.0,
       "scroll": false,
       "fullscreenBg": true,
+      "glitch": false,
       "item": ""
     },
     {
@@ -1019,6 +1073,7 @@
       "shake": false,
       "bgm": "",
       "sfx": "static",
+      "keepSfx": false,
       "location": "",
       "day": 0,
       "mode": "",

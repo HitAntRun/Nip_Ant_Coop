@@ -262,6 +262,7 @@ public class EndingCredits : MonoBehaviour
 
         // 직전 엔딩의 BGM을 이어서 재생 (이미 같은 곡이 나오고 있으면 끊기지 않고 계속됨)
         SoundManager.EnsureExists();
+        SoundManager.instance?.StopAllSfx(); 
         string bgmId = GameFlow.LastStoryStage == "End_B" ? endBBgm : endABgm;
         SoundManager.instance?.PlayBgmById(bgmId);
     }
