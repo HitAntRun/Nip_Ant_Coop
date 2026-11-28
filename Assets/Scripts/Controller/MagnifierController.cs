@@ -41,6 +41,11 @@ public class MagnifierController : MonoBehaviour
     
     [Header("Options")]
     public bool hideSystemCursor = false;
+
+    [Header("Helper")]
+    private Transform focusTarget;
+    public bool IsFocusing => focusTarget != null;
+    
     
     void Start()
     {
@@ -58,7 +63,9 @@ public class MagnifierController : MonoBehaviour
 
     void Update()
     {
-        Vector2 mouse = Input.mousePosition;
+        Vector2 mouse = focusTarget != null
+            ? (Vector2)mainCam.WorldToScreenPoint(focusTarget.position)
+            : (Vector2)Input.mousePosition;
         magnifierRoot.position = mouse;
         if (searchLight && isSearchMode)
         {
@@ -153,5 +160,19 @@ public class MagnifierController : MonoBehaviour
     {
         float circlePx = searchCircleSize.y * canvas.scaleFactor;
         return mainCam.orthographicSize * (circlePx / Screen.height) / searchMagnification;
+    }
+
+    public void BeginFocus(Transform target)
+    {
+        focusTarget = target;
+        isSearchMode = true;
+        ApplyMode();
+    }
+
+    public void EndFocus()
+    {
+        focusTarget = null;
+        isSearchMode = false;
+        ApplyMode();
     }
 }

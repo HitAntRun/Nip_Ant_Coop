@@ -2545,8 +2545,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.7, y: 49}
-  m_SizeDelta: {x: 85.1752, y: 41.7474}
+  m_AnchoredPosition: {x: 1, y: 49}
+  m_SizeDelta: {x: 96.1856, y: 41.7474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326750978
 MonoBehaviour:
@@ -3049,6 +3049,16 @@ MonoBehaviour:
   choiceChecks: []
   choiceInputDelay: 0.4
   choosing: 0
+  itemRoot: {fileID: 0}
+  itemGlow: {fileID: 0}
+  itemFlash: {fileID: 0}
+  popDuration: 0.35
+  glowRotateSpeed: 20
+  glowPulse: 0.08
+  flashDuration: 0.3
+  itemSpotlight: {fileID: 0}
+  itemImage: {fileID: 0}
+  itemFadeDuration: 0.25
   choiceSpeaker: "\uC5D0\uBC00"
   choicePortrait: 
   bgDB: {fileID: 0}
@@ -3057,14 +3067,18 @@ MonoBehaviour:
   backgroundImage: {fileID: 0}
   portraitImage: {fileID: 0}
   actorSize: {x: 400, y: 400}
+  cutFlickerInterval: 1
   characterRoot: {fileID: 0}
   slotLeft: {fileID: 0}
   slotCenter: {fileID: 0}
   slotRight: {fileID: 0}
   slotOff: {fileID: 0}
+  centerPairOffset: 150
   shakeRoot: {fileID: 0}
   shakeDuration: 0.3
   shakeMagnitude: 15
+  wiggleDistance: 40
+  wiggleCycleTime: 0.35
   fader: {fileID: 0}
   characterGroup: {fileID: 0}
   characterFadeDuration: 0.5
@@ -3079,6 +3093,7 @@ MonoBehaviour:
   breakFadeDuration: 0.45
   narrationHold: 2
   hideInNarration: []
+  logButton: {fileID: 0}
   cutFadeOut: 0.8
   cutBlackHold: 0.3
   cutFadeIn: 1
@@ -3088,6 +3103,9 @@ MonoBehaviour:
   driftRotation: 0.25
   driftSpeed: 0.4
   driftOverscale: 1.03
+  shutterFx: {fileID: 0}
+  glitchFx: {fileID: 0}
+  centerTextOffsetY: 444
   typingSfxEvery: 2
 --- !u!114 &335378074
 MonoBehaviour:
@@ -3154,6 +3172,8 @@ MonoBehaviour:
       locKey: stage2_1_intro_1
       trigger: 0
       image: {fileID: 21300000, guid: 4be047c3ac44d4187ba969dfaf6bccd0, type: 3}
+      focusContainerId: Stage2_Intro
+      focusEndDelay: 0.6
   tutorialPanel: {fileID: 1434988902}
   tutorialText: {fileID: 311207046}
   stepImage: {fileID: 1081609595}
@@ -3162,36 +3182,50 @@ MonoBehaviour:
     locKey: tuto_1
     trigger: 0
     image: {fileID: 21300000, guid: bd536e0c940054f41b43a7f26d7b9fb9, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
   - text: "\uC815\uBA74\uC5D0 \uD770\uAC1C\uBBF8\uAC00 \uC788\uC5C8\uB124? \uB9C8\uC6B0\uC2A4
       \uC88C\uD074\uB9AD\uC744 \uD1B5\uD574 \uD558\uC580\uAC1C\uBBF8\uB97C \uC2E0\uACE0\uD558\uC790!"
     locKey: tuto_2
     trigger: 1
     image: {fileID: 21300000, guid: 3d07dd4fbd8dc4e5788947d10f28a292, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
   - text: "\uC774\uBC88\uC5D4 \uC548\uBCF4\uC774\uB294 \uAC01\uB3C4\uC5D0 \uD558\uC580\uAC1C\uBBF8\uAC00
       \uC228\uC5B4\uC788\uC744\uC218 \uC788\uC73C\uB2C8 A,D\uD0A4\uB97C \uB20C\uB7EC
       \uCC3E\uC544\uBCF4\uC790!"
     locKey: tuto_3
     trigger: 2
     image: {fileID: 21300000, guid: bd536e0c940054f41b43a7f26d7b9fb9, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
   - text: "\uD770\uAC1C\uBBF8\uAC00 \uC228\uC5B4\uC788\uC5C8\uB124? \uB611\uAC19\uC774
       \uC2E0\uACE0\uD558\uC790!"
     locKey: tuto_4
     trigger: 1
     image: {fileID: 21300000, guid: 3d07dd4fbd8dc4e5788947d10f28a292, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
   - text: "\uB9C8\uC6B0\uC2A4 \uC6B0\uD074\uB9AD\uC744 \uD1B5\uD574 \uD654\uBA74\uC744
       \uD655\uB300\uD574\uBCFC \uC218 \uC788\uC5B4! \uB2E8, \uADF8 \uBD80\uBD84\uB9CC
       \uBCF4\uC774\uB2C8\uAE50 \uC54C\uC544\uB46C!!"
     locKey: tuto_5
     trigger: 3
     image: {fileID: 21300000, guid: bd536e0c940054f41b43a7f26d7b9fb9, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
   - text: "\uC774\uBC88\uC5D0\uB3C4 \uC2E0\uACE0\uD574\uBCF4\uC790!"
     locKey: tuto_6
     trigger: 1
     image: {fileID: 21300000, guid: 3d07dd4fbd8dc4e5788947d10f28a292, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
   - text: "\uC774\uC81C \uC81C\uB300\uB85C \uD55C\uBC88 \uCC3E\uC544\uBCFC\uAE4C?"
     locKey: tuto_7
     trigger: 0
     image: {fileID: 21300000, guid: 4be047c3ac44d4187ba969dfaf6bccd0, type: 3}
+    focusContainerId: 
+    focusEndDelay: 0.6
 --- !u!114 &335378076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8646,7 +8680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72, y: 52.99996}
+  m_AnchoredPosition: {x: -76, y: 52.99996}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331191496
@@ -9538,7 +9572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 69, y: 52.99996}
+  m_AnchoredPosition: {x: 70, y: 52.99996}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476070376
@@ -10007,6 +10041,7 @@ MonoBehaviour:
   vignette: {fileID: 1880164481}
   clockIdleShake: {fileID: 1958963817}
   clockAlarmShake: {fileID: 1958963816}
+  urgentBgmSpeed: 1.5
   fillGreen: {fileID: -532115552, guid: 0310d955bc9c3489e83c3cab21081e46, type: 3}
   fillYellow: {fileID: -1598932505, guid: 0310d955bc9c3489e83c3cab21081e46, type: 3}
   fillRed: {fileID: 1933145661, guid: 0310d955bc9c3489e83c3cab21081e46, type: 3}

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class TutorialController : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class TutorialController : MonoBehaviour
     [SerializeField] private string nextStageId   = "Stage1_1";
     [SerializeField] private Fader fader;
     [SerializeField] private bool skipLoading = true;
+    private MagnifierController magnifier;
+    private HiddenContainer focusing;
+    private bool transitioning;
     
     public enum Trigger { Continue, ReportAnt, Rotate, Magnify }
 
@@ -22,6 +27,8 @@ public class TutorialController : MonoBehaviour
         public string locKey;
         public Trigger trigger;
         public Sprite image;
+        public string focusContainerId;
+        public float focusEndDelay = 0.6f;
     }
     
     [System.Serializable]
@@ -45,6 +52,15 @@ public class TutorialController : MonoBehaviour
 
     void Awake() { instance = this; }
     void OnDestroy() { if (instance == this) instance = null; }
+
+    void OnEnable()  => LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    void OnDisable() => LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+
+    void OnLocaleChanged(Locale _)
+    {
+        if (showingHint || index < 0 || index >= steps.Count || tutorialText == null) return;
+        tutorialText.text = Loc.Get(Loc.UI, steps[index].locKey, steps[index].text);
+    }
 
     public bool IsBlocking =>
         enabled && index >= 0 && index < steps.Count && (!waitingForAction || showingHint);
@@ -84,6 +100,7 @@ public class TutorialController : MonoBehaviour
         if (tutorialPanel != null) tutorialPanel.SetActive(true);
         if (tutorialText != null)  tutorialText.text = Loc.Get(Loc.UI, steps[index].locKey, steps[index].text);
         ShowStepImage(steps[index].image);
+        BeginFocusIfNeeded(steps[index]);
     }
 
     void ShowStepImage(Sprite s)
@@ -101,6 +118,7 @@ public class TutorialController : MonoBehaviour
     public void Advance()
     {
         if (index < 0 || index >= steps.Count) return;
+        if (transitioning) return; 
 
         if (showingHint)
         {
@@ -114,6 +132,11 @@ public class TutorialController : MonoBehaviour
 
         if (steps[index].trigger == Trigger.Continue)
         {
+            if (focusing != null)
+            {
+                StartCoroutine(FocusOutThenNext(steps[index].focusEndDelay));
+                return;
+            }
             Next();
         }
         else
@@ -177,5 +200,32 @@ public class TutorialController : MonoBehaviour
 
         if (skipLoading) SceneRouter.LoadDirect(nextSceneName, nextStageId);
         else             SceneRouter.Load(nextSceneName, nextStageId);
+    }
+    
+    void BeginFocusIfNeeded(Step s)
+    {
+        if (string.IsNullOrEmpty(s.focusContainerId)) return;
+        if (magnifier == null) magnifier = FindFirstObjectByType<MagnifierController>();
+
+        foreach (var c in FindObjectsByType<HiddenContainer>(FindObjectsSortMode.None))
+            if (c.Id == s.focusContainerId) { focusing = c; break; }
+
+        if (focusing != null && magnifier != null)
+            magnifier.BeginFocus(focusing.transform);
+    }
+
+    IEnumerator FocusOutThenNext(float delay)
+    {
+        transitioning = true;
+        if (tutorialPanel != null) tutorialPanel.SetActive(false);
+        if (stepImage != null) stepImage.gameObject.SetActive(false);
+
+        focusing.Open();
+        yield return new WaitForSeconds(delay);
+
+        magnifier.EndFocus();
+        focusing = null;
+        transitioning = false;
+        Next();
     }
 }

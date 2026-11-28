@@ -274,6 +274,7 @@ MonoBehaviour:
   cubeTransform: {fileID: 2812043568267721521}
   termitePrefab: {fileID: 4826438362605952908, guid: d49f5befb5c43477bad48ea8ef6b3fc0,
     type: 3}
+  termite2Prefab: {fileID: 0}
   blackAntPrefab: {fileID: 5264465881617317395, guid: 85adb3946c3d9439b9b6779ca2853962,
     type: 3}
   currentStage: {fileID: 11400000, guid: f361cef2de4d14936be46d93599d754c, type: 2}
@@ -2154,16 +2155,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8149666442020939397}
     m_Modifications:
-    - target: {fileID: 3130868001073529844, guid: 59ff75ddacf414ce0af93637029f5686,
-        type: 3}
-      propertyPath: m_Name
-      value: Stage
-      objectReference: {fileID: 0}
-    - target: {fileID: 3130868001073529844, guid: 59ff75ddacf414ce0af93637029f5686,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: -5836144567070545054, guid: 55c1227d454904984a772d5a5a77bd49,
         type: 3}
       propertyPath: m_Name
@@ -2265,6 +2256,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3130868001073529844, guid: 0330a34d56f40435c9d5b58c707bad58,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130868001073529844, guid: 59ff75ddacf414ce0af93637029f5686,
+        type: 3}
+      propertyPath: m_Name
+      value: Stage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130868001073529844, guid: 59ff75ddacf414ce0af93637029f5686,
         type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3120,6 +3121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AntJelly_yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087299500530389976, guid: 42b5fa797469e4fbf9636247e8c718fb,
+        type: 3}
+      propertyPath: containerId
+      value: Stage2_Intro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
