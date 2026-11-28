@@ -10,6 +10,15 @@ jobs:
     runs-on: windows-latest # 윈도우를 사용합니다.
     
     steps:
+      # Docker 서비스가 가끔 안 켜지는 러너 버그 우회 (actions/runner-images#13729)
+      - name: Ensure Docker is running
+        shell: pwsh
+        run: |
+          if ((Get-Service docker).Status -ne 'Running') {
+            Restart-Service docker
+          }
+          docker version
+
       # Checkout
       - name: Checkout repository
         uses: actions/checkout@v4
