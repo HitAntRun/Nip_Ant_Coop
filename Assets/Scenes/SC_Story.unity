@@ -2756,6 +2756,7 @@ GameObject:
   - component: {fileID: 266271904}
   - component: {fileID: 266271906}
   - component: {fileID: 266271905}
+  - component: {fileID: 266271907}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -2820,6 +2821,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266271903}
   m_CullTransparentMesh: 1
+--- !u!114 &266271907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266271903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97aecb4fba7204b2ba1cf4404bffe483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entries:
+  - sprite: {fileID: 21300000, guid: 0ca529ab8452f453c80e661ee617a1dd, type: 3}
+    eyes: {fileID: 4900000, guid: a49dee50dda514ef09f675584fdfe3c9, type: 3}
+    lightShade: {fileID: 21300000, guid: 2258d0cee71564c7bbc9c363a849e6f8, type: 3}
+  - sprite: {fileID: 21300000, guid: 1dd692200447c4b20b7215496762dbbc, type: 3}
+    eyes: {fileID: 4900000, guid: bb7a9061c671b47bf92bd577805a24b7, type: 3}
+    lightShade: {fileID: 21300000, guid: afb1088374a724bbca46590913f3052d, type: 3}
+  blinkInterval: {x: 1.5, y: 5}
+  shadeColor: {r: 0.043137256, g: 0.02745098, b: 0.019607844, a: 1}
+  firstFlickerDelay: 1.2
+  flickerPeriod: 3.5
+  maxDark: 0.85
+  offTime: 0.5
 --- !u!1 &275011537
 GameObject:
   m_ObjectHideFlags: 0
