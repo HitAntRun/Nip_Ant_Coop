@@ -1,5 +1,7 @@
 using System.Collections;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -40,6 +42,7 @@ public class AntMonologue : MonoBehaviour
     private Transform cam;
     private Coroutine reactCo;
     private string idleLine;
+    private string reactLine;
     
     private void Awake()
     {
@@ -63,6 +66,19 @@ public class AntMonologue : MonoBehaviour
 
         SetVisible(false);
         ApplyBubbleScale();
+    }
+
+    private void OnEnable()  => LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    private void OnDisable() => LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+
+    private void OnLocaleChanged(Locale _)
+    {
+        if (label == null) return;
+        string key = reactCo != null ? reactLine : idleLine;
+        if (string.IsNullOrEmpty(key)) return;
+
+        label.text = Loc.Get(Loc.UI, key, "");
+        FitBubble();
     }
 
     private void Start()
@@ -155,6 +171,7 @@ public class AntMonologue : MonoBehaviour
 
     private IEnumerator ReactRoutine(string line, float duration)
     {
+        reactLine = line;
         label.text = Loc.Get(Loc.UI, line, "");
         FitBubble();
         if (shown)

@@ -56,6 +56,7 @@ public class GameTimer : MonoBehaviour
     void Update()
     {
         if (!running) return;
+        if (TutorialController.instance != null && TutorialController.instance.IsBlocking) return;
         
         remaining -= Time.deltaTime;
         elapsed += Time.deltaTime;

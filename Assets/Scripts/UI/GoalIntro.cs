@@ -2,6 +2,8 @@ using System.Collections;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class GoalIntro : MonoBehaviour
 {
@@ -32,6 +34,7 @@ public class GoalIntro : MonoBehaviour
     public bool IsShowing { get; private set; }
     private Vector2 shownPos;
     private bool skipRequested;
+    private int goalCount;
 
     void Awake()
     {
@@ -57,7 +60,8 @@ public class GoalIntro : MonoBehaviour
             yield break;
         }
 
-        goalText.text = string.Format(Loc.Get(Loc.UI, goalKey, goalFormat), count);
+        goalCount = count;
+        RefreshText();
 
         sign.gameObject.SetActive(true);
         sign.localEulerAngles = Vector3.zero;
@@ -80,4 +84,15 @@ public class GoalIntro : MonoBehaviour
     }
 
     public void Skip() => skipRequested = true;
+
+    void OnEnable()  => LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    void OnDisable() => LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+
+    void OnLocaleChanged(Locale _) => RefreshText();
+
+    void RefreshText()
+    {
+        if (goalText == null) return;
+        goalText.text = string.Format(Loc.Get(Loc.UI, goalKey, goalFormat), goalCount);
+    }
 }
